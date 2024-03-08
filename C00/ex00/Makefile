@@ -8,10 +8,7 @@ NAME = megaphone
 all : ${NAME}
 
 ${NAME} : ${OBJ}
-	@c++ ${OBJ} -o $@
-
-%.o : %.c
-	@c++ ${CPPFCLAGS} -c $< -o $@
+	@c++ ${OBJ} -c $@
 
 clean :
 	rm ${OBJ}
