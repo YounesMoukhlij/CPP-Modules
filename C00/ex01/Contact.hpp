@@ -14,6 +14,5 @@ public:
 	void	full_fill_contact(int number);
 };
 
-std::string Contact::to_use[5] = {"First Name", "Last Name", "NickName", "Phone Number", "Darkest Secret"};
 
 #endif

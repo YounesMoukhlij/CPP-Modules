@@ -9,6 +9,7 @@ all : ${NAME} clean play
 
 play :
 	./PhoneBook
+
 ${NAME} : ${OBJ}
 	@(c++ ${CPPFLAGS} ${OBJ} -o $@)
 
