@@ -8,8 +8,8 @@
 class Contact
 {
 private:
-	std::string	infos[3];
-	std::string to_use[3];
+	std::string	infos[5];
+	std::string to_use[5];
 public:
 	void	full_fill_contact();
 };
