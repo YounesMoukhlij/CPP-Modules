@@ -9,7 +9,8 @@
 class PhoneBook
 {
 	private:
-		Contact contacts[8];
+		Contact	contacts[8];
+		int		number;
 	public:
 		void display_banner();
 		void add_contact_to_list();
