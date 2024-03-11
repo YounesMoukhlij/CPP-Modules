@@ -14,8 +14,6 @@ void	PhoneBook::add(void)
 	{
 		if (this->contacts[this->number].fill_contacts() == 0)
 			this->number++;
-		else
-			std::cout << "error" << std::endl;
 	}
 }
 
@@ -32,7 +30,7 @@ void	PhoneBook::search()
 		std::cout << "~ Type Index to display Infos or 0 to Exit Search List.\n";
 		while (i < 5)
 		{
-			
+
 		}
 	}
 	// std::cout << std::string (this->contacts[0]) << std::endl;
