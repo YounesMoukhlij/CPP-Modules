@@ -1,29 +1,41 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Contact.cpp                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/11 14:27:53 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/03/11 14:27:55 by youmoukh         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "Contact.hpp"
 
 std::string Contact::to_use[5] = {"First Name", "Last Name", "NickName", "Phone Number", "Darkest Secret"};
 
-void	Contact::full_fill_contact(int number)
+void	Contact::search_banner()
 {
+	std::cout << "|-------------------------------------------|" << std::endl;
+	std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
+	std::cout << "|-------------------------------------------|" << std::endl;
+}
+
+void	Contact::display_banner()
+{
+	std::cout << "~ Hello !" << std::endl;
+	std::cout << "~ Enter your command [ADD, SEARCH, EXIT]" << std::endl;
+}
+
+int	Contact::fill_contacts()
+{
+	int	len;
 	int	i;
 
-	i = 0;
-	(void) number;
-	while (i++ < 5)
+	len = 0;
+	for (i = 0; i < 5; i++)
 	{
-		std::cout << Contact::to_use[i] << " :\n";
-		std::getline(std::cin, );
+		std::cout << "# " << Contact::to_use[i] << ":\n+";
+		std::getline(std::cin, this->infos[i]);
 	}
-
+	for (i = 0; i < 5; i++)
+	{
+		len = this->infos[i].length();
+		if (len == 0)
+		{
+			std::cout << "~ Empty contact not added !" << std::endl;
+			return (1);
+		}
+	}
+	std::cout << "~ Contact added Successfully !" << std::endl;
+	return (0);
 }
