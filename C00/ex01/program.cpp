@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:16 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/03/13 13:43:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/03/13 13:44:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int	main(void)
 	{
 		std::cout << "📞 ~ ";
 		std::getline(std::cin, cmd);
-		if (cmd == "A")
+		if (cmd == "ADD")
 			phonebook.add();
-		else if (cmd == "S")
+		else if (cmd == "SEARCH")
 			phonebook.search();
 		else if (cmd == "EXIT")
 		{
