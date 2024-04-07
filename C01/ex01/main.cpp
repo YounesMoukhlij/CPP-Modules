@@ -2,6 +2,14 @@
 
 #include "Zombie.hpp"
 
+void print_name(int num, Zombie *z)
+{
+    for (int i = 0; i < num; i++)
+    {
+      std::cout << "Zombie nbr " << i << ":";
+		  z[i].announce();
+    }
+}
 
 int main(void)
 {
@@ -16,5 +24,7 @@ int main(void)
 	if (!std::getline(std::cin, input_2))
 		exit(1);
 	number = std::atoi(input_2.c_str());
-	Zombie *z = ZombieHord()
+	Zombie *z = zombieHorde(number, input_1);
+	print_name(number, z);
+    delete [] z;
 }
