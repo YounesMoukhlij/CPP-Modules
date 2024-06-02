@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/03/13 13:42:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/06/02 17:08:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,14 @@ int	Contact::fill_contacts()
 	int	i;
 
 	len = 0;
-	for (i = 0; i < 5; i++)
+	i = 0;
+	while (i++ < 5)
 	{
 		std::cout << "~ " << Contact::to_use[i] << " : ";
 		std::getline(std::cin, this->infos[i]);
 	}
-	for (i = 0; i < 5; i++)
+	i = 0;
+	while (i++ < 5)
 	{
 		len = this->infos[i].length();
 		if (len == 0)
@@ -53,9 +55,12 @@ int	Contact::fill_contacts()
 
 void	Contact::display_contacts(int j)
 {
+	int	i;
+
+	i = 0;
 	this->index = j + 1;
 	std::cout << "|" << std::setw(10) << this->index;
-	for( int i = 0 ;i < 3; i++)
+	while (i++ < 3)
 	{
 		std::cout << "|";
 		if(Contact::infos[i].length() > 10)
