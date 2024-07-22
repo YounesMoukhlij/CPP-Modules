@@ -32,6 +32,7 @@ void	PhoneBook::search()
 {
 	int	input;
 
+	input = 0;
 	if (this->number == 0)
 		std::cout << "~ 0 Contacts, add a contact before searching !\n";
 	else
@@ -41,9 +42,10 @@ void	PhoneBook::search()
 			this->contacts[a].display_contacts(a);
 		std::cout << "|-------------------------------------------|" << std::endl;
 		std::cout << "~ Type Index to display Infos or 0 to Exit Search List.\n";
-		while (!(std::cin == input))
+		while (std::cin >> input)
 		{
-			
+			// if (std::cin < '0' && std::cin > '9')
+			// 	break ;
 		}
 		// std::cout << this->contacts[this->number] << std::endl;
 	}

@@ -24,6 +24,7 @@ class PhoneBook
 		int		number;
 	public:
 		PhoneBook();
+
 		void add();
 		void search();
 };
