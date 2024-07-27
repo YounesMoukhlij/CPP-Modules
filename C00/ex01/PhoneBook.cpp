@@ -32,7 +32,6 @@ void	PhoneBook::search()
 {
 	int	input;
 
-	input = 0;
 	if (this->number == 0)
 		std::cout << "~ 0 Contacts, add a contact before searching !\n";
 	else
@@ -42,12 +41,18 @@ void	PhoneBook::search()
 			this->contacts[a].display_contacts(a);
 		std::cout << "|-------------------------------------------|" << std::endl;
 		std::cout << "~ Type Index to display Infos or 0 to Exit Search List.\n";
-		while (std::cin >> input)
+		while (1337)
 		{
-			// if (std::cin < '0' && std::cin > '9')
-			// 	break ;
+			if (!(std::cin >> input) || (input < 0) || (input > this->number))
+				break ;
+			std::cin.clear();
+			std::cout << "Invalid Index, Try again" << std::endl;
 		}
-		// std::cout << this->contacts[this->number] << std::endl;
+		puts("11111111111111111\n");
+		if (input > 0)
+		{
+			puts("am here\n");
+			this->contacts[input - 1].display();
+		}
 	}
-	// std::cout << std::string (this->contacts[0]) << std::endl;
 }

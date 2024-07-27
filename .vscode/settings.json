@@ -64,6 +64,7 @@
 		"iterator": "cpp",
 		"memory": "cpp",
 		"type_traits": "cpp",
-		"utility": "cpp"
+		"utility": "cpp",
+		"execution": "cpp"
 	}
 }

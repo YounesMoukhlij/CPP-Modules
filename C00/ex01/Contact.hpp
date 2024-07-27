@@ -28,6 +28,7 @@ class Contact
 		static void	search_banner();
 		void		display_contacts(int ind);
 		int			fill_contacts();
+		void		display();
 };
 
 

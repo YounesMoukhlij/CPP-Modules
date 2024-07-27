@@ -36,11 +36,3 @@ int	main(void)
 	}
 	return (0);
 }
-
-
-fghfghfh
-B
-C
-D
-E
-F

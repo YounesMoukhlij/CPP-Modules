@@ -65,4 +65,13 @@ void	Contact::display_contacts(int j)
 	}
 	std::cout << "|" << std::endl;
 }
-        
+
+void	Contact::display(void)
+{
+	std::cout << "# Contact [" << this->index << "]" << std::endl;
+	for (int i = 0; i <= 4; i++)
+	{
+		std::cout << Contact::to_use[i] << ": ";
+		std::cout << this->infos[i] << std::endl;
+	}
+}
