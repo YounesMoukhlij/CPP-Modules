@@ -12,13 +12,19 @@
 
 #include "PhoneBook.hpp"
 
-int	main(void)
+int	main(int ac, char **av)
 {
 	PhoneBook	phonebook;
 	bool		flag;
 	std::string	cmd;
+	(void) av;
 
 	flag = true;
+	if (ac != 1)
+	{
+		std::cerr << "the program does not take any args!" << std::endl;
+		return (1);
+	}
 	Contact::display_banner();
 	while (flag)
 	{
