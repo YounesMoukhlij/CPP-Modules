@@ -8,7 +8,7 @@ NAME = megaphone
 all : ${NAME}
 
 ${NAME} : ${OBJ}
-	@c++ ${OBJ} -c $@
+	@c++ ${OBJ} -o $@
 
 clean :
 	rm ${OBJ}

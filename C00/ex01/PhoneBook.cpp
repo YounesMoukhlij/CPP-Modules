@@ -12,15 +12,24 @@
 
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook()
+PhoneBook::PhoneBook(void)
 {
 	this->number = 0;
 }
 
+PhoneBook::~PhoneBook(void)
+{
+}
+
 void	PhoneBook::add(void)
 {
+	static int get_last;
+
 	if (number == 8)
-		std::cout << "The PhoneBook Is Full ✅" << std::endl;
+	{
+		if (this->contacts[get_last].fill_contacts() == 0)
+			get_last++;
+	}
 	else
 	{
 		if (this->contacts[this->number].fill_contacts() == 0)
@@ -31,28 +40,29 @@ void	PhoneBook::add(void)
 void	PhoneBook::search()
 {
 	int	input;
+	std::string str;
 
 	if (this->number == 0)
 		std::cout << "~ 0 Contacts, add a contact before searching !\n";
 	else
 	{
 		Contact::search_banner();
-		for (int a = 0;a < this->number;a++)
+		for (int a = 0 ;a < this->number;a++)
 			this->contacts[a].display_contacts(a);
 		std::cout << "|-------------------------------------------|" << std::endl;
 		std::cout << "~ Type Index to display Infos or 0 to Exit Search List.\n";
-		while (1337)
+		while (1999)
 		{
-			if (!(std::cin >> input) || (input < 0) || (input > this->number))
-				break ;
-			std::cin.clear();
-			std::cout << "Invalid Index, Try again" << std::endl;
+			std::getline(std::cin, str);
+			input = std::atoi(str.c_str());
+			if ((input < 0) || (input > this->number) || !std::isdigit(input))
+			{
+				std::cout << "Invalid Index, Try from 0 to 7" << std::endl;
+				std::cin.clear();
+				return ;
+			}
+			break ;
 		}
-		puts("11111111111111111\n");
-		if (input > 0)
-		{
-			puts("am here\n");
-			this->contacts[input - 1].display();
-		}
+		this->contacts[input - 1].display();
 	}
 }

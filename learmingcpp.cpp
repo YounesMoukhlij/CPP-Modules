@@ -5,17 +5,18 @@
 
 int	main()
 {
+	int i = 0;
 
-	char *t = new char[10];
-	std::cout << "write something" << std::endl;
-	std::cin.getline(t, 10);
-
-	std::string str(t);
-	for (int i = 0; i < str.length(); i++)
-		std::cout << (char) std::toupper(t[i]);
-	std::cout << std::endl;
-	std::cout << str.length() << std::endl;
-	std::cout << str.length() << std::endl;
-	delete[] t;
-	return (0);
+	while (i <= 9)
+	{
+		if (i % 2 == 0)
+		{
+			printf("a3dad zawjiya * 2 == %d\n", i * 2);
+		}
+		else
+		{
+			printf("a3dad fardiya %d \n", i);
+		}
+		i++;
+	}
 }

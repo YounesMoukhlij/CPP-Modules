@@ -16,10 +16,7 @@ OBJ = ${SRC:.cpp=.o}
 CPPFLAGS = -Wall -Wextra -Werror
 NAME = PhoneBook
 
-all : ${NAME} clean play
-
-play :
-	./PhoneBook
+all : ${NAME}
 
 ${NAME} : ${OBJ}
 	@(c++ ${CPPFLAGS} ${OBJ} -o $@)

@@ -29,6 +29,8 @@ class Contact
 		void		display_contacts(int ind);
 		int			fill_contacts();
 		void		display();
+		Contact();
+		~Contact();
 };
 
 

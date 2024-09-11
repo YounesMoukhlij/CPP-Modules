@@ -12,6 +12,11 @@
 
 #include "Contact.hpp"
 
+Contact::Contact(void)
+{}
+Contact::~Contact(void)
+{}
+
 std::string Contact::to_use[5] = {"First Name", "Last Name", "NickName", "Phone Number", "Darkest Secret"};
 
 void	Contact::search_banner()
@@ -23,25 +28,32 @@ void	Contact::search_banner()
 
 void	Contact::display_banner()
 {
-	std::cout << "~ Hello !" << std::endl;
+	std::cout << "~ Hello There !" << std::endl;
 	std::cout << "~ Enter your command [ADD, SEARCH, EXIT]" << std::endl;
 }
 
 int	Contact::fill_contacts()
 {
-	int	len;
-	int	i;
+	int	i, j;
 
-	len = 0;
-	for (i = 0; i < 5; i++)
+	j = 0;
+	for (i = 0; i < 5 ; i++)
 	{
 		std::cout << "~ " << Contact::to_use[i] << " : ";
 		std::getline(std::cin, this->infos[i]);
-	}
-	for (i = 0; i < 5; i++)
-	{
-		len = this->infos[i].length();
-		if (len == 0)
+		if (Contact::to_use[i].compare("Phone Number") == 0)
+		{
+			while (this->infos[i][j])
+			{
+				if (!std::isdigit(this->infos[i][j]))
+				{
+					std::cout << "~ Phone Number couldn't have characters !" << std::endl;
+					return (1);
+				}
+				j++;
+			}
+		}
+		if (!this->infos[i].length())
 		{
 			std::cout << "~ Empty contact cannot be added !" << std::endl;
 			return (1);

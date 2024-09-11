@@ -15,24 +15,26 @@
 int	main(void)
 {
 	PhoneBook	phonebook;
-	int			flag;
+	bool		flag;
 	std::string	cmd;
 
-	flag = 1;
+	flag = true;
 	Contact::display_banner();
 	while (flag)
 	{
 		std::cout << "📞 ~ ";
 		std::getline(std::cin, cmd);
-		if (cmd == "ADD")
+		if (!cmd.compare("ADD"))
 			phonebook.add();
-		else if (cmd == "SEARCH")
+		else if (!cmd.compare("SEARCH"))
 			phonebook.search();
-		else if (cmd == "EXIT")
+		else if (!cmd.compare("EXIT"))
 		{
 			std::cout << "Thanks." << std::endl;
-			flag = 0;
+			flag = false;
 		}
+		if(std::cin.eof())
+			break;
 	}
 	return (0);
 }

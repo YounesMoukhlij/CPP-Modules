@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 
 int main(int ac, char **av)
 {
@@ -25,15 +26,12 @@ int main(int ac, char **av)
 		while (i < ac)
 		{
 			j = 0;
-			while (av[i][j])
+			std::string array(av[i]);
+			while (j < array.length())
 			{
-				if (av[i][j] >= 'a' && av[i][j] <= 'z')
-					av[i][j] -= 32;
-				std::cout << av[i][j];
+				std::cout << (char)std::toupper(array[j]);
 				j++;
 			}
-			if (i < ac - 1)
-				std::cout << " ";
 			i++;
 		}
 		std::cout << std::endl;
