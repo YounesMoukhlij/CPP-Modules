@@ -16,9 +16,18 @@ Zombie* zombieHorde( int N, std::string name )
 {
     Zombie  *z;
 
+	if (N < 0)
+	{
+		std::cerr << "N is negative!" << std::endl;
+		exit(1);
+	}
 	z = new Zombie[N];
 	if (!z)
-		return (NULL);
-	
+	{
+		std::cerr << "Failed to allocate memory!" << std::endl;
+		exit(1);
+	}
+	for (int i = 0; i < N; i++)
+		z[i].Get_Name(name);
 	return (z);
 }

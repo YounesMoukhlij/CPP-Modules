@@ -15,14 +15,13 @@
 
 class Zombie
 {
-private:
-	std::string name;
-public:
-	void nameZombie(std::string str);
-	Zombie(std::string str);
-	Zombie(int numZombies, std::string z);
-	void announce(void);
-	~Zombie();
+	private:
+		std::string name;
+	public:
+		Zombie(void);
+		~Zombie();
+		void	Get_Name(std::string n_name);
+		void announce(void);
 };
 
 void	print_name(int num, Zombie *z);

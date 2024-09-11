@@ -12,23 +12,22 @@
 
 #include "Zombie.hpp"
 
-void Zombie::nameZombie(std::string str)
+Zombie::Zombie()
 {
-	name = str;
+	std::cout << "constructor is Called" << std::endl;
 }
 
-Zombie::Zombie(int numZombies, std::string z)
+void Zombie::Get_Name(std::string n_name)
 {
-	for (int i = 0; i < numZombies; i++)
-		z[i].nameZombie(name);
+	name = n_name;
 }
 
 Zombie::~Zombie()
 {
-    std::cout << name << ": is destroyed\n";
+    std::cout << "Destructor is destroyed" << std::endl;
 }
 
 void Zombie::announce( void )
 {
-    std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
+    std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

@@ -15,26 +15,26 @@
 void print_name(int num, Zombie *z)
 {
     for (int i = 0; i < num; i++)
-    {
-      std::cout << "Zombie nbr " << i << ":";
 		  z[i].announce();
-    }
 }
 
-int main(void)
+void show(void)
 {
-	std::string input_1;
-	std::string input_2;
-	int	number;
+	system("leaks zombie");
+}
 
-	std::cout << "Type a Zombie Name : ";
-	if (!std::getline(std::cin, input_1))
-		exit(1);
-	std::cout << "Type Zombies Number : ";
-	if (!std::getline(std::cin, input_2))
-		exit(1);
-	number = std::atoi(input_2.c_str());
-	Zombie *z = zombieHorde(number, input_1);
+int main(int ac, char **av)
+{
+	int	number = 4;
+
+	atexit(show);
+	if (ac != 1)
+	{
+		std::cerr << "the program doesn't take any args!"  << std::endl;
+		return (1);
+	}
+	Zombie *z = zombieHorde(number, "younan");
 	print_name(number, z);
     delete [] z;
+	return (0x0);
 }
