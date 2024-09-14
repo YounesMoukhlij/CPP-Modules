@@ -65,6 +65,7 @@
 		"memory": "cpp",
 		"type_traits": "cpp",
 		"utility": "cpp",
-		"execution": "cpp"
+		"execution": "cpp",
+		"fstream": "cpp"
 	}
 }

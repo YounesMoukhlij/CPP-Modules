@@ -25,7 +25,7 @@ void	PhoneBook::add(void)
 {
 	static int get_last;
 
-	if (number == 8)
+	if (number == 3)
 	{
 		if (this->contacts[get_last].fill_contacts() == 0)
 			get_last++;
@@ -55,9 +55,9 @@ void	PhoneBook::search()
 		{
 			std::getline(std::cin, str);
 			input = std::atoi(str.c_str());
-			if ((input < 0) || (input > this->number) || !std::isdigit(input))
+			if ((input < 0) || (input > this->number) || input == 0)
 			{
-				std::cout << "Invalid Index, Try from 0 to 7" << std::endl;
+				std::cout << "Invalid Index, Try from 1 to 7" << std::endl;
 				std::cin.clear();
 				return ;
 			}
