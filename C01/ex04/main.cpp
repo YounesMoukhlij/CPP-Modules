@@ -1,4 +1,8 @@
-#include "sed.hpp"
+
+#include<iostream>
+#include<string>
+#include<fstream>
+
 
 int    parse(int ac, char **argv)
 {
@@ -15,17 +19,18 @@ int	main(int ac, char **argv)
 	std::string		file;
 	std::string		line;
 	std::string		newfile;
+	size_t				whereto;
 
 	if (parse(ac, argv))
 		return (EXIT_FAILURE);
-	// open the file.
+	std::string		s1 = argv[2];
+	std::string		s2 = argv[3];
 	std::fstream	Source(argv[1], std::ios::in);
 	if (!Source)
 	{
 		std::cerr << "Could not open file: " << argv[0x1] << std::endl;
 		return (EXIT_FAILURE);
 	}
-	// equivalent to strjoin
 	file = std::string(argv[0x1]) + ".replace";
 	std::fstream	Formedfile(file, std::ios::out | std::ios::trunc);
 	if (!Formedfile)
@@ -36,14 +41,14 @@ int	main(int ac, char **argv)
 	}
 	while (std::getline(Source, line))
 	{
+        while ((whereto = line.find(argv[2])) != std::string::npos)
+		{
+            line = line.substr(0, whereto) + argv[3] + line.substr(whereto + s1.length());
+            whereto += s2.length();
+        }
 		if (!Source.eof())
 			line += "\n";
-		std::cout << "here  " << line << std::endl;
-
-		int pos = line.find(argv[2]);
-		std::cout << pos << std::endl;
-		newfile = ft_sed(line, argv[0x2], argv[0x3]);
-		Formedfile << newfile;
+		Formedfile << line;
 	}
 	Source.close();
 	Formedfile.close();

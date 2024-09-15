@@ -14,7 +14,7 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = sed
 
-SRCS = main.cpp sed.cpp
+SRCS = main.cpp 
 
 OBJS = $(SRCS:.cpp=.o)
 
