@@ -16,7 +16,6 @@ int    parse(int ac, char **argv)
 
 int	main(int ac, char **argv)
 {
-	std::string		file;
 	std::string		line;
 	std::string		newfile;
 	size_t				whereto;
@@ -31,8 +30,7 @@ int	main(int ac, char **argv)
 		std::cerr << "Could not open file: " << argv[0x1] << std::endl;
 		return (EXIT_FAILURE);
 	}
-	file = std::string(argv[0x1]) + ".replace";
-	std::fstream	Formedfile(file, std::ios::out | std::ios::trunc);
+	std::fstream	Formedfile(std::string(argv[0x1]) + ".replace", std::ios::out | std::ios::trunc);
 	if (!Formedfile)
 	{
 		std::cerr << "Could not open file: " << std::endl;
@@ -41,13 +39,13 @@ int	main(int ac, char **argv)
 	}
 	while (std::getline(Source, line))
 	{
-        while ((whereto = line.find(argv[2])) != std::string::npos)
-		{
-            line = line.substr(0, whereto) + argv[3] + line.substr(whereto + s1.length());
-            whereto += s2.length();
-        }
 		if (!Source.eof())
 			line += "\n";
+        while ((whereto = line.find(s1)) != std::string::npos)
+		{
+            line = line.substr(0, whereto) + s2 + line.substr(whereto + s1.length());
+            whereto += s2.length();
+        }
 		Formedfile << line;
 	}
 	Source.close();
