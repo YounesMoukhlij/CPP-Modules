@@ -6,6 +6,8 @@ SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
+all : ${NAME}
+
 $(NAME): $(OBJS)
 	@c++ $(FLAGS) $^ -o $@
 

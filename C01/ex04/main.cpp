@@ -1,8 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/17 08:48:28 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/17 09:56:38 by youmoukh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include<iostream>
-#include<string>
-#include<fstream>
-
+#include "sed.hpp"
 
 int    parse(int ac, char **argv)
 {
@@ -16,9 +24,10 @@ int    parse(int ac, char **argv)
 
 int	main(int ac, char **argv)
 {
+	std::string		file;
 	std::string		line;
 	std::string		newfile;
-	size_t				whereto;
+	std::string		new_str;
 
 	if (parse(ac, argv))
 		return (EXIT_FAILURE);
@@ -30,7 +39,8 @@ int	main(int ac, char **argv)
 		std::cerr << "Could not open file: " << argv[0x1] << std::endl;
 		return (EXIT_FAILURE);
 	}
-	std::fstream	Formedfile(std::string(argv[0x1]) + ".replace", std::ios::out | std::ios::trunc);
+	file = std::string(argv[0x1]) + ".replace";
+	std::fstream	Formedfile(file, std::ios::out | std::ios::trunc);
 	if (!Formedfile)
 	{
 		std::cerr << "Could not open file: " << std::endl;
@@ -41,12 +51,8 @@ int	main(int ac, char **argv)
 	{
 		if (!Source.eof())
 			line += "\n";
-        while ((whereto = line.find(s1)) != std::string::npos)
-		{
-            line = line.substr(0, whereto) + s2 + line.substr(whereto + s1.length());
-            whereto += s2.length();
-        }
-		Formedfile << line;
+		new_str = sed_func(line, s1, s2);
+		Formedfile << new_str;
 	}
 	Source.close();
 	Formedfile.close();

@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   sed.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 08:49:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/17 08:49:55 by youmoukh         ###   ########.fr       */
+/*   Created: 2024/09/17 09:29:19 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/17 09:53:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef SED_HPP
+# define SED_HPP
 
-void	randomChump(std::string name)
-{
-	Zombie z = Zombie(name);
-	z.announce();
-}
+#include<iostream>
+#include<string>
+#include<fstream>
+
+std::string sed_func(std::string str, const std::string s1, const std::string s2);
+
+#endif

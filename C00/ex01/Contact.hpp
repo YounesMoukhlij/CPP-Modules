@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/03/13 13:43:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/07/22 19:42:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 class Contact
 {
 	private:
-		std::string	infos[5];
-		static std::string	to_use[5];
 		int					index;
+		std::string			infos[5];
+		static std::string	to_use[5];
 	public:
 		static void	display_banner();
 		static void	search_banner();
@@ -32,6 +32,5 @@ class Contact
 		Contact();
 		~Contact();
 };
-
 
 #endif

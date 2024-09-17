@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/04/22 17:19:07 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/15 17:51:46 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,8 @@ NAME = brain
 SRCS = main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
+
+all : ${NAME}
 
 $(NAME): $(OBJS)
 	@c++ $(FLAGS) $^ -o $@

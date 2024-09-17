@@ -1,17 +1,20 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/17 08:49:08 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/17 08:49:17 by youmoukh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Zombie.hpp"
-
-void	show()
-{
-	system ("leaks zombie");
-}
 
 int	main(void)
 {
 	std::string	input;
-
-	atexit(show);
 
 	std::cout << "\033[42m Go to randomChump function\033[0m" << std::endl;
 	randomChump("STACK_ZOMBIE");
