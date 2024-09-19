@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/17 13:34:20 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 12:06:08 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/19 15:54:15 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ ${NAME} : ${OBJ}
 	@echo "Linking ...\n"
 
 clean :
-	@rm ${OBJ}
+	@rm -f ${OBJ}
 
 fclean : clean
 	@rm -f ${NAME}
