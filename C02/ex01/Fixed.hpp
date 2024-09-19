@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/19 12:59:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/19 16:38:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,4 @@ class Fixed {
 		static const int	_fractionalBits = 0x8;
 };
 
-std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
+std::ostream& operator<<(std::ostream &file, const Fixed& fixed);
