@@ -1,31 +1,31 @@
 # CPP-Module-00 | 1337 Khouribga
 
 <p align="center">
-  <a href="https://github.com/younesmoukhlij/CPP-Modules">&#127968;</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module_01">&#10145;</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module_01">Next Module</a>
 </p>
 
 -------------------------------------------------------------------------------
 
 ## Table of content
 
-- [namespaces](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#namespaces)
-- [stdio streams](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#stdio-streams)
-- [class & instance](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#class--instance)
-- [member attributes & functions](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#member-attributes--functions)
-- [this pointer](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#this-pointer-the-self-keyword)
-- [initialization list](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#initialization-list)
-- [const](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#const)
-- [visibility](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#visibility)
-- [encapsulation](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#encapsulation)
-- [class vs struct](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#class-vs-struct)
-- [accessors / getters](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#accessors-getters)
-- [structural vs. physical comparison](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#structural-vs-physical-comparison)
-- [non member attributes & functions](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#non-member-attributes--functions)
-- [pointers to members](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#pointers-to-members)
-- [C++ string](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#c-strings)
-- [difference between std::cin and getline](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#difference-between-stdcin-and-getline)
-- [static attributes & functions within a class](https://github.com/achrafelkhnissi/CPP-Modules/wiki/Module00#static-attributes-and-functions-within-a-class)
+- [namespaces](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#namespaces)
+- [stdio streams](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#stdio-streams)
+- [class & instance](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#class--instance)
+- [member attributes & functions](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#member-attributes--functions)
+- [this pointer](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#this-pointer-the-self-keyword)
+- [initialization list](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#initialization-list)
+- [const](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#const)
+- [visibility](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#visibility)
+- [encapsulation](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#encapsulation)
+- [class vs struct](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#class-vs-struct)
+- [accessors / getters](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#accessors-getters)
+- [structural vs. physical comparison](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#structural-vs-physical-comparison)
+- [non member attributes & functions](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#non-member-attributes--functions)
+- [pointers to members](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#pointers-to-members)
+- [C++ string](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#c-strings)
+- [difference between std::cin and getline](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#difference-between-stdcin-and-getline)
+- [static attributes & functions within a class](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#static-attributes-and-functions-within-a-class)
 
 ### namespaces
 
