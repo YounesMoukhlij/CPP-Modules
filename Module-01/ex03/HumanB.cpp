@@ -1,40 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 17:18:50 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/04/22 17:18:52 by youmoukh         ###   ########.fr       */
+/*   Created: 2024/09/17 11:19:02 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/17 13:25:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanB.hpp"
 
-void print_name(int num, Zombie *z)
+HumanB::HumanB(const std::string &new_Name) : name(new_Name)
 {
-    for (int i = 0; i < num; i++)
-		  z[i].announce();
+	weapon = 0x0;
+	// std::cout << "Constructor Called" << std::endl;
 }
 
-void show(void)
+HumanB::~HumanB(void)
 {
-	system("leaks zombie");
+	// std::cout << "Destructor Called" << std::endl;
 }
 
-int main(int ac, char **av)
+void HumanB::setWeapon(Weapon &new_Weapon)
 {
-	int	number = 4;
+	weapon = &new_Weapon;
+}
 
-	atexit(show);
-	if (ac != 1)
-	{
-		std::cerr << "the program doesn't take any args!"  << std::endl;
-		return (1);
-	}
-	Zombie *z = zombieHorde(number, "younan");
-	print_name(number, z);
-    delete [] z;
-	return (0x0);
+void HumanB::attack(void)
+{
+	std::cout << name << " attacks with their " << weapon->getType() << std::endl;
 }

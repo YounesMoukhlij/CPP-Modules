@@ -6,22 +6,22 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/15 17:51:52 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/19 12:05:58 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = zombie
+NAME = Harl
 
-SRCS = main.cpp Zombie.cpp zombieHorde.cpp
+SRCS = main.cpp Harl.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
 all : ${NAME}
 
 $(NAME): $(OBJS)
-	@c++ $(FLAGS) $^ -o $@
+	@c++ $(CPPFLAGS) $^ -o $@
 
 clean:
 	rm -f $(OBJS)
@@ -29,4 +29,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
+
+.PHONY : clean

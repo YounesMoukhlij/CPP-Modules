@@ -5,28 +5,32 @@
 #                                                     +:+ +:+         +:+      #
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/15 17:52:03 by youmoukh         ###   ########.fr        #
+#    Created: 2024/09/17 13:34:20 by youmoukh          #+#    #+#              #
+#    Updated: 2024/09/19 12:06:08 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = harl
+CPPFCLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp Harl.cpp
+SRC = main.cpp Fixed.cpp main.cpp
 
-OBJS = $(SRCS:.cpp=.o)
+OBJ = ${SRC:.cpp=.o}
+
+NAME = fixed
 
 all : ${NAME}
 
-$(NAME): $(OBJS)
-	@c++ $(FLAGS) $^ -o $@
+${NAME} : ${OBJ}
+	@c++ ${CPPFCLAGS} $^ -o $@
+	@echo "Linking ...\n"
 
-clean:
-	rm -f $(OBJS)
+clean :
+	@rm ${OBJ}
 
-fclean: clean
-	rm -f $(NAME)
+fclean : clean
+	@rm -f ${NAME}
 
-re: fclean $(NAME)
+re : fclean all
+
+.PHONY : clean

@@ -66,6 +66,9 @@
 		"type_traits": "cpp",
 		"utility": "cpp",
 		"execution": "cpp",
-		"fstream": "cpp"
+		"fstream": "cpp",
+		"stdio.h": "c",
+		"deque": "cpp",
+		"stack": "cpp"
 	}
 }

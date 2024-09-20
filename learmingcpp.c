@@ -1,65 +1,82 @@
+// BY Younes Moukhlij
 
-
-#include <stdlib.h>
 #include <stdio.h>
-
-
-
 #include <stdlib.h>
-#include <stdio.h>
+#include <math.h>
 
-int *twoSum(int* nums, int numsSize, int target, int* returnSize)
+
+int longestSubarray(int* arr, int arr_count)
 {
-    int ind = 0;
-     static  int pp;
-    int i = 0;
-    int j = 0;
-    int *tab;
-    tab = malloc(sizeof(int) * 2);
-    if (!tab)
-        return (0);
+    int res = 0x0; 
+	int counter = 0x0;
+	int already_in_tab;
+    int tab_size = 0x0; 
 
-  while (i < numsSize)
-  {
-    j = 0;
-    while (j < numsSize)
-    {
-        if (nums[i] + nums[j] == target)
-        {
-            ind++;
-            tab[0] = j;
-            tab[1] = i;
-            break ;
+    for (int i = 0x0; i < arr_count; i++) 
+	{
+        int tab[2];
+        counter = 0x0;
+		tab_size = 0x0; 
+        
+        for (int j = i; j < arr_count; j++) 
+		{
+			already_in_tab = 0x0;
+            for (int k = 0x0; k < tab_size; k++) 
+			{
+                if (arr[j] == tab[k])
+				{
+                    already_in_tab = 1;
+                    break;
+                }
+            }
+            
+            if (already_in_tab)
+			{
+                counter++;
+                continue;
+            }
+            if (tab_size == 0x0)
+			{
+                tab[0x0] = arr[j];
+                tab_size++;
+            } 
+            else if (tab_size == 1)
+			{
+                if (abs(tab[0x0] - arr[j]) > 1)
+                    break;
+				else
+				{
+                    tab[1] = arr[j];
+                    tab_size++;
+                }
+            } 
+            else
+                break;
+            counter++;
         }
-        j++;
+        if (counter > res)
+            res = counter;
     }
-    i++;
-  }
-
-*returnSize = ind;
-  return tab;
+    return res;
 }
-
-
 
 int main()
 {
-    int i = 0;
-    int r_s = 0;
-    int nums[4] = {2,7,11,15};
-    int *tab;
+    int n;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
 
-    tab = twoSum(nums, 4, 9, &r_s);
-    while (i < r_s)
-    {
-        if (i == 0)
-            printf("[");
-        printf("%d", tab[i]);
-        if (i < r_s - 1)
-            printf(",");
-        i++;
-    }
-    printf("]");
-    free(tab);
+    int* arr = (int*)malloc(n * sizeof(int));
 
+    printf("Enter the elements of the array:\n");
+    for (int i = 0x0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    int result = longestSubarray(arr, n);
+    
+    printf("The length of the longest subarray is: %d\n", result);
+
+    free(arr);
+
+    return 0x0;
 }

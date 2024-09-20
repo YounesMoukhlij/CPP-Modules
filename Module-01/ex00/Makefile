@@ -5,28 +5,31 @@
 #                                                     +:+ +:+         +:+      #
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/15 17:51:46 by youmoukh         ###   ########.fr        #
+#    Created: 2024/09/17 08:50:02 by youmoukh          #+#    #+#              #
+#    Updated: 2024/09/19 12:05:17 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+SRC = main.cpp newZombie.cpp Zombie.cpp randomChump.cpp
 
-NAME = brain
+OBJ = ${SRC:.cpp=.o}
 
-SRCS = main.cpp
+CPPFCLAGS = -Wall -Wextra -Werror -std=c++98
 
-OBJS = $(SRCS:.cpp=.o)
+NAME = zombie
 
 all : ${NAME}
 
-$(NAME): $(OBJS)
-	@c++ $(FLAGS) $^ -o $@
+${NAME} : ${OBJ}
+	@c++ ${CPPFCLAGS} $^ -o $@
+	@echo "Linking ...\n"
 
-clean:
-	rm -f $(OBJS)
+clean :
+	@rm ${OBJ}
 
-fclean: clean
-	rm -f $(NAME)
+fclean : clean
+	@rm ${NAME}
 
-re: fclean $(NAME)
+re : fclean all
+
+.PHONY : clean
