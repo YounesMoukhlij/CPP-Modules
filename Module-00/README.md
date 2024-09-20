@@ -1,4 +1,4 @@
-# CPP-Module-00 | 1337 Khouribga
+# CPP-Module-00
 
 <p align="center">
   <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
