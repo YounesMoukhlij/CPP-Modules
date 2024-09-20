@@ -5,28 +5,25 @@
 #                                                     +:+ +:+         +:+      #
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/08/11 10:51:28 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/20 10:55:53 by youmoukh         ###   ########.fr        #
+#    Created: 2024/09/17 13:34:20 by youmoukh          #+#    #+#              #
+#    Updated: 2024/09/19 15:54:15 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = megaphone.cpp
-
-OBJ = ${SRC:.cpp=.o}
 
 CPPFCLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = megaphone
+SRC = main.cpp Fixed.cpp main.cpp
+
+OBJ = ${SRC:.cpp=.o}
+
+NAME = fixed
 
 all : ${NAME}
 
-%.o: %.cpp
-	@echo "\033[30m Compiling ...\033[0m"
-	@c++ $(CPPFCLAGS) -c $< -o $@
-
 ${NAME} : ${OBJ}
-	@echo "\033[32m Linking ...\033[0m"
 	@c++ ${CPPFCLAGS} $^ -o $@
+	@echo "Linking ...\n"
 
 clean :
 	@rm -f ${OBJ}

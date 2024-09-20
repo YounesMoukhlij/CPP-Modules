@@ -6,11 +6,12 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/19 16:38:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 16:21:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef FIXED_HPP
+#define FIXED_HPP
 
 #include <iostream>
 
@@ -35,3 +36,5 @@ class Fixed {
 };
 
 std::ostream& operator<<(std::ostream &file, const Fixed& fixed);
+
+#endif

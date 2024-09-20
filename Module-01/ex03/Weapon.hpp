@@ -6,13 +6,12 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 10:43:19 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/17 11:33:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 16:23:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
-
 
 # include <iostream>
 # include <string>

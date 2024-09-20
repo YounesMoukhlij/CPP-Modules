@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:48:40 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/17 11:31:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 16:23:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ class HumanA {
 		Weapon		&weapon;
 
 };
-# endif
 
+# endif
