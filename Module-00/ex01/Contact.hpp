@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/07/22 19:42:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 10:37:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <iostream>
 # include <iomanip>
-# include <string>
 
 class Contact
 {

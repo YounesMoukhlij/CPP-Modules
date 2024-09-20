@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:42:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/03/13 13:47:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 10:37:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define PHONE_BOOK_HPP
 
 # include <iostream>
-# include <string>
 # include "Contact.hpp"
 
 class PhoneBook
