@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module_01">Next Module</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module-01">Next Module</a>
 </p>
 
 -------------------------------------------------------------------------------
