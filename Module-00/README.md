@@ -1,13 +1,14 @@
 # CPP Module 00
 
-Namespaces, classes, member functions, stdio streams,
-initialization lists, static, const, and some other basic
-stuf
-
 <p align="center">
   <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
   <a href="https://github.com/YounesMoukhlij/CPP-Modules/tree/main/Module-01">Next Module</a>
 </p>
+
+Namespaces, classes, member functions, stdio streams,
+initialization lists, static, const, and some other basic
+stuf
+
 
 -------------------------------------------------------------------------------
 
