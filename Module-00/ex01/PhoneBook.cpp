@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 15:15:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/20 15:41:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	PhoneBook::add(void)
 
 void	PhoneBook::search()
 {
-	int	input;
+	int			input;
 	std::string str;
 
 	if (this->number == 0x0)
