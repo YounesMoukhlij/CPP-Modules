@@ -9,7 +9,7 @@
 
 ## Table of content
 
-- [namespaces](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#namespaces)
+- [namespaces](#namespaces)
 - [stdio streams](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#stdio-streams)
 - [class & instance](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#class--instance)
 - [member attributes & functions](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module00#member-attributes--functions)
