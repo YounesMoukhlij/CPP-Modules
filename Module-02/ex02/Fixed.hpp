@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/21 17:28:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/21 18:39:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class Fixed {
 	public:
 		Fixed();
 		~Fixed();
-		Fixed( const int num);
-		Fixed( const float num);
+		Fixed( const int dec);
+		Fixed( const float flo);
 		Fixed( const Fixed& origine);
 		Fixed& operator=( const Fixed& origine );
 
@@ -31,8 +31,8 @@ class Fixed {
 		Fixed operator-( const Fixed& origine ) const; 
 		Fixed operator/( const Fixed& origine ) const; 
 		
-		bool operator>( const Fixed& origine) const;
-		bool operator<( const Fixed& origine) const; 
+		bool operator>( const Fixed& origine)  const;
+		bool operator<( const Fixed& origine)  const;
 		bool operator>=( const Fixed& origine) const;
 		bool operator<=( const Fixed& origine) const;
 		bool operator==( const Fixed& origine) const;

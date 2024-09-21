@@ -6,12 +6,11 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:28:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/21 17:28:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/21 18:38:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
 
 Fixed::Fixed() : _value(2)
 {
