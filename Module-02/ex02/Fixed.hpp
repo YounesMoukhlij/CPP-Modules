@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 16:23:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/21 17:01:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,20 +24,35 @@ class Fixed {
 		Fixed( const float num);
 		Fixed( const Fixed& origine);
 		Fixed& operator=( const Fixed& origine );
-		Fixed& operator+( const Fixed& origine );
-		Fixed& operator-( const Fixed& origine );
-		Fixed& operator<( const Fixed& origine );
-		Fixed& operator>( const Fixed& origine );
-		Fixed& operator>=( const Fixed& origine );
-		Fixed& operator<=( const Fixed& origine );
-		Fixed& operator==( const Fixed& origine );
-		Fixed& operator/( const Fixed& origine );
-		Fixed& operator!=( const Fixed& origine );
 
+		
+		Fixed operator*( const Fixed& origine ) const; 
+		Fixed operator+( const Fixed& origine ) const; 
+		Fixed operator-( const Fixed& origine ) const; 
+		Fixed operator/( const Fixed& origine ) const; 
+		
+		bool operator>( const Fixed& origine) const;
+		bool operator<( const Fixed& origine) const; 
+		bool operator>=( const Fixed& origine) const;
+		bool operator<=( const Fixed& origine) const;
+		bool operator==( const Fixed& origine) const;
+		bool operator!=( const Fixed& origine) const;
+
+		Fixed&	operator++();
+		Fixed	operator++(int);
+		Fixed&	operator--();
+		Fixed	operator--(int);
+
+		static Fixed&	min( Fixed& f1, Fixed& f2);
+		static const Fixed&	min( const Fixed& f1, const Fixed& f2);
+		static Fixed&	max( Fixed& f1, Fixed& f2);
+		static const Fixed&	max( const Fixed& f1, const Fixed& f2);
+		
 		int		toInt( void ) const;
 		float	toFloat( void ) const;
 		int		getRawBits(void) const;
 		void	setRawBits(int const rawBits);
+		
 
 	private:
 		int					_value;
