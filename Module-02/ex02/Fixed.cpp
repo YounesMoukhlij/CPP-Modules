@@ -6,28 +6,28 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:28:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/21 17:15:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/21 17:28:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
 
-Fixed::Fixed() : _value(0)
+Fixed::Fixed() : _value(2)
 {
 	// std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed( const int d )
+Fixed::Fixed( const int dec )
 {
 	// std::cout << "Int constructor called" << std::endl;
-	_value = d << _fractionalBits;
+	_value = dec << _fractionalBits;
 }
 
-Fixed::Fixed( const float f )
+Fixed::Fixed( const float flo )
 {
 	// std::cout << "Float constructor called" << std::endl;
-	_value = roundf(f * (1 << _fractionalBits));
+	_value = roundf(flo * (1 << _fractionalBits));
 }
 
 Fixed::~Fixed()
@@ -56,10 +56,10 @@ int		Fixed::toInt( void ) const
 	return (_value >> _fractionalBits);
 }
 
-std::ostream& operator << (std::ostream& out, const Fixed& f)
+std::ostream& operator << (std::ostream& fileOut, const Fixed& fixed)
 {
-	out << f.toFloat();
-	return (out);
+	fileOut << fixed.toFloat();
+	return (fileOut);
 }
 
 Fixed::Fixed( const Fixed& origine)
