@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 16:42:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:49:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-	_name = "claptrap0";
+	_name = "__ClapTrap__";
 	_hitPoints = 10;
 	_energyPoints = 10;
 	_attackDamage = 0;
@@ -80,9 +80,9 @@ void	ClapTrap::takeDamage( unsigned int amount )
 void	ClapTrap::beRepaired( unsigned int amount )
 {
 	if (!_hitPoints)
-		std::cout << _name << " can't repair, no hitPoints left!" << std::endl;
+		std::cout << _name << " Unable to repair, no hitPoints left!" << std::endl;
 	else if (!_energyPoints)
-		std::cout << _name << " can't repair, no energyPoints left!" << std::endl;
+		std::cout << _name << " Unable to repair, no energyPoints left!" << std::endl;
 	else
 	{
 		_hitPoints += amount;
@@ -90,9 +90,3 @@ void	ClapTrap::beRepaired( unsigned int amount )
 		std::cout << _name << " repaired!" << std::endl;
 	}
 }
-
-
-// unsigned int 	ClapTrap::getAttackDamage() const
-// {
-// 	return (_attackDamage);
-// }
