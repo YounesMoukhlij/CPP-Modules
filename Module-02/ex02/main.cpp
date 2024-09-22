@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:07:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/21 17:26:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:30:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int main( void )
 	// 	std::cout << "a is greater than b" << std::endl;
 	
 	// Fixed i = b / a;
-	
 	// std::cout << "i value is " << i << std::endl;
 	
 	Fixed p = ++a;
