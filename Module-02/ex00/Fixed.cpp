@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:38 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/19 12:02:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/22 16:04:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ Fixed::~Fixed()
     std::cout << "\033[41mDestructor called\033[0m" << std::endl;
 }
 
-void Fixed::setRawBits(int const rawBits)
+void Fixed::setRawBits(int const raw)
 {
     std::cout << "setRawBits member function called" << std::endl;
-    _value = rawBits;
+    _value = raw;
 }
