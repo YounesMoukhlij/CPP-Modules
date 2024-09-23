@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:50 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:34:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:34:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 
 void	low()
-
+{
+	system("leaks zombie");
+}
 
 int main(int ac, char **av)
 {
