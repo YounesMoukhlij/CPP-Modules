@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:50 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:28:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:29:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@ void print_name(int num, Zombie *z)
 {
     for (int i = 0x0; i < num; i++)
 		  z[i].announce();
-}
-
-void low()
-{
-	system("leaks zombie");
 }
 
 int main(int ac, char **av)
