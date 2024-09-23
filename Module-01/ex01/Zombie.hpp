@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:31:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:33:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ class Zombie
 		void announce(void);
 };
 
-void	print_name(int num, Zombie *z);
 Zombie* zombieHorde( int N , std::string name);
 
 #endif
