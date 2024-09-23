@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:24:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:31:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Zombie
 	public:
 		Zombie(void);
 		~Zombie(void);
-		void	Get_Name(std::string n_name);
+		void	getName(std::string n_name);
 		void announce(void);
 };
 
