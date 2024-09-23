@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 12:04:57 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/23 13:19:26 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,14 +20,19 @@ OBJS = $(SRCS:.cpp=.o)
 
 all : ${NAME}
 
-$(NAME): $(OBJS)
-	@c++ $(FLAGS) $^ -o $@
+%.o: %.cpp Zombie.hpp
+	@echo "\033[30m Compiling ...\033[0m"
+	@c++ $(CPPFCLAGS) -c $< -o $@
+
+${NAME} : ${OBJ}
+	@c++ ${CPPFCLAGS} $^ -o $@
+	@echo "Linking ...\n"
 
 clean:
-	rm -f $(OBJS)
+	rm -rf $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 
 re: fclean $(NAME)
 

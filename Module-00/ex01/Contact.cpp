@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 10:52:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 17:46:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Contact::Contact(void)
 {
-	
+	// std::cout << "Constructor Called" << std::endl;
 }
 Contact::~Contact(void)
 {
-	
+	// std::cout << "Destructor Called" << std::endl;
 }
 
 std::string Contact::to_use[0x5] = {"First Name", "Last Name", "NickName", "Phone Number", "Darkest Secret"};
@@ -39,32 +39,35 @@ void	Contact::display_banner()
 
 int	Contact::fill_contacts()
 {
-	int	i, j;
+	int	i, j, flag;
+	std::string tmp;
+	std::string temp[0x5];
 
 	j = 0x0;
+	flag = 0x0;
 	for (i = 0x0; i < 0x5 ; i++)
 	{
 		std::cout << "~ " << Contact::to_use[i] << " : ";
-		std::getline(std::cin, this->infos[i]);
-		if (Contact::to_use[i].compare("Phone Number") == 0x0)
-		{
-			while (this->infos[i][j])
-			{
-				if (!std::isdigit(this->infos[i][j]))
-				{
-					std::cout << "~ Phone Number couldn't have characters !" << std::endl;
-					return (0x1);
-				}
-				j++;
-			}
-		}
-		if (!this->infos[i].length())
+		std::getline(std::cin, tmp);
+		if (!tmp.length())
 		{
 			std::cout << "~ Empty contact cannot be added !" << std::endl;
-			return (0x1);
+			flag = 0x1;
+			break ;
 		}
+		if (!flag)
+			temp[i] = tmp;
 	}
-	std::cout << "~ Contact added Successfully !" << std::endl;
+	if (!flag)
+	{
+		for (int i = 0x0; i < 0x5; i++)
+		{
+			Contact::infos[i] = temp[i];
+		}
+		std::cout << "~ Contact added Successfully !" << std::endl;
+	}
+	else if (flag)
+		return (0x1);
 	return (0x0);
 }
 
@@ -92,3 +95,4 @@ void	Contact::display(void)
 		std::cout << this->infos[i] << std::endl;
 	}
 }
+	

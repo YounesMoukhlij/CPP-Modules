@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 15:41:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 14:31:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 PhoneBook::PhoneBook(void)
 {
+	// std::cout << "Constructor Called" << std::endl;
 	this->number = 0x0;
 }
 
 PhoneBook::~PhoneBook(void)
 {
+	// std::cout << "Destructor Called" << std::endl;
 }
 
 void	PhoneBook::add(void)
@@ -40,6 +42,7 @@ void	PhoneBook::add(void)
 
 void	PhoneBook::search()
 {
+	int 		k = 0x0;
 	int			input;
 	std::string str;
 
@@ -55,14 +58,22 @@ void	PhoneBook::search()
 		while (0x1)
 		{
 			std::getline(std::cin, str);
+			while (str[k])
+			{
+				if (std::isalpha(str[k]) || !std::isalnum(str[k]))
+				{
+					std::cout << "Invalid Index, Try from 1 to 8" << std::endl;
+					return ;
+				}
+				k++;
+			}
 			input = std::atoi(str.c_str());
 			if ((input < 0x0) || (input > this->number) || input == 0x0)
 			{
 				if (!input)
 					std::cout << "SEARCH List Exited Successfully." << std::endl;
 				else
-					std::cout << "Invalid Index, Try from 1 to 7" << std::endl;
-				std::cin.clear();
+					std::cout << "Invalid Index, Try from 1 to 8" << std::endl;
 				return ;
 			}	
 			break ;

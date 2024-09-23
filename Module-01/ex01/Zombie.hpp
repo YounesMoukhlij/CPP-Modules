@@ -6,15 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 16:21:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 13:23:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
 
-#include <string>
 #include <iostream>
+#include <string>
 
 class Zombie
 {

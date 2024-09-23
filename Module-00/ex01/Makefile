@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/20 10:54:56 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/23 13:06:29 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,11 @@ ${NAME} : ${OBJ}
 	@c++ ${CPPFLAGS} $^ -o $@
 
 clean :
-	@rm -f ${OBJ}
+	@rm -rf ${OBJ}
 
 fclean : clean
-	@rm -f ${NAME}
+	@rm -rf ${NAME}
 
 re : fclean all
 
 .PHONY : clean
-
