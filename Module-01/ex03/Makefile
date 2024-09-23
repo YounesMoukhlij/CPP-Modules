@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/19 12:05:33 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 12:05:39 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/23 18:50:49 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,15 +21,20 @@ OBJS = $(SRCS:.cpp=.o)
 
 all : ${NAME}
 
+%.o: %.cpp HumanA.hpp Weapon.hpp HumanB.hpp
+	@echo "\033[30m Compiling ...\033[0m"
+	@c++ $(FLAGS) -c $< -o $@
+
 $(NAME): $(OBJS)
+	@echo "\033[32m Linking ...\033[0m"
 	@c++ $(CPPFLAGS) $^ -o $@
 
 clean:
-	rm -f $(OBJS)
+	@rm -rf $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -rf $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY : clean
