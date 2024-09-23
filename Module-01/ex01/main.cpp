@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:50 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:33:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:33:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(int ac, char **av)
 		return (0x1);
 	}
 	Zombie *z = zombieHorde(number, "younan");
-    for (int i = 0x0; i < num; i++)
+    for (int i = 0x0; i < number; i++)
 		  z[i].announce();
     delete [] z;
 	return (0x0);
