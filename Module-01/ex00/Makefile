@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/17 08:50:02 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 12:05:17 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/23 13:04:39 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,19 @@ NAME = zombie
 
 all : ${NAME}
 
+%.o: %.cpp Zombie.hpp
+	@echo "\033[30m Compiling ...\033[0m"
+	@c++ $(CPPFCLAGS) -c $< -o $@
+
 ${NAME} : ${OBJ}
 	@c++ ${CPPFCLAGS} $^ -o $@
 	@echo "Linking ...\n"
 
 clean :
-	@rm ${OBJ}
+	@rm -rf ${OBJ}
 
 fclean : clean
-	@rm ${NAME}
+	@rm -rf ${NAME}
 
 re : fclean all
 
