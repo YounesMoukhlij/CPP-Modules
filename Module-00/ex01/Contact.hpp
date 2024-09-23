@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:43:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 17:44:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 17:58:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ class Contact
 		~Contact();
 		static void	display_banner();
 		static void	search_banner();
-		void		fill_nums(std::string tmp);
 		void		display_contacts(int ind);
 		int			fill_contacts();
 		void		display();
