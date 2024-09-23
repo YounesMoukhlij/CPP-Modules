@@ -6,13 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:50 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:34:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:34:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 
+void	low()
 
 
 int main(int ac, char **av)
