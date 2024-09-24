@@ -3,9 +3,9 @@
 *BraiiiiiiinnnzzzZ 🧠*
 
 <p align="center">
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module_01">Go Back</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules">HOME</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module_02">GO Next</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module-01">Go Back</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules">HOME</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/master/Module-02">GO Next</a>
 </p>
 
 -------------------------------------------------------------------------
