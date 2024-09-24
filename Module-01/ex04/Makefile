@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 12:05:49 by youmoukh         ###   ########.fr        #
+#    Created: 2024/09/19 12:05:33 by youmoukh          #+#    #+#              #
+#    Updated: 2024/09/24 18:58:36 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,20 @@ OBJS = $(SRCS:.cpp=.o)
 
 all : ${NAME}
 
+%.o: %.cpp sed.hpp
+	@echo "\033[30m Compiling ...\033[0m"
+	@c++ $(CPPFLAGS) -c $< -o $@
+
 $(NAME): $(OBJS)
+	@echo "\033[32m Linking ...\033[0m"
 	@c++ $(CPPFLAGS) $^ -o $@
 
 clean:
-	rm -f $(OBJS)
+	@rm -rf $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -rf $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY : clean

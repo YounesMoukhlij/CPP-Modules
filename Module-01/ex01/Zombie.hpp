@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:18:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:33:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:55:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 #define ZOMBIE_HPP
 
 #include <iostream>
-// #include <string>
 
 class Zombie
 {
 	private:
-		std::string name;
+		std::string _name;
 	public:
 		Zombie(void);
 		~Zombie(void);
 		void	getName(std::string n_name);
-		void announce(void);
+		void 	announce(void);
 };
 
 Zombie* zombieHorde( int N , std::string name);

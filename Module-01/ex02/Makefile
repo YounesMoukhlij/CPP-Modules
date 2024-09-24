@@ -6,11 +6,11 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/23 18:37:46 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/24 18:30:28 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = brain
 
@@ -22,11 +22,11 @@ all : ${NAME}
 
 %.o: %.cpp
 	@echo "\033[30m Compiling ...\033[0m"
-	@c++ $(FLAGS) -c $< -o $@
+	@c++ $(CPPFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
-	@echo "\033[30m Compiling ...\033[0m"
-	@c++ $(FLAGS) $^ -o $@
+	@echo "Linking ...\n"
+	@c++ $(CPPFLAGS) $^ -o $@
 
 clean:
 	@rm -rf $(OBJS)

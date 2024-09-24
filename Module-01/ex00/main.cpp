@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:49:08 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:22:30 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:52:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	main(void)
 	z->announce();
 	delete(z);
 	std::cout << "Back from Heap allocation." << std::endl;
-	return (0x0);
+	return (EXIT_SUCCESS);
 }

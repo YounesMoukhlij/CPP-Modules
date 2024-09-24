@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 10:43:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:56:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:42:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Weapon::Weapon(const std::string& newType)
 {
 	std::cout << "Weapon Constructor Called" << std::endl;
-	type = newType;
+	_type = newType;
 }
 
 Weapon::~Weapon (void)
@@ -25,10 +25,10 @@ Weapon::~Weapon (void)
 
 const std::string&	Weapon::getType(void) 
 {
-	return type;
+	return _type;
 }
 
 void	Weapon::setType(const std::string& newType )
 {
-	type = newType;
+	_type = newType;
 }

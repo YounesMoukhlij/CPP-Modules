@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 09:30:17 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/17 09:56:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:25:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ std::string sed_func(std::string str, const std::string s1, const std::string s2
 {
 	size_t whereto;
 	
-	while ((whereto = str.find(s1)) != std::string::npos)
+	whereto = str.find(s1);
+	while (whereto != std::string::npos)
 	{
-        str = str.substr(0, whereto) + s2 + str.substr(whereto + s1.length());
-        whereto += s2.length();
+        str.erase(whereto, s1.length());
+        str.insert(whereto, s2);
+        whereto = str.find(s1, whereto + s2.length());
     }
 	return str;
 }

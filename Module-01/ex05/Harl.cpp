@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:51:08 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/17 08:51:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 19:02:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ Harl::~Harl()
 
 void	Harl::debug( void )
 {
-	std::cout << "I love having extra bacon for my ";
-	std::cout << "7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!" << std::endl;
+	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!" << std::endl;
 }
 
 void	Harl::info( void )
@@ -48,12 +47,17 @@ void	Harl::error( void )
 
 void	Harl::complain( std::string level )
 {
-	int	i;
-	std::string	levels[4] = { "DEBUG", "INFO", "WARNING", "ERROR" };
-	void (Harl::*pointertofunc[4])(void) = { &Harl::debug, &Harl::info, &Harl::warning, &Harl::error,};
-	i = -1;
-    while (levels[i].compare(level) && i < 4)
-        i++;
-	if (i < 4)
-		(this->*pointertofunc[i])();
+	int	i = -0x1;
+	
+	std::string	temp[4] = { "DEBUG", "INFO", "WARNING", "ERROR" };
+	
+	void (Harl::*pointerToFunction[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+    while (i < 0x4)
+	{
+		if (temp[i] == level)
+			break ;
+		i++;
+	}
+	if (i < 0x4 && i != -0x1)
+		(this->*pointerToFunction[i])();
 }

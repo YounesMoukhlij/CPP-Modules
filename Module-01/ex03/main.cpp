@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:48:58 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:53:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:57:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
-	return 0;
+	return (0);
 }

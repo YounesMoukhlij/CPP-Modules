@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:19:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:33:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 18:55:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie::Zombie()
 
 void Zombie::getName(std::string n_name)
 {
-	name = n_name;
+	_name = n_name;
 }
 
 Zombie::~Zombie()
@@ -29,5 +29,5 @@ Zombie::~Zombie()
 
 void Zombie::announce( void )
 {
-    std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+    std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

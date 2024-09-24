@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:48:51 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/20 16:23:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:36:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ class HumanB {
 		void	setWeapon(Weapon &new_Weapon);
 
 	private:
-		std::string	name;
-		Weapon*		weapon;
+		std::string	_name;
+		Weapon*		_weapon;
 
 };
 

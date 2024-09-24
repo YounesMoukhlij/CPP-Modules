@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:18:59 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/23 18:28:45 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/24 18:30:06 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,8 @@ all : ${NAME}
 	@c++ $(CPPFCLAGS) -c $< -o $@
 
 ${NAME} : ${OBJS}
-	@c++ ${CPPFCLAGS} $^ -o $@
 	@echo "Linking ...\n"
+	@c++ ${CPPFCLAGS} $^ -o $@
 
 clean:
 	@rm -rf $(OBJS)

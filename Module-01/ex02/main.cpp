@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 08:50:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/23 18:38:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/24 15:44:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(int ac, char **argv)
 	std::cout << (&arg) << std::endl;
 	std::cout << (stringPTR) << std::endl;
 	std::cout << (&stringREF) << std::endl;
-
+	
 	std::cout << arg << std::endl;
 	std::cout << *stringPTR << std::endl;
 	std::cout << stringREF << std::endl;
