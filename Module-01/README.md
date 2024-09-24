@@ -1,11 +1,12 @@
 # CPP-Module-01
 
-*BraiiiiiiinnnzzzZ 🧠*
+*Memory allocation, pointers to members,
+references, switch statement 🧠*
 
 <p align="center">
-  <a href="https://github.com/YounesMoukhlij/CPP-Modules/tree/main/Module-00">Go Back</a>
-  <a href="https://github.com/younesmoukhlij/CPP-Modules">HOME</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/main/Module-02">GO Next</a>
+  <a href="https://github.com/YounesMoukhlij/CPP-Modules/tree/main/Module-00">Go To the Back Module</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/main/Module-02">GO To Next Module</a>
 </p>
 
 -------------------------------------------------------------------------
