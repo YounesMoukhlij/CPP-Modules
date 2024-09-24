@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/17 08:50:02 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/23 13:04:39 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/23 18:50:24 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,8 +25,8 @@ all : ${NAME}
 	@c++ $(CPPFCLAGS) -c $< -o $@
 
 ${NAME} : ${OBJ}
+	@echo "\033[32m Linking ...\033[0m"
 	@c++ ${CPPFCLAGS} $^ -o $@
-	@echo "Linking ...\n"
 
 clean :
 	@rm -rf ${OBJ}
