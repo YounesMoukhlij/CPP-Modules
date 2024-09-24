@@ -12,21 +12,21 @@
 
 ## Table of content
 
-- [New and delete](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#new-and-delete)
-- [Stack vs heap memory](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#stack-vs-heap-memory)
-- [Pointers](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#pointers)
-- [References](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#references)
-- [Lifetime](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#lifetime)
-- [Scope](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#scope)
-- [Constant class instance in another class](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#constant-class-instance-in-another-class)
-- [Destructor called without a constructor](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#destructor-called-without-a-constructor)
-- [Streams](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#streams)
-- [Data transfer modes](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#data-transfer-modes)
-- [Text mode operations](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#text-mode-operations)
-- [Advantages of using streams](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#advantages-of-using-streams)
-- [File streams](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#file-streams)
-- [Creating file objects](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#creating-file-objects)
-- [Resources](https://github.com/younesmoukhlij/CPP-Modules/wiki/Module01#resources)
+- [New and delete](#new-and-delete)
+- [Stack vs heap memory](#stack-vs-heap-memory)
+- [Pointers](#pointers)
+- [References](#references)
+- [Lifetime](#lifetime)
+- [Scope](#scope)
+- [Constant class instance in another class](#constant-class-instance-in-another-class)
+- [Destructor called without a constructor](#destructor-called-without-a-constructor)
+- [Streams](#streams)
+- [Data transfer modes](#data-transfer-modes)
+- [Text mode operations](#text-mode-operations)
+- [Advantages of using streams](#advantages-of-using-streams)
+- [File streams](#file-streams)
+- [Creating file objects](#creating-file-objects)
+- [Resources](#resources)
 
 
 ### New and delete
