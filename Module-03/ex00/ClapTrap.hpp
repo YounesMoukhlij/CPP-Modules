@@ -6,13 +6,12 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:09 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 16:03:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/25 18:00:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
-
 
 #include <iostream>
 
@@ -27,10 +26,10 @@ class	ClapTrap
 
 	public:
 		ClapTrap();
+		~ClapTrap();
 		ClapTrap( const std::string& name );
 		ClapTrap( const ClapTrap& origine );
 		ClapTrap& operator=(const ClapTrap& origine );
-		~ClapTrap();
 		
 		void	attack( const std::string& target );
 		void	takeDamage( unsigned int amount );
