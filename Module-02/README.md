@@ -1,6 +1,4 @@
-# CPP-Module-02 | 1337 Khouribga
-
-My First Orthodox Class 📜
+# CPP-Module-02
 
 <p align="center">
   <a href="https://github.com/younesmoukhlij/CPP_Modules/main/Module-01">GO BACK TO THE PREVIOUS MODULE</a>
