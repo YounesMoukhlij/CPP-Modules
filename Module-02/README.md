@@ -3,9 +3,9 @@
 My First Orthodox Class 📜
 
 <p align="center">
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/main/Module_01">GO BACK TO THE PREVIOUS MODULE</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/main/Module-01">GO BACK TO THE PREVIOUS MODULE</a>
   <a href="https://github.com/younesmoukhlij/CPP_Modules">CPP MODULES</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/main/Module_03">GO TO THE NEXT MODULE</a>
+  <a href="https://github.com/younesmoukhlij/CPP_Modules/main/Module-03">GO TO THE NEXT MODULE</a>
 </p>
 
 ----------------------------------------------------------
