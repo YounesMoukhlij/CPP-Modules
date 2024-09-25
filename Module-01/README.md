@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/YounesMoukhlij/CPP-Modules/tree/main/Module-00">Previous Module</a>
   <a href="https://github.com/younesmoukhlij/CPP-Modules">CPP Modules</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/main/Module-02">Next Module</a>
+  <a href="https://github.com/YounesMoukhlij/CPP-Modules/tree/main/Module-02">Next Module</a>
 </p>
 
 Memory allocation, pointers to members, references, switch statement.
