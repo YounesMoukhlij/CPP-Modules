@@ -1,9 +1,9 @@
 # CPP-Module-02
 
 <p align="center">
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/main/Module-01">Previous Module</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules">CPP MODULES</a>
-  <a href="https://github.com/younesmoukhlij/CPP_Modules/tree/main/Module-03">Next Module</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules/tree/main/Module-01">Previous Module</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules">HOME</a>
+  <a href="https://github.com/younesmoukhlij/CPP-Modules/tree/main/Module-03">Next Module</a>
 </p>
 
 ----------------------------------------------------------
