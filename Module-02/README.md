@@ -10,7 +10,7 @@
 
 
 ## Table of content
-- [Ad-hoc polymorphism / function overload](#Ad-hoc polymorphism / function overload)
+- [Ad-hoc polymorphism / function overload](#Ad-hoc-polymorphism-/-function-overload)
 - [Operators overload](#operator-overload)
 - [Canonical classes](#canonical-form)
 - [Copy constructor](#copy-constructor)
