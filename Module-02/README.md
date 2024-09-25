@@ -6,11 +6,12 @@
   <a href="https://github.com/younesmoukhlij/CPP-Modules/tree/main/Module-03">Next Module</a>
 </p>
 
+Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form.
+
 ----------------------------------------------------------
 
 
 ## Table of content
-- [Ad-hoc polymorphism / function overload](#Ad-hoc-polymorphism-/-function-overload)
 - [Operators overload](#operator-overload)
 - [Canonical classes](#canonical-form)
 - [Copy constructor](#copy-constructor)
