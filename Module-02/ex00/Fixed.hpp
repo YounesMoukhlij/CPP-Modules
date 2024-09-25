@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 16:04:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/25 15:40:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 #include <iostream>
 
-class Fixed {
-
+class Fixed
+{
 	public:
 		Fixed();
+		~Fixed();
 		Fixed( const Fixed& origine);
 		Fixed& operator=( const Fixed& origine );
-		~Fixed();
 
 		int		getRawBits(void) const;
 		void	setRawBits(int const raw);

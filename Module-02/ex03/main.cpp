@@ -6,27 +6,20 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:07:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/25 13:17:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/25 14:36:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+#include "Point.hpp"
 
 int main( void )
 {
-	Fixed a;
-	Fixed const b( 10 );
-	Fixed const c( 42.42f );
-	Fixed const d( b );
-	a = Fixed( 1234.4321f );
+	Point	a(Fixed(1), Fixed(2));
+	Point	b(Fixed(1), Fixed(4));
+	Point	c(Fixed(2), Fixed(3));
+	Point	p(Fixed(6), Fixed(6));
 
-	std::cout << "a is " << a << std::endl;
-	std::cout << "b is " << b << std::endl;
-	std::cout << "c is " << c << std::endl;
-	std::cout << "d is " << d << std::endl;
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+	std::cout << bsp(a, b, c, p) << std::endl;
 	return (EXIT_SUCCESS);
 }

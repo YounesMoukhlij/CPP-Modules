@@ -6,14 +6,13 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/17 13:34:20 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/19 15:54:15 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/25 14:41:50 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-CPPFCLAGS = -Wall -Wextra -Werror -std=c++98
-
-SRC = main.cpp Fixed.cpp main.cpp
+SRC = main.cpp Fixed.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
@@ -21,15 +20,19 @@ NAME = fixed
 
 all : ${NAME}
 
+%.o: %.cpp Fixed.hpp
+	@echo "\033[30m Compiling ...\033[0m"
+	@c++ ${CPPFLAGS} -c $< -o $@
+
 ${NAME} : ${OBJ}
-	@c++ ${CPPFCLAGS} $^ -o $@
-	@echo "Linking ...\n"
+	@echo "\033[32m Linking ...\033[0m"
+	@c++ ${CPPFLAGS} $^ -o $@
 
 clean :
-	@rm -f ${OBJ}
+	@rm -rf ${OBJ}
 
 fclean : clean
-	@rm -f ${NAME}
+	@rm -rf ${NAME}
 
 re : fclean all
 

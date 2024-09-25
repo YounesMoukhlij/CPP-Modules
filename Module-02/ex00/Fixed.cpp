@@ -6,20 +6,20 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:35:38 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 16:04:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/25 15:40:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed()  : _value(0x2)
+Fixed::Fixed() : _value(0x2)
 {
-    std::cout << "\033[32mDefault constructor called\033[0m" << std::endl;
+    std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed& other)
 {
-    std::cout << "\033[33mCopy constructor called\033[0m" << std::endl;
+    std::cout << "Copy constructor called" << std::endl;
 	*this = other;
 }
 
@@ -39,7 +39,7 @@ Fixed& Fixed::operator=(const Fixed& other)
 
 Fixed::~Fixed()
 {
-    std::cout << "\033[41mDestructor called\033[0m" << std::endl;
+    std::cout << "Destructor called" << std::endl;
 }
 
 void Fixed::setRawBits(int const raw)
