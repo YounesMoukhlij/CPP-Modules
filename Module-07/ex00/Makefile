@@ -16,7 +16,7 @@ OBJ = ${SRC:.cpp=.o}
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = PhoneBook
+NAME = min_max
 
 all : ${NAME}
 
