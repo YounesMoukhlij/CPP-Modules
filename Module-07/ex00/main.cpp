@@ -6,28 +6,32 @@
 
 #include <iostream>
 
+
 template<typename T>
-void swap(T &a, T &b)
+T &min(T &t1, T &t2)
 {
-	T tmp = a;
-	a = b;
-	b = tmp;
+	if (t2 > t1)
+		return (t1);
+	return (t2);
 }
 
 template<typename T>
-T &min(T &a, T &b)
+void swap(T &t1, T &t2)
 {
-	if (b > a)
-		return (a);
-	return (b);
+	T tmp;
+
+    tmp = t1;
+	t1 = t2;
+	t2 = tmp;
 }
 
+
 template<typename T>
-T &max(T &a, T &b)
+T &max(T &t1, T &t2)
 {
-	if (a > b)
-		return (a);
-	return (b);
+	if (t1 > t2)
+		return (t1);
+	return (t2);
 }
 
 
