@@ -12,9 +12,9 @@ class Animal
         Animal();
 		Animal( const Animal& origine );
 		Animal& operator=( const Animal& origine );
-		~Animal();
+		 ~Animal();
 
-		void	        makeSound() const;
+		 void	        makeSound() const;
 		std::string		getType() const;
 
 };
