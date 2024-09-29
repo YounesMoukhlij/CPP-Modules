@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/29 15:08:48 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/29 15:49:05 by youmoukh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #pragma once
 
@@ -12,9 +22,9 @@ class Animal
         Animal();
 		Animal( const Animal& origine );
 		Animal& operator=( const Animal& origine );
-		 ~Animal();
+		virtual ~Animal();
 
-		 void	        makeSound() const;
+		virtual void	        makeSound() const;
 		std::string		getType() const;
 
 };
