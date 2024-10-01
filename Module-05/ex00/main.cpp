@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:36:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:36:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(void)
         bob.incrementGrade();
         std::cout << "After incrementing: " << bob << std::endl;
 
-        bob.incrementGrade();  // This should throw GradeTooHighException E
+        bob.incrementGrade();  // This should throw GradeTooHighException Exception
     }
     catch (std::exception& o)
 	{
@@ -34,7 +34,7 @@ int main(void)
         Bureaucrat alice("Alice", 150);
         std::cout << alice << std::endl;
 
-        alice.decrementGrade();  // This should throw GradeTooLowException
+        alice.decrementGrade();  // This should throw GradeTooLowException Exception
     }
     catch (std::exception& e)
 	{
