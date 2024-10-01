@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 13:06:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 13:06:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ int main(void)
 {
 	Bureaucrat Bur;
 	
-	std::cout << Bur.getName() << " B"
+	std::cout << Bur.getName() << " Bureaucrat grade " << Bur.getGrade
 	return (EXIT_SUCCESS);
 }
