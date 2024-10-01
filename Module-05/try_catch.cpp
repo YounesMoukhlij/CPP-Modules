@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     try {
         // Code that may throw an exception
-        int x = 0;
+        int x = 1;
         if (x == 0) {
             throw runtime_error("Division by zero error!");
         }
