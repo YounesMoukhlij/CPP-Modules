@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:19:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:20:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main(void)
 
         bob.incrementGrade();  // This should throw GradeTooHighException
     }
-    catch (std::exception& e)
+    catch (std::exception& o)
 	{
         std::cerr << "Exception caught: " << e.what() << std::endl;
     }
