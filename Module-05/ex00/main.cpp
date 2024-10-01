@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:20:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:20:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main(void)
 {
     try
 	{
-        Bureaucrat bob("Hemed lkhwaf", 2);
+        Bureaucrat bob("Hemed lkhwaf", 150);
         std::cout << bob << std::endl;
 
         bob.incrementGrade();
