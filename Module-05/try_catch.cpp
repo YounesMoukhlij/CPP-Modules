@@ -36,11 +36,11 @@ int main()
 	{
 		if (b == 0)
 			throw "b is 0 try different number";
-		cout << (a/b);
+		cout << "r"(a/b);
 	}
 	catch (const char *str)
 	{
-		cerr << "message catched " <<str << endl;
+		cerr << "message catched    " << str << endl;
 	}
 
 
