@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdexcept>
+
 using namespace std;
 
 int main() {
@@ -18,3 +20,23 @@ int main() {
     cout << "Program continues..." << endl;
     return 0;
 }
+
+
+
+// int main() {
+//     try {
+//         int x = -1;
+//         if (x < 0) {
+//             throw invalid_argument("Negative value not allowed");
+//         }
+//     } 
+//     catch (const invalid_argument& e) {
+//         cout << "Invalid argument: " << e.what() << endl;
+//     }
+//     catch (const exception& e) {
+//         // General catch-all for other exceptions
+//         cout << "Exception: " << e.what() << endl;
+//     }
+
+//     return 0;
+// }
