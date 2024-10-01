@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/25 18:51:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:44:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ ClapTrap::ClapTrap()
 	_name = "__ClapTrap__";
 	_hitPoints = 10;
 	_energyPoints = 10;
-	_attackDamage = 0;
+	_attackDamage = 0x0;
 }
 
 ClapTrap::ClapTrap( const std::string& name )
@@ -35,7 +35,7 @@ ClapTrap::ClapTrap( const std::string& name )
 	_name = name;
 	_hitPoints = 10;
 	_energyPoints = 10;
-	_attackDamage = 0;
+	_attackDamage = 0x0;
 }
 
 ClapTrap::ClapTrap( const ClapTrap& origine )
@@ -59,7 +59,7 @@ ClapTrap& ClapTrap::operator=( const ClapTrap& origine )
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ClapTrap Destructor called" << std::endl;
 }
 
 void	ClapTrap::attack( const std::string& target )
@@ -80,7 +80,7 @@ void	ClapTrap::attack( const std::string& target )
 void	ClapTrap::takeDamage( unsigned int amount )
 {
 	if (amount > _hitPoints)
-		_hitPoints = 0;
+		_hitPoints = 0x0;
 	else
 		_hitPoints -= amount;
 }
@@ -94,7 +94,12 @@ void	ClapTrap::beRepaired( unsigned int amount )
 	else
 	{
 		_hitPoints += amount;
-		_energyPoints--;
+		_energyPoints -= 0x1;
 		std::cout << _name << " repaired!" << std::endl;
 	}
+}
+
+unsigned int	ClapTrap::getDamage() const
+{
+	return (_attackDamage);
 }

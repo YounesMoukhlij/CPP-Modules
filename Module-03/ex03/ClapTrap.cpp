@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/26 17:12:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/26 17:21:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@
 ClapTrap::ClapTrap()
 {
 	_name = "__ClapTrap__";
-	_hitPoints = 10;
-	_energyPoints = 10;
-	_attackDamage = 0;
+	_hitPoints = 0x10;
+	_energyPoints = 0x10;
+	_attackDamage = 0x0;
 	std::cout << "ClapTrap Default constuctor called" << std::endl;
 }
 
 ClapTrap::ClapTrap( const std::string& name )
 {
 	_name = name;
-	_hitPoints = 10;
-	_energyPoints = 10;
-	_attackDamage = 0;
+	_hitPoints = 0x10;
+	_energyPoints = 0x10;
+	_attackDamage = 0x0;
 	std::cout << "Parameterized constuctor called" << std::endl;
 }
 
@@ -51,7 +51,7 @@ ClapTrap& ClapTrap::operator=( const ClapTrap& origine )
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "clapTrap Destructor called" << std::endl;
+	std::cout << "ClapTrap Destructor called" << std::endl;
 }
 
 void	ClapTrap::attack( const std::string& target )
@@ -60,7 +60,7 @@ void	ClapTrap::attack( const std::string& target )
 		std::cout << _name << " can't attack, no hitPoints left!" << std::endl;
 	else if (!_energyPoints)
 		std::cout << _name << " can't attack, no energyPoints left!" << std::endl;
-	else
+	else 
 	{
 		std::cout << "ClapTrap " << _name << " attacks " << target
 				  << " causing " << _attackDamage << " points of damage!"
@@ -72,7 +72,7 @@ void	ClapTrap::attack( const std::string& target )
 void	ClapTrap::takeDamage( unsigned int amount )
 {
 	if (amount > _hitPoints)
-		_hitPoints = 0;
+		_hitPoints = 0x0;
 	else
 		_hitPoints -= amount;
 }
@@ -91,6 +91,7 @@ void	ClapTrap::beRepaired( unsigned int amount )
 	}
 }
 
+
 unsigned int	ClapTrap::getDamage() const
 {
 	return (_attackDamage);
@@ -106,4 +107,3 @@ void	ClapTrap::showInfo() const
 	std::cout << "\033[32m!!!!!!!!!!!!!!!!! END !!!!!!!!!!!!!!!\033[0m" << std::endl;
 	std::cout << std::endl;
 }
-

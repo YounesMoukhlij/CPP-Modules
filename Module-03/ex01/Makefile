@@ -6,14 +6,14 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/17 13:34:20 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/25 18:54:41 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/09/26 18:27:15 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp ScavTrap.cpp main.cpp  ClapTrap.cpp
+SRC = main.cpp ScavTrap.cpp  ClapTrap.cpp
 
 OBJ = ${SRC:.cpp=.o}
 

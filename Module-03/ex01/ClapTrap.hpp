@@ -6,20 +6,18 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:09 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 16:03:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:52:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 
-
 #include <iostream>
 
 class	ClapTrap
 {
-
-	private:
+	protected:
 		std::string			_name;
 		unsigned int		_hitPoints;
 		unsigned int		_energyPoints;
@@ -32,9 +30,11 @@ class	ClapTrap
 		ClapTrap& operator=(const ClapTrap& origine );
 		~ClapTrap();
 		
-		void	attack( const std::string& target );
-		void	takeDamage( unsigned int amount );
-		void	beRepaired( unsigned int amount );
+		void			attack( const std::string& target );
+		void			takeDamage( unsigned int amount );
+		void			beRepaired( unsigned int amount );
+		unsigned int	getDamage() const;
+		void			showInfo() const;
 };
 
 #endif

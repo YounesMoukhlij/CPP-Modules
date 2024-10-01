@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 18:11:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/26 17:17:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/26 17:17:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,15 @@ ScavTrap::ScavTrap( const std::string& name ) : ClapTrap(name)
 	_hitPoints = 100;
     _energyPoints = 50;
     _attackDamage = 20;
-	std::cout << "ScavTrap Parameterized constuctor called" << std::endl;
 }
 
 ScavTrap::ScavTrap( const ScavTrap& origine ) : ClapTrap(origine)
 {
 
 }
+
+
+
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& origine)
 {
@@ -64,3 +66,4 @@ void	ScavTrap::attack( const std::string& target )
 		_energyPoints--;
 	}
 }
+

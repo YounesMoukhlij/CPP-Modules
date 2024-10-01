@@ -6,24 +6,27 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 15:56:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/22 17:27:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:49:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-	ClapTrap i;
-	ClapTrap a;
-
-
+    ScavTrap    t1("dog");
+    ScavTrap    t2("cat");
 	
-	i.attack("younes");
-	i.takeDamage(9);
-	i.beRepaired(10);
-	
-	a = i;
-	
-	return (0x0);
+	t1.showInfo();
+	t2.showInfo();
+    for (int i = 1; i < 10 ; i++)
+    {
+        std::cout << i << "  ";
+        t1.attack("cat");
+        t2.takeDamage(t1.getDamage());
+    }
+    t1.guardGate();
+	t1.showInfo();
+	t2.showInfo();
+    return (0x0);
 }
