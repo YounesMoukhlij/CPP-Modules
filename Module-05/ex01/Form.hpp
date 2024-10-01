@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:11:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:11:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,4 @@ class From
 		
 };
 
-std::ostream& operator<<(std::ostream& file, const From& from)
+std::ostream& operator<<(std::ostream& file, const From& from);
