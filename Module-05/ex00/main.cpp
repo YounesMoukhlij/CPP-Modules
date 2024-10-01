@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:43:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:43:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main(void)
 {
+    std::cout << "1st Try" << std::endl;
     try
 	{
         Bureaucrat bob("Hemed lkhwaf", 0x1);
@@ -42,11 +43,11 @@ int main(void)
     }
     catch (std::exception& y)
 	{
-	std::cout << std::endl;
-	std::cout << std::endl;
         std::cerr << "\033[32mException caught: " << y.what() << "\033[0m" <<std::endl;
 		
     }
+	std::cout << std::endl;
+	std::cout << std::endl;
     try
 	{
         Bureaucrat alice("Sa3iiid weld l7awat", 0xA);
