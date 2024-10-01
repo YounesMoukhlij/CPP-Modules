@@ -6,15 +6,36 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:45:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:54:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
 
-int main(void)
+int main(vo)
 {
-	Bureaucrat Bur;
+    try {
+        Bureaucrat bob("Bob", 2);
+        std::cout << bob << std::endl;
 
-	return (EXIT_SUCCESS);
+        bob.incrementGrade();
+        std::cout << "After incrementing: " << bob << std::endl;
+
+        bob.incrementGrade();  // This should throw GradeTooHighException
+    }
+    catch (std::exception& e) {
+        std::cerr << "Exception caught: " << e.what() << std::endl;
+    }
+
+    try {
+        Bureaucrat alice("Alice", 150);
+        std::cout << alice << std::endl;
+
+        alice.decrementGrade();  // This should throw GradeTooLowException
+    }
+    catch (std::exception& e) {
+        std::cerr << "Exception caught: " << e.what() << std::endl;
+    }
+
+    return 0;
 }
