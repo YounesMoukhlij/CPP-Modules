@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:36:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:38:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main(void)
     }
     catch (std::exception& o)
 	{
-        std::cerr << "Exception caught: " << o.what() << std::endl;
+        std::cerr << "\033[32mException caught: " << o.what() <<""\033[0m" <<std::endl;
     }
 
     try
