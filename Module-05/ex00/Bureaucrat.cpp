@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:46:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:46:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,6 @@ void	Bureaucrat::decrementGrade()
 
 std::ostream& operator<<(std::ostream& file, const Bureaucrat& bureaucrat)
 {
-	file << bureaucrat._name << ">, bureaucrat grade"
+	file << bureaucrat.getName() << ", bureaucrat grade " << 
 	
 }
