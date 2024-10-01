@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 13:08:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 13:08:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,7 @@ std::string Bureaucrat::getName()
 	return (_name);
 }
 
-int	Bureaucrat::g
+int	Bureaucrat::getGrade()
+{
+	return (_grade);
+}
