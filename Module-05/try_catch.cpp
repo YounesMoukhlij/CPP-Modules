@@ -38,7 +38,10 @@ int main()
 			throw "b is 0 try different number";
 		return (a/b);
 	}
-	ca
+	catch (const char *str)
+	{
+		cerr << str <<
+	}
 
 
     return 0;
