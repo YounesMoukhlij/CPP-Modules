@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:08:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:08:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ class From
 		Form();
 		Form(const Form& origine);
 		Form(const Form& origine);
-		Form&
+		Form& operator=(const Form& origine);
 		
 };
