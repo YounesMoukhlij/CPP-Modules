@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:40:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:40:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,4 +72,4 @@ void	Bureaucrat::decrementGrade()
 	_grade--;
 }
 
-std::ostream& operator<<(s)
+std::ostream& operator<<(std::ostream& file, const Bureaucrat& )
