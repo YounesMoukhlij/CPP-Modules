@@ -6,13 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:08:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:09:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 # include <iostream>
+# include <ex
 
 class Bureaucrat
 {
