@@ -23,20 +23,12 @@ using namespace std;
 
 
 
-int main() {
-    try {
-        int x = -1;
-        if (x < 0) {
-            throw invalid_argument("Negative value not allowed");
-        }
-    } 
-    catch (const invalid_argument& e) {
-        cout << "Invalid argument: " << e.what() << endl;
-    }
-    catch (const exception& e) {
-        // General catch-all for other exceptions
-        cout << "Exception: " << e.what() << endl;
-    }
+int main()
+{
+	int a,b;
+
+	cout << ""
+	cin << a;
 
     return 0;
 }
