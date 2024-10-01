@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:26:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:26:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,26 +26,26 @@ class Bureaucrat
 		Bureaucrat& operator=(const Bureaucrat& origine);
 		~Bureaucrat();
 	
-   class GradeTooHighException : public std::exception
-   {
-    	public:
-    	    const char* what() const noexcept override
-			{
-    	        return "Grade is too high!";
-    	    }
-    };
-
-    class GradeTooLowException : public std::exception
-	{
-    	public:
-    	    const char* what() const noexcept override
-			{
-    	        return "Grade is too low!";
-    	    }
-    };
+   		class GradeTooHighException : public std::exception
 	
-		const std::string	getName() const;
-		int 				getGrade();
+   			public:
+   			    const char* what() const noexcept override
+					{
+   			        return "Grade is too high!";
+   			    }
+   		};
+
+   		class GradeTooLowException : public std::exception
+			{
+   			public:
+   			    const char* what() const noexcept override
+					{
+   			        return "Grade is too low!";
+   			    }
+   		};
+			
+				const std::string	getName() const;
+				int 				getGrade();
 	
 };
 
