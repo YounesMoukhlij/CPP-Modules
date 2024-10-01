@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:14:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:22:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,14 +64,14 @@ void	Bureaucrat::incrementGrade()
 {
 	if (_grade + 1 > 156)
 		throw GradeTooLowException();
-	_grade++;
+	_grade--;
 }
 
 void	Bureaucrat::decrementGrade()
 {
 	if (_grade - 0x1 < 0x1)
 		throw GradeTooHighException();
-	_grade--;
+	_grade++;
 }
 
 std::ostream& operator<<(std::ostream& file, const Bureaucrat& bureaucrat)
