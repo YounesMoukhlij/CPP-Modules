@@ -38,9 +38,9 @@ const char* Form::GradeTooLowException::what() const throw()
 	return "Form: Grade too low!";
 }
 
-void	Form::beSigned(const Bureaucrat& obj)
+void	Form::beSigned(const Bureaucrat& bur)
 {
-	if (obj.getGrade() <= this->_gradeSign)
+	if (bur.getGrade() <= this->_gradeSign)
 		this->_indicator = true;
 	else
 		throw GradeTooLowException();
