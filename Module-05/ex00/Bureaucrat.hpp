@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:28:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:28:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,8 @@ class Bureaucrat
 			
 		const std::string	getName() const;
 		int 				getGrade();
-		void
+		void				increamentGrade();
+		void				dcreamentGrade();
 	
 };
 
