@@ -32,5 +32,11 @@ int main()
 	cout << "give me 2nd number " << endl;
 	cin >> b;
 
+	try
+	{
+		if (b == 0)
+			throw 
+	}
+
     return 0;
 }
