@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:35:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:35:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,11 @@ Bureaucrat::Bureaucrat()
 Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name), _grade(grade)
 {
 	std::cout << "Bureaucrat Default Constructor Called" << std::endl;
-	if (grade)
+	if (grade < 0x1)
+	{
+		throw GradeTooHighException();
+	}
+	else
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat& origine)
