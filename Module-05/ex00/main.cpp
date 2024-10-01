@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:40:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:41:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,12 +43,12 @@ int main(void)
     }
     try
 	{
-        Bureaucrat alice("Alice", 0xA);
+        Bureaucrat alice("Sa3iiid weld l7awat", 0xA);
         std::cout << alice << std::endl;
 
         alice.decrementGrade();  // This should throw Nothing 0_0
-        std::cout << "After incrementing: " << bob << std::endl;
-        std::cout << "After incrementing: " << bob << std::endl;
+        std::cout << "After incrementing: " << alice << std::endl;
+        std::cout << "After incrementing: " << alice << std::endl;
     }
     catch (std::exception& y)
 	{
