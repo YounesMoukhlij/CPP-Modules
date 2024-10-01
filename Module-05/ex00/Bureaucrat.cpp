@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:25:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:25:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,8 @@ std::ostream& operator<<(std::ostream& file, const Bureaucrat& bureaucrat)
 const char* Bureaucrat::GradeTooHighException::what() const
 {
    	return ("Grade is too high!");
+}
+const char* Bureaucrat::GradeTooLowException::what() const
+{
+   	return ("Grade is too L!");
 }
