@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:10:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:10:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ class From
 		const int			_gradeExecut;
 	public:
 		~Form();
-		Form();
+		Form(const std::string name);
 		Form(const Form& origine);
-
 		Form& operator=(const Form& origine);
 		
 };
+
+std::ostream& operator<<(const )
