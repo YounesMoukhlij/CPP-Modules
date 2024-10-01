@@ -36,7 +36,7 @@ int main()
 	{
 		if (b == 0)
 			throw "b is 0 try different number";
-		cout << "r"(a/b);
+		cout << "result " << (a/b) << endl;
 	}
 	catch (const char *str)
 	{
