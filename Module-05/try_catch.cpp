@@ -36,13 +36,13 @@ int main()
 	{
 		if (b == 0)
 			throw "b is 0 try different number";
-		return (a/b);
+		cout << (a/b);
 	}
 	catch (const char *str)
 	{
 		cerr << str << endl;
 	}
-	
+
 
 
     return 0;
