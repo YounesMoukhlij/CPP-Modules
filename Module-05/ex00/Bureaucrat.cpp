@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:36:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:37:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	Bureaucrat::incrementGrade()
 
 void	Bureaucrat::decrementGrade()
 {
-	if (_grade - 1 > 15)
-		throw GradeTooHighException();
+	if (_grade - 0x1 < 0x1)
+		throw GradeTooLowException();
 	_grade--;
 }
