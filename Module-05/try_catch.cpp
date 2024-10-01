@@ -35,8 +35,11 @@ int main()
 	try
 	{
 		if (b == 0)
-			throw 
+			throw "b is 0 try different number";
+		return (a/b);
 	}
+	ca
+
 
     return 0;
 }
