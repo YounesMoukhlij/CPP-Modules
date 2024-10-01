@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:38:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:38:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main(void)
     }
     catch (std::exception& o)
 	{
-        std::cerr << "\033[32mException caught: " << o.what() <<""\033[0m" <<std::endl;
+        std::cerr << "\033[32mException caught: " << o.what() << "\033[0m" <<std::endl;
     }
 
     try
@@ -38,7 +38,8 @@ int main(void)
     }
     catch (std::exception& e)
 	{
-        std::cerr << "Exception caught: " << e.what() << std::endl;
+        std::cerr << "\033[32mException caught: " << o.what() << "\033[0m" <<std::endl;
+		
     }
 
     return 0;
