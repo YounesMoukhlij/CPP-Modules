@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:08:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/30 17:53:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:54:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,4 @@ Animal::~Animal()
 std::string	Animal::getType() const
 {
 	return (type);
-}
-
-void	Animal::makeSound() const
-{
-	std::cout << "L7iwan can't make sound" << std::endl;
 }
