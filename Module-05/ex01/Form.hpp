@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:07:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:07:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ class From
 {
 	private :
 		const std::string	_name;
-		bool				indicator;
+		bool				_indicator;
+		const				_gradeSign;
 		
 };
