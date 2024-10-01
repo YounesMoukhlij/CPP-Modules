@@ -50,7 +50,7 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& origine)
 	return (*this);
 }
 
-const std::string& Bureaucrat::getName() const 
+const std::string& Bureaucrat::getName() const
 {
 	return (_name);
 }
@@ -88,3 +88,10 @@ const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
    	return ("Grade is too Low!");
 }
+
+
+void	Bureaucrat::signForm()
+{
+
+}
+
