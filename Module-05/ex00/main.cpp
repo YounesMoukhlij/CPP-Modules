@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:39:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:39:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,18 @@ int main(void)
         std::cout << alice << std::endl;
 
         alice.decrementGrade();  // This should throw GradeTooLowException Exception
+    }
+    catch (std::exception& y)
+	{
+        std::cerr << "\033[32mException caught: " << y.what() << "\033[0m" <<std::endl;
+		
+    }
+    try
+	{
+        Bureaucrat alice("Alice", 0xA);
+        std::cout << alice << std::endl;
+
+        alice.decrementGrade();  // This should throw No Exception
     }
     catch (std::exception& y)
 	{
