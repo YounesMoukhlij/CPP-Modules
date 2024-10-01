@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:08:48 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/29 15:49:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:28:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,3 @@ class Animal
 		std::string		getType() const;
 
 };
-
-
-

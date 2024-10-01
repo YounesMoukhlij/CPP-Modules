@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.hpp                                       :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/29 15:00:36 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/30 16:57:35 by youmoukh         ###   ########.fr       */
+/*   Created: 2024/09/29 15:09:04 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/09/29 19:11:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "WrongAnimal.hpp"
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-class WrongCat : public WrongAnimal
+class   Dog : public Animal
 {
-	public:
-		WrongCat();
-		WrongCat(const WrongCat& origine);
-		WrongCat& operator=(const WrongCat& origine);
-		~WrongCat();
-		
-		void makeSound() const;
-		std::string	getType() const;
+	private:
+		Brain *_Brain;
+    public:
+        Dog();
+        Dog( const Dog& origine );
+        Dog& operator=( const Dog& origine );
+        ~Dog();
+
+        void    makeSound() const;
 };
-
-

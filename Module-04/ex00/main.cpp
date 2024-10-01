@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:08:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/29 17:07:30 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:47:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,33 +16,37 @@
 #include "WrongAnimal.hpp"
 #include "Animal.hpp"
 
-int main()
+
+int main(void)
 {
     const Animal* meta = new Animal();
     const Animal* jhonnyDogs = new Dog();
     const Animal* pussyCat = new Cat();
     std::cout << jhonnyDogs->getType() << " " << std::endl;
     std::cout << pussyCat->getType() << " " << std::endl;
-    jhonnyDogs->makeSound(); //will output the dog sound!
+    jhonnyDogs->makeSound();
     pussyCat->makeSound();
     meta->makeSound();
 
 	std::cout << "\n\n\n\n\nTesting WrongAnimal and WrongCat:\n\n\n\n\n\n";
 
     WrongAnimal* wrongMeta = new WrongAnimal();
-    WrongAnimal* wrongCat = new WrongCat();
+    const WrongAnimal* wrongCat = new WrongCat();
+	WrongCat* test = new WrongCat();
 
     std::cout << wrongCat->getType() << " " << std::endl;
-    wrongCat->makeSound(); // Output: WrongAnimal makes a weird sound
-    wrongMeta->makeSound(); // Output: WrongAnimal makes a weird sound
+    std::cout << test->getType() << " " << std::endl;
+    wrongCat->makeSound();
+    wrongMeta->makeSound();
+    test->makeSound();
 
     delete wrongMeta;
     delete wrongCat;
+    delete test;
 
 	
     delete jhonnyDogs;
     delete pussyCat;
     delete meta;
     return (0x0);
-
 }

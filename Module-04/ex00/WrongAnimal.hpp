@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 14:53:57 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/29 15:05:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:21:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class WrongAnimal
 {
-	private:
+	protected:
 		std::string type;
 	public:
 		WrongAnimal();
@@ -25,8 +25,6 @@ class WrongAnimal
 		~WrongAnimal();
 		
 		void	        makeSound() const;
-		std::string	getType() const;
-
-		
+		std::string	getType() const;	
 };
 

@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 14:56:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/09/30 17:21:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:45:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,5 @@ std::string	WrongAnimal::getType() const
 
 void	WrongAnimal::makeSound() const
 {
-	std::cout << "KHAKAHAKAHK What sound is this 0_0!" << std::endl;
+	std::cout << "KHAKAHAKAHK What sound is this 0_0" << std::endl;
 }
