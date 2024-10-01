@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:41:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:41:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ int main(void)
 
         alice.decrementGrade();  // This should throw Nothing 0_0
         std::cout << "After decrementing: " << alice << std::endl;
+		
+        alice.incrementGrade();  // This should throw Nothing 0_0
         std::cout << "After incrementing: " << alice << std::endl;
     }
     catch (std::exception& y)
