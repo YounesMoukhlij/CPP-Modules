@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:39:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:39:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int main(void)
         Bureaucrat alice("Alice", 0xA);
         std::cout << alice << std::endl;
 
-        alice.decrementGrade();  // This should throw Nothing 0_
+        alice.decrementGrade();  // This should throw Nothing 0_0
     }
     catch (std::exception& y)
 	{
