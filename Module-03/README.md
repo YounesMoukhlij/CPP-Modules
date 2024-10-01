@@ -1,6 +1,6 @@
 # CPP-Module-03
 
-Aaaaand... OPEN! 👵
+Inheritance, Ouups this is a new Child !
 
 <p align="center">
   <a href="https://github.com/younesmoukhlij/CPP-Modules/tree/main//Module-02">Previous Module</a>
