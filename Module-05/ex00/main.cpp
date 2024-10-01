@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:43:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:43:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int main(void)
     }
 	std::cout << std::endl;
 	std::cout << std::endl;
+    std::cout << "3rd Try" << std::endl;
     try
 	{
         Bureaucrat alice("Sa3iiid weld l7awat", 0xA);
