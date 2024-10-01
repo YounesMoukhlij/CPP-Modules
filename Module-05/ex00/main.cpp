@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:47:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:47:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int main(void)
     std::cout << "4th Try" << std::endl;
     try
 	{
-        Bureaucrat alice("Sa3iiid weld l7awat", 0xA);
+        Bureaucrat alice("zghayda hadiid", 0x0);
         std::cout << alice << std::endl;
 
         alice.decrementGrade();  // This should throw Nothing 0_0
