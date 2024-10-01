@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:35:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:35:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name), _grade(
 	{
 		throw GradeTooHighException();
 	}
-	else
+	if (grade > 156)
+	{
+		throw GradeTooLowException();
+	}
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat& origine)
