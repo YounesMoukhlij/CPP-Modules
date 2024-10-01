@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 16:37:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:40:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,3 +71,5 @@ void	Bureaucrat::decrementGrade()
 		throw GradeTooLowException();
 	_grade--;
 }
+
+std::ostre
