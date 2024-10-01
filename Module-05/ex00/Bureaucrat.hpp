@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:09:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:09:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Bureaucrat
    		class GradeTooHighException : public std::exception
 		{
    			public:
-   			    const char* what() const noexcept override;
+   			    const char* what() const noexcept override
 				{
    			        return ("Grade is too high!");
    			    }
@@ -39,7 +39,7 @@ class Bureaucrat
    		class GradeTooLowException : public std::exception
 		{
    			public:
-   			    const char* what() const noexcept override;
+   			    const char* what() const noexcept override
 				{
    			        return ("Grade is too low!");
    			    }
