@@ -27,8 +27,10 @@ int main()
 {
 	int a,b;
 
-	cout << ""
-	cin << a;
+	cout << "give me first number " << endl;
+	cin >> a;
+	cout << "give me 2nd number " << endl;
+	cin >> b;
 
     return 0;
 }
