@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 13:03:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 13:03:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int main(void)
 {
 	Bureaucrat ;
-	
+
 	return (EXIT_SUCCESS);
 }
