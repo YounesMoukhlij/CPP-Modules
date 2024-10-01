@@ -40,8 +40,9 @@ int main()
 	}
 	catch (const char *str)
 	{
-		cerr << str <<
+		cerr << str << endl;
 	}
+	
 
 
     return 0;
