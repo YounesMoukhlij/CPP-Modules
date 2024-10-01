@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:11:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:11:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ class From
 		Form(const std::string name);
 		Form(const Form& origine);
 		Form& operator=(const Form& origine);
+		
+		void	beSigned()const;
 		
 };
 
