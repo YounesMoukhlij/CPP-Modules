@@ -45,7 +45,7 @@ class Form
 		int					getGradeExecute(void) const;
 		bool				Signed(void ) const;
 		const std::string& getName() const;
-		void	beSigned(const Bureaucrat& obj);
+		void	beSigned(const Bureaucrat& bur);
 
 };
 
