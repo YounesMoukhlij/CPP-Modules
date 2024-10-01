@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:24:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:24:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	Bureaucrat::incrementGrade()
 void	Bureaucrat::decrementGrade()
 {
 	if (_grade - 0x1 < 0x1)
-		throw GradeTooHException();
+		throw GradeTooLowException();
 	_grade++;
 }
 
@@ -80,8 +80,4 @@ std::ostream& operator<<(std::ostream& file, const Bureaucrat& bureaucrat)
 	return file;
 }
 
-// const char* Bureaucrat::GradeTooHighException::what() const noexcept override
-
-// {
-//    	return ("Grade is too high!");
-// }
+GradeTooHighException
