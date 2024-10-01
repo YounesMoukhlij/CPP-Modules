@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:21:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 18:28:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ class Form
    			public:
    			    const char* what() const throw();
    		};
-		void	beSigned(Bureaucrat bureau);
+		void	beSigned(b bureau);
 		
 };
 
