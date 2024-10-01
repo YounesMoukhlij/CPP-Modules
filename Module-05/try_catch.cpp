@@ -40,7 +40,7 @@ int main()
 	}
 	catch (const char *str)
 	{
-		cerr << str << endl;
+		cerr << "message catched " <<str << endl;
 	}
 
 
