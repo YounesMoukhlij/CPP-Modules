@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:42:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:42:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(void)
         std::cerr << "\033[32mException caught: " << o.what() << "\033[0m" <<std::endl;
     }
 
-    std::cout << "After incrementing: " << bob << std::endl;
+    std::cout << "2" << std::endl;
 
     try
 	{
