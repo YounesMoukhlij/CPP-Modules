@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:38:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:56:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ void	Form::beSigned(const Bureaucrat& bur)
 		throw GradeTooLowException();
 }
 
-// Form::Form(const Form& origine)
-// {
-// 	std::cout << "Form copy Constructor Called" << std::endl;
-// 	*this = origine;
-// }
+Form::Form(const Form& origine)
+{
+	std::cout << "Form copy Constructor Called" << std::endl;
+	*this = origine;
+}
 
 
 Form& Form::operator=(const Form& origine)
