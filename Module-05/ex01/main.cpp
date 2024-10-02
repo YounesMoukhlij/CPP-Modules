@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:47:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 13:29:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,29 @@ int main(int you, char **nes)
 		std::cerr << "Program doesn't accepte any arguments" << std::endl;
 		return (1);
 	}
-	try
-	{
-		Bureaucrat bureaucrat("popo", 1);
-		Form uuuu("momo", 0x3, 0x1A);
 
-		std::cout << uuuu;
-	}
-	catch (const std::exception& e)
-	{
-		std::cerr << e.what() << std::endl;
-	}
-	return 0;
+    try {
+        Bureaucrat john("John Doe", 2);
+        Form taxForm("Tax Form", 3, 5);
+
+        std::cout << taxForm << std::endl;
+        john.signForm(taxForm);
+        std::cout << taxForm << std::endl;
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
+    }
+
+    // try {
+    //     Bureaucrat jane("Jane Smith", 150);
+    //     Form payrollForm("Payroll Form", 100, 50);
+
+    //     std::cout << payrollForm << std::endl;
+    //     jane.signForm(payrollForm);  // This will throw because Jane's grade is too low
+    // }
+    // catch (const std::exception& e) {
+    //     std::cerr << "Exception: " << e.what() << std::endl;
+    // }
+
+    return 0;
 }
-

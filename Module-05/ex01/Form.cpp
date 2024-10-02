@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:15:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:32:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(n
 	else if (this->_gradeSign > 150 || this->_gradeSign > 150)
 		throw GradeTooLowException();
 }
-
 
 const char* Form::GradeTooHighException::what() const throw()
 {
@@ -66,10 +65,10 @@ const std::string& Form::getName(void) const
 	return (this->_name);
 }
 
-bool Form::Signed() const
-{
-	return (_indicator);
-}
+// bool Form::Signed() const
+// {
+// 	return (_indicator);
+// }
 
 int	Form::getGradeSigned(void) const
 {
@@ -81,8 +80,23 @@ int	Form::getGradeExecute(void) const
 	return (this->_gradeExecute);
 }
 
+// std::ostream& operator<<(std::ostream& file, const Form& form)
+// {
+// 	file << "Form " << form.getName() << ", Sign Status: " << (form.Signed() ? "Signed" : "Not Signed") << ", Grade Required to Sign: " << form.getGradeSigned() << ", Grade Required to Execute: " << form.getGradeExecute() << std::endl;
+// 	return file;
+// }
+
 std::ostream& operator<<(std::ostream& file, const Form& form)
 {
-	file << "Form " << form.getName() << ", Sign Status: " << (form.Signed() ? "Signed" : "Not Signed") << ", Grade Required to Sign: " << form.getGradeSigned() << ", Grade Required to Execute: " << form.getGradeExecute() << std::endl;
-	return file;
+    file << "Form: " << form.getName()
+        << ", Signed: " << (form.getIndicator() ? "Yes" : "No")
+        << ", Grade required to sign: " << form.getGradeSigned()
+        << ", Grade required to execute: " << form.getGradeExecute();
+    return file;
+}
+
+
+bool	Form::getIndicator() const
+{
+	return (_indicator);
 }

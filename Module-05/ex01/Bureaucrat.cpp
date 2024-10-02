@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 17:46:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 13:25:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,21 @@ const char* Bureaucrat::GradeTooLowException::what() const throw()
 }
 
 
-void	Bureaucrat::signForm()
+void	Bureaucrat::signForm(Form& form) const
 {
-
+	// if (form.getIndicator() == true)
+	// 	std::cout << Bureaucrat::getName() << form.getName() << std::endl;
+	// else
+	// 	std::cout << Bureaucrat::getName() << " Couldn't sign "<< form.getName() << " because " << "." << std::endl;
+	
+	try
+	{
+		form.beSigned(*this);
+		std::cout << _name << " signed " << form.getName() << std::endl;
+	}
+	catch (const std::exception &younes)
+	{
+		std::cout << _name << " Couldn't sign "<< form.getName() << " because " << younes.what() << "." << std::endl;
+	}
 }
 

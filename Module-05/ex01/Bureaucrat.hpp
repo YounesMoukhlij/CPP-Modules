@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/01 18:20:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:33:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 # include <iostream>
 # include <exception>
+# include "Form.hpp"
+
+class Form;
+
 
 class Bureaucrat
 {
@@ -43,7 +47,7 @@ class Bureaucrat
 		int 				getGrade() const ;
 		void				incrementGrade();
 		void				decrementGrade();
-		void				signForm();
+		void				signForm(Form& form) const;
 	
 };
 
