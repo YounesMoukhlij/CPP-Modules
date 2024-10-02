@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 13:29:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:38:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,17 @@ int main(int you, char **nes)
 		return (1);
 	}
 
-    try {
-        Bureaucrat john("John Doe", 2);
-        Form taxForm("Tax Form", 3, 5);
+    // try {
+    //     Bureaucrat john("John Doe", 2);
+    //     Form taxForm("Tax Form", 3, 5);
 
-        std::cout << taxForm << std::endl;
-        john.signForm(taxForm);
-        std::cout << taxForm << std::endl;
-    }
-    catch (const std::exception& e) {
-        std::cerr << "Exception: " << e.what() << std::endl;
-    }
+    //     std::cout << taxForm << std::endl;
+    //     john.signForm(taxForm);
+    //     std::cout << taxForm << std::endl;
+    // }
+    // catch (const std::exception& e) {
+    //     std::cerr << "Exception: " << e.what() << std::endl;
+    // }
 
     // try {
     //     Bureaucrat jane("Jane Smith", 150);
