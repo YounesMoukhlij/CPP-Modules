@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:33:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/02 14:38:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Form
 	public:
 		~Form();
 		Form();
-		Form(const Form& origine);
+		// Form(const Form& origine);
 		Form(const std::string& name, int gradeSigned, int gradeExecute);
 		Form& operator=(const Form& origine);
 
