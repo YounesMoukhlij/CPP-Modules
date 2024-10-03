@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:11:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:11:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,6 @@ void	ShrubberyCreationForm::ShrubberyAction(void) const
 		throw FileCreationException;
 	}
 	std::string = generat
+	file <
 	file.close();
 }
