@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:31:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:48:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class AForm
 		const int			_gradeSign;
 		const int			_gradeExecute;
 	public:
-		~AForm();
+		virtual ~AForm();
 		AForm();
 		AForm(const std::string& name, int gradeSign, int gradeExecute);
 		AForm(const AForm& origine);
