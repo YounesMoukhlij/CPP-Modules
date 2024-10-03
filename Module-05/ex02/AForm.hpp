@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 16:49:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:49:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ class AForm
 		const int			_gradeSign;
 		const int			_gradeExecute;
 	public:
-		~Form();
-		Form();
-		Form(const std::string& name, int gradeSign, int gradeExecute);
-		Form(const Form& origine);
-		Form& operator=(const Form& origine);
+		~AForm();
+		AForm();
+		AForm(const std::string& name, int gradeSign, int gradeExecute);
+		AForm(const AForm& origine);
+		AForm& operator=(const AForm& origine);
 
 		class GradeTooHighException : public std::exception
 		{
@@ -50,4 +50,4 @@ class AForm
 };
 
 
-std::ostream& operator<<(std::ostream& file, const Form& from);
+std::ostream& operator<<(std::ostream& file, const AForm& from);
