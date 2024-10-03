@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:58:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:58:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	PresidentialPardonForm::PresidentialPardonFormAction(void) const
 
 void	PresidentialPardonForm::execute(Bureaucrat const & bur) const
 {
-	executionChecker(Bureaucrat)
+	executionChecker(bur)
 	PresidentialPardonFormAction();
 }
 
