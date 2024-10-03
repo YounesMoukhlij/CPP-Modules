@@ -6,19 +6,27 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:02 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 16:53:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:44:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-class PresidentialPardonForm
+class PresidentialPardonForm : public AForm
 {
-private:
-	/* data */
-public:
-	PresidentialPardonForm(/* args */);
-	~PresidentialPardonForm();
+	private:
+		std::string target;
+	public:
+		PresidentialPardonForm(void);
+		PresidentialPardonForm(const std::string);
+		PresidentialPardonForm(const PresidentialPardonForm&);
+		~PresidentialPardonForm(void);
+
+		PresidentialPardonForm& operator= (const PresidentialPardonForm&);
+		
+		const std::string&	getTarget(void) const;
+		void	PresidentialPardonFormAction(void) const;
+		void	execute(Bureaucrat const & executor) const;
 };
 
 
