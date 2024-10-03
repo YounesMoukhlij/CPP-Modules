@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:21:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:21:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,15 @@ RobotomyRequestForm::~RobotomyRequestForm(void)
 
 RobotomyRequestForm&  RobotomyRequestForm::operator=(const RobotomyRequestForm& origine)
 {
-	if (this != &Robot)
-		this->target = Robot.target;
+	if (this != &origine)
+		this->_target = origine._target;
 	return (*this);
 }
 
 
 const std::string& RobotomyRequestForm::getTarget(void) const
 {
-	return (this->target);
+	return (this->_target);
 }
 
 void	RobotomyRequestForm::RobotomyRequestFormAction(void) const
