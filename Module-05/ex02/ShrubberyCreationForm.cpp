@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:05:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:06:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm(void) : AForm("Shrubbery", 145, 137)
+ShrubberyCreationForm::ShrubberyCreationForm() : AForm("Shrubbery", 145, 137)
 {
 	this->_target = "defaultTarget";
 }
@@ -27,7 +27,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& origin
 	*this = origine;	
 }
 
-ShrubberyCreationForm::~ShrubberyCreationForm(void)
+ShrubberyCreationForm::~ShrubberyCreationForm()
 {
 	
 }
