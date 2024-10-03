@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:23:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:23:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,6 @@ class Bureaucrat
    			public:
    			    const char* what() const throw();
    		};
-			
-	
 };
 
 std::ostream& operator<<(std::ostream& file, const Bureaucrat& bureaucrat);
