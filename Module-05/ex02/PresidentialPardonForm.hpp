@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:02 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:58:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:58:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class PresidentialPardonForm : public AForm
 		
 		const std::string&	getTarget(void) const;
 		void	PresidentialPardonFormAction(void) const;
-		void	execute(Bureaucrat const & bur) const;
+		void	execute(const Bureaucrat& bur) const;
 };
 
 
