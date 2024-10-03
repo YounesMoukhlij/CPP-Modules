@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:54:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:54:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ class AForm
 		const int			_gradeSign;
 		const int			_gradeExecute;
 	protected:
-		void	executionChecker(const Bureaucrat) const;
-		
+		void	executionChecker(const Bureaucrat& bur) const;
 	public:
 		virtual ~AForm();
 		AForm();
