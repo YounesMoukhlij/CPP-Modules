@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:43:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:43:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm& operator= (const ShrubberyCreationForm&);
 
 		const	std::string&	getTarget(void) const;
-		void	ShrubberyAction(void) const;
+		// void	ShrubberyAction(void) const;
 		void	execute(Bureaucrat const & executor) const;
 
 		class FileCreationException : public std::exception
 		{
 			public:
 				const char* what() const throw();
-		} FileCreationException;
+		};
 };
 
