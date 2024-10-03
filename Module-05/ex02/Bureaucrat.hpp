@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:33:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:31:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ class Bureaucrat
 		void				incrementGrade();
 		void				decrementGrade();
 		void				signForm(Form& form) const;
+		executeForm(AForm const & form) 
 	
 };
 
