@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:00:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:03:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 }
 
 
-ShrubberyCreationForm(const std::string& target) : AForm("ShrubberyCreationForm", 145, 137), target(target)
+ShrubberyCreationForm(const std::string& target) : AForm("ShrubberyCreationForm", 145, 137), target(_target)
 {
 	
 }
