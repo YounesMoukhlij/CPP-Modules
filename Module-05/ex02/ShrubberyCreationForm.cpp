@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:05:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:05:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const std::string _target): AForm("
 	this->_target = _target;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& shrubbery) : AForm(shrubbery.getName(), shrubbery.getGradeRequiredtoSign(), shrubbery.getGradeRequiredtoExcute())
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& origine) : AForm(shrubbery.getName(), shrubbery.getGradeRequiredtoSign(), shrubbery.getGradeRequiredtoExcute())
 {
 	*this = shrubbery;	
 }
