@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:38:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:38:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm();
 		~ShrubberyCreationForm();
 		
-		ShrubberyCreationForm(const std::string& target)
-	        : AForm("ShrubberyCreationForm", 145, 137), target(target) {}
+		ShrubberyCreationForm(const std::string& target);
 	
 	    void execute(Bureaucrat const & executor) const {
 	        validateExecution(executor);
@@ -31,3 +30,5 @@ class ShrubberyCreationForm : public AForm
 	    }
 };
 
+ShrubberyCreationForm(const std::string& target)
+	        : AForm("ShrubberyCreationForm", 145, 137), target(target) {}
