@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:08:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:08:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 ShrubberyCreationForm::ShrubberyCreationForm() : AForm("Shrubbery", 145, 137)
 {
+	std::cout << "Shrubbery Default Constructor Called" << std::endl;
 	this->_target = "defaultTarget";
 }
 
