@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:39:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:00:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,17 @@ void execute(Bureaucrat const & executor) const
     std::ofstream outfile(target + "_shrubbery");
     outfile << "ASCII Trees\n";
     outfile.close();
+	
+
+void	ShrubberyCreationForm::ShrubberyAction(void) const
+{
+	std::ofstream	out_file;
+
+	out_file.open(this->target + "_shrubbery");
+	if (!out_file.is_open())
+	{
+		std::cerr << "can't create the file " << this->target  << "_shrubbery" << std::endl;
+		throw FileCreationException;
+	}
+	out_file.close();
 }
