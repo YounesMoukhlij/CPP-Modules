@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:39:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:40:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RobotomyRequestForm.hpp" 
 
-RobotomyRequestForm::RobotomyRequestForm(void) : AForm("Robot", 72, 45)
+RobotomyRequestForm::RobotomyRequestForm(void) : AForm("Robot", 0x48, 45)
 {
 	this->_target = "defaultTarget";
 	std::srand(std::time(0x0));
