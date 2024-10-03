@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:42 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:59:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:00:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class RobotomyRequestForm : public AForm
 {
 	private:
-		std::string	target;
+		std::string	_target;
 	public:
 		RobotomyRequestForm(void);
 		RobotomyRequestForm(const std::string);
