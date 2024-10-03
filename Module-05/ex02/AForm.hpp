@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:53:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:53:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ class AForm
 		bool				_indicator;
 		const int			_gradeSign;
 		const int			_gradeExecute;
-	
+	protected:
+		void	exChkecher()
+		
 	public:
 		virtual ~AForm();
 		AForm();
