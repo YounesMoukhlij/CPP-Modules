@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:12:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:12:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,8 @@ void	ShrubberyCreationForm::ShrubberyAction(void) const
 	if (!file.is_open())
 	{
 		std::cerr << "can't create the file " << this->_target  << "_shrubbery" << std::endl;
-		throw FileCreationException;
+		throw FileCreationException();
 	}
-	std::string = generat
 	file << generateAsciiTree();
 	file.close();
 }
