@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 16:50:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:40:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AForm.hpp"
 
-AForm::AForm(void) : _name("Student"), _gradeSign(150), _gradeExecute(150)
+AForm::AForm(void) : _name("Student"), _gradeSign(0x96), _gradeExecute(0x96)
 {
 	std::cout << "AForm Default Constructor Called" << std::endl;
 	this->_indicator = false;
@@ -24,7 +24,7 @@ AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name
 	this->_indicator = false;
 	if (this->_gradeSign < 1 || this->_gradeExecute < 1)
 		throw GradeTooHighException();
-	else if (this->_gradeSign > 150 || this->_gradeSign > 150)
+	else if (this->_gradeSign > 0x96 || this->_gradeSign > 0x96)
 		throw GradeTooLowException();
 }
 
