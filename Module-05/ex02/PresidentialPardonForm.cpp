@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:01:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:02:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ PresidentialPardonForm::PresidentialPardonForm(void) : AForm("PresidentForm", 25
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string _target) : AForm("PresidentForm", 25, 5)
 {
-	this->target = _target;
+	this->_target = _target;
 }
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& PresidentForm) : AForm(PresidentForm.getName(), PresidentForm.getGradeRequiredtoSign(), PresidentForm.getGradeRequiredtoExcute())
@@ -35,7 +35,7 @@ PresidentialPardonForm::~PresidentialPardonForm(void)
 PresidentialPardonForm&  PresidentialPardonForm::operator=(const PresidentialPardonForm& PresidentForm)
 {
 	if (this != &PresidentForm)
-		this->_target = PresidentForm.target;
+		this->_target = PresidentForm._target;
 	return (*this);
 }
 
