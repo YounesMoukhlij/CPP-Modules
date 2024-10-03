@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:17:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:18:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void	Bureaucrat::signForm(AForm& form) const
 	}
 }
 
-void Bureaucrat::executeForm(const AForm& form) const
+void Bureaucrat::executeForm(AForm const & form) const
 {
     try
 	{
