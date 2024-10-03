@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:40:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:43:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name
 {
 	std::cout << "AForm Parameriezed Constructor Called" << std::endl;
 	this->_indicator = false;
-	if (this->_gradeSign < 1 || this->_gradeExecute < 1)
+	if (this->_gradeSign < 0x1 || this->_gradeExecute < 0x1)
 		throw GradeTooHighException();
 	else if (this->_gradeSign > 0x96 || this->_gradeSign > 0x96)
 		throw GradeTooLowException();
