@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:39:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:39:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 
 ShrubberyCreationForm::ShrubberyCreationForm(/* args */)
 {
+	
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm()
 {
-	
+	std::cout << "ShrubberyCreationForm Destructor"<<	
 }
 
 
