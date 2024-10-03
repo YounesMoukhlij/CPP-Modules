@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:46:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:12:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,18 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 
-    try
-	 {
-        Bureaucrat alice("Alice", 10);
-        Form contract("Bouzkri", 30, 20);
+    // try
+	//  {
+    //     Bureaucrat alice("Alice", 10);
+    //     Form contract("Bouzkri", 30, 20);
 
-        std::cout << contract << std::endl;  // Show initial form status
-        alice.signForm(contract);           // Try to sign the form
-        std::cout << contract << std::endl;  // Show updated form statusscre
-    }
-	catch (std::exception& e)
-	{
-        std::cout << "Caught exception: " << e.what() << std::endl;
-    }
+    //     std::cout << contract << std::endl;  // Show initial form status
+    //     alice.signForm(contract);           // Try to sign the form
+    //     std::cout << contract << std::endl;  // Show updated form statusscre
+    // }
+	// catch (std::exception& e)
+	// {
+    //     std::cout << "Caught exception: " << e.what() << std::endl;
+    // }
     return (EXIT_SUCCESS);
 }
