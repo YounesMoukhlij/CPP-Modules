@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 16:49:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:30:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ class AForm
 		const std::string&	getName() const;
 		bool				getIndicator() const;
 		void				beSigned(const Bureaucrat &bur);
+		
 
 };
 
