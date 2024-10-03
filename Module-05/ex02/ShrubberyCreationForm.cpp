@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:07:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:08:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& origin
 
 ShrubberyCreationForm::~ShrubberyCreationForm()
 {
+	std::cout << "Shrubbery Destructor Called" << std::endl;
 	
 }
 
