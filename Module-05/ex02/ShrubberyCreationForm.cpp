@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:03:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:04:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ ShrubberyCreationForm(const std::string& target) : AForm("ShrubberyCreationForm"
 
 void	ShrubberyCreationForm::ShrubberyAction(void) const
 {
-	std::ofstream	out_file;
+	std::ofstream	file;
 
-	out_file.open(this->_target + "_shrubbery");
-	if (!out_file.is_open())
+	file.open(this->_target + "_shrubbery");
+	if (!file.is_open())
 	{
-		std::cerr << "can't create the file " << this->target  << "_shrubbery" << std::endl;
+		std::cerr << "can't create the file " << this->_target  << "_shrubbery" << std::endl;
 		throw FileCreationException;
 	}
-	out_file.close();
+	file.close();
 }
