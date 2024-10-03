@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:38:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:40:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,19 @@ int main(int you, char **nes)
 		return (1);
 	}
 
-    // try {
-    //     Bureaucrat john("John Doe", 2);
-    //     Form taxForm("Tax Form", 3, 5);
+    try
+	 {
+        Bureaucrat alice("Alice", 10);
+        Form contract("Bouzkri", 30, 20);
 
-    //     std::cout << taxForm << std::endl;
-    //     john.signForm(taxForm);
-    //     std::cout << taxForm << std::endl;
-    // }
-    // catch (const std::exception& e) {
-    //     std::cerr << "Exception: " << e.what() << std::endl;
-    // }
+        std::cout << contract << std::endl;  // Show initial form status
+        alice.signForm(contract);           // Try to sign the form
+        std::cout << contract << std::endl;  // Show updated form status
+    }
+	catch (std::exception& e)
+	{
+        std::cout << "Caught exception: " << e.what() << std::endl;
+    }
 
     // try {
     //     Bureaucrat jane("Jane Smith", 150);
@@ -44,6 +46,5 @@ int main(int you, char **nes)
     // catch (const std::exception& e) {
     //     std::cerr << "Exception: " << e.what() << std::endl;
     // }
-
     return 0;
 }

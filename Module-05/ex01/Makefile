@@ -6,21 +6,23 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/01 12:38:40 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/03 16:27:50 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Bureaucrat.cpp
+SRC = main.cpp Bureaucrat.cpp Form.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = Bureaucrat
+NAME = Form
 
-all : ${NAME}
+all : ${NAME} clean play
+play:
+	./Form
 
-%.o : %.cpp Bureaucrat.hpp
+%.o : %.cpp Bureaucrat.hpp Form.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 

@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:56:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 15:51:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 Form::Form(void) : _name("Student"), _gradeSign(150), _gradeExecute(150)
 {
-// 	std::cout << "Form Default Constructor Called" << std::endl;
+	std::cout << "Form Default Constructor Called" << std::endl;
 	this->_indicator = false;
 }
 
-Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(name), _gradeExecute(gradeExecute),  _gradeSign(gradeSigned)
+Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(name), _gradeSign(gradeSigned), _gradeExecute(gradeExecute)
 {
+	std::cout << "Form Parameriezed Constructor Called" << std::endl;
 	this->_indicator = false;
 	if (this->_gradeSign < 1 || this->_gradeExecute < 1)
 		throw GradeTooHighException();
@@ -45,7 +46,7 @@ void	Form::beSigned(const Bureaucrat& bur)
 		throw GradeTooLowException();
 }
 
-Form::Form(const Form& origine)
+Form::Form(const Form& origine) : _name(origine._name), _gradeSign(origine._gradeSign), _gradeExecute(origine._gradeExecute)
 {
 	std::cout << "Form copy Constructor Called" << std::endl;
 	*this = origine;
@@ -65,10 +66,6 @@ const std::string& Form::getName(void) const
 	return (this->_name);
 }
 
-// bool Form::Signed() const
-// {
-// 	return (_indicator);
-// }
 
 int	Form::getGradeSigned(void) const
 {
@@ -79,12 +76,6 @@ int	Form::getGradeExecute(void) const
 {
 	return (this->_gradeExecute);
 }
-
-// std::ostream& operator<<(std::ostream& file, const Form& form)
-// {
-// 	file << "Form " << form.getName() << ", Sign Status: " << (form.Signed() ? "Signed" : "Not Signed") << ", Grade Required to Sign: " << form.getGradeSigned() << ", Grade Required to Execute: " << form.getGradeExecute() << std::endl;
-// 	return file;
-// }
 
 std::ostream& operator<<(std::ostream& file, const Form& form)
 {
@@ -99,4 +90,9 @@ std::ostream& operator<<(std::ostream& file, const Form& form)
 bool	Form::getIndicator() const
 {
 	return (_indicator);
+}
+
+Form::~Form()
+{
+	std::cout << "Form Destructor Called" << std::endl;
 }

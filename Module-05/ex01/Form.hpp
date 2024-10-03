@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 14:38:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 14:44:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ class Form
 	public:
 		~Form();
 		Form();
-		// Form(const Form& origine);
-		Form(const std::string& name, int gradeSigned, int gradeExecute);
+		Form(const std::string& name, int gradeSign, int gradeExecute);
+		Form(const Form& origine);
 		Form& operator=(const Form& origine);
 
 		class GradeTooHighException : public std::exception
@@ -43,7 +43,6 @@ class Form
    		};
 		int					getGradeSigned(void) const;
 		int					getGradeExecute(void) const;
-		bool				Signed(void ) const;
 		const std::string&	getName() const;
 		bool				getIndicator() const;
 		void				beSigned(const Bureaucrat &bur);
