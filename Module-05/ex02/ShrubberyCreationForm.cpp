@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:12:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:12:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ std::string generateAsciiTree()
     tree += "       }|{\n";
     tree += "       }|{\n";
     tree += "       }|{\n";
+    tree += "      -----\n";
 
     return tree;
 }
