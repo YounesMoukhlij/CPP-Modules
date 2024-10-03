@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:20:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:21:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 RobotomyRequestForm::RobotomyRequestForm(void) : AForm("Robot", 72, 45)
 {
-	this->target = "defaultTarget";
+	this->_target = "defaultTarget";
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string _target): AForm("Robot", 72, 45)
 {
-	this->target = _target;
+	this->_target = _target;
 	std::srand(std::time(nullptr));
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& origine) : AForm(origine.getName(), origine.getGradeSigned(), origine.getGradeExecute())
 {
-	*this = Robot;
+	*this = origine;
 	std::srand(std::time(nullptr));
 }
 
@@ -34,7 +34,7 @@ RobotomyRequestForm::~RobotomyRequestForm(void)
 	
 }
 
-RobotomyRequestForm&  RobotomyRequestForm::operator=(const RobotomyRequestForm& Robot)
+RobotomyRequestForm&  RobotomyRequestForm::operator=(const RobotomyRequestForm& origine)
 {
 	if (this != &Robot)
 		this->target = Robot.target;
