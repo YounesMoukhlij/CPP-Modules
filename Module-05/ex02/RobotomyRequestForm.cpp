@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:19:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:20:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string _target): AForm("Robo
 	std::srand(std::time(nullptr));
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& Robot) : AForm(Robot.getName(), Robot.getGradeRequiredtoSign(), Robot.getGradeRequiredtoExcute())
+RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& origine) : AForm(origine.getName(), origine.getGradeSigne(), origine.getGradeRequiredtoExcute())
 {
 	*this = Robot;
 	std::srand(std::time(nullptr));
@@ -57,8 +57,8 @@ void	RobotomyRequestForm::RobotomyRequestFormAction(void) const
 		std::cout << "The robotomy of " << this->target << " failed.\n";
 }
 
-void	RobotomyRequestForm::execute(Bureaucrat const & executor) const
+void	RobotomyRequestForm::execute(Bureaucrat const & bur) const
 {
-	executionCh(executor);
+	executionChecker(bur);
 	RobotomyRequestFormAction();
 }
