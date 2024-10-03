@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 15:51:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:43:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ Form::Form(const Form& origine) : _name(origine._name), _gradeSign(origine._grad
 	std::cout << "Form copy Constructor Called" << std::endl;
 	*this = origine;
 }
-
 
 Form& Form::operator=(const Form& origine)
 {
