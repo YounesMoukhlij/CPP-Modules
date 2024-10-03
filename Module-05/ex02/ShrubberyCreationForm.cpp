@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:03:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:03:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,6 @@ ShrubberyCreationForm(const std::string& target) : AForm("ShrubberyCreationForm"
 			
 
 
-void execute(Bureaucrat const & executor) const
-{
-    validateExecution(executor);
-    std::ofstream outfile(target + "_shrubbery");
-    outfile << "ASCII Trees\n";
-    outfile.close();
-	
 
 void	ShrubberyCreationForm::ShrubberyAction(void) const
 {
