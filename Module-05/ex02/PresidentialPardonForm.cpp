@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:02:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:07:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ PresidentialPardonForm::PresidentialPardonForm(const std::string _target) : AFor
 	this->_target = _target;
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& PresidentForm) : AForm(PresidentForm.getName(), PresidentForm.getGradeRequiredtoSign(), PresidentForm.getGradeRequiredtoExcute())
+PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm& PresidentForm) : AForm(PresidentForm.getName(), PresidentForm.getGradeSigned(), PresidentForm.getGradeExecute())
 {
 	*this = PresidentForm;	
 }
