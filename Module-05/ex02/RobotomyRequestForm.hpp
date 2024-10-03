@@ -6,11 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:42 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:44:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:44:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#include "AForm.hpp"
+
 
 class RobotomyRequestForm : public AForm
 {

@@ -6,11 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:02 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 17:44:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:44:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#include "AForm.hpp"
 
 class PresidentialPardonForm : public AForm
 {
