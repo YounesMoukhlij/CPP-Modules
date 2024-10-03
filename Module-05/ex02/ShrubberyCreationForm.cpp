@@ -6,28 +6,38 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:04:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:04:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm()
+ShrubberyCreationForm::ShrubberyCreationForm(void) : AForm("Shrubbery", 145, 137)
 {
-	std::cout << "ShrubberyCreationForm Default Constructor" << std::endl;	
+	this->_target = "defaultTarget";
 }
 
-ShrubberyCreationForm::~ShrubberyCreationForm()
+ShrubberyCreationForm::ShrubberyCreationForm(const std::string _target): AForm("Shrubbery", 145, 137)
 {
-	std::cout << "ShrubberyCreationForm Destructor" << std::endl;	
+	this->target = _target;
 }
 
+ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& shrubbery) : AForm(shrubbery.getName(), shrubbery.getGradeRequiredtoSign(), shrubbery.getGradeRequiredtoExcute())
+{
+	*this = shrubbery;	
+}
 
-ShrubberyCreationForm(const std::string& target) : AForm("ShrubberyCreationForm", 145, 137), target(_target)
+ShrubberyCreationForm::~ShrubberyCreationForm(void)
 {
 	
 }
-			
+
+ShrubberyCreationForm&  ShrubberyCreationForm::operator=(const ShrubberyCreationForm& shrubbery)
+{
+	if (this != &shrubbery)
+		this->target = shrubbery.target;
+	return (*this);
+}			
 
 
 
