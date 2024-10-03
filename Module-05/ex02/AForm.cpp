@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Form.cpp                                           :+:      :+:    :+:   */
+/*   AForm.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 16:43:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:50:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Form.hpp"
+#include "AForm.hpp"
 
-Form::Form(void) : _name("Student"), _gradeSign(150), _gradeExecute(150)
+AForm::AForm(void) : _name("Student"), _gradeSign(150), _gradeExecute(150)
 {
-	std::cout << "Form Default Constructor Called" << std::endl;
+	std::cout << "AForm Default Constructor Called" << std::endl;
 	this->_indicator = false;
 }
 
-Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(name), _gradeSign(gradeSigned), _gradeExecute(gradeExecute)
+AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name(name), _gradeSign(gradeSigned), _gradeExecute(gradeExecute)
 {
-	std::cout << "Form Parameriezed Constructor Called" << std::endl;
+	std::cout << "AForm Parameriezed Constructor Called" << std::endl;
 	this->_indicator = false;
 	if (this->_gradeSign < 1 || this->_gradeExecute < 1)
 		throw GradeTooHighException();
@@ -28,17 +28,17 @@ Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(n
 		throw GradeTooLowException();
 }
 
-const char* Form::GradeTooHighException::what() const throw()
+const char* AForm::GradeTooHighException::what() const throw()
 {
-	return "Form: Grade too high!";
+	return "AForm: Grade too high!";
 }
 
-const char* Form::GradeTooLowException::what() const throw()
+const char* AForm::GradeTooLowException::what() const throw()
 {
-	return "Form: Grade too low!";
+	return "AForm: Grade too low!";
 }
 
-void	Form::beSigned(const Bureaucrat& bur)
+void	AForm::beSigned(const Bureaucrat& bur)
 {
 	if (bur.getGrade() >= this->_gradeSign)
 		this->_indicator = true;
@@ -46,52 +46,52 @@ void	Form::beSigned(const Bureaucrat& bur)
 		throw GradeTooLowException();
 }
 
-Form::Form(const Form& origine) : _name(origine._name), _gradeSign(origine._gradeSign), _gradeExecute(origine._gradeExecute)
+AForm::AForm(const AForm& origine) : _name(origine._name), _gradeSign(origine._gradeSign), _gradeExecute(origine._gradeExecute)
 {
-	std::cout << "Form copy Constructor Called" << std::endl;
+	std::cout << "AForm copy Constructor Called" << std::endl;
 	*this = origine;
 }
 
-Form& Form::operator=(const Form& origine)
+AForm& AForm::operator=(const AForm& origine)
 {
-	std::cout << "Form copy assignement  Called" << std::endl;
+	std::cout << "AForm copy assignement  Called" << std::endl;
 	if (this != &origine)
 		*this = origine;
 	return (*this);
 }
 
-const std::string& Form::getName(void) const
+const std::string& AForm::getName(void) const
 {
 	return (this->_name);
 }
 
 
-int	Form::getGradeSigned(void) const
+int	AForm::getGradeSigned(void) const
 {
 	return (this->_gradeSign);
 }
 
-int	Form::getGradeExecute(void) const
+int	AForm::getGradeExecute(void) const
 {
 	return (this->_gradeExecute);
 }
 
-std::ostream& operator<<(std::ostream& file, const Form& form)
+std::ostream& operator<<(std::ostream& file, const AForm& AForm)
 {
-    file << "Form: " << form.getName()
-        << ", Signed: " << (form.getIndicator() ? "Yes" : "No")
-        << ", Grade required to sign: " << form.getGradeSigned()
-        << ", Grade required to execute: " << form.getGradeExecute();
+    file << "AForm: " << AForm.getName()
+        << ", Signed: " << (AForm.getIndicator() ? "Yes" : "No")
+        << ", Grade required to sign: " << AForm.getGradeSigned()
+        << ", Grade required to execute: " << AForm.getGradeExecute();
     return file;
 }
 
 
-bool	Form::getIndicator() const
+bool	AForm::getIndicator() const
 {
 	return (_indicator);
 }
 
-Form::~Form()
+AForm::~AForm()
 {
-	std::cout << "Form Destructor Called" << std::endl;
+	std::cout << "AForm Destructor Called" << std::endl;
 }
