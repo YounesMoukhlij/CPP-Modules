@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:18:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:23:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ class Bureaucrat
 		Bureaucrat& operator=(const Bureaucrat& origine);
 		~Bureaucrat();
 	
+		const std::string&	getName() const;
+		int 				getGrade() const ;
+		void				incrementGrade();
+		void				decrementGrade();
+		void				signForm(AForm& form) const;
+		void				executeForm(AForm const & form);
    		class GradeTooHighException : public std::exception
 		{
    			public:
@@ -43,12 +49,6 @@ class Bureaucrat
    			    const char* what() const throw();
    		};
 			
-		const std::string&	getName() const;
-		int 				getGrade() const ;
-		void				incrementGrade();
-		void				decrementGrade();
-		void				signForm(AForm& form) const;
-		void				executeForm(AForm const & form);
 	
 };
 

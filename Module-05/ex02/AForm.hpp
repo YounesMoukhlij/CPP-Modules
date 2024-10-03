@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:23:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:23:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,23 +26,24 @@ class AForm
 	protected:
 		void	executionChecker(const Bureaucrat& bur) const;
 	public:
-		virtual ~AForm();
 		AForm();
-		AForm(const std::string& name, int gradeSign, int gradeExecute);
+		virtual ~AForm();
 		AForm(const AForm& origine);
 		AForm& operator=(const AForm& origine);
+		AForm(const std::string& name, int gradeSign, int gradeExecute);
 
-		class GradeTooHighException : public std::exception
-		{
-   			public:
-   			    const char* what() const throw();
-   		};
 		const std::string&	getName() const;
 		bool				getIndicator() const;
 		int					getGradeSigned(void) const;
 		int					getGradeExecute(void) const;
 		void				beSigned(const Bureaucrat &bur);
 		virtual void		execute(Bureaucrat const & executor) const = 0;
+		
+		class GradeTooHighException : public std::exception
+		{
+   			public:
+   			    const char* what() const throw();
+   		};
 
    		class GradeTooLowException : public std::exception
 		{
