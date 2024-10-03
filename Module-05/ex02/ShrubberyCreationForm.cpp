@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:08:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:11:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,19 @@ ShrubberyCreationForm&  ShrubberyCreationForm::operator=(const ShrubberyCreation
 	return (*this);
 }			
 
+std::string generateAsciiTree() {
+    std::string tree;
 
+    tree += "       ###\n";
+    tree += "      #o###\n";
+    tree += "    #####o###\n";
+    tree += "   #o#\\#|#/###\n";
+    tree += "    ###\\|/#o#\n";
+    tree += "     # }|{  #\n";
+    tree += "       }|{\n";
+
+    return tree;
+}
 
 void	ShrubberyCreationForm::ShrubberyAction(void) const
 {
