@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:52:00 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:07:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:27:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ PresidentialPardonForm&  PresidentialPardonForm::operator=(const PresidentialPar
 
 void	PresidentialPardonForm::PresidentialPardonFormAction(void) const
 {
-	std::cout << this->_target << " has been pardoned." << std::endl;
+	std::cout << this->_target << " has been pardoned by Zaphod Beeblebrox." << std::endl;
 }
 
 void	PresidentialPardonForm::execute(Bureaucrat const & bur) const
