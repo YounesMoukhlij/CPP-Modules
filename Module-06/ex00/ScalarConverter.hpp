@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:03:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:06:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class ScalarConverter
 		ScalarConverter& operator= (const ScalarConverter& origine);
 		
 		static int	getType(const std::string &str);
-		static int	detectType(const std::string &str);
+		static int	typeDetectionOperation(const std::string &str);
 		static int	AnoramlType(const std::string &str);
 		static void	charOperation(const std::string& str);
 		static void	intOperation(const std::string& str);
