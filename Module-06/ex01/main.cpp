@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:32:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:33:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int main(int you, char **nes)
 	
 	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
-	if (deserializedData == &data)
+	try
+	{
+		if (deserializedData == &data)
 	{
 		std::cout << "Operation Done Successfully :)" << std::endl;
 		std::cout << "intValue: " << deserializedData->_intValue << std::endl;
