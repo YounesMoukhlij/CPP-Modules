@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:15:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:15:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ class ScalarConverter
 {
 	public:
 		ScalarConverter() = delete;
-		ScalarConverter(const ScalarConverter& origine);
-		~ScalarConverter();
+		ScalarConverter(const ScalarConverter& origine) = delete;
+		~ScalarConverter() = delete;
 		ScalarConverter& operator= (const ScalarConverter& origine);
 		
 		static int		typeDetectionOperation(const std::string &str);
