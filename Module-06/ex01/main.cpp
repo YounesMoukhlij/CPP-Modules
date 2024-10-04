@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:21:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:23:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,13 @@ int main(int you, char **nes)
 	data.intValue = 78;
 	
 	serialized = Serializer::serialize(&data);
+	if (deserializedData == &data)
+	{
+		std::cout << "intValue: " << serialized->intValue << std::endl;
+		std::cout << "floatValue: " << serialized->floatValue << std::endl;
+		std::cout << "charValue: " << serialized->charValue << std::endl;
+		std::cout << "boolValue: " << serialized->boolValue << std::endl;
+	}
 	deserializedData = Serializer::deserialize(serialized);
 	if (deserializedData == &data)
 	{
