@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:12:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:41:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,45 @@ int main(int you, char **nes)
 		std::cerr << "Program doesn't accepte any arguments" << std::endl;
 		return (EXIT_FAILURE);
 	}
+	try
+	{
+		Bureaucrat bureaucrat("saim", 1);
+		RobotomyRequestForm roboto("roboto");
+		
+		bureaucrat.signForm(roboto);
+		roboto.execute(bureaucrat);
+		std::cout << roboto;
+	}
+	catch (const std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+	
+	try
+	{
+		Bureaucrat bureaucrat("zak", 1);
+		ShrubberyCreationForm shrubbery("shrubbery");
+		bureaucrat.signForm(shrubbery);
+		shrubbery.execute(bureaucrat);
+		std::cout << shrubbery;
+	}
+	catch (const std::exception& e)
+	{
+			std::cerr << e.what() << std::endl;
+	}
 
-    // try
-	//  {
-    //     Bureaucrat alice("Alice", 10);
-    //     Form contract("Bouzkri", 30, 20);
-
-    //     std::cout << contract << std::endl;  // Show initial form status
-    //     alice.signForm(contract);           // Try to sign the form
-    //     std::cout << contract << std::endl;  // Show updated form statusscre
-    // }
-	// catch (std::exception& e)
-	// {
-    //     std::cout << "Caught exception: " << e.what() << std::endl;
-    // }
+	try
+	{
+		std::srand(std::time(nullptr));
+		Bureaucrat bureaucrat("zak", 4);
+		PresidentialPardonForm presidential("presidential");
+		bureaucrat.signForm(presidential);
+		presidential.execute(bureaucrat);
+		std::cout << presidential;
+	}
+	catch (const std::exception& e)
+	{
+			std::cerr << e.what() << std::endl;
+	}
     return (EXIT_SUCCESS);
 }
