@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:08:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:49:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,10 @@
 
 class Intern
 {
-	private:
-		
 	public:
+		~Intern();
 		Intern(void);
 		Intern(const Intern&);
-		~Intern();
-
 		Intern& operator=(const Intern&);
 
 		AForm*	makeForm(const std::string&, const std::string&);
