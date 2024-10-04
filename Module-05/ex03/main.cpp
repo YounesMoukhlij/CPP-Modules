@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:11:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:11:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Bureaucrat.hpp"
 # include "AForm.hpp"
-# include "AForm.hpp"
+# include "Intern.hpp"
 # include "RobotomyRequestForm.hpp"
 # include "ShrubberyCreationForm.hpp"
 # include "PresidentialPardonForm.hpp"
