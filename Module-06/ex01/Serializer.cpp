@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:16:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:16:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,18 @@ Serializer::Serializer(void) {
 	
 }
 
-Serializer::Serializer(const Serializer& _serializer) {
-	if (this != &_serializer)
-		*this = _serializer;
+Serializer::Serializer(const Serializer& o) {
+	if (this != &o)
+		*this = o;
 }
 
 Serializer::~Serializer(void) {
 	
 }
 
-Serializer& Serializer::operator=(const Serializer& _serializer)
+Serializer& Serializer::operator=(const Serializer& origine)
 {
-	if (this != &_serializer)
-	{}
+	(void) origine;
 	return (*this);
 }
 
