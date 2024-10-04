@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:26:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:26:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,9 +74,9 @@ int ScalarConverter::AnoramlType(const std::string& str) {
 int	ScalarConverter::getType(const std::string& str)
 {
 	int indicator = typeDetectionOperation(str);
-	if ( != _STRING_)
-		return (_type);
-	return (AnoramlType(str));
+	if (indicator != _STRING_)
+		return (indicator);
+	return (anonymous(str));
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
