@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:40:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:42:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ Data*	Serializer::deserialize(uintptr_t raw)
 	return (reinterpret_cast<Data*>(raw));
 }
 
-const char* Serializer::what() const throw()
+const char* Serializer::ExceptionSerializer::what() const throw()
 {
 	return ("Serialization and deserialization failed!");
 }
