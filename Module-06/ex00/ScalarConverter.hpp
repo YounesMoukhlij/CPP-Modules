@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:01:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:01:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ class ScalarConverter
 		 void		intOperation(const std::string& str);
 		 void		floatOperation(const std::string& str);
 		 void		doubleOperation(const std::string& str);
-		 void		minusInffOperation(void);
-		 void		plusInffOperation(void);
-		 void		nanOperation(void);
-		 void		stringOperation(void);
+		 void		minusInffOperation(const std::string& str);
+		 void		plusInffOperation(const std::string& str);
+		 void		nanOperation(const std::string& str);
+		 void		stringOperation(const std::string& str);
 		 void 	convert(const std::string& );
 };
