@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:33:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:33:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	while (str[i] >= '0' && str[i] <= '9')
 		i++;
 	printf("i === [%d]\n", i);
+	printf("size === [%lu]\n", str.size());
 	printf("size === [%lu]\n", str.size());
 	if (str[i] == '\0')
 		return (_INT_);
