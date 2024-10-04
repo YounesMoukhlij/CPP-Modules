@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:35:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:35:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Serializer
    			public:
    			    const char* what() const throw()
 				{
-					
+					std::cout << "Serialization and deserialization failed!" << std::endl;
 				}
    		};
 };
