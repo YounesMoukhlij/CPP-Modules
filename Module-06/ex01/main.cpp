@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:29:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:30:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(int you, char **nes)
 	data.boolValue = true;
 	data.charValue = 'c';
 	data.floatValue = 10.56f;
-	data.intValue = 78;
+	data.intValue = 1;
 	
 	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
