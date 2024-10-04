@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:59:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:00:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,12 @@ ScalarConverter::~ScalarConverter(){
 	
 }
 
-ScalarConverter& ScalarConverter::operator=(const ScalarConverter& _scalar){
+ScalarConverter& ScalarConverter::operator=(const ScalarConverter& _scalar)
+{
 	if (this != &_scalar)
 	{
 		
-	}
+
 	return (*this);
 }
 
