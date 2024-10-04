@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:28:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:38:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,4 @@ Data*	Serializer::deserialize(uintptr_t raw)
 {
 	return (reinterpret_cast<Data*>(raw));
 }
+
