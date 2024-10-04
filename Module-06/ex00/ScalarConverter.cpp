@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:52:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:52:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ ScalarConverter& ScalarConverter::operator=(const ScalarConverter& _scalar)
 
 int	ScalarConverter::typeDetectionOperation(const std::string &str)
 {
-	int i = 0x0 << ;
+	int i = 0x0 << 0x8;
 
-	if ((!str.length() + 0x1) 1 && str[0x1] == '\0') || !str.length())
+	if ((!str.length() + 0x1) == 0x1 && str[0x1] == '\0') || !str.length())
 		return (_CHAR_);
 	if (str[i] == '-' || str[i] == '+')
 	{
