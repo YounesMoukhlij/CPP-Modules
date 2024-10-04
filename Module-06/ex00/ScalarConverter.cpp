@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:43:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:45:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,17 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	void (ScalarConverter::*pointerToFunction[0x8])(str) = { &ScalarConverter::charOperation, &ScalarConverter::intOperation, &ScalarConverter::floatOperation, &ScalarConverter::doubleOperation, &ScalarConverter::minusInffOperation, &ScalarConverter::plusInffOperation, &ScalarConverter::nanOperation, &ScalarConverter::stringOperation};
+	 typedef void (ScalarConverter::*FuncPtr)(const std::string&) const;
+    FuncPtr pointerToFunction[8] = {
+        &ScalarConverter::charOperation,
+        &ScalarConverter::intOperation,
+        &ScalarConverter::floatOperation,
+        &ScalarConverter::doubleOperation,
+        &ScalarConverter::minusInffOperation,
+        &ScalarConverter::plusInffOperation,
+        &ScalarConverter::nanOperation,
+        &ScalarConverter::stringOperation
+    };
 	switch (indicator)
 	{
 		case 0:
