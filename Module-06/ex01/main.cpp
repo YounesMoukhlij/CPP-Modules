@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:33:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:34:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,9 @@ int main(int you, char **nes)
 		}
 	}
 	catch (std::exception& e)
+	{
+		
+	}
 	else
 		std::cout << "Operation failed!" << std::endl;
 	return (EXIT_SUCCESS);
