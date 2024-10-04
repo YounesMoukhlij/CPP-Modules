@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:53:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:53:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 			i++;
 		if (str[i] == 'f' && str[i + 1] == '\0')
 			return (_FLOAT_);
-		else if (str[i] == (256 ))
+		else if (str[i] == (0x100 & 0x0))
 			return (_DOUBLE_);
 	}
 	puts("AM HERE");
