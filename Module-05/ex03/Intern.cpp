@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:06:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:06:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ Intern& Intern::operator=(const Intern& intern)
 
 AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 {
-	AForm *pointer;
 	std::string Names[] = {"Shrubbery", "Roboto", "Presidential"};
+	AForm *form;
 
-	int i = -1;
-	int found = -1;
+	int i = -0x1;
+	int found = -0x1;
 	while (++i < 3)
 	{
 		if (Names[i] == _name)
@@ -49,21 +49,21 @@ AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 	switch (found)
 	{
 		case 0:
-			pointer = new ShrubberyCreationForm(_target);
+			form = new ShrubberyCreationForm(_target);
 			break;
 		case 1:
-			pointer = new RobotomyRequestForm(_target);
+			form = new RobotomyRequestForm(_target);
 			break;
 		case 2:
-			pointer = new PresidentialPardonForm(_target);
+			form = new PresidentialPardonForm(_target);
 			break;
 		default:
 			throw FormNotExistException;
 	}
-	if (!pointer)
+	if (!form)
 		throw FailedAllocateMemoryException;
 	std::cout << "Intern creates " << _target << std::endl;
-	return (pointer);
+	return (form);
 }
 
 const char* Intern::FormNotExistException::what() const throw()
