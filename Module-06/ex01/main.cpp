@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:18:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:18:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ int main(int you, char **nes)
 	}
 	else
 		std::cout << "Serialization and deserialization failed!" << std::endl;
-	return (0);
+	return (EXIT_FAILURE);
 }
