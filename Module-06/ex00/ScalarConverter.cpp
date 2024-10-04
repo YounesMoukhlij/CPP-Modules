@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:24:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:25:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ void	printMessage(int mode, char _char, int _int, float _float)
 		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
 		std::cout << "double: " << static_cast<double>(_char) << std::endl;
 	}
-	else if (mode == _FLOAT_)
+	else if (mode == _INT_)
 	{
 		std::cout << "int: " << _int << std::endl;
 		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_int) << "f" << std::endl;
@@ -95,9 +95,6 @@ void	ScalarConverter::charOperation(const std::string& str)
 		std::cout << "char: " << "Non displayable" << std::endl;
 	}
 	printMessage(_CHAR_, _char, 0x0, 0x0);
-	// std::cout << "int: " << static_cast<int>(_char) << std::endl;
-	// std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
-	// std::cout << "double: " << static_cast<double>(_char) << std::endl;
 }
 
 void	ScalarConverter::intOperation(const std::string& str) {
@@ -114,7 +111,7 @@ void	ScalarConverter::intOperation(const std::string& str) {
 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
-	printMessage(_INT_, 0x0, numbe, number);
+	printMessage(_INT_, 0x0, number, 0x0);
 
 }
 
