@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:31:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:32:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const & bur) const
 	try
 	{
 		ShrubberyAction();
-		std::cout << bur.getName() << " executed " << this->target << std::endl;
+		std::cout << bur.getName() << " executed " << this->_target << std::endl;
 	}
 	catch(const std::exception& e)
 	{
