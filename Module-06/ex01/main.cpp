@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:26:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:29:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main(int you, __attributes_void__ char **nes)
 {
+	IGNORE(nes);
 	if (you != 1)
 	{
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
