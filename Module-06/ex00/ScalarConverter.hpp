@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:10:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:11:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 #include <sstream>
 
 
-# define CHAR 0
-# define INT 1
-# define FLOAT 2
-# define DOUBLE 3
-# define MINUSINF 4
-# define PLUSINF 5
-# define NANF 6
-# define STRING 7
+# define _CHAR_ 0
+# define _INT_ 1
+# define _FLOAT_ 2
+# define _DOUBLE_ 3
+# define _MINUSINF_ 4
+# define _PLUSINF_ 5
+# define _NANF_ 6
+# define _STRING_ 7
 
 class ScalarConverter
 {
