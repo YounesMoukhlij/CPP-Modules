@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:59:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:59:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -210,19 +210,19 @@ void	ScalarConverter::convert(const std::string& str) {
 		case 1:
 			intCase(str);
 			break;
-		case _FLOAT:
+		case 2:
 			floatCase(str);
 			break;
-		case _DOUBLE:
+		case 3:
 			doubleCase(str);
 			break;
-		case _MINUSINF:
+		case 4:
 			minusInfAndMinusInffCase();
 			break;
-		case _PLUSINF:
+		case 5:
 			plusInfAndPlusInffCase();
 			break;
-		case _NANF:
+		case 6:
 			nanAndNanfCase();
 			break;
 		default:
