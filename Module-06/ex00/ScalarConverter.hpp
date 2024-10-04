@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:04:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:15:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 class ScalarConverter
 {
 	public:
-		ScalarConverter();
+		ScalarConverter() = delete;
 		ScalarConverter(const ScalarConverter& origine);
 		~ScalarConverter();
 		ScalarConverter& operator= (const ScalarConverter& origine);
