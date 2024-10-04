@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:02:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:02:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ScalarConverter::ScalarConverter()
 {
-	std::cout << "ScalarConverter Destructor called." << std::endl;	
+	std::cout << "ScalarConverter Default Contructor called." << std::endl;	
 }
 
 ScalarConverter::ScalarConverter(const ScalarConverter& _scalar)
