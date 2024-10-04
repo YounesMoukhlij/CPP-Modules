@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:47:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:53:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int main(int you, char **nes)
 {
-	(void)nes;
+	(void) nes;
 	if (you != 0x1)
 	{
 		std::cerr << "Program doesn't accepte any arguments" << std::endl;
