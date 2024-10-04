@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:35:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:35:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void	ScalarConverter::intOperation(const std::string& str)
 	std::stringstream	ssInt(str);
 
 	ssInt >> number;
-	number = std::atoi(str)
+	number = str.;
 	// if (ssInt.fail())
 	// {
 	// 	std::cout << "the number: " << str << " is out of range int" << std::endl;
