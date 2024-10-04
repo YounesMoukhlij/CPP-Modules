@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:26:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:26:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	return (_STRING_);
 }
 
-void	printMessage(int mode, char _char, int _int, float _float)
+void	printMessage(int mode, char _char, int _int, float _float, double _doub)
 {
 	if (mode == _CHAR_)
 	{
@@ -100,7 +100,7 @@ void	ScalarConverter::charOperation(const std::string& str)
 			_char = static_cast<char>(_char - '0');
 		std::cout << "char: " << "Non displayable" << std::endl;
 	}
-	printMessage(_CHAR_, _char, 0x0, 0x0);
+	printMessage(_CHAR_, _char, 0x0, 0x0, 0x0);
 }
 
 void	ScalarConverter::intOperation(const std::string& str)
@@ -118,7 +118,7 @@ void	ScalarConverter::intOperation(const std::string& str)
 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
-	printMessage(_INT_, 0x0, number, 0x0);
+	printMessage(_INT_, 0x0, number, 0x0, 0x0);
 
 }
 
@@ -143,7 +143,7 @@ void	ScalarConverter::floatOperation(const std::string& str) {
 	if (number < std::numeric_limits<int>::min() || number > std::numeric_limits<int>::max())
 		std::cout << "int: out of range" << std::endl;
 	else
-		printfMessage(_FLOAT_, 0x0, 0x0, number);
+		printfMessage(_FLOAT_, 0x0, 0x0, number, 0x0);
 	std::cout << "int: " << static_cast<int> (number) << std::endl;
 	std::cout << "float: " << std::fixed << std::setprecision(1) << number << "f" << std::endl;
 	std::cout << "double: " << static_cast<double>(number) << std::endl;
