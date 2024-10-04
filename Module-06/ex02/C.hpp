@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:48:42 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:50:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:51:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-class C
+class C : public Base
 {
 	public:
 		~C(void);
