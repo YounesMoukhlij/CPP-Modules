@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:23:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:23:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,12 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 void	printMessage(int mode, char _char, int _int, float _float)
 {
 	if (mode == _CHAR_)
-	std::cout << "int: " << static_cast<int>(_char) << std::endl;
-	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
-	std::cout << "double: " << static_cast<double>(_char) << std::endl;
+	{
+		std::cout << "int: " << static_cast<int>(_char) << std::endl;
+		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
+		std::cout << "double: " << static_cast<double>(_char) << std::endl;
+	}
+	else if (mode == _FLOAT_)
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
