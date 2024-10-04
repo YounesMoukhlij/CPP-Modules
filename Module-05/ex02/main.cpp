@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:46:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:46:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,10 @@ int main(int you, char **nes)
 		std::cerr << e.what() << std::endl;
 	}
 	
+    std::cout << "2nd Try" << std::endl;
     std::cout << std::endl;
     std::cout << std::endl;
+	
 	try
 	{
 		Bureaucrat bureaucrat("zak", 1);
