@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:05:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:06:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -186,7 +186,7 @@ void	ScalarConverter::stringOperation(const std::string& str)
 void	ScalarConverter::minusInffOperation(const std::string& str)
 {
 	(void) str;
-	printMessage(_STRING_, 0x0, 0x0, 0x0, 0x0);
+	printMessage(_MINUSINF_, 0x0, 0x0, 0x0, 0x0);
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "-inff" << std::endl;
@@ -196,6 +196,7 @@ void	ScalarConverter::minusInffOperation(const std::string& str)
 void	ScalarConverter::plusInffOperation(const std::string& str)
 {
 	(void) str;
+	printMessage(_MINUSINF_, 0x0, 0x0, 0x0, 0x0);
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "+inff" << std::endl;
