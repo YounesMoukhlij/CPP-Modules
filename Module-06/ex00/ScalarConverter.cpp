@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:35:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:35:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -172,7 +172,7 @@ void	ScalarConverter::minusInffOperation(void)
 	std::cout << "double: " << "-inf" << std::endl;
 }
 
-void	ScalarConverter::plusInfAndPlusInffOperation(void)
+void	ScalarConverter::plusInffOperation(void)
 {
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
@@ -218,7 +218,7 @@ void	ScalarConverter::convert(const std::string& str)
 		// 	doubleOperation(str);
 		// 	break;
 		// case 4:
-		// 	minusInfAndMinusInffCase();
+		// 	minusInffOperation();
 		// 	break;
 		// case 5:
 		// 	plusInfAndPlusInffCase();
