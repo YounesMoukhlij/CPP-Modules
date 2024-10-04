@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:22:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:22:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 	ScalarConverter::convert(static_cast<std::string>(nes[1]));
-	return (0);
+	return (EXIT_SUCCESS);
 }
