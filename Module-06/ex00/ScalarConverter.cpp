@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:02:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:04:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ void	printMessage(int mode, char _char, int _int, float _float, double _double)
 			std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_double) << "f" << std::endl;
 		std::cout << "double: " << _double << std::endl;
 	}
+	else if (mode == )
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
@@ -173,10 +174,7 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 void	ScalarConverter::stringOperation(const std::string& str)
 {
 	(void) str;
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "converter Impossible" << std::endl;
-	std::cout << "double: " << "converter Impossible" << std::endl;
+
 }
 
 void	ScalarConverter::minusInffOperation(const std::string& str)
