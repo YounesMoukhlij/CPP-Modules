@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:01:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:04:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ class ScalarConverter
 		~ScalarConverter();
 		ScalarConverter& operator= (const ScalarConverter& origine);
 		
-		 int		typeDetectionOperation(const std::string &str);
-		 void		charOperation(const std::string& str);
-		 void		intOperation(const std::string& str);
-		 void		floatOperation(const std::string& str);
-		 void		doubleOperation(const std::string& str);
-		 void		minusInffOperation(const std::string& str);
-		 void		plusInffOperation(const std::string& str);
-		 void		nanOperation(const std::string& str);
-		 void		stringOperation(const std::string& str);
-		 void 	convert(const std::string& );
+		static int		typeDetectionOperation(const std::string &str);
+		static void		charOperation(const std::string& str);
+		static void		intOperation(const std::string& str);
+		static void		floatOperation(const std::string& str);
+		static void		doubleOperation(const std::string& str);
+		static void		minusInffOperation(const std::string& str);
+		static void		plusInffOperation(const std::string& str);
+		static void		nanOperation(const std::string& str);
+		static void		stringOperation(const std::string& str);
+		static void 	convert(const std::string& );
 };
