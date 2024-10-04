@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:43:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:43:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,11 @@ int main(int you, char **nes)
 			std::cout << "boolValue: " << deserializedData->_boolValue << std::endl;
 			std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
 		}
-		puts("123");
-		throwSerializer::ExceptionSerializer();
+		else
+			throw Serializer::ExceptionSerializer();
 	}
 	catch (std::exception& younes)
 	{
-		puts("123");
         std::cout << "Caught exception: " << younes.what() << std::endl;
 	}
 	return (EXIT_SUCCESS);
