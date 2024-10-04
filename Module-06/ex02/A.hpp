@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:48:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:52:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:52:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "Base.hpp"
 
-class A : 
+class A : public Base
 {
 	public:
 		~A(void);
