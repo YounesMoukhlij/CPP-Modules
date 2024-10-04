@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:25:30 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:25:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,9 @@ void	printMessage(int mode, char _char, int _int, float _float)
 	}
 	else if (mode == _FLOAT_)
 	{
-
+		std::cout << "int: " << static_cast<int> (_float) << std::endl;
+		std::cout << "float: " << std::fixed << std::setprecision(1) << _float << "f" << std::endl;
+		std::cout << "double: " << static_cast<double>(_float) << std::endl;
 	}
 	else if (mode == _DOUBLE_)
 	{
