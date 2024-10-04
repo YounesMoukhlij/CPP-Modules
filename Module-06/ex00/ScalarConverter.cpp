@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:21:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:21:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,15 +112,14 @@ void	ScalarConverter::charOperation(const std::string& str)
 void	ScalarConverter::intOperation(const std::string& str)
 {
 	int	number;
-	std::stringstream	ssInt(str);
+	// std::stringstream	ssInt(str);
 
-	ssInt >> number;
-	printf("%d")
-	if (ssInt.fail())
-	{
-		std::cout << "the number: " << str << " is out of range int" << std::endl;
-		return ;
-	}
+	// ssInt >> number;
+	// if (ssInt.fail())
+	// {
+	// 	std::cout << "the number: " << str << " is out of range int" << std::endl;
+	// 	return ;
+	// }
 	if (isprint(number))
 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
 	else
