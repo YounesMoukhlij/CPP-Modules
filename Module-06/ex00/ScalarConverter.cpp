@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:19:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:20:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,8 @@ int	ScalarConverter::getType(const std::string& str) {
 	return (AnoramlType(str));
 }
 
-void	ScalarConverter::charOperation(const std::string& str) {
+void	ScalarConverter::charOperation(const std::string& str)
+{
 	char _char;
 
 	_char = static_cast<char>(str[0]);
