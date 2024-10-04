@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:45:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:46:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void	ScalarConverter::charOperation(const std::string& str)
 {
 	char _char;
 
-	_char = static_cast<char>(str[0]);
+	_char = static_cast<char>(str[0 << 8]);
 	if (isprint(_char) && !isdigit(_char))
 		std::cout << "char: '" << _char << "'" << std::endl;
 	else
