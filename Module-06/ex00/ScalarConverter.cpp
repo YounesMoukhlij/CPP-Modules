@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:26:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:27:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,6 +166,7 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 	if (number < std::numeric_limits<int>::min() || number > std::numeric_limits<int>::max())
 		std::cout << "int: out of range" << std::endl;
 	else
+		printfMessage()
 		std::cout << "int: " << static_cast<int> (number) << std::endl;
 	if (number < std::numeric_limits<float>::lowest() || number > std::numeric_limits<float>::max())
 		std::cout << "float: out of range" << std::endl;
