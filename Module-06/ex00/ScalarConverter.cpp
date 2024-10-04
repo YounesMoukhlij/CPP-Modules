@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:41:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:41:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,6 +159,7 @@ void	ScalarConverter::charOperation(const std::string& str)
 
 void	ScalarConverter::stringOperation(std::string& str)
 {
+	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "converter Impossible" << std::endl;
@@ -167,6 +168,7 @@ void	ScalarConverter::stringOperation(std::string& str)
 
 void	ScalarConverter::minusInffOperation(std::string& str)
 {
+	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "-inff" << std::endl;
@@ -184,6 +186,7 @@ void	ScalarConverter::plusInffOperation(std::string& str)
 
 void	ScalarConverter::nanOperation(std::string& str)
 {
+	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "nanf" << std::endl;
