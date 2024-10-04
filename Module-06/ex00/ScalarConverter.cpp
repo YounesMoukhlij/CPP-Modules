@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:23:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:24:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,11 @@ void	printMessage(int mode, char _char, int _int, float _float)
 		std::cout << "double: " << static_cast<double>(_char) << std::endl;
 	}
 	else if (mode == _FLOAT_)
+	{
+			// std::cout << "int: " << number << std::endl;
+	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(number) << "f" << std::endl;
+	std::cout << "double: " << static_cast<double>(number) << std::endl;
+	}
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
@@ -106,9 +111,7 @@ void	ScalarConverter::intOperation(const std::string& str) {
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
 	printMessage(_FLOAT_, 0x0, 0x0, number);
-	// std::cout << "int: " << number << std::endl;
-	// std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(number) << "f" << std::endl;
-	// std::cout << "double: " << static_cast<double>(number) << std::endl;
+
 }
 
 void	ScalarConverter::floatOperation(const std::string& str) {
