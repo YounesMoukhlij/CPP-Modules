@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:51:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:51:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ void	ScalarConverter::intOperation(const std::string& str)
 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
-	printMessage(_INT_, 0 >> 1, number, 1 << 0, 0x0);
+	printMessage(_INT_, 0 >> 1, number, (1 << 0) - 0x1 , 0x0);
 }
 
 void	ScalarConverter::floatOperation(const std::string& str) {
