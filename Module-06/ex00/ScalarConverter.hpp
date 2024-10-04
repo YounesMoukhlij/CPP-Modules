@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:17:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:17:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,6 @@ class ScalarConverter
 		ScalarConverter(const ScalarConverter& origine);
 		~ScalarConverter();
 		ScalarConverter& operator= (const ScalarConverter& origine);		
-		static void 	convert(const std::string& );
+		public :
+			static void 	convert(const std::string& );
 };
