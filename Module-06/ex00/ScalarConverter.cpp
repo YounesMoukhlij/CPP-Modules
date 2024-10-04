@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:30:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:31:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -199,10 +199,11 @@ void	ScalarConverter::charOperation(const std::string& str)
 
 void	ScalarConverter::convert(const std::string& str)
 {
-	int indicator = typeDetectionOperation(str);
+	int indicator;
+	
+	indicator = typeDetectionOperation(str);
 	if (indicator == _STRING_)
-		return (indicator);
-	indicator = anonymousString(str);
+		indicator = anonymousString(str);
 	switch (indicator)
 	{
 		case 0:
