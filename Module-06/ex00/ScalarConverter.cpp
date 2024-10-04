@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:41:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:41:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,7 @@ void	ScalarConverter::intOperation(const std::string& str)
 	_int = std::atoi(str.c_str());
 	if (_int > INT_MAX || _int < INT_MIN)
 	{
-		std::cout << "the _int: " << str << " is out of range int" << std::endl;
+		std::cout << "the number: " << str << " is out of range int" << std::endl;
 		return ;
 	}
 	if (isprint(_int))
@@ -128,27 +128,27 @@ void	ScalarConverter::intOperation(const std::string& str)
 
 void	ScalarConverter::floatOperation(const std::string& str)
 {
-	float	number;
+	float		_float;
 	std::string copyString;
 
 	copyString = str;
 	copyString[copyString.length() - 1] = '\0';
 	std::stringstream	ssFloat(copyString);
 
-	ssFloat >> number;
+	ssFloat >> _float;
 	if (ssFloat.fail())
 	{
 		std::cout << "the number: " << str << " is out of range float" << std::endl;
 		return ;
 	}
-	if (isprint(static_cast<int> (number)))
-		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
+	if (isprint(static_cast<int> (_float)))
+		std::cout << "char: '" << static_cast<char> (_float) << "'" << std::endl;
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
-	if (number < std::numeric_limits<int>::min() || number > std::numeric_limits<int>::max())
+	if (_float < std::numeric_limits<int>::min() || _float > std::numeric_limits<int>::max())
 		std::cout << "int: out of range" << std::endl;
 	else
-		printMessage(_FLOAT_, 0x0 << 0x8, 0x0, number, 0x0);
+		printMessage(_FLOAT_, 0x0 << 0x8, 0x0, _float, 0x0);
 }
 
 void	ScalarConverter::doubleOperation(const std::string& str)
