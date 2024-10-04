@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:43:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:34:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,4 +94,14 @@ bool	AForm::getIndicator() const
 AForm::~AForm()
 {
 	std::cout << "AForm Destructor Called" << std::endl;
+}
+
+
+
+void	AForm::executionChecker(const Bureaucrat& b) const
+{
+	if (!_signed)
+		throw GradeNotSignedException;
+	if (b.getGrade() > this->gradeRequiredtoExcute)
+		throw GradeTooLowException;
 }
