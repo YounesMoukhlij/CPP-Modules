@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:32:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:32:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ int main(int you, char **nes)
 		std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
 	}
 	else
-		std::cout << "Serialization and deserialization failed!" << std::endl;
+		std::cout << "Operation failed!" << std::endl;
 	return (EXIT_SUCCESS);
 }
