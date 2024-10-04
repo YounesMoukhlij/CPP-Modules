@@ -6,13 +6,13 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 18:57:50 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/04 18:58:01 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp A.cpp A.cpp A.cpp
+SRC = main.cpp A.cpp B.cpp C.cpp Base.cpp Tools.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
