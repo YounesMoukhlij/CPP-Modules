@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:28:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:28:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -223,7 +223,7 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	stavoid (*pointerToFunction[_STRING_ + 0x1])(std::string& str) = {
+	void (*pointerToFunction[_STRING_ + 0x1])(const std::string& str) = {
         
 		&ScalarConverter::charOperation,
         &ScalarConverter::intOperation,
