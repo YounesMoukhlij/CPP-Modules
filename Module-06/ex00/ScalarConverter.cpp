@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:02:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:02:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int	ScalarConverter::getType(const std::string& str) {
 	return (AnoramlType(str));
 }
 
-void	ScalarConverter::charCase(const std::string& str) {
+void	ScalarConverter::charOperation(const std::string& str) {
 	char _char;
 
 	_char = static_cast<char>(str[0]);
@@ -98,7 +98,7 @@ void	ScalarConverter::charCase(const std::string& str) {
 	std::cout << "double: " << static_cast<double>(_char) << std::endl;
 }
 
-void	ScalarConverter::intCase(const std::string& str) {
+void	ScalarConverter::intOperation(const std::string& str) {
 	int	number;
 	std::stringstream	ssInt(str);
 
@@ -117,7 +117,7 @@ void	ScalarConverter::intCase(const std::string& str) {
 	std::cout << "double: " << static_cast<double>(number) << std::endl;
 }
 
-void	ScalarConverter::floatCase(const std::string& str) {
+void	ScalarConverter::floatOperation(const std::string& str) {
 	float	number;
 	std::string copyString;
 
@@ -143,7 +143,7 @@ void	ScalarConverter::floatCase(const std::string& str) {
 	std::cout << "double: " << static_cast<double>(number) << std::endl;
 }
 
-void	ScalarConverter::doubleCase(const std::string& str)
+void	ScalarConverter::doubleOperation(const std::string& str)
 {
 	double	number;
 	std::stringstream	ssDouble(str);
@@ -169,7 +169,7 @@ void	ScalarConverter::doubleCase(const std::string& str)
 	std::cout << "double: " << number << std::endl;
 }
 
-// void	ScalarConverter::stringCase(void) {
+// void	ScalarConverter::stringOperation(void) {
 // 	std::cout << "char: " << "converter Impossible" << std::endl;
 // 	std::cout << "int: " << "converter Impossible" << std::endl;
 // 	std::cout << "float: " << "converter Impossible" << std::endl;
