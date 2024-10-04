@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:40:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:40:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,7 +157,7 @@ void	ScalarConverter::charOperation(const std::string& str)
 // 	std::cout << "double: " << number << std::endl;
 // }
 
-void	ScalarConverter::stringOperation(void)
+void	ScalarConverter::stringOperation(str)
 {
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
@@ -175,6 +175,7 @@ void	ScalarConverter::minusInffOperation(void)
 
 void	ScalarConverter::plusInffOperation(void)
 {
+	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "+inff" << std::endl;
@@ -223,12 +224,12 @@ void	ScalarConverter::convert(const std::string& str)
 		// 	minusInffOperation(str);
 		// 	break;
 		// case 5:
-		// 	plusInffOperation();
+		// 	plusInffOperation(str);
 		// 	break;
 		// case 6:
-		// 	nanOperation();
+		// 	nanOperation(str);
 		// 	break;
 		default:
-			stringOperation();
+			stringOperation(str);
 	}
 }
