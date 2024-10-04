@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:40:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:40:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -204,7 +204,7 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	void (ScalarConverter::*pointerToFunction[0x8])(void) = { &ScalarConverter::charOperation, &ScalarConverter::intOperation, &ScalarConverter::floatOperation, &ScalarConverter::doubleOperation, &ScalarConverter::minusInffOperation, &ScalarConverter::plusInffOperation, &ScalarConverter::nanOperation, &ScalarConverter::stringOperation};
+	void (ScalarConverter::*pointerToFunction[0x8])(str) = { &ScalarConverter::charOperation, &ScalarConverter::intOperation, &ScalarConverter::floatOperation, &ScalarConverter::doubleOperation, &ScalarConverter::minusInffOperation, &ScalarConverter::plusInffOperation, &ScalarConverter::nanOperation, &ScalarConverter::stringOperation};
 	switch (indicator)
 	{
 		case 0:
@@ -220,7 +220,7 @@ void	ScalarConverter::convert(const std::string& str)
 		// 	doubleOperation(str);
 		// 	break;
 		// case 4:
-		// 	minusInffOperation();
+		// 	minusInffOperation(str);
 		// 	break;
 		// case 5:
 		// 	plusInffOperation();
