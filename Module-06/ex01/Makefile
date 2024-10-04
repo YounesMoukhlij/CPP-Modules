@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 18:20:06 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/04 18:20:08 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC = main.cpp Serializer.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = convSerializerert
+NAME = Serializer
 
 all : ${NAME} 
 
