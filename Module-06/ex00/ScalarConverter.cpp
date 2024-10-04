@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:25:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:25:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,9 @@ void	printMessage(int mode, char _char, int _int, float _float)
 
 	}
 	else if (mode == _DOUBLE_)
+	{
 
+	}
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
@@ -99,7 +101,8 @@ void	ScalarConverter::charOperation(const std::string& str)
 	printMessage(_CHAR_, _char, 0x0, 0x0);
 }
 
-void	ScalarConverter::intOperation(const std::string& str) {
+void	ScalarConverter::intOperation(const std::string& str)
+{
 	int	number;
 	std::stringstream	ssInt(str);
 
