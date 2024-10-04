@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:58:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:03:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ class ScalarConverter
 		static int	getType(const std::string &str);
 		static int	detectType(const std::string &str);
 		static int	AnoramlType(const std::string &str);
-		static void	charCase(const std::string& str);
-		static void	intCase(const std::string& str);
-		static void	floatCase(const std::string& str);
-		static void	doubleCase(const std::string& str);
-		static void	minusInfAndMinusInffCase(void);
-		static void	plusInfAndPlusInffCase(void);
-		static void	nanAndNanfCase(void);
-		static void	stringCase(void);
+		static void	charOperation(const std::string& str);
+		static void	intOperation(const std::string& str);
+		static void	floatOperation(const std::string& str);
+		static void	doubleOperation(const std::string& str);
+		static void	minusInfAndMinusInffOperation(void);
+		static void	plusInfAndPlusInffOperation(void);
+		static void	nanAndNanfOperation(void);
+		static void	stringOperation(void);
 		static void convert(const std::string& );
 };
