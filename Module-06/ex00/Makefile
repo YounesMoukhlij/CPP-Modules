@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 15:23:50 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/04 15:24:07 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,9 @@ NAME = convert
 
 all : ${NAME} clear
 
+clear :
+	@clear
+	
 %.o : %.cpp ScalarConverter.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
