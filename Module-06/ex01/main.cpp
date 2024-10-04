@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:38:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:42:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,7 @@ int main(int you, char **nes)
 			std::cout << "charValue: " << deserializedData->_charValue << std::endl;
 			std::cout << "boolValue: " << deserializedData->_boolValue << std::endl;
 			std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
-			Serializer::ExceptionSerializer();
 		}
-		else
 			Serializer::ExceptionSerializer();
 	}
 	catch (std::exception& e)
