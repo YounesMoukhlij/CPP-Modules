@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:26:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:26:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 int main(int you, char **nes)
 {
-	(void) nes;
-	if (you != 2)
+	if (you != 1)
 	{
-		std::cerr << "Try: ./convert <arg must be a number>" << std::endl;
+		std::cerr << "The Program Does not " << std::endl;
 		return (EXIT_FAILURE);
 	}
 	uintptr_t	serialized;
