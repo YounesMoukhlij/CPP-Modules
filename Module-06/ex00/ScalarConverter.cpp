@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:24:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:24:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ void	printMessage(int mode, char _char, int _int, float _float)
 		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_int) << "f" << std::endl;
 		std::cout << "double: " << static_cast<double>(_int) << std::endl;
 	}
+	else if (mode == ___mb_cur_max
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
