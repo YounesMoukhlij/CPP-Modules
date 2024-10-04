@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:35:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:36:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,3 +105,4 @@ void	AForm::executionChecker(const Bureaucrat& bur) const
 	if (bur.getGrade() > this->_gradeExecute)
 		throw GradeTooLowException();
 }
+
