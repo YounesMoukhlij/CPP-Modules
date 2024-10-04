@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:05:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:05:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:05:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 #include "RobotomyRequestForm.hpp"
 #include "Intern.hpp"
 
-int main(int ac, char **av)
+int main(int you, char **nes)
 {
-	(void)av;
-	if (ac != 1)
+	(void)nes;
+	if (you != 1)
 	{
 		std::cerr << "the program doesn't accepte any arguments" << std::endl;
 		return (1);
