@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:02:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:03:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,24 +98,24 @@ void	ScalarConverter::charOperation(const std::string& str) {
 	std::cout << "double: " << static_cast<double>(_char) << std::endl;
 }
 
-void	ScalarConverter::intOperation(const std::string& str) {
-	int	number;
-	std::stringstream	ssInt(str);
+// void	ScalarConverter::intOperation(const std::string& str) {
+// 	int	number;
+// 	std::stringstream	ssInt(str);
 
-	ssInt >> number;
-	if (ssInt.fail())
-	{
-		std::cout << "the number: " << str << " is out of range int" << std::endl;
-		return ;
-	}
-	if (isprint(number))
-		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
-	else
-		std::cout << "char: " << "Non displayable" << std::endl;
-	std::cout << "int: " << number << std::endl;
-	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(number) << "f" << std::endl;
-	std::cout << "double: " << static_cast<double>(number) << std::endl;
-}
+// 	ssInt >> number;
+// 	if (ssInt.fail())
+// 	{
+// 		std::cout << "the number: " << str << " is out of range int" << std::endl;
+// 		return ;
+// 	}
+// 	if (isprint(number))
+// 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
+// 	else
+// 		std::cout << "char: " << "Non displayable" << std::endl;
+// 	std::cout << "int: " << number << std::endl;
+// 	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(number) << "f" << std::endl;
+// 	std::cout << "double: " << static_cast<double>(number) << std::endl;
+// }
 
 // void	ScalarConverter::floatOperation(const std::string& str) {
 // 	float	number;
@@ -207,15 +207,15 @@ void	ScalarConverter::convert(const std::string& str) {
 		case 0:
 			charOperation(str);
 			break;
-		case 1:
-			intOperation(str);
-			break;
-		case 2:
-			floatOperation(str);
-			break;
-		case 3:
-			doubleOperation(str);
-			break;
+		// case 1:
+		// 	intOperation(str);
+		// 	break;
+		// case 2:
+		// 	floatOperation(str);
+		// 	break;
+		// case 3:
+		// 	doubleOperation(str);
+		// 	break;
 		// case 4:
 		// 	minusInfAndMinusInffCase();
 		// 	break;
@@ -225,7 +225,7 @@ void	ScalarConverter::convert(const std::string& str) {
 		// case 6:
 		// 	nanAndNanfCase();
 		// 	break;
-		default:
-			stringOperation();
+		// default:
+		// 	stringOperation();
 	}
 }
