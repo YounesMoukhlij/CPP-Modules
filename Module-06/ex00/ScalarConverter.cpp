@@ -6,14 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:02:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:02:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
 
-ScalarConverter::ScalarConverter(){
-	
+ScalarConverter::ScalarConverter()
+{
+	std::cout << "ScalarConverter Destructor called." << std::endl;	
 }
 
 ScalarConverter::ScalarConverter(const ScalarConverter& _scalar)
@@ -24,7 +25,7 @@ ScalarConverter::ScalarConverter(const ScalarConverter& _scalar)
 
 ScalarConverter::~ScalarConverter()
 {
-	std::cout << ""	
+	std::cout << "ScalarConverter Destructor called." << std::endl;	
 }
 
 ScalarConverter& ScalarConverter::operator=(const ScalarConverter& _scalar)
