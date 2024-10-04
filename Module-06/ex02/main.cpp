@@ -6,14 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:58:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:58:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Base.hpp"
 #include "B.hpp"
 #include "A.hpp"
-#include ".hpp"
+#include "C.hpp"
+#include "Tools.hpp"
 
 int main(int you, char **nes)
 {
