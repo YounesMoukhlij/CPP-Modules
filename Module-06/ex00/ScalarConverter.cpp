@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:01:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:02:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,7 +143,8 @@ void	ScalarConverter::floatCase(const std::string& str) {
 	std::cout << "double: " << static_cast<double>(number) << std::endl;
 }
 
-void	ScalarConverter::doubleCase(const std::string& str) {
+void	ScalarConverter::doubleCase(const std::string& str)
+{
 	double	number;
 	std::stringstream	ssDouble(str);
 
@@ -225,6 +226,6 @@ void	ScalarConverter::convert(const std::string& str) {
 		// 	nanAndNanfCase();
 		// 	break;
 		default:
-			stringCase();
+			stringOperation();
 	}
 }
