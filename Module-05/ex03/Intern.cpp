@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:08:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:08:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 
 	int i = -0x1;
 	int checker = -0x1;
-	while (++i < 0x3)
+	for (int i = 0x0; i < 0x3; i++)
 	{
 		if (Names[i] == _name)
 			checker = i;
