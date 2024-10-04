@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:06:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:06:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Intern& Intern::operator=(const Intern& intern)
 AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 {
 	AForm *ptr;
-	std::string classesName[] = {"Shrubbery", "Roboto", "Presidential"};
+	std::string Name[] = {"Shrubbery", "Roboto", "Presidential"};
 
 	int i = -1;
 	int found = -1;
