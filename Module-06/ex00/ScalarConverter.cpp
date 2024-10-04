@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:09:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:09:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ void	printMessage(int mode, char _char, int _int, float _float, double _double)
 		std::cout << "float: " << "+inff" << std::endl;
 		std::cout << "double: " << "+inf" << std::endl;
 	}
-	else if (areEqual(mode = _NANF_)
+	else if (std::areEqual(mode, _NANF_))
 	{
 		std::cout << "char: " << "converter Impossible" << std::endl;
 		std::cout << "int: " << "converter Impossible" << std::endl;
