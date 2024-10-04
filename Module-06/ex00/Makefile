@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 14:53:27 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/04 14:56:23 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC = main.cpp ScalarConverter.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = Converter
+NAME = convert
 
 all : ${NAME}
 
