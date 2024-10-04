@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:37:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:37:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,7 +157,8 @@ void	ScalarConverter::charOperation(const std::string& str)
 // 	std::cout << "double: " << number << std::endl;
 // }
 
-void	ScalarConverter::stringOperation(void) {
+void	ScalarConverter::stringOperation(void)
+{
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "converter Impossible" << std::endl;
