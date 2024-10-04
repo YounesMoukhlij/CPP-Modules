@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:48:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:48:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:49:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 Base::~Base()
 {
-	
+	std::cout << "destructor base class called" << std::endl;
+
 }
