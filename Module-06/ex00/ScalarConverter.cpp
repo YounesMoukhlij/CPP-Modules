@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:50:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:55:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -219,38 +219,30 @@ void	ScalarConverter::convert(const std::string& str)
         &ScalarConverter::nanOperation,
         &ScalarConverter::stringOperation
     };
-	switch (indicator)
-	{
-		case 0:
-			// charOperation(str);
-			(this->*pointerToFunction[0x0](str));
-			break;
-		case 1:
-			(this->*pointerToFunction[0x0](str));
-			// intOperation(str);
-			break;
-		case 2:
-			(this->*pointerToFunction[0x0](str));
-			// floatOperation(str);
-			break;
-		case 3:
-			(this->*pointerToFunction[0x0](str));
-			// doubleOperation(str);
-			break;
-		case 4:
-			(this->*pointerToFunction[0x0](str));
-			// minusInffOperation(str);
-			break;
-		case 5:
-			(this->*pointerToFunction[0x0](str));
-			// plusInffOperation(str);
-			break;
-		case 6:
-			(this->*pointerToFunction[0x0](str));
-			// nanOperation(str);
-			break;
-		default:
-			(this->*pointerToFunction[0x0](str));
-			// stringOperation(str);
-	}
+   switch (indicator) {
+        case _CHAR_:
+            (this->*pointerToFunction[_CHAR_])(str);
+            break;
+        case _INT_:
+            (this->*pointerToFunction[_INT_])(str);
+            break;
+        case _FLOAT_:
+            (this->*pointerToFunction[_FLOAT_])(str);
+            break;
+        case _DOUBLE_:
+            (this->*pointerToFunction[_DOUBLE_])(str);
+            break;
+        case _MINUSINF_:
+            (this->*pointerToFunction[_MINUSINF_])(str);
+            break;
+        case _PLUSINF_:
+            (this->*pointerToFunction[_PLUSINF_])(str);
+            break;
+        case _NANF_:
+            (this->*pointerToFunction[_NANF_])(str);
+            break;
+        default:
+            (this->*pointerToFunction[_STRING_])(str);
+            break;
+    }
 }
