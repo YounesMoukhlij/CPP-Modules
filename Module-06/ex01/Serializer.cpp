@@ -6,9 +6,11 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:14:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:16:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Serializer.hpp"
 
 Serializer::Serializer(void) {
 	
@@ -23,7 +25,8 @@ Serializer::~Serializer(void) {
 	
 }
 
-Serializer& Serializer::operator=(const Serializer& _serializer) {
+Serializer& Serializer::operator=(const Serializer& _serializer)
+{
 	if (this != &_serializer)
 	{}
 	return (*this);
