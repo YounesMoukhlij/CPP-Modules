@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:12:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:13:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,15 +64,15 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	return (_STRING_);
 }
 
-int ScalarConverter::AnoramlType(const std::string& str) {
-	if (!str.compare("-inff") || !str.compare("-inf"))
-		return (_MINUSINF);
-	if (!str.compare("+inff") || !str.compare("+inf"))
-		return (_PLUSINF);
-	if (!str.compare("nanf") || !str.compare("nan"))
-		return (_NANF);
-	return (_STRING);
-}
+// int ScalarConverter::AnoramlType(const std::string& str) {
+// 	if (!str.compare("-inff") || !str.compare("-inf"))
+// 		return (_MINUSINF);
+// 	if (!str.compare("+inff") || !str.compare("+inf"))
+// 		return (_PLUSINF);
+// 	if (!str.compare("nanf") || !str.compare("nan"))
+// 		return (_NANF);
+// 	return (_STRING);
+// }
 
 int	ScalarConverter::getType(const std::string& str) {
 	int	_type;
