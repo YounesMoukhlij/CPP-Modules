@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:36:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:41:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,8 @@ void	ScalarConverter::intOperation(const std::string& str)
 	printMessage(_INT_, 0 >> 1, _int, (1 << 0) - 0x1 , 0x0);
 }
 
-void	ScalarConverter::floatOperation(const std::string& str) {
+void	ScalarConverter::floatOperation(const std::string& str)
+{
 	float	number;
 	std::string copyString;
 
