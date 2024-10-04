@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:49:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:49:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,7 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	void (ScalarConverter::*pointerToFunction)(const std::string&) = {
+	void (ScalarConverter::*pointerToFunction[0x8])(const std::string&) = {
         
 		&ScalarConverter::charOperation,
         &ScalarConverter::intOperation,
