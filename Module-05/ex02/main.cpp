@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:46:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:47:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(int you, char **nes)
     std::cout << std::endl;
 	try
 	{
-		Bureaucrat bureaucrat("oooooo", 1);
+		Bureaucrat bureaucrat("Mrana", 1);
 		RobotomyRequestForm roboto("roboto");
 		
 		bureaucrat.signForm(roboto);
@@ -46,7 +46,7 @@ int main(int you, char **nes)
 	
 	try
 	{
-		Bureaucrat bureaucrat("zak", 1);
+		Bureaucrat bureaucrat("Younes", 1);
 		ShrubberyCreationForm shrubbery("shrubbery");
 		bureaucrat.signForm(shrubbery);
 		shrubbery.execute(bureaucrat);
@@ -64,7 +64,7 @@ int main(int you, char **nes)
 	try
 	{
 		std::srand(std::time(nullptr));
-		Bureaucrat bureaucrat("zak", 4);
+		Bureaucrat bureaucrat("YOUNAN", 4);
 		PresidentialPardonForm presidential("presidential");
 		bureaucrat.signForm(presidential);
 		presidential.execute(bureaucrat);
