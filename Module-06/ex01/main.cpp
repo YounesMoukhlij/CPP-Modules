@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:34:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:34:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,12 @@ int main(int you, char **nes)
 			std::cout << "boolValue: " << deserializedData->_boolValue << std::endl;
 			std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
 		}
+		else
+			throw ();
 	}
 	catch (std::exception& e)
 	{
-		
+        std::cout << "Caught exception: " << e.what() << std::endl;
 	}
 	else
 		std::cout << "Operation failed!" << std::endl;
