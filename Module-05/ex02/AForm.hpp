@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:15 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:29:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:37:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,12 @@ class AForm
    			public:
    			    const char* what() const throw();
    		};
+		
+		class	GradeNotSignedException : public std::exception
+		{
+			public:
+				const char *what() const throw();
+		};
 
 };
 
