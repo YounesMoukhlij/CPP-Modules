@@ -6,11 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:48:42 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:51:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:51:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+
+#include "Base.hpp"
 
 class C : public Base
 {
