@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:10:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:10:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,25 +41,25 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	if (str[i] == '-' || str[i] == '+')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
-		return (STRN);
+		return (STRING);
 	while (isdigit(str[i]))
 		i++;
 	if (str[i] == '\0')
-		return (_INT);
+		return (INT);
 	else if (str[i] == '.')
 	{
 		i++;
 		while (isdigit(str[i]))
 			i++;
 		if (str[i] == 'f' && str[i + 1] == '\0')
-			return (_FLOAT);
+			return (FLOAT);
 		else
 		{
 			if (str[i] == '\0')
-				return (_DOUBLE);
+				return (DOUBLE);
 		}
 	}
-	return (_STRING);
+	return (STRING);
 }
 
 int ScalarConverter::AnoramlType(const std::string& str) {
