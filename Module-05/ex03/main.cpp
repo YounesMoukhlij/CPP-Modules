@@ -6,11 +6,12 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:11:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:11:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Bureaucrat.hpp"
+# include "AForm.hpp"
 # include "AForm.hpp"
 # include "RobotomyRequestForm.hpp"
 # include "ShrubberyCreationForm.hpp"
@@ -33,7 +34,7 @@ int main(int you, char **nes)
 		AForm *form1;
 		AForm *form2;
 		form1 = intern.makeForm("Roboto", "Bender");
-		form2 = intern.makeForm("Shrubbery", "saim");
+		form2 = intern.makeForm("Shrubbery", "Mr");
 		try
 		{
 			bureaucrat.signForm(*form1);
