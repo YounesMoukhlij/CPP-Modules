@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:27:30 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:27:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,11 @@ void	printMessage(int mode, char _char, int _int, float _float, double _double)
 	else if (mode == _DOUBLE_)
 	{
 		std::cout << "int: " << static_cast<int> (_double) << std::endl;
-		std::cout << "float: " << std::fixed << std::setprecision(1) << _double << "f" << std::endl;
-		std::cout << "double: " << static_cast<double>(_double) << std::endl;
+		if (_double < std::numeric_limits<float>::lowest() || _double > std::numeric_limits<float>::max())
+			std::cout << "float: out of range" << std::endl;
+		else
+			std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_double) << "f" << std::endl;
+		std::cout << "double: " << _double << std::endl;
 	}
 }
 
