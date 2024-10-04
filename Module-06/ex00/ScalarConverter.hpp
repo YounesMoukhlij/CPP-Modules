@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:16:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:17:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,6 @@
 class ScalarConverter
 {
 	private:
-	public:
-		ScalarConverter();
-		ScalarConverter(const ScalarConverter& origine);
-		~ScalarConverter();
-		ScalarConverter& operator= (const ScalarConverter& origine);
-		
 		static int		typeDetectionOperation(const std::string &str);
 		static void		charOperation(const std::string& str);
 		static void		intOperation(const std::string& str);
@@ -44,5 +38,9 @@ class ScalarConverter
 		static void		plusInffOperation(const std::string& str);
 		static void		nanOperation(const std::string& str);
 		static void		stringOperation(const std::string& str);
+		ScalarConverter();
+		ScalarConverter(const ScalarConverter& origine);
+		~ScalarConverter();
+		ScalarConverter& operator= (const ScalarConverter& origine);		
 		static void 	convert(const std::string& );
 };
