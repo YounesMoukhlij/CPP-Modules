@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:27:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:27:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,7 +170,6 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 		std::cout << "int: out of range" << std::endl;
 	else
 		printfMessage(_DOUBLE_, 0x0, 0x0, 0x0, number);
-	
 }
 
 void	ScalarConverter::stringOperation(const std::string& str)
