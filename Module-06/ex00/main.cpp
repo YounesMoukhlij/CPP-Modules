@@ -6,21 +6,21 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:55:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:55:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
 
-int main(int ac, char **av)
+int main(int you, char **n)
 {
-	(void)av;
+	(void)n;
 
-	if (ac != 2)
+	if (you != 2)
 	{
-		std::cerr << "Error usage: ./convert arg" << std::endl;
+		std::cerr << "Error usage: ./Converter arg" << std::endl;
 		return (1);
 	}
-	ScalarConverter::convert(static_cast<std::string>(av[1]));
+	ScalarConverter::convert(static_cast<std::string>(n[1]));
 	return (0);
 }
