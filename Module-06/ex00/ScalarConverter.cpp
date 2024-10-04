@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:26:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:26:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,9 +146,6 @@ void	ScalarConverter::floatOperation(const std::string& str) {
 		std::cout << "int: out of range" << std::endl;
 	else
 		printfMessage(_FLOAT_, 0x0, 0x0, number, 0x0);
-	std::cout << "int: " << static_cast<int> (number) << std::endl;
-	std::cout << "float: " << std::fixed << std::setprecision(1) << number << "f" << std::endl;
-	std::cout << "double: " << static_cast<double>(number) << std::endl;
 }
 
 void	ScalarConverter::doubleOperation(const std::string& str)
