@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:36:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:36:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class Serializer
 		~Serializer();
 		static uintptr_t serialize(Data* ptr);
 		static Data* deserialize(uintptr_t raw);
+		
 		class ExceptionSerializer : public std::exception
 		{
    			public:
