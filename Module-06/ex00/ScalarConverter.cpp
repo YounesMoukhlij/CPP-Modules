@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:06:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:06:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ void	printMessage(int mode, char _char, int _int, float _float, double _double)
 		std::cout << "float: " << "converter Impossible" << std::endl;
 		std::cout << "double: " << "converter Impossible" << std::endl;
 	}
+	else if (mode )
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
@@ -187,16 +188,13 @@ void	ScalarConverter::minusInffOperation(const std::string& str)
 {
 	(void) str;
 	printMessage(_MINUSINF_, 0x0, 0x0, 0x0, 0x0);
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "-inff" << std::endl;
-	std::cout << "double: " << "-inf" << std::endl;
+
 }
 
 void	ScalarConverter::plusInffOperation(const std::string& str)
 {
 	(void) str;
-	printMessage(_MINUSINF_, 0x0, 0x0, 0x0, 0x0);
+	printMessage(_PLUSINF_, 0x0, 0x0, 0x0, 0x0);
 	std::cout << "char: " << "converter Impossible" << std::endl;
 	std::cout << "int: " << "converter Impossible" << std::endl;
 	std::cout << "float: " << "+inff" << std::endl;
