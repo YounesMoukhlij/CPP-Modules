@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:05:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:05:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,6 +180,7 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 void	ScalarConverter::stringOperation(const std::string& str)
 {
 	(void) str;
+	printMessage(_STRING)
 
 }
 
