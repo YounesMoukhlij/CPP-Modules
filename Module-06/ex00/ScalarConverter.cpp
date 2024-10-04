@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:55:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:55:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,7 +133,7 @@ void	ScalarConverter::floatOperation(const std::string& str)
 
 	copyString = str;
 	// copyString[copyString.length() - 1] = '\0';
-	std::stringstream	str_(copyString);
+	std::stringstream	strToFloat(copyString);
 
 	ssFloat >> _float;
 	if (ssFloat.fail())
