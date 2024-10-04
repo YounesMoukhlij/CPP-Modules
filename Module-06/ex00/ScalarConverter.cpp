@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:55:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:56:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,11 +131,11 @@ void	ScalarConverter::floatOperation(const std::string& str)
 	float		_float;
 	std::string copyString;
 
-	copyString = str;
+	// copyString = str;
 	// copyString[copyString.length() - 1] = '\0';
-	std::stringstream	strToFloat(copyString);
+	std::stringstream	strToFloat(str);
 
-	ssFloat >> _float;
+	strToFloat >> _float;
 	if (ssFloat.fail())
 	{
 		std::cout << "the number: " << str << " is out of range float" << std::endl;
