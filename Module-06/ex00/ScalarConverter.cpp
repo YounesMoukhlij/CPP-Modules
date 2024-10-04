@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:48:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:49:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,9 +208,9 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	void (ScalarConverter::*pointerToFunction)(const std::string&);
-    *pointerToFunction[8] = {
-        &ScalarConverter::charOperation,
+	void (ScalarConverter::*pointerToFunction)(const std::string&) = {
+        
+		&ScalarConverter::charOperation,
         &ScalarConverter::intOperation,
         &ScalarConverter::floatOperation,
         &ScalarConverter::doubleOperation,
@@ -225,24 +225,24 @@ void	ScalarConverter::convert(const std::string& str)
 			// charOperation(str);
 			(this->*pointerToFunction[0x0](str));
 			break;
-		// case 1:
-		// 	intOperation(str);
-		// 	break;
-		// case 2:
-		// 	floatOperation(str);
-		// 	break;
-		// case 3:
-		// 	doubleOperation(str);
-		// 	break;
-		// case 4:
-		// 	minusInffOperation(str);
-		// 	break;
-		// case 5:
-		// 	plusInffOperation(str);
-		// 	break;
-		// case 6:
-		// 	nanOperation(str);
-		// 	break;
+		case 1:
+			intOperation(str);
+			break;
+		case 2:
+			floatOperation(str);
+			break;
+		case 3:
+			doubleOperation(str);
+			break;
+		case 4:
+			minusInffOperation(str);
+			break;
+		case 5:
+			plusInffOperation(str);
+			break;
+		case 6:
+			nanOperation(str);
+			break;
 		default:
 			stringOperation(str);
 	}
