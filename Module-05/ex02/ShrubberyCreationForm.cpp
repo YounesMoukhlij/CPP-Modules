@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:31:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:31:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,13 +74,13 @@ void	ShrubberyCreationForm::ShrubberyAction(void) const
 	file.close();
 }
 
-void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const
+void	ShrubberyCreationForm::execute(Bureaucrat const & bur) const
 {
-	checkExecution(executor);
+	executionChecker(bur);
 	try
 	{
 		ShrubberyAction();
-		std::cout << executor.getName() << " executed " << this->target << std::endl;
+		std::cout << bur.getName() << " executed " << this->target << std::endl;
 	}
 	catch(const std::exception& e)
 	{
