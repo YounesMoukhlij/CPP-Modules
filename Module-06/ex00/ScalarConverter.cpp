@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:26:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:26:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	return (_STRING_);
 }
 
-int ScalarConverter::AnoramlType(const std::string& str) {
+int ScalarConverter::anonymousString(const std::string& str)
+{
 	if (!str.compare("-inff") || !str.compare("-inf"))
 		return (_MINUSINF_);
 	if (!str.compare("+inff") || !str.compare("+inf"))
