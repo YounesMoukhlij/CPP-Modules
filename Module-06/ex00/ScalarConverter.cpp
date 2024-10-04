@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:03:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:03:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,7 +157,7 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 	std::cout << "double: " << number << std::endl;
 }
 
-void	ScalarConverter::stringOperation(std::string& str)
+void	ScalarConverter::stringOperation(const std::string& str)
 {
 	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
@@ -166,7 +166,7 @@ void	ScalarConverter::stringOperation(std::string& str)
 	std::cout << "double: " << "converter Impossible" << std::endl;
 }
 
-void	ScalarConverter::minusInffOperation(std::string& str)
+void	ScalarConverter::minusInffOperation(const std::string& str)
 {
 	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
@@ -175,7 +175,7 @@ void	ScalarConverter::minusInffOperation(std::string& str)
 	std::cout << "double: " << "-inf" << std::endl;
 }
 
-void	ScalarConverter::plusInffOperation(std::string& str)
+void	ScalarConverter::plusInffOperation(const std::string& str)
 {
 	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
@@ -184,7 +184,7 @@ void	ScalarConverter::plusInffOperation(std::string& str)
 	std::cout << "double: " << "+inf" << std::endl;
 }
 
-void	ScalarConverter::nanOperation(std::string& str)
+void	ScalarConverter::nanOperation(const std::string& str)
 {
 	(void) str;
 	std::cout << "char: " << "converter Impossible" << std::endl;
