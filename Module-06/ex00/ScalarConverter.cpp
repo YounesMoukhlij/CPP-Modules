@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:01:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:01:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,33 +168,33 @@ void	ScalarConverter::doubleCase(const std::string& str) {
 	std::cout << "double: " << number << std::endl;
 }
 
-void	ScalarConverter::stringCase(void) {
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "converter Impossible" << std::endl;
-	std::cout << "double: " << "converter Impossible" << std::endl;
-}
+// void	ScalarConverter::stringCase(void) {
+// 	std::cout << "char: " << "converter Impossible" << std::endl;
+// 	std::cout << "int: " << "converter Impossible" << std::endl;
+// 	std::cout << "float: " << "converter Impossible" << std::endl;
+// 	std::cout << "double: " << "converter Impossible" << std::endl;
+// }
 
-void	ScalarConverter::minusInfAndMinusInffCase(void) {
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "-inff" << std::endl;
-	std::cout << "double: " << "-inf" << std::endl;
-}
+// void	ScalarConverter::minusInfAndMinusInffCase(void) {
+// 	std::cout << "char: " << "converter Impossible" << std::endl;
+// 	std::cout << "int: " << "converter Impossible" << std::endl;
+// 	std::cout << "float: " << "-inff" << std::endl;
+// 	std::cout << "double: " << "-inf" << std::endl;
+// }
 
-void	ScalarConverter::plusInfAndPlusInffCase(void) {
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "+inff" << std::endl;
-	std::cout << "double: " << "+inf" << std::endl;
-}
+// void	ScalarConverter::plusInfAndPlusInffCase(void) {
+// 	std::cout << "char: " << "converter Impossible" << std::endl;
+// 	std::cout << "int: " << "converter Impossible" << std::endl;
+// 	std::cout << "float: " << "+inff" << std::endl;
+// 	std::cout << "double: " << "+inf" << std::endl;
+// }
 
-void	ScalarConverter::nanAndNanfCase(void) {
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "nanf" << std::endl;
-	std::cout << "double: " << "nan" << std::endl;
-}
+// void	ScalarConverter::nanAndNanfCase(void) {
+// 	std::cout << "char: " << "converter Impossible" << std::endl;
+// 	std::cout << "int: " << "converter Impossible" << std::endl;
+// 	std::cout << "float: " << "nanf" << std::endl;
+// 	std::cout << "double: " << "nan" << std::endl;
+// }
 
 void	ScalarConverter::convert(const std::string& str) {
 	
@@ -215,15 +215,15 @@ void	ScalarConverter::convert(const std::string& str) {
 		case 3:
 			doubleOperation(str);
 			break;
-		case 4:
-			minusInfAndMinusInffCase();
-			break;
-		case 5:
-			plusInfAndPlusInffCase();
-			break;
-		case 6:
-			nanAndNanfCase();
-			break;
+		// case 4:
+		// 	minusInfAndMinusInffCase();
+		// 	break;
+		// case 5:
+		// 	plusInfAndPlusInffCase();
+		// 	break;
+		// case 6:
+		// 	nanAndNanfCase();
+		// 	break;
 		default:
 			stringCase();
 	}
