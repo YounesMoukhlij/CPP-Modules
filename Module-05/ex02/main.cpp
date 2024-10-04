@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:46:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:46:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,19 +56,23 @@ int main(int you, char **nes)
 	{
 			std::cerr << e.what() << std::endl;
 	}
+	
+	std::cout << std::endl;
+	std::cout << std::endl;
+    std::cout << "3rd Try" << std::endl;
 
-	// try
-	// {
-	// 	std::srand(std::time(nullptr));
-	// 	Bureaucrat bureaucrat("zak", 4);
-	// 	PresidentialPardonForm presidential("presidential");
-	// 	bureaucrat.signForm(presidential);
-	// 	presidential.execute(bureaucrat);
-	// 	std::cout << presidential;
-	// }
-	// catch (const std::exception& e)
-	// {
-	// 		std::cerr << e.what() << std::endl;
-	// }
+	try
+	{
+		std::srand(std::time(nullptr));
+		Bureaucrat bureaucrat("zak", 4);
+		PresidentialPardonForm presidential("presidential");
+		bureaucrat.signForm(presidential);
+		presidential.execute(bureaucrat);
+		std::cout << presidential;
+	}
+	catch (const std::exception& e)
+	{
+			std::cerr << e.what() << std::endl;
+	}
     return (EXIT_SUCCESS);
 }
