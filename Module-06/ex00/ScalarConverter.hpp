@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:36:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:36:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ class ScalarConverter
 		static int		typeDetectionOperation(const std::string &str);
 		static int		anonymousString(const std::string &str);
 		static void	charOperation(const std::string& str);
-		static void	intOperation(const std::string& str);
-		static void	floatOperation(const std::string& str);
-		static void	doubleOperation(const std::string& str);
-		void	minusInffOperation(void);
-		void	plusInfOperation(void);
-		void	nanOperation(void);
+		static void		intOperation(const std::string& str);
+		static void		floatOperation(const std::string& str);
+		static void		doubleOperation(const std::string& str);
+		static void		minusInffOperation(void);
+		static void		plusInfOperation(void);
+		static void		nanOperation(void);
 		static void	stringOperation(void);
 		static void 	convert(const std::string& );
 };
