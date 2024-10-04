@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:31:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:32:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -205,14 +205,13 @@ void	ScalarConverter::convert(const std::string& str)
 	if (indicator == _STRING_)
 	{
 		if (!str.compare("+inff") || !str.compare("+inf"))
-			indicator = _PLUSINF_);
+			indicator = _PLUSINF_;
 		if (!str.compare("nanf") || !str.compare("nan"))
-			indicator = _NANF_);
+			indicator = _NANF_;
 		if (!str.compare("-inff") || !str.compare("-inf"))
-			indicator = _MINUSINF_);
-		indicator = _STRING_);
+			indicator = _MINUSINF_;
+		indicator = _STRING_;
 	}
-		indicator = anonymousString(str);
 	switch (indicator)
 	{
 		case 0:
