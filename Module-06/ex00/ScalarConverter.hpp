@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:06:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:08:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,15 @@
 #include <exception>
 #include <sstream>
 
-typedef enum s_type{
-	_CHAR,
-	_INT,
-	_FLOAT,
-	_DOUBLE,
-	_MINUSINF,
-	_PLUSINF,
-	_NANF,
-	_STRING
-}	t_type;
+
+	#define _CHAR,
+	#define _INT,
+	#define _FLOAT,
+	#define _DOUBLE,
+	#define _MINUSINF,
+	#define _PLUSINF,
+	#define _NANF,
+	#define _STRING
 
 class ScalarConverter
 {
