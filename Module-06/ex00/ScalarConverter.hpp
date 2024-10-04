@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:11:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:20:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ class ScalarConverter
 		// void	plusInfAndPlusInffOperation(void);
 		// void	nanAndNanfOperation(void);
 		void	stringOperation(void);
-		void 	convert(const std::string& );
+		static void 	convert(const std::string& );
 };
