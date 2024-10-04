@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:36:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:37:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,6 @@ AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name
 		throw GradeTooLowException();
 }
 
-const char* AForm::GradeTooHighException::what() const throw()
-{
-	return "AForm: Grade too high!";
-}
-
-const char* AForm::GradeTooLowException::what() const throw()
-{
-	return "AForm: Grade too low!";
-}
 
 void	AForm::beSigned(const Bureaucrat& bur)
 {
