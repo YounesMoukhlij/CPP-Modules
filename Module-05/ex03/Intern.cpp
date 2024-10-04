@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:06:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:07:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ const char* Intern::FormNotExistException::what() const throw()
 	return ("Form not found!");
 }
 
-const char* Intern::FailedAllocateMemoryException::what() const throw()
+const char* Intern::MemoryFailedAllocationException::what() const throw()
 {
 	return ("Failed to allocate memory!");
 }
