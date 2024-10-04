@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:47:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:47:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,7 @@ void	ScalarConverter::convert(const std::string& str)
 			indicator = _MINUSINF_;
 		indicator = _STRING_;
 	}
-	 typedef void (ScalarConverter::*FuncPtr)(const std::string&) const;
+	typedef void (ScalarConverter::*FuncPtr)(const std::string&) const;
     FuncPtr pointerToFunction[8] = {
         &ScalarConverter::charOperation,
         &ScalarConverter::intOperation,
