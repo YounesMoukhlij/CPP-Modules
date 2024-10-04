@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:20:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:20:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,12 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	return (_STRING_);
 }
 
-// void	printMessage(int mode)
-// {
-// 	std::cout << "int: " << static_cast<int>(_char) << std::endl;
-// 	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
-// 	std::cout << "double: " << static_cast<double>(_char) << std::endl;
-// }
+void	printMessage(int mode)
+{
+	std::cout << "int: " << static_cast<int>(_char) << std::endl;
+	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(_char) << "f" << std::endl;
+	std::cout << "double: " << static_cast<double>(_char) << std::endl;
+}
 
 void	ScalarConverter::charOperation(const std::string& str)
 {
