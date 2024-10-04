@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:37:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:01:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ class ScalarConverter
 		~ScalarConverter();
 		ScalarConverter& operator= (const ScalarConverter& origine);
 		
-		static int		typeDetectionOperation(const std::string &str);
-		static void		charOperation(const std::string& str);
-		static void		intOperation(const std::string& str);
-		static void		floatOperation(const std::string& str);
-		static void		doubleOperation(const std::string& str);
-		static void		minusInffOperation(void);
-		static void		plusInffOperation(void);
-		static void		nanOperation(void);
-		static void		stringOperation(void);
-		static void 	convert(const std::string& );
+		 int		typeDetectionOperation(const std::string &str);
+		 void		charOperation(const std::string& str);
+		 void		intOperation(const std::string& str);
+		 void		floatOperation(const std::string& str);
+		 void		doubleOperation(const std::string& str);
+		 void		minusInffOperation(void);
+		 void		plusInffOperation(void);
+		 void		nanOperation(void);
+		 void		stringOperation(void);
+		 void 	convert(const std::string& );
 };
