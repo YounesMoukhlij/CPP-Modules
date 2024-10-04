@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:18:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:18:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,19 @@ int main(int you, char **nes)
 		std::cerr << "Try: ./convert <arg must be a number>" << std::endl;
 		return (EXIT_FAILURE);
 	}
-	Data originalData;
+	Data data;
 	uintptr_t serialized;
 	Data* deserializedData;
 	
-	originalData.boolValue = true;
-	originalData.charValue = 'c';
-	originalData.floatValue = 10.56f;
-	originalData.intValue = 78;
-	serialized = Serializer::serialize(&originalData);
+	// inialisation.
+	data.boolValue = true;
+	data.charValue = 'c';
+	data.floatValue = 10.56f;
+	data.intValue = 78;
+	
+	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
-	if (deserializedData == &originalData)
+	if (deserializedData == &data)
 	{
 		std::cout << "Serialization and deserialization successful!" << std::endl;
 		std::cout << "intValue: " << deserializedData->intValue << std::endl;
