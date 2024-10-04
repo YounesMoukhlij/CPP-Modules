@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:02:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:02:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ class Intern
 	public:
 		Intern(/* args */);
 		~Intern();
-		nakeFo
+		nakeForm(std:);
 };
