@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:30:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:31:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,19 @@ int main(int you, char **nes)
 	Data 		data;
 	
 	// inialisation.
-	data.boolValue = false;
-	data.charValue = 'h';
-	data.floatValue = 199.442f;
-	data.intValue = 13;
+	data._boolValue = false;
+	data._charValue = 'h';
+	data._floatValue = 199.442f;
+	data._intValue = 13;
 	
 	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
 	if (deserializedData == &data)
 	{
-		std::cout << "intValue: " << deserializedData->intValue << std::endl;
-		std::cout << "floatValue: " << deserializedData->floatValue << std::endl;
-		std::cout << "charValue: " << deserializedData->charValue << std::endl;
-		std::cout << "boolValue: " << deserializedData->boolValue << std::endl;
+		std::cout << "intValue: " << deserializedData->_intValue << std::endl;
+		std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
+		std::cout << "charValue: " << deserializedData->_charValue << std::endl;
+		std::cout << "boolValue: " << deserializedData->_boolValue << std::endl;
 	}
 	else
 		std::cout << "Serialization and deserialization failed!" << std::endl;
