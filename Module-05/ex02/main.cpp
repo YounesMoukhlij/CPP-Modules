@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:53:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:55:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(int you, char **nes)
     std::cout << std::endl;
 	try
 	{
-		Bureaucrat bureaucrat("Mr", 1);
+		Bureaucrat bureaucrat("Mr", );
 		RobotomyRequestForm roboto("roboto");
 		
 		bureaucrat.signForm(roboto);
