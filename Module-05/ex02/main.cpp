@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:44:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:45:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,18 @@ int main(int you, char **nes)
 		std::cerr << e.what() << std::endl;
 	}
 	
-	// try
-	// {
-	// 	Bureaucrat bureaucrat("zak", 1);
-	// 	ShrubberyCreationForm shrubbery("shrubbery");
-	// 	bureaucrat.signForm(shrubbery);
-	// 	shrubbery.execute(bureaucrat);
-	// 	std::cout << shrubbery;
-	// }
-	// catch (const std::exception& e)
-	// {
-	// 		std::cerr << e.what() << std::endl;
-	// }
+	try
+	{
+		Bureaucrat bureaucrat("zak", 1);
+		ShrubberyCreationForm shrubbery("shrubbery");
+		bureaucrat.signForm(shrubbery);
+		shrubbery.execute(bureaucrat);
+		std::cout << shrubbery;
+	}
+	catch (const std::exception& e)
+	{
+			std::cerr << e.what() << std::endl;
+	}
 
 	// try
 	// {
