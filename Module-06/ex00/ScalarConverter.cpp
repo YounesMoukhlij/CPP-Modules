@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:18:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:18:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 		return (_INT_);
 	if (str[i] == '.')
 	{
-		i++;
+		++i;
 		while (str[i] >= 48 && str[i] <= 57)
 			i++;
 		if (str[i] == 'f' && str[i + 1] == '\0')
