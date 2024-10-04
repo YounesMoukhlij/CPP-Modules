@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:08:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:09:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,10 @@ AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 			form = new PresidentialPardonForm(_target);
 			break;
 		default:
-			throw FormNotExistException;
+			throw NoFormExist();
 	}
 	if (!form)
-		throw FailedAllocateMemoryException;
+		throw FailedAllocatMemoryFailedAllocationeMemoryException;
 	std::cout << "Intern creates " << _target << std::endl;
 	return (form);
 }
