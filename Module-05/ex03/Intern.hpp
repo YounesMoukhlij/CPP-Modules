@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:07:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:08:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ class Intern
 
 		AForm*	makeForm(const std::string&, const std::string&);
 
-		class FormNotExist : public std::exception
+		class NoFormExist : public std::exception
 		{
 			public:
 				const char *what() const throw();
-		} FormNotExistException;
+		} ;
 
 		class MemoryFailedAllocation: public std::exception
 		{
