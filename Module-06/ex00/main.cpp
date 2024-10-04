@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:03:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:48:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int main(int you, char **nes)
 		std::cerr << "Try: ./convert <arg must be a number>" << std::endl;
 		return (1);
 	}
-	ScalarConverter::convert(static_cast<std::string>(nes[1]));
+	printf("%d\n", 8 >)
+	// ScalarConverter::convert(static_cast<std::string>(nes[1]));
 	return (0);
 }
