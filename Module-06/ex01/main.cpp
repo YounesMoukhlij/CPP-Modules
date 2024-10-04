@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:42:46 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:42:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int main(int you, char **nes)
 			std::cout << "floatValue: " << deserializedData->_floatValue << std::endl;
 		}
 		puts("123");
-			Serializer::ExceptionSerializer();
+		Serializer::ExceptionSerializer();
 	}
 	catch (std::exception& younes)
 	{
