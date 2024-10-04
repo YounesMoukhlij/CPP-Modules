@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:16:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:18:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,15 @@
 int main(int you, char **nes)
 {
 	(void)nes;
-	Data originalData;
-	uintptr_t serialized;
-	Data* deserializedData;
 	if (you != 2)
 	{
 		std::cerr << "Try: ./convert <arg must be a number>" << std::endl;
 		return (EXIT_FAILURE);
 	}
+	Data originalData;
+	uintptr_t serialized;
+	Data* deserializedData;
+	
 	originalData.boolValue = true;
 	originalData.charValue = 'c';
 	originalData.floatValue = 10.56f;
