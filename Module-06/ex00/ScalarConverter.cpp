@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:07:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:07:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,6 +114,7 @@ void	printMessage(int mode, char _char, int _int, float _float, double _double)
 		std::cout << "float: " << "+inff" << std::endl;
 		std::cout << "double: " << "+inf" << std::endl;
 	}
+	else if
 }
 
 void	ScalarConverter::charOperation(const std::string& str)
@@ -213,11 +214,7 @@ void	ScalarConverter::plusInffOperation(const std::string& str)
 void	ScalarConverter::nanOperation(const std::string& str)
 {
 	(void) str;
-	printMessage(_PLUSINF_, 0x0, 0x0, 0x0, 0x0);
-	std::cout << "char: " << "converter Impossible" << std::endl;
-	std::cout << "int: " << "converter Impossible" << std::endl;
-	std::cout << "float: " << "nanf" << std::endl;
-	std::cout << "double: " << "nan" << std::endl;
+	printMessage(_NANF_, 0x0, 0x0, 0x0, 0x0);
 }
 
 void	ScalarConverter::convert(const std::string& str)
