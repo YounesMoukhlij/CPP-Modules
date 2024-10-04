@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:39:30 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:39:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,6 @@ class Serializer
 		class ExceptionSerializer : public std::exception
 		{
    			public:
-   			    const char* what() const throw()
-				{
-					return ("Serialization and deserialization failed!");
-
+   			    const char* what() const throw();
    		};
 };
