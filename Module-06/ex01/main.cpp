@@ -6,15 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:15:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:16:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Serializer.hpp"
 
-int main(int ac, char **av)
+int main(int you, char **nes)
 {
-	(void)av;
+	(void)nes;
 	Data originalData;
 	uintptr_t serialized;
 	Data* deserializedData;
