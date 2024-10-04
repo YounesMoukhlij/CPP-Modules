@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:32:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:33:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ int	ScalarConverter::typeDetectionOperation(const std::string &str)
 	}
 	return (_STRING_);
 }
+
+void
 
 void	ScalarConverter::charOperation(const std::string& str)
 {
