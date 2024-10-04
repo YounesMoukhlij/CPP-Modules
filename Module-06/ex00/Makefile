@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 14:56:23 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/04 15:23:50 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJ = ${SRC:.cpp=.o}
 
 NAME = convert
 
-all : ${NAME}
+all : ${NAME} clear
 
 %.o : %.cpp ScalarConverter.hpp
 	@echo "\033[30m Compiling ...\033[0m"
