@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:04:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:04:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -221,7 +221,7 @@ void	ScalarConverter::convert(const std::string& str)
     };
    switch (indicator) {
         case _CHAR_:
-            (ScalarConverter::*pointerToFunction[_CHAR_])(str);
+            pointerToFunction[_CHAR_](str);
             break;
         case _INT_:
             (pointerToFunction[_INT_])(str);
