@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:05:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:05:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 14:05:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ int main(int you, char **nes)
 	}
 	try
 	{
-		Bureaucrat bureaucrat("zak", 1);
+		Bureaucrat bureaucrat("Youness", 1);
 		Intern intern;
 		AForm *form1;
 		AForm *form2;
 		form1 = intern.makeForm("Roboto", "Bender");
-		form2 = intern.makeForm("Shrubbery", "saim");
+		form2 = intern.makeForm("Shrubbery", "meda");
 		try
 		{
 			bureaucrat.signForm(*form1);
