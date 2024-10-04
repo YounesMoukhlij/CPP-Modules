@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 15:03:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 15:03:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -197,7 +197,8 @@ void	ScalarConverter::charOperation(const std::string& str) {
 // 	std::cout << "double: " << "nan" << std::endl;
 // }
 
-void	ScalarConverter::convert(const std::string& str) {
+void	ScalarConverter::convert(const std::string& str)
+{
 	
 	int _type;
 
