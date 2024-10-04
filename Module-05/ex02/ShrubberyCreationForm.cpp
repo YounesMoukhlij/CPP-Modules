@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:32:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 13:33:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,11 @@ std::string generateAsciiTree()
     tree += "      -----\n";
 
     return tree;
+}
+
+const char* ShrubberyCreationForm::FileCreationException::what() const throw()
+{
+	return "failed to creat the output file!";
 }
 
 void	ShrubberyCreationForm::ShrubberyAction(void) const
