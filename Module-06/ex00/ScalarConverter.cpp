@@ -221,7 +221,7 @@ void	ScalarConverter::convert(const std::string& str)
     };
    switch (indicator) {
         case _CHAR_:
-            (thispointerToFunction[_CHAR_])(str);
+            (pointerToFunction[_CHAR_])(str);
             break;
         case _INT_:
             (this->*pointerToFunction[_INT_])(str);
