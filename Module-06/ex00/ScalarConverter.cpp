@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:36:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 17:36:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,20 +111,20 @@ void	ScalarConverter::charOperation(const std::string& str)
 
 void	ScalarConverter::intOperation(const std::string& str)
 {
-	int	number;
+	int	_int;
 
-	number = std::atoi(str.c_str());
-	if (number > INT_MAX )
+	_int = std::atoi(str.c_str());
+	if (_int > INT_MAX || _int)
 	// if (ssInt.fail())
 	// {
-	// 	std::cout << "the number: " << str << " is out of range int" << std::endl;
+	// 	std::cout << "the _int: " << str << " is out of range int" << std::endl;
 	// 	return ;
 	// }
-	if (isprint(number))
-		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
+	if (isprint(_int))
+		std::cout << "char: '" << static_cast<char> (_int) << "'" << std::endl;
 	else
 		std::cout << "char: " << "Non displayable" << std::endl;
-	printMessage(_INT_, 0 >> 1, number, (1 << 0) - 0x1 , 0x0);
+	printMessage(_INT_, 0 >> 1, _int, (1 << 0) - 0x1 , 0x0);
 }
 
 void	ScalarConverter::floatOperation(const std::string& str) {
