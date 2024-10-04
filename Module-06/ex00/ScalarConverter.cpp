@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:00:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:00:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,12 +131,12 @@ void	ScalarConverter::floatOperation(const std::string& str)
 	float				_float;
 	std::stringstream	strToFloat(str);
 
-	strToFloat >> _float;
 	if (strToFloat.fail())
 	{
 		std::cout << "Invalid input: cannot convert: " << str << " to float" << std::endl;
 		return ;
 	}
+	strToFloat >> _float;
 	if (isprint(static_cast<int> (_float)))
 		std::cout << "char: '" << static_cast<char> (_float) << "'" << std::endl;
 	else
@@ -152,12 +152,12 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 	double	number;
 	std::stringstream	strToDouble(str);
 
-	strToDouble >> number;
 	if (strToDouble.fail())
 	{
 		std::cout << "Invalid input: cannot convert:  " << str << " to double" << std::endl;
 		return ;
 	}
+	strToDouble >> number;
 	if (isprint(static_cast<int>(number)))
 		std::cout << "char: '" << static_cast<char> (number) << "'" << std::endl;
 	else
