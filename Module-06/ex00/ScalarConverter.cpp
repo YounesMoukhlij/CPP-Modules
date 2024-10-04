@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 16:08:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:08:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -221,28 +221,28 @@ void	ScalarConverter::convert(const std::string& str)
     };
    switch (indicator) {
         case _CHAR_:
-            (thi0s>pointerToFunction[_CHAR_])(str);
+            (this->*pointerToFunction[_CHAR_])(str);
             break;
         case _INT_:
-            (pointerToFunction[_INT_])(str);
+            (this->*pointerToFunction[_INT_])(str);
             break;
         case _FLOAT_:
-            (pointerToFunction[_FLOAT_])(str);
+            (this->*pointerToFunction[_FLOAT_])(str);
             break;
         case _DOUBLE_:
-            (pointerToFunction[_DOUBLE_])(str);
+            (this->*pointerToFunction[_DOUBLE_])(str);
             break;
         case _MINUSINF_:
-            (pointerToFunction[_MINUSINF_])(str);
+            (this->*pointerToFunction[_MINUSINF_])(str);
             break;
         case _PLUSINF_:
-            (pointerToFunction[_PLUSINF_])(str);
+            (this->*pointerToFunction[_PLUSINF_])(str);
             break;
         case _NANF_:
-            (pointerToFunction[_NANF_])(str);
+            (this->*pointerToFunction[_NANF_])(str);
             break;
         default:
-            (pointerToFunction[_STRING_])(str);
+            (this->*pointerToFunction[_STRING_])(str);
             break;
     }
 }
