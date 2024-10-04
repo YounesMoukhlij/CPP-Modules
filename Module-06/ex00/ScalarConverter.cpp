@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:37 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 17:59:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/04 18:00:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,7 @@ void	ScalarConverter::intOperation(const std::string& str)
 	_int = std::atoi(str.c_str());
 	if (_int > INT_MAX || _int < INT_MIN)
 	{
-		std::cout << "Invalid input: cannot convert: " << str << " is out of range integer" << std::endl;
+		std::cout << "Invalid input: cannot convert: " << str << " to integer" << std::endl;
 		return ;
 	}
 	if (isprint(_int))
@@ -155,7 +155,7 @@ void	ScalarConverter::doubleOperation(const std::string& str)
 	ssDouble >> number;
 	if (ssDouble.fail())
 	{
-		std::cout << "the number: " << str << " is out of range double" << std::endl;
+		std::cout << "Invalid input: cannot convert:  " << str << " to double" << std::endl;
 		return ;
 	}
 	if (isprint(static_cast<int>(number)))
