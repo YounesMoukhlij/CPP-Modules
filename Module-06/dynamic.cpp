@@ -9,6 +9,7 @@ class Shape
 public:
     virtual ~Shape() {}
     virtual void draw() const = 0; 
+};
 
 class Circle : public Shape {
 public:
@@ -49,7 +50,7 @@ void printShapeInfo(Shape* shape) {
 
 int main()
 {
-	Shape o;
+	Shape o
 
 	printShapeInfo(o);
 }
