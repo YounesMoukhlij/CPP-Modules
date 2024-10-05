@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 15:23:31 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:00:45 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,10 +18,7 @@ OBJ = ${SRC:.cpp=.o}
 
 NAME = Dynamic
 
-all : ${NAME} play
-
-play :
-	@clear
+all : ${NAME}
 
 %.o : %.cpp A.hpp B.hpp C.hpp Base.hpp Tools.hpp
 	@echo "\033[30m Compiling ...\033[0m"
