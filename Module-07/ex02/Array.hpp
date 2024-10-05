@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:25:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:25:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,8 @@ Array<T>::Array(unsigned int n) : _size(n), _array(new T[n])
 }
 
 template<class T>
-Array<T>::Array(const Array& origine) : _array(new T(origine._array)), _size(origine._size)
-{
-	
+Array<T>::Array(const Array& origine)
+	_array = 0x0;
 	if (*this != origine)
 	{
 		_size = origine._size;
