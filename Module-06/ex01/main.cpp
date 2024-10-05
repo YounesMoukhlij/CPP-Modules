@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:44:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 12:56:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int main(int you, char **nes)
 	uintptr_t	serialized;
 	Data		*deserializedData;
 	Data 		data;
+	
+	
 	
 	// inialisation.
 	data._boolValue = false;
