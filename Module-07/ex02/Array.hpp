@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:13:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:13:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ template<class T>
 Array<T>::Array(unsigned int n) : n(0x0)
 {
 	_size = n;
-	new 
+	new T[_size];
 }
 
 template<class T>
