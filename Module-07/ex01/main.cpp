@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:28:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:29:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main(void)
 	bool boolR[2] = { false, true };
 	iter(boolR, 2, &afficher); std::cout << std::endl;
 
-	std::string stringR[5] = { "phrase 1", "phrase 2", "templates", "are", "fun" };
+	std::string stringR[5] = { "Younes", "Moukhlij", "1337", "are", "fun" };
 	iter(stringR, 5, &afficher); std::cout << std::endl;
 	iter(stringR, 2, &afficher); std::cout << std::endl;
 	iter(stringR, 0, &afficher); std::cout << std::endl;
