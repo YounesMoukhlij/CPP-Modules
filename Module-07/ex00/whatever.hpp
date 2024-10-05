@@ -6,13 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:16:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:18:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <iostream>
+
+#define IGNORE(param) (void)(param)
 
 template<typename T> T &max(T &t1, T &t2)
 {
