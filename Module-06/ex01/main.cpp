@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:27:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:27:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main(int you, char **nes)
 	data._floatValue = 199.442f;
 	data._intValue = 13;
 	
-	printf("size of %d\n", sizeof(uintpt))
+	printf("size of %lu\n", sizeof(uintptr_t));
 	
 	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
