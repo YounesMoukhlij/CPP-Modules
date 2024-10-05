@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:24:04 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:24:15 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,7 @@ SRC = main.cpp
 NAME = template
 
 
-
-all : ${NAME} print_younes
+all : ${NAME}
 
 %.o: %.cpp whatever.hpp
 	@echo "\033[30m Compiling ...\033[0m"
