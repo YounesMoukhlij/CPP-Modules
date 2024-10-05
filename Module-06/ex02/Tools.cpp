@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:43:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:43:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ void	identify(Base* p)
 	if (dynamic_cast<A*>(p))
 		std::cout << "By Reference The Type is A" << std::endl;
 	else if (dynamic_cast<B*>(p))
-		std::cout << "The Type is B" << std::endl;
+		std::cout << "By Reference The Type is B" << std::endl;
 	else if (dynamic_cast<C*>(p))
-		std::cout << "The Type is C" << std::endl;
+		std::cout << "By Reference The Type is C" << std::endl;
 	else
 		std::cout << "Unknow type" << std::endl;
 }
