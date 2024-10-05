@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:53:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:55:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # define MAX_VAL 750
 # define IGNORE(param) (void)(param)
 
-<template> <class T>
+template<class T>
 class Array
 {
 	public:
@@ -26,5 +26,6 @@ class Array
 	Array(unsigned int n);
 	Array(const Array& origine);
 	Array& operator=(const Array &origine);
+	con
 	
 }:
