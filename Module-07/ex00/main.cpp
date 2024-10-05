@@ -6,21 +6,21 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:04:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:04:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
 
 
-<TemplateT &min(T &t1, T &t2)
+<Template> T &min(T &t1, T &t2)
 {
 	if (t2 > t1)
 		return (t1);
 	return (t2);
 }
 
-void swap(T &t1, T &t2)
+void swap(<Template>T &t1, <Template>T &t2)
 {
 	T tmp;
 
@@ -30,7 +30,7 @@ void swap(T &t1, T &t2)
 }
 
 
-T &max(T &t1, T &t2)
+<Template>T &max(<Template>T &t1, T &t2)
 {
 	if (t1 > t2)
 		return (t1);
