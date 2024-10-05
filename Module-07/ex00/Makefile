@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:21:42 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:22:02 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,15 +32,15 @@ CYAN = \033[36m
 WHITE = \033[37m
 
 print_younes:
-	@echo "$(MAGENTA)     ██     ██  ██████   ██    ██  ██     ██  ███████   ███████   ███████   $(RESET)"
-	@echo "$(YELLOW)      ██     ██ ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
-	@echo "$(GREEN)       ██  ██  ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
-	@echo "$(CYAN)        ████    ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
+	@echo "$(RED)     ██     ██  ██████   ██    ██  ██     ██  ███████   ███████   ███████   $(RESET)"
+	@echo "$(RED)      ██     ██ ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
+	@echo "$(RED)       ██  ██  ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
+	@echo "$(RED)        ████    ██    ██  ██    ██  ██     ██ ██         ██         ██         $(RESET)"
 	@echo "$(RED)          ██      ██████    ██████    ██████   ███████   ███████   ███████   $(RESET)"
-	@echo "$(BLUE)                                         ##    ##                     $(RESET)"
-	@echo "$(WHITE)                                         ##    ##                     $(RESET)"
-	@echo "$(MAGENTA)                                        ##    ##                     $(RESET)"
-	@echo "$(YELLOW)                                        ##    ##                     $(RESET)"
+	@echo "$(RED)                                         ##    ##                     $(RESET)"
+	@echo "$(RED)                                         ##    ##                     $(RESET)"
+	@echo "$(RED)                                        ##    ##                     $(RESET)"
+	@echo "$(RED)                                        ##    ##                     $(RESET)"
 
 
 
