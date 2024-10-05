@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:22:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:43:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@
 
 class Serializer
 {
-	private:
-		Serializer();
 	public:
+		Serializer();
 		Serializer(const Serializer& origine);
 		Serializer& operator= (const Serializer& origine);
 		~Serializer();
