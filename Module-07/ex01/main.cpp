@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:34:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:36:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int main(int you, char **nes)
 	}
 	
 	
-	std::string stringR[0x4] = { "Younes", "Moukhlij", "1337", "Khouribga"};
-	iter(stringR, 0x1, &afficher); std::cout << std::endl;
+	std::string _string[0x4] = { "Younes", "Moukhlij", "1337", "Khouribga"};
+	iter(_string, 0x1, &afficher); std::cout << std::endl;
 	iter(stringR, 0x2, &afficher); std::cout << std::endl;
 	iter(stringR, 0x0, &afficher); std::cout << std::endl;
 	iter(stringR, 0x4, &afficher); std::cout << std::endl;
