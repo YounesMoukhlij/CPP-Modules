@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:50:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:50:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ template<class T>
 Array<T>::~Array()
 {
 	std::cout << "Array Destructor Called." << std::endl; 
-	// delete [] _array;
+	delete [] _array;
 }
 
 template<class T>
