@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:41:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:41:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int main(int you, char **nes)
 	// identify by Pointer
 	identify(base);
 	
-	// identify by R
+	// identify by Reference
 	identify(*base);
 	
 	delete base;
