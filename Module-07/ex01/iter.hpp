@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:25:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:27:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:27:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <cctype>
 
 
-template<typename T> void aff(T const &v)
+template<typename T> void afficher(T const &v)
 {
 	std::cout << v << " ";
 }
