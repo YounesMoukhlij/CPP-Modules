@@ -6,11 +6,17 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:37:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:37:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Serializer.hpp"
+
+class younes
+{
+	
+}
+
 
 int main(int you, char **nes)
 {
