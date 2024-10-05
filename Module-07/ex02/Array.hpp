@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:46:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:49:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ class Array
 template<class T>
 Array<T>::~Array()
 {
+	std::cout << ""
 	delete [] _array;
 }
 
