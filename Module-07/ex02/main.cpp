@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:44:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:44:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int you, char**)
 		return (EXIT_FAILURE);
 	}
 	
-	std
+	std::cout << "Test sizeof int."
 	Array<int> arr1;
     std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
 	
