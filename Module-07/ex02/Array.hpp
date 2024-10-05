@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:50:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:51:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ Array<T>::Array(const Array& origine)
 	{
 		_size = origine._size;
 		_array = new T[_size];
-		for (int i = 0x0; i < _size ; i++)
+		for (size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
 }
