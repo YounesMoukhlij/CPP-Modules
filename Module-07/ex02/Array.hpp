@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:00:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:01:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ Array::~Array()
 
 Array::Array()
 {
-	std::cout << "D"
+	std::cout << "Default Array Constructor called" << std::end
 }
