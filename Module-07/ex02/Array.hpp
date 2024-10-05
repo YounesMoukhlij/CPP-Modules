@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:56:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:56:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,14 @@
 template<class T>
 class Array
 {
+	private:
+		unsigned int 
 	public:
-	Array();
-	~Array();
-	Array(unsigned int n);
-	Array(const Array& origine);
-	Array& operator=(const Array &origine);
-	const T& operator[](unsigned int index)
+		Array();
+		~Array();
+		Array(unsigned int n);
+		Array(const Array& origine);
+		Array& operator=(const Array &origine);
+		const T& operator[](unsigned int index)
 	
 }:
