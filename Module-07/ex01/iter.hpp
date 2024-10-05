@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:25:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:30:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:30:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <iostream>
 #include <cctype>
 
+# define IGNORE(param) (void)(param)
 
 template<typename T> void afficher(T const &_value)
 {
