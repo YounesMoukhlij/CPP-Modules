@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:27:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:28:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 
 int main(int, char**)
 {
+		IGNORE(nes);
+	
+	if (you != 0x1)
+	{
+		std::cerr << "The Program Does not take any Arguments." << std::endl;
+		return (EXIT_FAILURE);
+	}
     // Array<int> numbers(MAX_VAL);
     // int* mirror = new int[MAX_VAL];
     // srand(time(NULL));
