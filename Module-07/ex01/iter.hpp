@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:25:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:38:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:38:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ template<typename T> void afficher(T const &_value)
 
 template<typename T> void iter(T *array, size_t length, void (*func)(T const &_value))
 {
-	for (int length = 0x0; )
+	
+	while (array[length])
 	for (size_t i = 0x0; i < length; i++)
 	{
 		if (i < array.size())
