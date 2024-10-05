@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:21:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:21:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int main(int you, char **nes)
 	if (!base)
 	{
 		std::cout << "An error happend while allocation." << std::endl;
+		return (EXIT_FAILURE);
 	}
 	return (EXIT_SUCCESS);
 }
