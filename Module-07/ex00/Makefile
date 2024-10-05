@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:23:02 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:23:14 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,12 +31,10 @@ MAGENTA = \033[35m
 CYAN = \033[36m
 WHITE = \033[37m
 
-print_younes:
-	@echo "Coded By Younes Moukhlij."
 
 
 
-all : ${NAME}
+all : ${NAME} print_younes
 
 %.o: %.cpp whatever.hpp
 	@echo "\033[30m Compiling ...\033[0m"
@@ -45,6 +43,9 @@ all : ${NAME}
 ${NAME} : ${OBJ}
 	@echo "\033[32m Linking ...\033[0m"
 	@c++ ${CPPFLAGS} $^ -o $@
+
+print_younes:
+	@echo "Coded By Younes Moukhlij."
 
 clean :
 	@rm -rf ${OBJ}
