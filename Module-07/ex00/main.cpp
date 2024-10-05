@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:54:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:01:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ int main( void )
 {
     int a = 2;
     int b = 3;
-    ::swap( a, b );
+    swap( a, b );
     std::cout << "a = " << a << ", b = " << b << std::endl;
-    std::cout << "min( a, b ) = " << ::min( a, b ) << std::endl;
-    std::cout << "max( a, b ) = " << ::max( a, b ) << std::endl;
+    std::cout << "min( a, b ) = " << min( a, b ) << std::endl;
+    std::cout << "max( a, b ) = " << max( a, b ) << std::endl;
     std::string c = "chaine1";
     std::string d = "chaine2";
     ::swap(c, d);
