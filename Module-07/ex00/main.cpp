@@ -6,11 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:55:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:55:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
+
+
 
 
 // int main(int you, char **nes)
@@ -42,22 +44,7 @@
 // }
 
 
-class Awesome
-{
-  public:
-    Awesome(void) : _n(0) {}
-    Awesome( int n ) : _n( n ) {}
-    Awesome & operator= (Awesome & a) { _n = a._n; return *this; }
-    bool operator==( Awesome const & rhs ) const { return (this->_n == rhs._n); }
-    bool operator!=( Awesome const & rhs ) const{ return (this->_n != rhs._n); }
-    bool operator>( Awesome const & rhs ) const { return (this->_n > rhs._n); }
-    bool operator<( Awesome const & rhs ) const { return (this->_n < rhs._n); }
-    bool operator>=( Awesome const & rhs ) const { return (this->_n >= rhs._n); }
-    bool operator<=( Awesome const & rhs ) const { return (this->_n <= rhs._n); }
-    int get_n() const { return _n; }
-  private:
-    int _n;
-};
+
 std::ostream & operator<<(std::ostream & o, const Awesome &a) { o << a.get_n(); return o; }
 
 int main(void)
