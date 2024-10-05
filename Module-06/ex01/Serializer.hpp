@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:22:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:22:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Serializer
 		Serializer();
 	public:
 		Serializer(const Serializer& origine);
-		Serializer& operator= (const Serializer& );
+		Serializer& operator= (const Serializer& origine);
 		~Serializer();
 		static uintptr_t serialize(Data* ptr);
 		static Data* deserialize(uintptr_t raw);
