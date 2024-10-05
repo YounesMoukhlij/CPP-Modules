@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:31:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:31:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ class Awesome
   public:
     Awesome( void ) : _n( 42 ) { return; }
     int get( void ) const { return this->_n; }
-	void print();
+	void print(T& x);
   private:
     int _n;
 };
