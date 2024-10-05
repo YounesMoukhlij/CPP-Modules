@@ -6,18 +6,19 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:10:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:11:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "A.hpp"
 #include "B.hpp"
 #include "C.hpp"
+#include ".hpp"
 #include "Tools.hpp"
 
 Base*	generate(void)
 {
-	int _random = 
+	int _random = std::srand();
 	switch()
 	{
 		case 0;
