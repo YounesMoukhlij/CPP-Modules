@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:44:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:44:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 void younes()
 {
-	system("leaks Dyc")
+	system("leaks Dynamic");
 }
 
 int main(int you, char **nes)
