@@ -1,13 +1,11 @@
 
 #include <iostream>
 
-using namespace name
-{
+using namespace std:
 	
 
-
-
-
+class Shape
+{
 public:
     virtual ~Shape() {}
     virtual void draw() const = 0;  // Pure virtual function
