@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:17:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:17:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,5 @@ Array& operator=(const Array &origine)
 template<class T>
 unsigned int getSize( void )
 {
-	e
+	return (_size);
 }
