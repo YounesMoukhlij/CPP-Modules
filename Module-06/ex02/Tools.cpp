@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:30:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:31:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,10 @@ void	identify(Base& p)
 	{
 		try 
 		{
-		dynamic_cast<A&>(p);
-		std::cout << "The Type is A" << std::endl;
+			dynamic_cast<B&>(p);
+			std::cout << "The Type is B" << std::endl;
 		}
+		cat
 	}
 
 }
