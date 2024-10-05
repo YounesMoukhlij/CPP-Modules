@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:30:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:00:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 
 class ScalarConverter
 {
+	private:
 	public:
 		static int		typeDetectionOperation(const std::string &str);
 		static void		charOperation(const std::string& str);
