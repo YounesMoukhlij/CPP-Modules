@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:56:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:57:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int main(int you, char **nes)
     std::cout << "max( c, d ) = " << max( c, d ) << std::endl;
 		
 		
-	Awesome c(2), d(4);
+	Awesome cc(2), dd(4);
     swap(c, d);
     std::cout << c << " " << d << std::endl;
     std::cout << max(c, d) << std::endl;
