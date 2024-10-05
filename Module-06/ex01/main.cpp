@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 12:56:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:26:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@ int main(int you, char **nes)
 	Data 		data;
 	
 	
-	
+
 	// inialisation.
 	data._boolValue = false;
 	data._charValue = 'h';
 	data._floatValue = 199.442f;
 	data._intValue = 13;
+	
+	printf("%d")
 	
 	serialized = Serializer::serialize(&data);
 	deserializedData = Serializer::deserialize(serialized);
