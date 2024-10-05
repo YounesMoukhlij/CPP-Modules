@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:34:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:35:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ class Array
 		Array(const Array& origine);
 		Array<T>& operator=(const Array &origine);
 		
-		unsigned int	getSize() const;
-		arraT&				operator[](unsigned int index);
-		const T&		operator[](unsigned int index) const;
+		unsigned int			getSize() const;
+		Array<T>&			operator[](unsigned int index);
+		const Array<T>&		operator[](unsigned int index) const;
 };
 
 template<class T>
