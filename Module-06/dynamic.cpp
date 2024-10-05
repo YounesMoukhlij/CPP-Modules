@@ -50,7 +50,16 @@ void printShapeInfo(Shape* shape) {
 
 int main()
 {
-	Shape o
 
+shape->draw(); // Calls the correct draw() function (polymorphism)
+    
+    // Now we want to access specific features of Circle or Rectangle
+    if (Circle* c = dynamic_cast<Circle*>(shape)) {
+        c->setRadius(10.0); // Downcasting to Circle-specific functionality
+    } else if (Rectangle* r = dynamic_cast<Rectangle*>(shape)) {
+        r->setWidth(5.0); // Downcasting to Rectangle-specific functionality
+    } else {
+        std::cout << "Unknown shape type" << std::endl;
+    }
 	printShapeInfo(o);
 }
