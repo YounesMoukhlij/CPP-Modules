@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:38:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:38:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int main(int you, char**)
 	
 	Array<int> arr1;
     std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
+	
+	
     // Array<int> numbers(MAX_VAL);
     // int* mirror = new int[MAX_VAL];
     // srand(time(NULL));
