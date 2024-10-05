@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:21:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:23:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ Base*	generate(void)
 	int _random;
 	
 	_random = std::rand() % 0x3;
-	printf("rando %d\n", _random);
-	printf("3a %d\n",  std::rand());
 	switch(_random)
 	{
 		case 0x0:
