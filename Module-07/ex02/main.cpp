@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:53:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:53:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int main(int you, char**)
 		{
 			const unsigned int vv = std::rand();
 			std::cout << i << std::endl;
-			str._array[i] = vv;
+
 		}
 		
 		Array<int> arr3(arr1);
