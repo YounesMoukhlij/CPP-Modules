@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:43:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:43:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@ class Array
 		unsigned int		getSize() const;
 		Array<T>&			operator[](unsigned int index);
 		const Array<T>&		operator[](unsigned int index) const;
-		
-		std::ostream& 		operator<<(std::ostream& file, const T& obj);
-
 };
 
 template<class T>
@@ -110,10 +107,4 @@ Array<T>& Array<T>::operator[](unsigned int index)
     return _array[index];
 }
 
-template<class T>
-std::ostream& Array<T>::operator<<(std::ostream& file, const T& obj)
-{
-	file << obj._array ;
-	return file;
-}
 
