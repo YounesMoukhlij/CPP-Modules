@@ -6,14 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:03:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:03:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
 
 
-template<typename T>
 T &min(T &t1, T &t2)
 {
 	if (t2 > t1)
@@ -21,7 +20,6 @@ T &min(T &t1, T &t2)
 	return (t2);
 }
 
-template<typename T>
 void swap(T &t1, T &t2)
 {
 	T tmp;
@@ -32,7 +30,6 @@ void swap(T &t1, T &t2)
 }
 
 
-template<typename T>
 T &max(T &t1, T &t2)
 {
 	if (t1 > t2)
