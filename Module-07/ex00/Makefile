@@ -6,21 +6,21 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/09/23 13:06:29 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 15:54:27 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = main.cpp
+SRC = main.cpp whatever.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = min_max
+NAME = temp
 
 all : ${NAME}
 
-%.o: %.cpp
+%.o: %.cpp whatever.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 
