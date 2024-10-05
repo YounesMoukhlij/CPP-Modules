@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:52:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:52:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,30 +42,3 @@
 // 	return (EXIT_SUCCESS);
 // }
 
-class Awesome
-{
-  public:
-    Awesome(void) : _n(0) {}
-    Awesome( int n ) : _n( n ) {}
-    Awesome & operator= (Awesome & a) { _n = a._n; return *this; }
-    bool operator==( Awesome const & rhs ) const { return (this->_n == rhs._n); }
-    bool operator!=( Awesome const & rhs ) const{ return (this->_n != rhs._n); }
-    bool operator>( Awesome const & rhs ) const { return (this->_n > rhs._n); }
-    bool operator<( Awesome const & rhs ) const { return (this->_n < rhs._n); }
-    bool operator>=( Awesome const & rhs ) const { return (this->_n >= rhs._n); }
-    bool operator<=( Awesome const & rhs ) const { return (this->_n <= rhs._n); }
-    int get_n() const { return _n; }
-  private:
-    int _n;
-};
-
-int main(void)
-{
-	Awesome a(2), b(4);
-
-        swap(a, b);
-        std::cout << a << " " << b << std::endl;
-        std::cout << max(a, b) << std::endl;
-        std::cout << min(a, b) << std::endl;
-        return (0);
-}
