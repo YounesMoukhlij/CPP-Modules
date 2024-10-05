@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:43:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:46:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ template<class T>
 Array<T>::Array(const Array& origine)
 {
 	_array = 0x0;
-	if (*this != origine)
+	if (this != &origine)
 	{
 		_size = origine._size;
 		_array = new T[_size];
