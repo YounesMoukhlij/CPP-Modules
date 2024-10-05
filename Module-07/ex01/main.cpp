@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:32:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:32:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int main(void)
 	iter(stringR, 0x0, &afficher); std::cout << std::endl;
 	iter(stringR, 0x4, &afficher); std::cout << std::endl;
 	
-	float floatR[5] = { 0.0f, 1.1f, 2.2f, 3.3f, 4.4f };
-	iter(floatR, 5, &afficher); std::cout << std::endl;
+	float floatR[0x5] = { 0.01f, 1.1f, 2.2f, 3.3f, 4.43f };
+	iter(floatR, 0x5, &afficher); std::cout << std::endl;
 
 	int _int[5] = { 0, 1, 2, 3, 4 };
 	iter(_int, 5, &afficher); std::cout << std::endl;
