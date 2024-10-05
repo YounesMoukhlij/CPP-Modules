@@ -50,5 +50,7 @@ void printShapeInfo(Shape* shape) {
 
 int main()
 {
-	
+	Shape o;
+
+	o
 }
