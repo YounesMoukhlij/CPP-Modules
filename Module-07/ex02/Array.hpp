@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:30:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:30:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,9 +92,11 @@ unsigned int Array<T>::getSize( void ) const
         return _array[index];
     }
 
-Array<T>& Array<T>::operator[](unsigned int index) {
-        if (index >= _size) {
-            throw std::out_of_range("Index out of bounds");
-        }
-        return _array[index];
+Array<T>& Array<T>::operator[](unsigned int index)
+{
+    if (index >= _size)
+	{
+        throw std::out_of_range("Index out of bounds");
     }
+    return _array[index];
+}
