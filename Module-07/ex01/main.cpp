@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:24:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:24:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ template< typename T >
 void print( T& x )
 {
   std::cout << x << std::endl;
-  return ();
+  return ;
 }
 
 
