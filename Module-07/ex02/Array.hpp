@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:00:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:00:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,9 @@ class Array
 		unsigned int getSize() const;
 };
 
-~Array()
+Array::~Array()
 {
-	delete [] array
+	delete [] _array;
 }
+
+Array::Array()
