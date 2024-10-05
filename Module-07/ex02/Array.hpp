@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:16:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:16:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,3 +75,5 @@ Array& operator=(const Array &origine)
 	return (*this);	
 }
 
+template<class T>
+unsigned int getS
