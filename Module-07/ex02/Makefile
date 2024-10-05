@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:25:39 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:40:21 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ NAME = iter
 
 all : ${NAME}
 
-%.o: %.cpp iter.hpp
+%.o: %.cpp Array.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 
