@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:26:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:27:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,9 @@ Base*	generate(void)
 void	identify(Base* p)
 {
 	if (dynamic_cast<A*>(p))
-		std::cout << "A" << std::endl;
+		std::cout << "The Type is A" << std::endl;
+		std::cout << "The Type is B" << std::endl;
+		std::cout << "The Type is C" << std::endl;
 
 }
 
