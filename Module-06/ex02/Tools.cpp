@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:43:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:43:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,8 @@ void	identify(Base& p)
 		{
 			try 
 			{
-				(void)dynamic_cast<B&>(p);
-				std::cout << "By pointer The Type is B" << std::endl;
+				(void)dynamic_cast<C&>(p);
+				std::cout << "By pointer The Type is : C" << std::endl;
 			}
 			catch (std::bad_cast&)
 			{
