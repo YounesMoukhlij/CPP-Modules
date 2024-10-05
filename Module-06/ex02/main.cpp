@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:41:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:42:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(int you, char **nes)
 	base = generate();
 	if (!base)
 	{
-		std::cout << "An error happend while allocation." << std::endl;
+		std::cerr << "An error happend while allocation." << std::endl;
 		return (EXIT_FAILURE);
 	}
 	// identify by Pointer
