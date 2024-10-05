@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:19:30 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:19:38 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,8 @@ SRC = main.cpp
 
 NAME = template
 
-# Makefile
 
-.PHONY: print_younes
+
 
 RESET = \033[0m
 RED = \033[31m
@@ -59,4 +58,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY : clean
+.PHONY : clean print_younes
