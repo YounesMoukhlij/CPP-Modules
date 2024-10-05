@@ -6,23 +6,23 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:41:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:41:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Serializer.hpp"
 
-class younes
-{
-	private:
-		younes() {};
-	public:
-		~younes() {};
-		 void print()
-		{
-			std::cout << "hello" << std::endl;
-		}
-};
+// class younes
+// {
+// 	private:
+// 		younes() {};
+// 	public:
+// 		~younes() {};
+// 		 void print()
+// 		{
+// 			std::cout << "hello" << std::endl;
+// 		}
+// };
 
 
 int main(int you, char **nes)
@@ -36,9 +36,6 @@ int main(int you, char **nes)
 	// uintptr_t	serialized;
 	// Data		*deserializedData;
 	// Data 		data;
-	
-	younes a;
-	a.print();
 
 	// // inialisation.
 	// data._boolValue = false;
