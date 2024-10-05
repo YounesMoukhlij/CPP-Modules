@@ -1,5 +1,13 @@
 
-class Shape {
+#include <iostream>
+
+using namespace name
+{
+	
+
+
+
+
 public:
     virtual ~Shape() {}
     virtual void draw() const = 0;  // Pure virtual function
