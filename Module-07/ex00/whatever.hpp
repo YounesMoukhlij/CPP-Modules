@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:13:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:13:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@
 
 template<typename T> T &max(T &t1, T &t2)
 {
-	if ()
+	if (t1 > t2)
+		return (t1);
+	return (t2);
 }
 
 
