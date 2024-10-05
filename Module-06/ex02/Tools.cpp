@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:28:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:29:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,7 @@ void	identify(Base& p)
 {
 	try
 	{
-		if (dynamic_cast<A&>(p))
-		
+		dynamic_cast<A&>(p);
 	}
 
 }
