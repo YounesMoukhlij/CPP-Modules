@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:13:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:13:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,6 @@ void	deepCopy(const Array& origine)
 {
 	if (_array)
 		delete [] _array;
-		
+	_size = 
 	
 }
