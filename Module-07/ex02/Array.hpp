@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:56:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:56:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ template<class T>
 class Array
 {
 	private:
-		unsigned int 
+		T
+		unsigned int _n;
 	public:
 		Array();
 		~Array();
