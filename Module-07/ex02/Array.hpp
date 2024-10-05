@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:08:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:10:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ class Array
 		T& operator[](unsigned int index);
 		const T& operator[](unsigned int index) const;
 		unsigned int getSize() const;
+		
 };
 
 template<class T>
