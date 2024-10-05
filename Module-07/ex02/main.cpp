@@ -6,16 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:28:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:28:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
-int main(int, char**)
-{
-		IGNORE(nes);
-	
+int main(int you, char**)
+{	
 	if (you != 0x1)
 	{
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
