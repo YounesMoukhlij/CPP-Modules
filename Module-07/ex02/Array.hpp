@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:11:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:11:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,8 @@ Array& operator=(const Array &origine)
 }
 
 template<class T>
-void	deepCopy(const Ar)
+void	deepCopy(const Array& origine)
+{
+	if (_array)
+		
+}
