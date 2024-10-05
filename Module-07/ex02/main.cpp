@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:28:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:37:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,19 @@ int main(int you, char**)
 		return (EXIT_FAILURE);
 	}
     Array<int> numbers(MAX_VAL);
-    int* mirror = new int[MAX_VAL];
-    srand(time(NULL));
-    for (int i = 0; i < MAX_VAL; i++)
-    {
-        const int value = rand();
-        numbers[i] = value;
-        mirror[i] = value;
-    }
+    // int* mirror = new int[MAX_VAL];
+    // srand(time(NULL));
+    // for (int i = 0; i < MAX_VAL; i++)
+    // {
+    //     const int value = rand();
+    //     numbers[i] = value;
+    //     mirror[i] = value;
+    // }
     //SCOPE
-    {
-        Array<int> tmp = numbers;
-        Array<int> test(tmp);
-    }
+    // {
+    //     Array<int> tmp = numbers;
+    //     Array<int> test(tmp);
+    // }
 
     // for (int i = 0; i < MAX_VAL; i++)
     // {
