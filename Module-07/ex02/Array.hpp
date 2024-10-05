@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:21:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:25:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Array
 		~Array();
 		Array(unsigned int n);
 		Array(const Array& origine);
-		Array& operator=(const Array &origine);
+		Array<T& operator=(const Array &origine);
 		
 		unsigned int	getSize() const;
 		T&				operator[](unsigned int index);
@@ -64,7 +64,7 @@ Array<T>::Array(const Array& origine) : _array(new T(origine._array)), _size(ori
 }
 
 template<class T>
-Array& Array<T>::operator=(const Array &origine)
+Array<T>& Array<T>::operator=(const Array &origine)
 {
 	if (this != &origine)
 	{
