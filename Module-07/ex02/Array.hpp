@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:02:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:03:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,13 @@ class Array
 		unsigned int getSize() const;
 };
 
-template
+template<class T>
 Array<T>::~Array()
 {
 	delete [] _array;
 }
 
+template<class T>
 Array::Array() : _array(0x0), _size(0x0)
 {
 	std::cout << "Default Array Constructor called" << std::endl;
