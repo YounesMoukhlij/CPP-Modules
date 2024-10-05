@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:25:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:26:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ Array<T>& Array<T>::operator=(const Array &origine)
 }
 
 template<class T>
-unsigned int Array<T>::getSize( void )
+unsigned int Array<T>::getSize( void ) const
 {
 	return (_size);
 }
