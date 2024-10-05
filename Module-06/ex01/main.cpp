@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:40:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:40:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 class younes
 {
+		younes() {};
 	public:
-		~younes()
-		younes();
+		~younes() {};
 		void print()
 		{
 			std::cout << "hello" << std::endl;
