@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:32:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:32:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,10 @@ void	identify(Base& p)
 			}
 			catch (std::bad_cast&)
 			{
-		std::cout << "Unknow type" << std::endl;
-
+				std::cout << "Unknow type" << std::endl;
 			}
 		}
 	}
-
 }
 
 
