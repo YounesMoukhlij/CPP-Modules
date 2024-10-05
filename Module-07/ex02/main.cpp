@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:39:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:40:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main(int you, char**)
 	Array<int> arr2(5);
     std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 	
-	  for (unsigned int i = 0; i < arr2.size(); ++i)
+	  for (unsigned int i = 0; i < arr2.getSize(); ++i)
 	  {
         arr2[i] = i * 10;  // Assign values
         std::cout << "arr2[" << i << "] = " << arr2[i] << std::endl;
