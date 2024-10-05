@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:46:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:46:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ class Array
 	public:
 	Array();
 	~Array();
-	Array& operator=
+	Array& operator=(const Array &origine);
 }:
