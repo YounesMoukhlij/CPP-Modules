@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:03:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:04:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int main(int you, char **nes)
 	std::cout << std::endl;
 
 	
-	 int tab[] = { 0, 1, 2, 3, 4 };
+	int tab[] = { 0, 1, 2, 3, 4 };
   	Awesome tab2[5];
 
   	iter( tab, 5, print<const int> );
