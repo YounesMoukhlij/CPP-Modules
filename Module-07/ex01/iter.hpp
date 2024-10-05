@@ -6,15 +6,17 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:25:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:26:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:26:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+#include <iostream>
+#include <cctype>
 
-template<typename T>
-void display(T const &v)
+
+template<typename T> void display(T const &v)
 {
 	std::cout << v << " ";
 }
