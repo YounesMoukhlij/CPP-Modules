@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:38:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:38:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ class younes
 		younes();
 	public:
 		~younes();
+		print()
+		{
+			std::coi
+		}
 };
 
 
@@ -33,7 +37,7 @@ int main(int you, char **nes)
 	// Data		*deserializedData;
 	// Data 		data;
 	
-	younes 
+	younes a;
 
 	// // inialisation.
 	// data._boolValue = false;
