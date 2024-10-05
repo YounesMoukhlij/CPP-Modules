@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:56:44 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:11:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:11:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Base*	generate(void)
 		case 2;
 			return (new B());
 		default:
-			return ()
+			return (0x0);
 	}
 }
 
