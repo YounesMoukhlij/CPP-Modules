@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:17:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:17:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int main(int you, char **nes)
 	}
 	Base *base;
 
-	
+	base = 
 	return (EXIT_SUCCESS);
 }
