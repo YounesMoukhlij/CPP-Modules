@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:38:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:38:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ class younes
 	private :
 		younes();
 	public:
-}
+		~younes();
+};
 
 
 int main(int you, char **nes)
@@ -32,7 +33,7 @@ int main(int you, char **nes)
 	// Data		*deserializedData;
 	// Data 		data;
 	
-	
+	younes 
 
 	// // inialisation.
 	// data._boolValue = false;
