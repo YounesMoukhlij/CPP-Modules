@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:51:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:52:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main(int you, char**)
 		// }
 		
 		Array<int> arr3(arr1);
-    	std::cout << "Size of arr2: " << arr3.getSize() << std::endl;
+    	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
 	}
 	catch(const std::exception& e)
 	{
