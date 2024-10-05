@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:14:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:15:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,9 +74,7 @@ void	deepCopy(const Array& origine)
 		delete [] _array;
 	_size = origine._size;
 	_array = new T[_size];
-	for (int i = 0x0; i < _size ; i++)
-	{
-		_array[i] = 
-	}
+	for (int i = 0x0; i < _size ;i++)
+		_array[i] = origine._array[i];
 	
 }
