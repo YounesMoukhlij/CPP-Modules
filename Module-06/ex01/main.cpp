@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:40:35 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:40:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class younes
 		younes() {};
 	public:
 		~younes() {};
-		void print()
+		static void print()
 		{
 			std::cout << "hello" << std::endl;
 		}
@@ -37,7 +37,7 @@ int main(int you, char **nes)
 	// Data		*deserializedData;
 	// Data 		data;
 	
-	younes a;
+	// younes a;
 	a.print();
 
 	// // inialisation.
