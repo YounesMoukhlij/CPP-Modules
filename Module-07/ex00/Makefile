@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:23:40 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/05 16:23:46 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,8 +45,9 @@ ${NAME} : ${OBJ}
 	@c++ ${CPPFLAGS} $^ -o $@
 
 print_younes:
-	@ecch
+	@echo "\n"
 	@echo "Coded By Younes Moukhlij."
+	@echo "\n"
 
 clean :
 	@rm -rf ${OBJ}
