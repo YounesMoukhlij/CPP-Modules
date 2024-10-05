@@ -6,14 +6,20 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:48:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:49:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
+void	younes()
+{
+	
+}
+
 int main(int you, char**)
 {	
+	atexit(younes);
 	if (you != 0x1)
 	{
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
