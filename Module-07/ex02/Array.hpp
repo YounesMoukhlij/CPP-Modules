@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:01:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:01:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Array::~Array()
 	delete [] _array;
 }
 
-Array::Array()
+Array::Array() : _array(0x0). 
 {
-	std::cout << "Default Array Constructor called" << std::end
+	std::cout << "Default Array Constructor called" << std::endl;
 }
