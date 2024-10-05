@@ -6,9 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:52:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:52:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+template<typename T>
+T &max(T &t1, T &t2);
+
+
+template<typename T>
+void swap(T &t1, T &t2);
