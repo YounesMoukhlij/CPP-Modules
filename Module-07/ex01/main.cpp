@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:33:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:34:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,5 @@ int main(int you, char **nes)
 	iter(_double, 0x5, &afficher); std::cout << std::endl;
 
 
-	return (0);
+	return (EXIT_SUCCESS);
 }
