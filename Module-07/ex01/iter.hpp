@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:25:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:37:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:37:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ template<typename T> void iter(T *array, size_t length, void (*func)(T const &_v
 {
 	for (size_t i = 0x0; i < length; i++)
 	{
-		if (i < a)
+		if (i < array.size())
 			(*func)(array[i]);
 	}
 }
