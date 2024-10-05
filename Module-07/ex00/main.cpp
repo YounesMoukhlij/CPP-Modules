@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:57:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:57:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,10 @@ int main(int you, char **nes)
 		
 		
 	Awesome cc(2), dd(4);
-    swap(c, d);
-    std::cout << c << " " << d << std::endl;
-    std::cout << max(c, d) << std::endl;
-    std::cout << min(c, d) << std::endl;
+    swap(cc, dd);
+    std::cout << cc << " " << dd << std::endl;
+    std::cout << max(cc, dd) << std::endl;
+    std::cout << min(cc, dd) << std::endl;
 		
     return (EXIT_SUCCESS);
 }
