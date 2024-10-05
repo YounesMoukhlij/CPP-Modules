@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:42:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:42:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ int main(int you, char**)
 	Array<int> arr2(5);
     std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 	
-	Array<std::string>_s
+	Array<std::string>str(3);
+	for (int i = 0x0;)
 	
 	
     // Array<int> numbers(MAX_VAL);
