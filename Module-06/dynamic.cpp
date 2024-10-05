@@ -47,3 +47,8 @@ void printShapeInfo(Shape* shape) {
         std::cout << "Unknown shape type" << std::endl;
     }
 }
+
+int main()
+{
+	
+}
