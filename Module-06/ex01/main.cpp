@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:55:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:40:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:41:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main(int you, char **nes)
 	// Data 		data;
 	
 	// younes a;
-	a.print();
+	younes::print();
 
 	// // inialisation.
 	// data._boolValue = false;
