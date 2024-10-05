@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:04:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:04:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void swap(<Template>T &t1, <Template>T &t2)
 }
 
 
-<Template>T &max(<Template>T &t1, T &t2)
+<Template>T &max(<Template>T &t1, <Template>T &t2)
 {
 	if (t1 > t2)
 		return (t1);
