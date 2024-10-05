@@ -8,8 +8,7 @@ class Shape
 {
 public:
     virtual ~Shape() {}
-    virtual void draw() const = 0;  // Pure virtual function
-};
+    virtual void draw() const = 0; 
 
 class Circle : public Shape {
 public:
