@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 16:14:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 16:15:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int main( void )
     std::cout << "Before Swap" << std::endl;
     std::cout << "c = " << c << ", d = " << d << std::endl;
     swap(c, d);
+    std::cout << "After Swap" << std::endl;
     std::cout << "c = " << c << ", d = " << d << std::endl;
     std::cout << "min( c, d ) = " << min( c, d ) << std::endl;
     std::cout << "max( c, d ) = " << max( c, d ) << std::endl;
