@@ -52,5 +52,5 @@ int main()
 {
 	Shape o;
 
-	o
+	oprintShapeInfo(o)
 }
