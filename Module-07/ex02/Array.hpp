@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:05:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:05:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ template<class T>
 Array<T>::Array(unsigned int n) : n(0x0)
 {	
 }
+
 template<class T>
-Array<T>::Array(unsigned int n) : n(0x0)
+Array<T>::Array(const Array& origine) : 
 {	
 }
