@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:15:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:16:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ class Array
 		Array& operator=(const Array &origine);
 		
 		unsigned int	getSize() const;
-		void			deepCopy(const Array& origine);
 		T&				operator[](unsigned int index);
 		const T&		operator[](unsigned int index) const;
 };
@@ -73,12 +72,5 @@ Array& operator=(const Array &origine)
 		for (int i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
-	return (t)	
-}
-
-template<class T>
-void	deepCopy(const Array& origine)
-{
-
-	
+	return (*this);	
 }
