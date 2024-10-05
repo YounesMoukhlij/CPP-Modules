@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:26:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:31:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 18:33:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ std::ostream & operator<<( std::ostream & o, Awesome const & rhs )
 }
 
 template< typename T >
-void  print( T& x )
+void  print( const T& x )
 {
   std::cout << x << std::endl;
   return ;
