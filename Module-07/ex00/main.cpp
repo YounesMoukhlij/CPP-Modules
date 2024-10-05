@@ -6,16 +6,9 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 15:52:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 15:53:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
-
-
-
-
-#include <iostream>
 
 
 template<typename T>
