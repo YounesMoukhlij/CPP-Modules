@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:18:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:19:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ Array<T>::Array(const Array& origine) : _array(new T(origine._array)), _size(ori
 }
 
 template<class T>
-Array& operator=(const Array &origine)
+Array& Array<T>::operator=(const Array &origine)
 {
 	if (this != &origine)
 	{
