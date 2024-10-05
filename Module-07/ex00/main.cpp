@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:54:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:55:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ class Awesome
     int _n;
 };
 std::ostream & operator<<(std::ostream & o, const Awesome &a) { o << a.get_n(); return o; }
+
 int main(void)
 {
 	Awesome a(2), b(4);
