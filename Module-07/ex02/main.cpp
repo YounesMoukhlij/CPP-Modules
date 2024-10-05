@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:40:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:46:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,55 +27,51 @@ int main(int you, char**)
 	Array<int> arr2(5);
     std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 	
-	  for (unsigned int i = 0; i < arr2.getSize(); ++i)
-	  {
-        arr2[i] = i * 10;  // Assign values
-        std::cout << "arr2[" << i << "] = " << arr2[i] << std::endl;
+	
+    Array<int> numbers(MAX_VAL);
+    int* mirror = new int[MAX_VAL];
+    srand(time(NULL));
+    for (int i = 0; i < MAX_VAL; i++)
+    {
+        const int value = rand();
+        numbers[i] = value;
+        mirror[i] = value;
     }
-    // Array<int> numbers(MAX_VAL);
-    // int* mirror = new int[MAX_VAL];
-    // srand(time(NULL));
-    // for (int i = 0; i < MAX_VAL; i++)
-    // {
-    //     const int value = rand();
-    //     numbers[i] = value;
-    //     mirror[i] = value;
-    // }
-    //SCOPE
-    // {
-    //     Array<int> tmp = numbers;
-    //     Array<int> test(tmp);
-    // }
+    // SCOPE
+    {
+        Array<int> tmp = numbers;
+        Array<int> test(tmp);
+    }
 
-    // for (int i = 0; i < MAX_VAL; i++)
-    // {
-    //     if (mirror[i] != numbers[i])
-    //     {
-    //         std::cerr << "didn't save the same value!!" << std::endl;
-    //         return 1;
-    //     }
-    // }
-    // try
-    // {
-    //     numbers[-2] = 0;
-    // }
-    // catch(const std::exception& e)
-    // {
-    //     std::cerr << e.what() << '\n';
-    // }
-    // try
-    // {
-    //     numbers[MAX_VAL] = 0;
-    // }
-    // catch(const std::exception& e)
-    // {
-    //     std::cerr << e.what() << '\n';
-    // }
+    for (int i = 0; i < MAX_VAL; i++)
+    {
+        if (mirror[i] != numbers[i])
+        {
+            std::cerr << "didn't save the same value!!" << std::endl;
+            return 1;
+        }
+    }
+    try
+    {
+        numbers[-2] = 0;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    try
+    {
+        numbers[MAX_VAL] = 0;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
 
-    // for (int i = 0; i < MAX_VAL; i++)
-    // {
-    //     numbers[i] = rand();
-    // }
-    // delete [] mirror;//
+    for (int i = 0; i < MAX_VAL; i++)
+    {
+        numbers[i] = rand();
+    }
+    delete [] mirror;//
     return 0;
 }
