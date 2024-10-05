@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 17:40:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:41:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,5 @@ Array<T>& Array<T>::operator[](unsigned int index)
 }
 
 template<class T>
-A
+std::ostream& 
 
