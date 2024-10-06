@@ -5,9 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <list>
-#include <deque>
-#include <set>
+
 
 # define IGNORE(param) (void)(param)
 
