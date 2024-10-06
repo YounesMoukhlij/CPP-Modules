@@ -23,7 +23,7 @@ int main(int you, char **nes)
 
     for (std::vector<int>::iterator i = vect.begin(); i < vect.end(), i++)
     {
-        std::cout << " i << std::endl;
+        std::cout << "Ele i << std::endl;
     }
 
 }
