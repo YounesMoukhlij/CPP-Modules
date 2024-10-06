@@ -31,7 +31,7 @@ int main(int you, char **nes)
     try
     {
         {
-            std::vector<int>::iterator  isthere = easyfind(vect, 0x01);
+            std::vector<int>::iterator  isthere = easyfind(vect, 0x1);
             std::cout << "Element has been found = [" << *isthere << "]" << std::endl;
         }
     }
