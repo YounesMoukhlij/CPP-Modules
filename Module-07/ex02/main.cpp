@@ -61,7 +61,7 @@ int main(int you, char **nes)
     }
     try
     {
-        numbers[MAX_VAL] = 0;
+        numbers[MAX_VAL] = 0x0;
     }
     catch(const std::exception& e)
     {
@@ -86,7 +86,7 @@ int main(int you, char **nes)
     	std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 
 
-		Array<std::string>str(3);
+		Array<std::string>str(0x3);
 		for (size_t i = 0x0; i < str.getSize() ; i++)
 		{
 			std::cout << i << std::endl;
