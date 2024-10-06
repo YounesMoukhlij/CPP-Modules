@@ -21,6 +21,9 @@ int main(int you, char **nes)
     vect.push_back(0xE);
     vect.push_back(0xF);
 
-    for (std::iterator i = vect.begin(); i <)
+    for (std::iterator i = vect.begin(); i < vect.end(), i++)
+    {
+        
+    }
 
 }
