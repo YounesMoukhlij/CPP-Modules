@@ -112,9 +112,6 @@ int main(int you, char **nes)
 		std::cout << "Check after modifing the value." << std::endl;
 		for (size_t i = 0x0; i < arr4.getSize(); i++)
 			std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
-
-
-
 	}
 	catch(const std::exception& e)
 	{
