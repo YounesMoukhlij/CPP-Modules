@@ -9,7 +9,8 @@
 class Span
 {
     private:
-        unsigned int _n;
+        int             *array;
+        unsigned int    _n;
 	public:
 		Span();
 		Span(unsigned int n);
