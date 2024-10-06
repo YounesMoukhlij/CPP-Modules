@@ -26,4 +26,15 @@ int main(int you, char **nes)
         std::cout << "Element of vector<int> = " << *i << std::endl;
     }
 
+    try
+    {
+        {
+            
+        }
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+
 }
