@@ -26,10 +26,12 @@ int main(int you, char **nes)
         std::cout << "Element of vector<int> = " << *i << std::endl;
     }
 
+    std::cout << std::endl;
+    std::cout << std::endl;
     try
     {
         {
-            std::vector<int>::iterator  isthere = easyfind(vect, 0x0);
+            std::vector<int>::iterator  isthere = easyfind(vect, 0x01);
             std::cout << "Element has been found = [" << *isthere << "]" << std::endl;
         }
     }
