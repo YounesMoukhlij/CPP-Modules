@@ -37,5 +37,5 @@ int main(int you, char **nes)
     {
         std::cerr << e.what() << std::endl;
     }
-
+	return (EXIT_FAILURE);
 }
