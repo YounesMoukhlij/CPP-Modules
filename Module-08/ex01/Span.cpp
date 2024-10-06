@@ -7,6 +7,12 @@ Span::Span()
 {
 
 }
-		Span(unsigned int _n);
-		Span(const Span& _origine);
+Span::Span(unsigned int _n)
+{
+
+}
+Span::Span(const Span& _origine)
+{
+
+}
 		~Span();
