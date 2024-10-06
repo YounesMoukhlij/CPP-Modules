@@ -44,12 +44,12 @@ int main(int you, char**)
 		Array<int> arr3(arr1);
     	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
 		Array<int> numbers(MAX_VAL);
-    	// int* mirror = new int[MAX_VAL];
+    	int* mirror = new int[MAX_VAL];
 		for (unsigned int i = 0; i < MAX_VAL; i++)
     	{
         	const unsigned int value = rand();
         	numbers[i] = value;
-        	// mirror[i] = value;
+        	mirror[i] = value;
     	}
 	}
 	catch(const std::exception& e)
