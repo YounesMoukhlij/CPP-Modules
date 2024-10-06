@@ -17,7 +17,7 @@ void	younes()
 	system("leaks iter");
 }
 
-int main(int ac, char **nes)
+int main(int you, char **nes)
 {
 	atexit(younes);
 	IGNORE(nes);
@@ -76,9 +76,8 @@ int main(int ac, char **nes)
     }
 	std::cout << std::endl;
 	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << std::endl;
 	std::cout << "2nd TEST" << std::endl;
+	std::cout << std::endl;
 	std::cout << std::endl;
 	try
 	{
