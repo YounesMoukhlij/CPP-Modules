@@ -29,17 +29,17 @@ class Array
 		~Array();
 		Array(unsigned int n);
 		Array(const Array& origine);
-		Array<T>& operator=(const Array &origine);
-		
+		Array& operator=(const Array &origine);
+
 		unsigned int		getSize() const;
-		Array<T>&			operator[](unsigned int index);
+		T&			operator[](unsigned int index);
 		const Array<T>&		operator[](unsigned int index) const;
 };
 
 template<class T>
 Array<T>::~Array()
 {
-	std::cout << "Array Destructor Called." << std::endl; 
+	std::cout << "Array Destructor Called." << std::endl;
 	delete [] _array;
 }
 
@@ -79,7 +79,7 @@ Array<T>& Array<T>::operator=(const Array &origine)
 		for (size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
-	return (*this);	
+	return (*this);
 }
 
 template<class T>
