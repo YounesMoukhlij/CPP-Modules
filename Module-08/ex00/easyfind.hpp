@@ -1,9 +1,11 @@
 
 
+#pragma once
+
 
 template <typename T>
-typename T::iterator easyfind(T& boc, int _integer)
+typename T::iterator easyfind(T& box, int _integer)
 {
-	typename T::iterator i = std::find(boc.begin(), boc.end(), _integer);
+	typename T::iterator i = std::find(box.begin(), box.end(), _integer);
 	return i;
 }
