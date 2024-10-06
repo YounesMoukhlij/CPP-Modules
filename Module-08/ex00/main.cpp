@@ -17,8 +17,10 @@ int main(int you, char **nes)
     vect.push_back(0x1);
     vect.push_back(0xA);
     vect.push_back(0xB);
-    vect.push_back(0x9C);
-    vect.push_back(0x9);
-    vect.push_back(0x1);
+    vect.push_back(0xC);
+    vect.push_back(0xE);
+    vect.push_back(0xF);
+
+    for ()
 
 }
