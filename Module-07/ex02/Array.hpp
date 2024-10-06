@@ -83,7 +83,7 @@ Array<T>& Array<T>::operator=(const Array &origine)
 }
 
 template<class T>
-sizr Array<T>::getSize( void ) const
+size_t Array<T>::getSize( void ) const
 {
 	return (_size);
 }
