@@ -31,9 +31,9 @@ class Array
 		Array(const Array& origine);
 		Array& operator=(const Array &origine);
 
-		unsigned int		getSize() const;
-		T&			operator[](unsigned int index);
-		const Array<T>&		operator[](unsigned int index) const;
+		unsigned int	getSize() const;
+		T&				operator[](unsigned int index);
+		const T&		operator[](unsigned int index) const;
 };
 
 template<class T>
