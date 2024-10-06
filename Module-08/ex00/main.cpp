@@ -35,7 +35,7 @@ int main(int you, char **nes)
     }
     catch(const std::exception& e)
     {
-        std::cerr << e.what() << '\n';
+        std::cerr << e.what() << std::endl;
     }
 
 }
