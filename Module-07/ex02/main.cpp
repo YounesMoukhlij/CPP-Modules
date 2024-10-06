@@ -99,7 +99,7 @@ int main(int you, char **nes)
     	std::cout << "Size of arr4 of type float: " << arr4.getSize() << std::endl;
 		for (size_t i = 0x0; i < arr4.getSize(); i++)
 		{
-			
+			arr4[i] = 42.5f;
 		}
 
 
