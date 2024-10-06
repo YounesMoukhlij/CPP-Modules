@@ -72,6 +72,7 @@ int main(int you, char **nes)
     {
         numbers[i] = rand();
     }
+    delete [] mirror;
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << "2nd TEST" << std::endl;
