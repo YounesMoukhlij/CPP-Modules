@@ -15,14 +15,14 @@ OBJ = ${SRC:.cpp=.o}
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Span.cpp
 
 NAME = iter
 
 
 all : ${NAME}
 
-%.o: %.cpp Array.hpp
+%.o: %.cpp Span.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 
