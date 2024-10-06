@@ -77,7 +77,7 @@ int main(int ac, char **nes)
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
-	std::cout << ""
+	std::cout << "2nd TEST"
 	std::cout <<
 	try
 	{
