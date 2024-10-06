@@ -95,6 +95,8 @@ int main(int you, char **nes)
 		for (std::size_t i = 0; i < arr3.getSize(); i++)
 			std::cout << "c[" << i << "] = " << arr3[i] << std::endl;
 
+		Array<float> arr4()
+
 	}
 	catch(const std::exception& e)
 	{
