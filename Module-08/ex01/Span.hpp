@@ -14,7 +14,7 @@ class Span {
 		Span(const Span& _origine);
 		~Span();
 
-		Span& operator=(const Span& _obj);
+		Span&   operator=(const Span& origine);
 		int		shortestSpan();
 		int		longestSpan();
         int     addNumber();
