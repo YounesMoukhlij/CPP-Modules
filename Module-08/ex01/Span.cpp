@@ -11,7 +11,7 @@ Span::Span(unsigned int _n)
 {
 
 }
-Span::Span(const Span& _origine)
+Span::Span(const Span& origine)
 {
 
 }
@@ -20,4 +20,7 @@ Span::~Span()
 
 }
 
-		Span&   operator=(const Span& origine);
+Span::Span&   operator=(const Span& origine);
+{
+
+}
