@@ -109,6 +109,7 @@ int main(int you, char **nes)
 	    {
     	    std::cerr << e.what() << '\n';
     	}
+		std::s
 		for (size_t i = 0x0; i < arr4.getSize(); i++)
 			std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
 
