@@ -5,7 +5,6 @@
 
 int main(int you, char **nes)
 {
-	atexit(younes);
 	IGNORE(nes);
 	if (you != 0x1)
 	{
