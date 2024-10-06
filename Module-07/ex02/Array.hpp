@@ -23,17 +23,17 @@ class Array
 {
 	private:
 		T* _array;
-		size_t _size;
+		std::size_t _size;
 	public:
 		Array();
 		~Array();
-		Array(size_t n);
+		Array(std::size_t n);
 		Array(const Array& origine);
 		Array& operator=(const Array &origine);
 
-		size_t	getSize() const;
-		T&				operator[](size_t index);
-		const T&		operator[](size_t index) const;
+		std::size_t	getSize() const;
+		T&				operator[](std::size_t index);
+		const T&		operator[](std::size_t index) const;
 };
 
 template<class T>
@@ -49,7 +49,7 @@ Array<T>::Array() : _array(0x0), _size(0x0)
 }
 
 template<class T>
-Array<T>::Array(size_t n) : _size(n)
+Array<T>::Array(std::size_t n) : _size(n)
 {
 	_array = new T[n];
 }
@@ -62,7 +62,7 @@ Array<T>::Array(const Array& origine)
 	{
 		_size = origine._size;
 		_array = new T[_size];
-		for (size_t i = 0x0; i < _size ; i++)
+		for (std::size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
 }
@@ -76,20 +76,20 @@ Array<T>& Array<T>::operator=(const Array &origine)
 			delete [] _array;
 		_size = origine._size;
 		_array = new T[_size];
-		for (size_t i = 0x0; i < _size ; i++)
+		for (std::size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
 	return (*this);
 }
 
 template<class T>
-size_t Array<T>::getSize( void ) const
+std::size_t Array<T>::getSize( void ) const
 {
 	return (_size);
 }
 
 template<class T>
-const Array<T>& Array<T>::operator[](size_t index) const
+const Array<T>& Array<T>::operator[](std::size_t index) const
 {
     if (index >= _size)
 	{
@@ -99,7 +99,7 @@ const Array<T>& Array<T>::operator[](size_t index) const
 }
 
 template<class T>
-Array<T>& Array<T>::operator[](size_t index)
+Array<T>& Array<T>::operator[](std::size_t index)
 {
     if (index >= _size)
 	{
