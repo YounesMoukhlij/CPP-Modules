@@ -21,7 +21,7 @@ int main(int you, char **nes)
     vect.push_back(0xE);
     vect.push_back(0xF);
 
-    for (std::vector<int>::iterator i = vect.begin(); i < vect.end(), i++)
+    for (std::vector<int>::iterator i = vect.begin(); i < vect.end(); i++)
     {
         std::cout << "Element of vector<int> = " << *i << std::endl;
     }
