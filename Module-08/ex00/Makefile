@@ -12,7 +12,7 @@ NAME = easyFind
 
 all : ${NAME}
 
-%.o: %.cpp Array.hpp
+%.o: %.cpp easyfind.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 
