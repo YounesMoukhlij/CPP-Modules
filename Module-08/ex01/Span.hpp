@@ -9,10 +9,10 @@
 class Span
 {
     private:
-    
+        unsigned int _n;
 	public:
 		Span();
-		Span(unsigned int _n);
+		Span(unsigned int n);
 		Span(const Span& origine);
 		~Span();
 
