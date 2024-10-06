@@ -45,9 +45,9 @@ int main(int you, char**)
     	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
 		Array<int> numbers(MAX_VAL);
     	int* mirror = new int[MAX_VAL];
-		for (unsigned int i = 0; i < MAX_VAL; i++)
+		for (const unsigned int i = 0; i < MAX_VAL; i++)
     	{
-        	unsigned int value = rand();
+        	const unsigned int value = rand();
         	numbers[i] = value;
         	mirror[i] = value;
     	}
