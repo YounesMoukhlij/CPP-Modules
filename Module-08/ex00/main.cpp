@@ -29,7 +29,7 @@ int main(int you, char **nes)
     try
     {
         {
-            std::iterator = 
+            std::iterator = isthere = easyfind()
         }
     }
     catch(const std::exception& e)
