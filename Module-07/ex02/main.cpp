@@ -55,7 +55,7 @@ int main(int you, char **nes)
     }
     try
     {
-        numbers[-2] = 0;
+        numbers[-0x2] = 0x0;
     }
     catch(const std::exception& e)
     {
@@ -70,7 +70,7 @@ int main(int you, char **nes)
         std::cerr << e.what() << '\n';
     }
 
-    for (int i = 0; i < MAX_VAL; i++)
+    for (int i = 0x0; i < MAX_VAL; i++)
     {
         numbers[i] = rand();
     }
@@ -84,7 +84,7 @@ int main(int you, char **nes)
 		Array<int> arr1;
     	std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
 
-		Array<int> arr2(5);
+		Array<int> arr2(0x5);
     	std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 
 
