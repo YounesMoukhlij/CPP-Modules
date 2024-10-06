@@ -29,7 +29,8 @@ int main(int you, char **nes)
     try
     {
         {
-            std::vector<int>::iterator = isthere = easyfind(vect, 0x0);
+            std::vector<int>::iterator  isthere = easyfind(vect, 0x0);
+            
         }
     }
     catch(const std::exception& e)
