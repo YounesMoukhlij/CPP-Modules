@@ -96,7 +96,8 @@ int main(int you, char **nes)
 			std::cout << "c[" << i << "] = " << arr3[i] << std::endl;
 
 		Array<float> arr4(0x6);
-    	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
+    	std::cout << "Size of arr4 of type float: " << arr4.getSize() << std::endl;
+		
 
 
 	}
