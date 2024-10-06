@@ -119,5 +119,5 @@ int main(int you, char **nes)
 	{
 		std::cerr << e.what() << '\n';
 	}
-    return 0;
+    return (EXIT_SUCCESS);
 }
