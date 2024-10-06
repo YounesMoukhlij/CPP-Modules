@@ -23,7 +23,7 @@ int main(int you, char **nes)
 
     for (std::iterator i = vect.begin(); i < vect.end(), i++)
     {
-        
+        std::cout << *vect << std::endl;
     }
 
 }
