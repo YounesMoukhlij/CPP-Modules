@@ -60,9 +60,9 @@ void	younes()
 //     return 0;
 // }
 
-int main(int, char**)
+int main(int ac, char **nes)
 {
-		// atexit(younes);
+	atexit(younes);
 	if (you != 0x1)
 	{
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
