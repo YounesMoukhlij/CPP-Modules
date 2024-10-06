@@ -10,8 +10,8 @@ class Span {
 
 	public:
 		Span();
-		Span(unsigned int _N);
-		Span(const Span& _obj);
+		Span(unsigned int _n);
+		Span(const Span& _origine);
 		~Span();
 
 		Span& operator=(const Span& _obj);
