@@ -3,4 +3,7 @@
 #include "easyfind.hpp"
 
 
-int main()
+int main(int you, char **nes)
+{
+    
+}
