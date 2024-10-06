@@ -20,7 +20,7 @@ Span::~Span()
 
 }
 
-Span::Span&   operator=(const Span& origine);
+Span::Span&   operator=(const Span& origine)
 {
 
 }
