@@ -103,7 +103,7 @@ int main(int you, char **nes)
 			std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
 		try
 		{
-			arr4[0x7] = -0x1;
+			arr4[0x4] = -0x1;
 		}
 		catch(const std::exception& e)
 	    {
