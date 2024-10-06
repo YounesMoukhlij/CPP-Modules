@@ -14,7 +14,7 @@ int main(int you, char **nes)
 
     std::vector<int> vect;
 
-    vect.push_back(0x1);
+    vect.push_back(0x0);
     vect.push_back(0xA);
     vect.push_back(0xB);
     vect.push_back(0xC);
