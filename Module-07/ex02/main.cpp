@@ -77,8 +77,9 @@ int main(int ac, char **nes)
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
-	std::cout << "2nd TEST"
-	std::cout <<
+	std::cout << std::endl;
+	std::cout << "2nd TEST" << std::endl;
+	std::cout << std::endl;
 	try
 	{
 		Array<int> arr1;
