@@ -4,6 +4,6 @@
 template <typename T>
 typename T::iterator easyfind(T& container, int _integer)
 {
-	typename T::iterator i = std::find(container.begin(), container.end(), value);
+	typename T::iterator i = std::find(container.begin(), container.end(), _integer);
 	return i;
 }
