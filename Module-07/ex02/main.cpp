@@ -28,12 +28,10 @@ int main(int you, char **nes)
 	}
 
     Array<int> numbers(MAX_VAL);
-
     int* mirror = new int[MAX_VAL];
-
     srand(time(NULL));
 
-    for (int i = 0; i < MAX_VAL; i++)
+    for (int i = 0x0; i < MAX_VAL; i++)
     {
         const int value = rand();
         numbers[i] = value;
@@ -45,7 +43,7 @@ int main(int you, char **nes)
         Array<int> test(tmp);
     }
 
-    for (int i = 0; i < MAX_VAL; i++)
+    for (int i = 0x0; i < MAX_VAL; i++)
     {
         if (mirror[i] != numbers[i])
         {
