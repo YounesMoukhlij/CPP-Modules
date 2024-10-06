@@ -12,4 +12,8 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 
+    std::vector<int> vect;
+
+    vect.pu
+
 }
