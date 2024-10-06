@@ -91,7 +91,7 @@ int main(int you, char **nes)
 		for (size_t i = 0x0; i < str.getSize() ; i++)
 			std::cout << i << " str " << str[i] << std::endl;
 
-		Array<int> arr3(arr1);
+		Array<int> arr3(arr2);
     	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
 		for (std::size_t i = 0; i < arr3.getSize(); i++)
 			std::cout << "c[" << i << "] = " << arr3[i] << std::endl;
