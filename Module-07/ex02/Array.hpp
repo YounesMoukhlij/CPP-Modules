@@ -49,7 +49,7 @@ Array<T>::Array() : _array(0x0), _size(0x0)
 }
 
 template<class T>
-Array<T>::Array(unsigned int n) : _size(n)
+Array<T>::Array(size_t n) : _size(n)
 {
 	_array = new T[n];
 }
@@ -83,7 +83,7 @@ Array<T>& Array<T>::operator=(const Array &origine)
 }
 
 template<class T>
-unsigned int Array<T>::getSize( void ) const
+sizr Array<T>::getSize( void ) const
 {
 	return (_size);
 }
