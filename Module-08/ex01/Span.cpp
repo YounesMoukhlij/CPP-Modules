@@ -33,7 +33,7 @@ int		Span::shortestSpan()
 int		Span::longestSpan()
 {
 }
-int    Span:: addNumber()
+int    Span::addNumber()
 {
 
 }
