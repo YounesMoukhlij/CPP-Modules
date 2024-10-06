@@ -6,7 +6,8 @@
 
 # define IGNORE(param) (void)(param)
 
-class Span {
+class Span
+{
 
 	public:
 		Span();
