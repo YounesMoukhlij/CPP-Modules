@@ -74,7 +74,7 @@ int main(int ac, char **nes)
     {
         numbers[i] = rand();
     }
-
+	std::cout <<
 	try
 	{
 		Array<int> arr1;
