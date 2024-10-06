@@ -8,10 +8,6 @@
 
 class Span {
 
-	private:
-		int*			_arrayElements;
-		std::size_t	_size;
-		std::size_t	_index;
 	public:
 		Span();
 		Span(unsigned int _N);
@@ -19,8 +15,6 @@ class Span {
 		~Span();
 
 		Span& operator=(const Span& _obj);
-		void	addNumber(int _number);
 		int		shortestSpan();
 		int		longestSpan();
-		void	FillArray();
 };
