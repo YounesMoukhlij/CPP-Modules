@@ -88,6 +88,7 @@ int main(int you, char **nes)
 
 
 		Array<std::string>str(0x3);
+    	std::cout << "Size of str: " << arr2.getSize() << std::endl;
 		for (size_t i = 0x0; i < str.getSize() ; i++)
 			std::cout << i << " str " << str[i] << std::endl;
 
