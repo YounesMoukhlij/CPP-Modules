@@ -18,5 +18,6 @@ typename T::iterator easyfind(T& box, int _integer)
 
 std::ostream& operator<<(std::ostream& file, std::vector<int> v)
 {
-    file <<
+    file << v;
+    return file;
 }
