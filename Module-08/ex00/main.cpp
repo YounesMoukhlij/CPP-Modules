@@ -30,7 +30,7 @@ int main(int you, char **nes)
     {
         {
             std::vector<int>::iterator  isthere = easyfind(vect, 0x0);
-            std::cout << "Element has been found." << std::endl;
+            std::cout << "Element has been found." << isthere << std::endl;
         }
     }
     catch(const std::exception& e)
