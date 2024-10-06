@@ -24,3 +24,13 @@ Span::Span&   operator=(const Span& origine)
 {
 
 }
+
+
+int		shortestSpan()
+{
+
+}
+int		longestSpan()
+
+}
+int     addNumber();
