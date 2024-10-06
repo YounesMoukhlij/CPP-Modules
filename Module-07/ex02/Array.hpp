@@ -23,17 +23,17 @@ class Array
 {
 	private:
 		T* _array;
-		si _size;
+		size_t _size;
 	public:
 		Array();
 		~Array();
-		Array(si n);
+		Array(size_t n);
 		Array(const Array& origine);
 		Array& operator=(const Array &origine);
 
-		si	getSize() const;
-		T&				operator[](si index);
-		const T&		operator[](si index) const;
+		size_t	getSize() const;
+		T&				operator[](size_t index);
+		const T&		operator[](size_t index) const;
 };
 
 template<class T>
