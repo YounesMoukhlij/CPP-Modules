@@ -7,7 +7,7 @@ Span::Span()
 {
 
 }
-Span::Span(unsigned int _n)
+Span::Span(unsigned int n)
 {
 
 }
