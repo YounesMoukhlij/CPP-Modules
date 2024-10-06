@@ -17,5 +17,7 @@ Span::Span(const Span& _origine)
 }
 Span::~Span()
 {
-    
+
 }
+
+		Span&   operator=(const Span& origine);

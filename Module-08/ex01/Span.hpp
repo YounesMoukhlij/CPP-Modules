@@ -11,7 +11,7 @@ class Span {
 	public:
 		Span();
 		Span(unsigned int _n);
-		Span(const Span& _origine);
+		Span(const Span& origine);
 		~Span();
 
 		Span&   operator=(const Span& origine);
