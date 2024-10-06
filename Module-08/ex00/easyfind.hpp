@@ -14,5 +14,8 @@ typename T::iterator easyfind(T& box, int _integer)
 {
 	typename T::iterator i = std::find(box.begin(), box.end(), _integer);
     if ()
+    {
+        throw std::runtime_error("")
+    }
 	return i;
 }
