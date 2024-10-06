@@ -100,6 +100,5 @@ int main(int you, char **nes)
 	{
 		std::cerr << e.what() << '\n';
 	}
-    delete [] mirror;
     return 0;
 }
