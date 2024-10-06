@@ -16,3 +16,4 @@ typename T::iterator easyfind(T& box, int _integer)
 	return i;
 }
 
+std::ostream& 
