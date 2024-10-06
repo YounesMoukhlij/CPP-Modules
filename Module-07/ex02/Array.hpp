@@ -89,7 +89,7 @@ std::size_t Array<T>::getSize( void ) const
 }
 
 template<class T>
-const Array<T>& Array<T>::operator[](std::size_t index) const
+const T& Array<T>::operator[](std::size_t index) const
 {
     if (index >= _size)
 	{
@@ -99,7 +99,7 @@ const Array<T>& Array<T>::operator[](std::size_t index) const
 }
 
 template<class T>
-Array<T>& Array<T>::operator[](std::size_t index)
+T& Array<T>::operator[](std::size_t index)
 {
     if (index >= _size)
 	{
