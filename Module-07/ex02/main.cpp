@@ -17,49 +17,6 @@ void	younes()
 	system("leaks iter");
 }
 
-// int main(int you, char**)
-// {
-	// atexit(younes);
-	if (you != 0x1)
-	{
-		std::cerr << "The Program Does not take any Arguments." << std::endl;
-		return (EXIT_FAILURE);
-	}
-
-// 	try
-// 	{
-// 		Array<int> arr1;
-//     	std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
-
-// 		Array<int> arr2(5);
-//     	std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
-
-
-// 		Array<std::string>str(3);
-// 		for (size_t i = 0x0; i < str.getSize() ; i++)
-// 		{
-// 			std::cout << i << std::endl;
-// 		}
-
-// 		Array<int> arr3(arr1);
-//     	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
-// 		Array<int> numbers(MAX_VAL);
-//     	int* mirror = new int[MAX_VAL];
-// 		for (unsigned int i = 0; i < MAX_VAL; i++)
-//     	{
-//         	const unsigned int value = rand();
-//         	numbers[i] = value;
-//         	mirror[i] = value;
-//     	}
-// 	}
-// 	catch(const std::exception& e)
-// 	{
-// 		std::cerr << e.what() << '\n';
-// 	}
-
-//     return 0;
-// }
-
 int main(int ac, char **nes)
 {
 	atexit(younes);
