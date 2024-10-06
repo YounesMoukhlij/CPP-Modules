@@ -74,6 +74,10 @@ int main(int ac, char **nes)
     {
         numbers[i] = rand();
     }
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << ""
 	std::cout <<
 	try
 	{
