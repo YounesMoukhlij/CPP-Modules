@@ -97,7 +97,7 @@ int main(int you, char **nes)
 
 		Array<float> arr4(0x6);
     	std::cout << "Size of arr4 of type float: " << arr4.getSize() << std::endl;
-		
+		for (size_t i = 0x0; i < arr4.getSize())
 
 
 	}
