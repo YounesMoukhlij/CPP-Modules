@@ -8,7 +8,8 @@
 
 class Span
 {
-
+    private:
+    
 	public:
 		Span();
 		Span(unsigned int _n);
