@@ -26,11 +26,14 @@ Span::Span&   operator=(const Span& origine)
 }
 
 
-int		shortestSpan()
+int		Span::shortestSpan()
 {
 
 }
-int		longestSpan()
+int		Span::longestSpan()
+{
+}
+int    Span:: addNumber()
+{
 
 }
-int     addNumber();
