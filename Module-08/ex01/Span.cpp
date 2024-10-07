@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:57:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:57:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int    Span::addNumber(unsigned int n)
 }
 
 
-void	Span::gimeSomeGaz(unsigned int _i, unsigned int _n)
+void	Span::gimeSomeGaz(unsigned int _n, unsigned int _ni)
 {
 	
 }
