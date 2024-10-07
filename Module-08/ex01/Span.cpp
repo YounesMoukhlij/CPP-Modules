@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:41:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:42:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,14 @@ Span::Span(const Span& origine)
 	{
 		_n = origine._n;
 		_i = origine._i;
-		_array = new _array[_n];
+		_array = new int[_n];
 		for (std::size_t i = 0x0; i < _n ; i++)
 			_array[i] = origine._array[i];
 	}
 }
 Span::~Span()
 {
-
+	delete [] _array;
 }
 
 Span&   Span::operator=(const Span& origine)
@@ -48,7 +48,7 @@ Span&   Span::operator=(const Span& origine)
 	_array = 0x0;
 	if (this != &origine)
 	{
-		_size = origine._size;
+		_ = origine._;
 		_array = new T[_size];
 		for (std::size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
