@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:37:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:38:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,14 @@ Span::Span(unsigned int n)
 
 Span::Span(const Span& origine)
 {
-
+	_array = 0x0;
+	if (this != &origine)
+	{
+		_n = origine._n;
+		_array = new T[_size];
+		for (std::size_t i = 0x0; i < _size ; i++)
+			_array[i] = origine._array[i];
+	}
 }
 Span::~Span()
 {
