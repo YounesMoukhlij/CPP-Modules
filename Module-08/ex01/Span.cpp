@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:14:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:14:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ Span::Span(const Span& origine)
 
 Span::~Span()
 {
-	std::cout << "Copy Destructor Called." << std::endl;
+	std::cout << "Destructor Called." << std::endl;
 	delete [] _array;
 }
 
