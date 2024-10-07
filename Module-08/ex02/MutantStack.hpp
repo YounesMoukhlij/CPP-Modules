@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:25:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:27:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 # define IGNORE(param) (void)(param)
 
-template <typename T>
+template <class T>
 class MutantStack : public std::stack<T>
 {
 	public:
@@ -32,19 +32,19 @@ class MutantStack : public std::stack<T>
 		// start();
 };
 
-template <typename T>
+template <class T>
 MutantStack<T>::MutantStack() : std::stack<T>()
 {
 	std::cout << "Constructor Called." << std::endl;	
 }
 
-template <typename T>
+template <class T>
 MutantStack<T>::~MutantStack()
 {
 	std::cout << "Destructor Called." << std::endl;	
 }
 
-template <typename T>
+template <class T>
 MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
@@ -52,7 +52,7 @@ MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 	// 	*this = origine;
 }
 
-template <typename T>
+template <class T>
 MutantStack& MutantStack<T>::operator=(const MutantStack& origine)
 {
 	std::cout << "Copy Assignement Called." << std::endl;
