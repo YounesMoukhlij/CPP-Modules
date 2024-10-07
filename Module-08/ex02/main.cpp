@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:19:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:19:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,9 @@ int main(int you, char **nes)
 	MutantStack<int> test;
 	
 	test = s;
-	MutantStack<int>::iterator t1 = s.begin();
-	MutantStack<int>::iterator i = s.end();
+	MutantStack<int>::iterator t1 = test.begin();
+	MutantStack<int>::iterator t2 = test.end();
+	
 	
 	return (EXIT_SUCCESS);
 }
