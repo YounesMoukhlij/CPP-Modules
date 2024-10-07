@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:05:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:06:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ int		Span::shortestSpan()
 	}
 	
 	std::sort(_array[0x0], _array[_n]);
+	return (0);
 }
 
 int		Span::longestSpan()
@@ -85,6 +86,7 @@ int		Span::longestSpan()
 	{
 		std::cout << _array[i] << std::endl;
 	}
+	return (0);
 }
 
 int    Span::addNumber(unsigned int n)
