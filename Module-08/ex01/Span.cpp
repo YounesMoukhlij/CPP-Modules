@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:48:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:49:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,10 @@ int		Span::longestSpan()
 int    Span::addNumber(unsigned int n)
 {
 	if (_n <= _i)
-		_array[i] = n;
+	{
+		_array[_i] = n;
+		_i++;
+	}
 	else
 		throw std::out_of_range ("Cannot add the number, Out of range.");
 }
