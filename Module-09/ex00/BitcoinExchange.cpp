@@ -6,8 +6,8 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:40:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:40:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "BitcoinExchange.h[]"
+#include "BitcoinExchange.hpp"
