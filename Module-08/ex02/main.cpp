@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:20:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:20:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int main(int you, char **nes)
 	mstack.push(5);
 	mstack.push(737);
 	mstack.push(0);
+	mstack.push(0x9C);
 	std::cout << "SIZE : " << mstack.size() << std::endl;
 	MutantStack<int>::iterator it = mstack.begin();
 	MutantStack<int>::iterator ite = mstack.end();
