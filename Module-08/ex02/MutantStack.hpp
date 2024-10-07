@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:09:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:09:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 # define IGNORE(param) (void)(param)
 
-template <t
+template <typename T>
 class MutantStack : public std::stack<T>
 {
 	private:
