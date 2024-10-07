@@ -6,14 +6,15 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:23:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:24:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 # include <iostream>
-# <stdexcept>
+# include <stdexcept>
+# include <algorithm>
 
 
 # define IGNORE(param) (void)(param)
