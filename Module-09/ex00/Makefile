@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/07 16:39:13 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/07 16:50:51 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,10 +17,13 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp BitcoinExchange.cpp
 
-NAME = iter
+NAME = btc
 
 
-all : ${NAME}
+all : ${NAME} play
+
+play :
+	@clear
 
 %.o: %.cpp BitcoinExchange.hpp
 	@echo "\033[30m Compiling ...\033[0m"
