@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 14:15:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:08:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ class MutantStack
 		MutantStack& operator=(const MutantStack& origine);
 		
 		~MutantStack();
+		beg
 };
 
 MutantStack::MutantStack(/* args */)
