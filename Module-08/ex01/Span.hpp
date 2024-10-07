@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:24:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:27:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 # include <iostream>
 # include <stdexcept>
-# include <algorithm>
+# include <exception>
+// # include <algorithm>
 
 
 # define IGNORE(param) (void)(param)
