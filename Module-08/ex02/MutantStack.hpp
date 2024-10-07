@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:10:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:10:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,11 @@ MutantStack::MutantStack(/* args */)
 MutantStack::~MutantStack()
 {
 	std::cout << "Destructor Called." << std::endl;	
+}
+
+MutantStack::MutantStack(const MutantStack& origine)
+{
+	if (this != &origine)
+		
 }
 
