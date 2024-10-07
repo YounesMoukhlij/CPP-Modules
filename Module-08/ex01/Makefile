@@ -17,7 +17,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp Span.cpp
 
-NAME = S
+NAME = Span
 
 
 all : ${NAME}
