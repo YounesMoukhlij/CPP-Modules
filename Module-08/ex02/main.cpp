@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:24:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:25:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int main(int you, char **nes)
 	std::cout << "SIZE : " << mstack.size() << std::endl;
 	MutantStack<int>::iterator it = mstack.begin();
 	MutantStack<int>::iterator ite = mstack.end();
-	++it;
-	--it;
+	// ++it;
+	// --it;
 	while (it != ite)
 	{
 		std::cout << *it << std::endl;
@@ -47,8 +47,8 @@ int main(int you, char **nes)
 	MutantStack<int> s(mstack);
 	MutantStack<int>::iterator io = s.begin();
 	MutantStack<int>::iterator ioe = s.end();
-	++io;
-	--io;
+	// ++io;
+	// --io;
 	while (io != ioe)
 	{
 		std::cout << *io << std::endl;
