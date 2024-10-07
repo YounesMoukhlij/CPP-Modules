@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:43:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:53:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <iostream>
 # include <stdexcept>
 # include <exception>
+# include <new>
 # include <algorithm>
 
 
