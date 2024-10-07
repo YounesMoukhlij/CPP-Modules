@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:32:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:32:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ Span&   Span::operator=(const Span& origine)
 
 int		Span::shortestSpan()
 {
-	int	lowestSpan = INT_;
+	int	lowestSpan = INT_MAX;
 	
 	if (_n <= 0x1)
 		throw std::out_of_range("No Enough numbers to look in.");
@@ -74,7 +74,7 @@ int		Span::shortestSpan()
 	for (unsigned int i = 0; i < _n ; i++)
 	{
 		if (_array[i] < lowestSpan)
-			low
+			lowestSpan = _array[i];
 	}
 	return (lowestSpan);
 }
