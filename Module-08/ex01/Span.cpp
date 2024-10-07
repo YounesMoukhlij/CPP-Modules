@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:49:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:51:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,9 @@ Span::Span()
 
 Span::Span(usd n)
 {
-	try
-	{
-		_array = new int[n];
+	_array = new int[n];
+	if (_array)
 		
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
 	
 	_n = n;
 	_i = 0x0;
