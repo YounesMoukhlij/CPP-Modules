@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:49:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:49:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ class MutantStack : public std::stack<T>
 		iterator end();
 		iterator begin();
 };
-0
-111111111
 
 template <typename T>
 MutantStack<T>::MutantStack() : std::stack<T>()
