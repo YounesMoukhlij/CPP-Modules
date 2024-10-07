@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:47:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:47:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 
 # define IGNORE(param) (void)(param)
-
+# de
 class Span
 {
     private:
