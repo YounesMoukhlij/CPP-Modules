@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:40:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:40:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ Span::Span()
 
 Span::Span(unsigned int n)
 {
-	new _array = 0;
+	new _array[n];
+	_n = n;
 }
 
 Span::Span(const Span& origine)
