@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:34:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:34:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdexcept>
 # include <exception>
 # include <algorithm>
-# include <dequ>
+# include <stack>
 
 # define IGNORE(param) (void)(param)
 
@@ -68,13 +68,13 @@ MutantStack<T>& MutantStack<T>::operator=(const MutantStack& origine)
 }
 
 template <typename>
-typename MutantStack<T>::iterator begin()
+typename MutantStack<T>::iterator MutantStack<T>::begin()
 {
 	return (this->c.begin());
 }
 
 template <typename>
-typename MutantStack<T>::iterator end()
+typename MutantStack<T>::iterator MutantStack<T>::end()
 {
 	return (this->end());
 }
