@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:14:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:15:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ MutantStack::MutantStack(const MutantStack& origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
 	if (this != &origine)
-		this = *origine;
+		*this = *origine;
 	
 }
 
