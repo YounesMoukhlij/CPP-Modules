@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:09:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:10:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ void	Span::arrayFiller()
 {
 	for (unsigned int index = 0x0; index < _n; index++)
 	{
-		int _value = std::rand();
+		int _value = std::rand() % 9;
 		_array[index] = _value;
 	}
 	_i = _n;
