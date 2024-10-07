@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:35:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:36:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ MutantStack<T>::~MutantStack()
 }
 
 template <typename T>
-MutantStack::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
+MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
 	// if (this != &origine)
