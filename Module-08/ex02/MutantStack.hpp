@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:21:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:22:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@
 template <typename T>
 class MutantStack : public std::stack<T>
 {
-	private:
-		/* data */
 	public:
 		MutantStack();
 		~MutantStack();
