@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:46:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:46:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,6 @@ int		Span::longestSpan()
 {
 	if (_n <= 0x1)
 		throw std::out_of_range("No Enough numbers to look in.");
-	int	highestSpan = INT_MAX;
 		
 	std::cout << "before sorting" << std::endl;
 	for (unsigned int i = 0; i< _n ; i++)
@@ -93,6 +92,7 @@ int		Span::longestSpan()
 		std::cout << _array[i] << std::endl;
 	}
 	std::sort(_array, _array + _n);
+	int	highestSpan = _array[_n ];
 	
 	std::cout << "after sorting" << std::endl;
 	std::cout  << std::endl;
