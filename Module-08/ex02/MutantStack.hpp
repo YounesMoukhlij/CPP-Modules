@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:30:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:30:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,4 +68,4 @@ MutantStack<T>& MutantStack<T>::operator=(const MutantStack& origine)
 
 template <typename>
 
-
+typename MutantStack iterator
