@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:19:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:19:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,9 @@ MutantStack& MutantStack<T>::operator=(const MutantStack& origine)
 {
 	std::cout << "Copy Assignement Called." << std::endl;
 	if (this != &origine)
+	{
+		std::stack<T>
 		*this = origine;
+	}
+	return (*this);
 }
