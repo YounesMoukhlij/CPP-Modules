@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:09:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:10:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int main(int you, char **nes)
 	}
 	Span a(3);
 	
-	a.
+	a.arrayFiller();
+	std::cout << a.Lo
 
 	return (EXIT_SUCCESS);
 }
