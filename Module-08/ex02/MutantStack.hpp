@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:36:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:41:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ MutantStack<T>& MutantStack<T>::operator=(const MutantStack& origine)
 	return (*this);
 }
 
-template <typename>
+template <typename T>
 typename MutantStack<T>::iterator MutantStack<T>::begin()
 {
 	return (this->c.begin());
