@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:41:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:41:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(int you, char **nes)
 		// std::cout << a.shortestSpan() << std::endl;
 		// a.displayArray();
 	}
-	catch (std::exception e)
+	catch (std::exception &e)
 	{
 		std::cout << "Exception Caugth : " << e.what() << std::endl;
 	}
