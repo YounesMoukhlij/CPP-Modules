@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:32:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:32:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ typename MutantStack<T>::iterator begin()
 }
 
 template <typename>
-typename MutantStack<T>::iterator begin()
+typename MutantStack<T>::iterator end()
 {
-	return (this->begin());
+	return (this->end());
 }
