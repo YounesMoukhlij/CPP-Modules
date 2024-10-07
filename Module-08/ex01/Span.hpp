@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:40:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:41:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class Span
 {
     private:
-        int             *array;
+        int             *_array;
         unsigned int    _n;
 		unsigned int	_i;
 	public:
