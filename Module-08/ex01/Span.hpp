@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:48:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:56:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ class Span
 		Span&   operator=(const Span& origine);
 		int		shortestSpan();
 		int		longestSpan();
-		int		addNumber(unsigned int n)
+		int		addNumber(unsigned int n);
+		void	gimmeSomeGas()
 };
