@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:13:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:14:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ class MutantStack : public std::stack<T>
 	private:
 		/* data */
 	public:
+		MutantStack();
+		~MutantStack();
 		MutantStack(const MutantStack& origine);
-		MutantStack(/* args */);
 		MutantStack& operator=(const MutantStack& origine);
 		
-		~MutantStack();
 		begin();
 		start();
 };
