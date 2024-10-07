@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:45:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:46:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,8 @@ int		Span::longestSpan()
 
 }
 
-int    Span::addNumber(unsigned int )
+int    Span::addNumber(unsigned int i, unsigned int n)
 {
-	if ()
+	if (i < n)
+		_array[i]
 }
