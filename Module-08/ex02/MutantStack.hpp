@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:09:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:10:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,11 @@ class MutantStack : public std::stack<T>
 
 MutantStack::MutantStack(/* args */)
 {
+	std::cout << "Constructor Called." << std::endl;	
 }
 
 MutantStack::~MutantStack()
 {
-	std::	
+	std::cout << "Destructor Called." << std::endl;	
 }
 
