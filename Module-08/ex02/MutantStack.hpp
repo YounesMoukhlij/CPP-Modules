@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:28:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:29:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 # define IGNORE(param) (void)(param)
 
-template <class T>
+template <typename T>
 class MutantStack : public std::stack<T>
 {
 	public:
@@ -55,7 +55,7 @@ MutantStack::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 }
 
 template <class T>
-MutantStack<T>& MutantStack<::operator=(const MutantStack& origine)
+MutantStack<T>& MutantStack::operator=(const MutantStack& origine)
 {
 	std::cout << "Copy Assignement Called." << std::endl;
 	if (this != &origine)
