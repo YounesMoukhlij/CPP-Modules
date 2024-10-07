@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:47:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:47:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,5 @@ int    Span::addNumber(unsigned int i, unsigned int n)
 	if (i < _i)
 		_array[i] = n;
 	else
-		throw std::runtime_error ("Cannot add the number, ")
+		throw std::runtime_error ("Cannot add the number, Out of range.");
 }
