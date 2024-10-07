@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:46:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:46:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int		Span::longestSpan()
 		std::cout << _array[i] << std::endl;
 	}
 	std::sort(_array, _array + _n);
-	int	highestSpan = _array[_n ];
+	int	highestSpan = _array[_n - 0x1] - _array[0x0];
 	
 	std::cout << "after sorting" << std::endl;
 	std::cout  << std::endl;
