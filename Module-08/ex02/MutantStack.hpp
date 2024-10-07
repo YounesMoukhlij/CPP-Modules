@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:11:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:12:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,5 @@ MutantStack::MutantStack(const MutantStack& origine)
 
 MutantStack& MutantStack::operator=(const MutantStack& origine)
 {
-	
+	if ()
 }
