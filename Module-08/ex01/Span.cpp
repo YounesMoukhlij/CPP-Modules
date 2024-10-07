@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:40:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:41:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 Span::Span()
 {
 	_i = 0x0;
-	_array = 0x0;
+	_array = NULL;
 	_n = 0x0;
 }
 
 Span::Span(unsigned int n)
 {
-	new _array[n];
+	 _array[n];
 	_n = n;
 }
 
