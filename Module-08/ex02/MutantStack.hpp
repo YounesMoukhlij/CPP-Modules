@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:20:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:21:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class MutantStack : public std::stack<T>
 };
 
 template<class T>
-MutantStack<T>::MutantStack() 
+MutantStack<T>::MutantStack() : std::stack<T>()
 {
 	std::cout << "Constructor Called." << std::endl;	
 }
