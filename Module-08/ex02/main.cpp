@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:08:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:08:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int main(int you, char **nes)
 	mstack.push(17);
 	std::cout << "TOP : " << mstack.top() << std::endl;
 	mstack.pop();
-	std::cout << "SIZE : " << mstack.top() << std::endl;
-	std::cout << mstack.size() << std::endl;
+	std::cout << "TOP : " << mstack.top() << std::endl;
+	std::cout << "SIZE : " << mstack.size() << std::endl;
 	mstack.push(3);
 	mstack.push(5);
 	mstack.push(737);
