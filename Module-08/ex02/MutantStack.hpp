@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:22:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:25:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ MutantStack& MutantStack<T>::operator=(const MutantStack& origine)
 	if (this != &origine)
 	{
 		std::stack<T>::operator=(origine);
-		*this = origine;
+		// *this = origine;
 	}
 	return (*this);
 }
