@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:08:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:09:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int main(int you, char **nes)
 		std::cout << *it << std::endl;
 		++it;
 	}
+	// Test the copy Constructor
 	MutantStack<int> s(mstack);
 	MutantStack<int>::iterator io = s.begin();
 	MutantStack<int>::iterator ioe = s.end();
