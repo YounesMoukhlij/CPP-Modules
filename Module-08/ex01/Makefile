@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/07 12:09:11 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/07 12:23:32 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,10 @@ SRC = main.cpp Span.cpp
 NAME = Span
 
 
-all : ${NAME}
+all : ${NAME} play
+
+play :
+	@clear
 
 %.o: %.cpp Span.hpp
 	@echo "\033[30m Compiling ...\033[0m"
