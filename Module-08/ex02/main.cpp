@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 16:21:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:21:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,8 @@ int main(int you, char **nes)
 	test = mstack;
 	MutantStack<int>::iterator t1 = test.begin();
 	MutantStack<int>::iterator t2 = test.end();
-	std::cout << "Begin of test"*t1 << std::endl;
-	std::cout << *t2 << std::endl;
+	std::cout << "Begin of test "<< *t1 << std::endl;
+	std::cout << "End of test " << *t2 << std::endl;
 	
 	
 	return (EXIT_SUCCESS);
