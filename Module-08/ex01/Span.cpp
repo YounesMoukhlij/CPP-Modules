@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:13:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:13:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,12 @@ Span::Span(unsigned int n)
 	_array = new int[n];
 	_n = n;
 	_i = 0x0;
-	std::cout << "Param Constructor Called." << std::endl;
+	std::cout << "Parametriesed Constructor Called." << std::endl;
 }
 
 Span::Span(const Span& origine)
 {
+	std::cout << "Copy Constructor Called." << std::endl;
 	if (this != &origine)
 	{
 		_n = origine._n;
@@ -48,6 +49,7 @@ Span::~Span()
 
 Span&   Span::operator=(const Span& origine)
 {
+	std::cout << "Copy  Constructor Called." << std::endl;
 	_array = 0x0;
 	if (this != &origine)
 	{
