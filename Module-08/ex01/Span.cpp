@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:52:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:53:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ Span::Span()
 Span::Span(usd n)
 {
 	_array = new int[n];
-	if (_array)
-		throw std::bad_alloc("Allocation Failed.");
+	if (!_array)
+		throw std::bad_alloc();
 	_n = n;
 	_i = 0x0;
 	std::cout << "Parametriesed Constructor Called." << std::endl;
