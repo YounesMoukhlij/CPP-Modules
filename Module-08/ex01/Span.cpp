@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 12:48:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 12:50:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,5 +129,5 @@ void	Span::arrayFiller()
 
 void	Span::displayArray()
 {
-	for ()
+	for (usd i = 0x0; i < _n)
 }
