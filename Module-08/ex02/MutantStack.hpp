@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:21:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:21:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,19 +34,19 @@ class MutantStack : public std::stack<T>
 		// start();
 };
 
-template<class T>
+template <typename T>
 MutantStack<T>::MutantStack() : std::stack<T>()
 {
 	std::cout << "Constructor Called." << std::endl;	
 }
 
-template<class T>
+template <typename T>
 MutantStack<T>::~MutantStack()
 {
 	std::cout << "Destructor Called." << std::endl;	
 }
 
-template<class T>
+template <typename T>
 MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
@@ -54,6 +54,7 @@ MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 		*this = origine;
 }
 
+template <typename T>
 MutantStack& MutantStack<T>::operator=(const MutantStack& origine)
 {
 	std::cout << "Copy Assignement Called." << std::endl;
