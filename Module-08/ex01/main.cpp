@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:20:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:20:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main(int you, char **nes)
 	}
 	catch (std::exception e)
 	{
-		std::cout << "Exception Caugth : "<< e.what() << std::endl;
+		std::cout << "Exception Caugth : " << e.what() << std::endl;
 	}
 	return (EXIT_SUCCESS);
 }
