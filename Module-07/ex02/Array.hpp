@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 18:58:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:54:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ Array<T>::Array(const Array& origine)
 	{
 		_size = origine._size;
 		_array = new T[_size];
+		if (!_array)
+			throw std::bad_alloc();
 		for (std::size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
@@ -76,6 +78,8 @@ Array<T>& Array<T>::operator=(const Array &origine)
 			delete [] _array;
 		_size = origine._size;
 		_array = new T[_size];
+		if (!_array)
+			throw std::bad_alloc();
 		for (std::size_t i = 0x0; i < _size ; i++)
 			_array[i] = origine._array[i];
 	}
