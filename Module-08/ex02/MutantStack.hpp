@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:30:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:30:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ class MutantStack : public std::stack<T>
 		MutantStack(const MutantStack& origine);
 		MutantStack& operator=(const MutantStack& origine);
 		
-		begin();
-		start();
 		
 		typedef typename std::stack<T>::container_type::iterator iterator;
+		iterator begin();
+		iterator start();
 };
 
 template <typename T>
@@ -68,4 +68,7 @@ MutantStack<T>& MutantStack<T>::operator=(const MutantStack& origine)
 
 template <typename>
 
-typename MutantStack iterator
+typename MutantStack::iterator begin()
+{
+	
+}
