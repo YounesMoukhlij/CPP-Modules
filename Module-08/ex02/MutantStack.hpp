@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 15:08:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:09:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
 
 # define IGNORE(param) (void)(param)
 
-class MutantStack
+template <t
+class MutantStack : public std::stack<T>
 {
 	private:
 		/* data */
@@ -29,7 +30,8 @@ class MutantStack
 		MutantStack& operator=(const MutantStack& origine);
 		
 		~MutantStack();
-		beg
+		begin();
+		start();
 };
 
 MutantStack::MutantStack(/* args */)
