@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:51:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:52:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Span::Span(usd n)
 {
 	_array = new int[n];
 	if (_array)
-		
+		throw std::bad_alloc("Allocation Fa")
 	
 	_n = n;
 	_i = 0x0;
