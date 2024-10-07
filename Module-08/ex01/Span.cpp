@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:18:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:18:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ Span::Span(usd n)
 Span::Span(const Span& origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
-	_array = NUL
+	_array = NULL;
 	if (this != &origine)
 	{
 		_n = origine._n;
