@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 12:38:07 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/04 13:57:22 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/08 18:55:33 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJ = ${SRC:.cpp=.o}
 
 NAME = Form
 
-all : ${NAME} clean play
+all : ${NAME}
 
 play :
 	@clear
