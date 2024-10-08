@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/02 13:25:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:44:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,11 +92,6 @@ const char* Bureaucrat::GradeTooLowException::what() const throw()
 
 void	Bureaucrat::signForm(Form& form) const
 {
-	// if (form.getIndicator() == true)
-	// 	std::cout << Bureaucrat::getName() << form.getName() << std::endl;
-	// else
-	// 	std::cout << Bureaucrat::getName() << " Couldn't sign "<< form.getName() << " because " << "." << std::endl;
-	
 	try
 	{
 		form.beSigned(*this);
