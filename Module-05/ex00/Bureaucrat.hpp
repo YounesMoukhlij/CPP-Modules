@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:28:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:29:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class Bureaucrat
    		class GradeTooLowException : public std::exception
 		{
    			public:
-   			    const char* what() const noexcept const;
+   			    const char* what() const noexcept;
    		};
 			
 		const std::string&	getName() const;
