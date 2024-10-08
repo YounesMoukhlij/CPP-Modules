@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:44:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:47:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,6 @@ const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
    	return ("Grade is too Low!");
 }
-
 
 void	Bureaucrat::signForm(Form& form) const
 {
