@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:46:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:47:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main(int you, char **nes)
 
     try
 	 {
-        Bureaucrat alice("Alice", 10);
+        Bureaucrat alice("Alice", 40);
         Form contract("Bouzkri", 30, 20);
 	
 		contract.beSigned(alice);
