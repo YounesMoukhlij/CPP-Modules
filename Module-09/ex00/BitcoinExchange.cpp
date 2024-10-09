@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:16:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:17:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,6 +188,7 @@ void	BitcoinExchange::readData(void)
 
 	std::getline(infile, line);
 	line = trim(line);
+	firstCheck(line, 0x0);
 	if (line != "date | value")
 		throw InvalidData();
 	while (std::getline(infile, line))
