@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:23:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:24:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,9 +119,19 @@ void	BitcoinExchange::loadData(void)
 	}
 }
 
+bool	isaDate(str::string& s)
+{
+
+}
+
+bool	isaValue(str::string& s)
+{
+
+}
+
 bool	parseEntry(std::string& str)
 {
-	std::string	_valueStr;
+	std::string	strV;
 	std::string	_date;
 	size_t		delPos;
 
@@ -129,9 +139,15 @@ bool	parseEntry(std::string& str)
 	if (delPos == std::string::npos)
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	_date = str.substr(0, delPos);
-	_valueStr = str.substr(delPos + 1);
+	strV = str.substr(delPos + 1);
 	_date = trim(_date);
-	_valueStr = trim(_valueStr);
+	strV = trim(strV);
+	if (!isaDate(_date) || !isaValue(strV))
+		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
+	if (_value < 0)
+		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
+	if (_value > 1000)
+		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	
 	return (true);
 }
