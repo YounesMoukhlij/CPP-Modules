@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:49:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:49:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,7 +147,7 @@ void	BitcoinExchange::fillData(const std::string& inputDate)
 }
 
 
-bool	parseEntry(std::string& str)
+bool	BitcoinExchange::parseEntry(std::string& str)
 {
 	std::string	strV;
 	float		_value;
