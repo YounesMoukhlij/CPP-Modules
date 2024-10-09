@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:52:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:52:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,6 @@ void	BitcoinExchange::loadData(void)
 		date = line.substr(0x0, delPos);
 		rate = line.substr(delPos + 1);
 		date = trim(date);
-		rate = trim(_rate);
+		rate = trim(rate);
 	}
 }
