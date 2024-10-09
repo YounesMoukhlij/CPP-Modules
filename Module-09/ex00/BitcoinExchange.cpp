@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:19:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:20:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -198,8 +198,7 @@ void	BitcoinExchange::readData(void)
 	std::string	line;
 
 	std::getline(infile, line);
-	line = trim(line);
-	firstCheck(line, 0x0);
+	firstCheck(line = trim(line), 0x0);
 
 	while (std::getline(infile, line))
 	{
