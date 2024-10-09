@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:40:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:40:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,7 @@ void	BitcoinExchange::openingFiles(const std::string& name, int j)
 {
 	infile.open(name);
 	if (!infile.is_open()) 
-	{
 		(1) & (std::cerr << name << ": ", throw Invalidfile(), j = 0x1);
-	}
 	dataBase.open("data.csv");
 	if (!dataBase.is_open())
 	{
