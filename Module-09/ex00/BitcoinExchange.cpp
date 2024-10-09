@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 13:42:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 13:43:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ void	BitcoinExchange::openingFiles(const std::string& name, int j)
 void	BitcoinExchange::loadData(void)
 {
 	std::string	line;
-	size_t		delimiterPos;
+	size_t		delPos;
 
 	getline(dataBase, line);
 	line = std::remove(line.begin(), line.end(), ' ');
@@ -89,12 +89,12 @@ void	BitcoinExchange::loadData(void)
 		throw	InvalidData;
 	while (getline(dataBase, line))
 	{
-		delimiterPos = line.find(',');
-		if (delimiterPos == std::string::npos)
+		delPos = line.find(',');
+		if (delPos == std::string::npos)
 		{
 			closeFds();
 			throw InvalidData;
 		}
-		addToDataBaseMap(line, delimiterPos);
+		addToDataBaseMap(line, delPos);
 	}
 }
