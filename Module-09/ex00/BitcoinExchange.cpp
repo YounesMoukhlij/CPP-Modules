@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:27:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:28:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,10 +124,6 @@ bool	isaDate(std::string& s)
 
 }
 
-bool	isaValue(std::string& s)
-{
-
-}
 
 bool	parseEntry(std::string& str)
 {
@@ -142,8 +138,11 @@ bool	parseEntry(std::string& str)
 	strV = str.substr(delPos + 1);
 	_date = trim(_date);
 	strV = trim(strV);
-	if (!isaDate(_date) || !isaValue(strV))
+	if (!isaDate(_date))
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
+	std::stringstream strFloat(_valueStr);
+	strFloat >> _value;
+	return !strFloat.fail() && strFloat.eof();
 	if (_value < 0x0 || _value > 3E8)
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	
