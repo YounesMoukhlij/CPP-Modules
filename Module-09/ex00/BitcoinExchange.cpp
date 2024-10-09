@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:50:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:51:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,8 @@ void	BitcoinExchange::addToDataBaseMap(const std::string& _str, size_t _posDelim
 void	BitcoinExchange::loadData(void)
 {
 	std::string		line;
-	size_t		delPos;
+	size_t			delPos;
+	st
 
 	std::getline(dataBase, line);
 	line = trim(line);
