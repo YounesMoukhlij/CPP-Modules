@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:16:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:16:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,9 @@
 
 class BitcoinExchange
 {
+	privat
 	public :
-		class	FileInvalidName: public std::exception
-		{
-			public:
-				const char* what() const throw();
-		};
+	
 		class	FileErrorOpen: public std::exception
 		{
 			public:
@@ -40,4 +37,9 @@ class BitcoinExchange
 			public:
 				const char* what() const throw();
 		};
-}
+		class	FileInvalidName: public std::exception
+		{
+			public:
+				const char* what() const throw();
+		};
+};
