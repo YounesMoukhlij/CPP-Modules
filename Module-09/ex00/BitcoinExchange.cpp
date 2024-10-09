@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:21:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:21:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ bool	parseEntry(std::string& str)
 
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
-		return (std::cerr << "Error : bad input => " << _line << std::endl;, false);
+		return ((std::cerr << "Error : bad input => " << str << std::endl), false);
 	_date = str.substr(0, delPos);
 	_valueStr = str.substr(delPos + 1);
 	_date = trimString(_date);
