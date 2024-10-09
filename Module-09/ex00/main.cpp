@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:38:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 13:52:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int main(int you, char **nes)
 	{
 		std::string file = static_cast<const std::string>(nes[0x1]);
 		bit.nameChecker(file, 0x0);
+		bit.
 	}
 	catch (std::exception &younes)
 	{
