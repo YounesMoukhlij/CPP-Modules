@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:52:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:52:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,7 +143,6 @@ void	BitcoinExchange::fillData(const std::string& inputDate)
 		else
 			std::cerr << "No date found in the database for: " << inputDate << std::endl;
 	}
-	
 }
 
 
@@ -166,6 +165,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	year = date.substr(0, 4);
 	month = date.substr(5, 2);
 	day = date.substr(8, 2);
+	// must
 	std::stringstream strFloat(strV);
 	strFloat >> value;
 	if (!(!strFloat.fail() && strFloat.eof()))
