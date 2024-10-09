@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:29:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:07:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ void	BitcoinExchange::loadData(void)
 {
 	std::string		line;
 	size_t			delPos;
-	std::string		date;
+	// std::string		date;
 	std::string		rate;
 	float			rateV;
 	
@@ -119,9 +119,27 @@ void	BitcoinExchange::loadData(void)
 	}
 }
 
-bool	isaDate(std::string& s)
+void	BitcoinExchange::fillData(const std::string& inputDate)
 {
+	std::map<std::string, float>::const_iterator it;
 
+	it = dataMap.lower_bound(inputDate);
+	if (it != dataMap.end() && it->first == inputDate)
+		std::cout << inputDate << " => " << value << " = " << it->second * value << std::endl;
+	else
+	{
+		if (it != dataMap.begin())
+		{
+			--it;
+			if (it->first < inputDate)
+				std::cout << inputDate << " => " << value << " = " << it->second * value << std::endl;
+			else
+				std::cerr << "No date found in the database for: " << inputDate << std::endl;
+		}
+		else
+			std::cerr << "No date found in the database for: " << inputDate << std::endl;
+	}
+	
 }
 
 
@@ -129,21 +147,31 @@ bool	parseEntry(std::string& str)
 {
 	std::string	strV;
 	std::string	_date;
+	float		_value;
 	size_t		delPos;
+	std::string	year;
+	std::string	month;
+	std::string	day;
 
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
+		return ((std::cerr << "Error : bad input => " << str << std::endl), false);
+	_date = trim(str.substr(0x0, delPos));
+	strV = trim(str.substr(delPos + 0x1));
+	// check dates
+	if (_date.size() != 0xA || _date[0x4] != '-' || _date[0x7] != '-' )
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
-	_date = str.substr(0, delPos);
-	strV = str.substr(delPos + 1);
-	_date = trim(_date);
-	strV = trim(strV);
-	if (!isaDate(_date))
-		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
-
-	if (_value < 0x0 || _value > 3E8)
-		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
-	
+	year = _date.substr(0, 4);
+	month = _date.substr(5, 2);
+	day = _date.substr(8, 2);
+	std::stringstream strFloat(strV);
+	strFloat >> _value;
+	if (!(!strFloat.fail() && strFloat.eof()))
+		return ((std::cerr << "Error: too larsssge a number." << std::endl), false);
+	if (_value > 3E8)
+		return ((std::cerr << "Error: too large a number." << std::endl), false);
+	if (_value < 0x0)
+		return ((std::cerr << "Error : not a positive number." << std::endl), false);
 	return (true);
 }
 
@@ -162,6 +190,13 @@ void	BitcoinExchange::readData(void)
 		if (!parseEntry(line))
 			continue;
 		else
-			func(date);
+			fillData(date);
 	}
+}
+
+
+void	BitcoinExchange::fileDescriptors(void)
+{
+	infile.close();
+	dataBase.close();
 }

@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:20:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:01:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ class BitcoinExchange
 	private:
 		std::ifstream					infile;
 		std::ifstream					dataBase;
+		std::string						date;
 		std::map<std::string, float>	dataMap;
+		float							value;
 		
 	public :
 		// canonical Form
@@ -41,6 +43,8 @@ class BitcoinExchange
 		void				readData();
 		void				nameChecker(std::string& name, int i);
 		void				openingFiles(const std::string& name, int j);
+		void				fillData(const std::string& infos);
+		void				fileDescriptors();
 		
 		
 		// Exceptions

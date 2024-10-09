@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:59:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:01:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int main(int you, char **nes)
 		bit.nameChecker(file, 0x0);
 		bit.openingFiles(file, 0x0);
 		bit.loadData();
+		bit.readData();
+		bit.fileDescriptors();
 	}
 	catch (std::exception &younes)
 	{
