@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:27:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:28:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(int you, char **nes)
 	}
 	BitcoinExchange	bit;
 	
-	std::string file = static_cast<string>(nes[0x1]);
-	bit.NameChecker()
+	std::string file = static_cast<const std::string>(nes[0x1]);
+	bit.NameChecker();
 	return (EXIT_SUCCESS);
 }
