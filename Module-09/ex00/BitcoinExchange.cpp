@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:24:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:24:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,11 @@ BitcoinExchange::BitcoinExchange(const BitcoinExchange& origine)
 		*this = origine;
 }
 
-BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& origine){
-	if (this != &origine) {
-		dataBaseMap = origine.dataBaseMap;
+BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& origine)
+{
+	if (this != &origine)
+	{
+		
 	}
 	return (*this);
 }
