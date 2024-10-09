@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:03:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:04:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,8 +86,8 @@ std::string trim(const std::string& str)
 
     // std::string::size_type last = str.find_last_not_of(" ");
 	
-	size_t start = 0;
-	size_t end = str.size();
+	size_t first = 0x0;
+	size_t last = str.size();
 
 	while (start < end && std::isspace(str[start])) {
 		++start;
