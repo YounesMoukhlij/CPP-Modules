@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:37:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:38:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -193,6 +193,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 		return false;
 	if (_month == 2)
 	{
+		if (day > 28 )
 			return false;
 	}
 	/*
