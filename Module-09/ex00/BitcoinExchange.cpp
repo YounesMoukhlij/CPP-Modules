@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 13:44:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 13:45:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void	BitcoinExchange::loadData(void)
 	line = std::remove(line.begin(), line.end(), ' ');
 	if (line != "date,exchange_rate")
 		throw	InvalidData();
-	while (getline(dataBase, line))
+	while (std::getline(dataBase, line))
 	{
 		delPos = line.find(',');
 		if (delPos == std::string::npos)
