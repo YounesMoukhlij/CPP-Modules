@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:41:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:42:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ void	BitcoinExchange::loadData(void)
 	}	
 }
 
-void	BitcoinExchange::fillData(const std::string& inputDate)
+void	BitcoinExchange::printD(const std::string& inputDate)
 {
 	std::map<std::string, float>::const_iterator it;
 
