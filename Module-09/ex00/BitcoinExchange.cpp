@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:32:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:32:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -184,8 +184,8 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	std::stringstream _intD(day);
 	
 	_intY >> _year;
-	monthInt >> _month;
-	dayInt >> _day;
+	_intM >> _month;
+	dnt >> _day;
 	/*
 		* must check years months and days.
 	*/
