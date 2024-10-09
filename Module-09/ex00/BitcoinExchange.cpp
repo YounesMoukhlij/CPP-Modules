@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:11:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:20:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,23 @@ void	BitcoinExchange::loadData(void)
 
 bool	parseEntry(std::string& str)
 {
-	
+	std::string	_valueStr;
+	size_t		delimiterPos;
+
+	delimiterPos = _line.find('|');
+	if (delimiterPos == std::string::npos)
+		return (displayError(_line, 0), false);
+	_date = _line.substr(0, delimiterPos);
+	_valueStr = _line.substr(delimiterPos + 1);
+	_date = trimString(_date);
+	_valueStr = trimString(_valueStr);
+	if (!isValidDate(_date) || !isValidValue(_valueStr))
+		return (displayError(_line, 0), false);
+	if (_value < 0)
+		return (displayError(_line, 1), false);
+	if (_value > 1000)
+		return (displayError(_line, 2), false);
+	return (true);
 }
 
 
