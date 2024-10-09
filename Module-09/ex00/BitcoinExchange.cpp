@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:37:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:37:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,23 +78,9 @@ void	BitcoinExchange::openingFiles(const std::string& name, int j)
 std::string trim(const std::string& str)
 {
     std::string::size_type first = str.find_first_not_of(" ");
-    
     if (first == std::string::npos)
         return "";
-
     std::string::size_type last = str.find_last_not_of(" ");
-	
-	// size_t first = 0x0;
-	// size_t last = str.size();
-
-	// while (first < last && std::isspace(str[first]))
-	// 	++first;
-
-	// while (last > first && std::isspace(str[last - 1]))
-	// 	--last;
-
-	// return str.substr(first, last - first);
-
     return str.substr(first, last - first + 1);
 }
 
