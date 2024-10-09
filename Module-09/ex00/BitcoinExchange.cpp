@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:20:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:20:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,7 +127,7 @@ bool	parseEntry(std::string& str)
 
 	delimiterPos = _line.find('|');
 	if (delimiterPos == std::string::npos)
-		return (displayError(_line, 0), false);
+		// return (displayError(_line, 0), false);
 	_date = _line.substr(0, delimiterPos);
 	_valueStr = _line.substr(delimiterPos + 1);
 	_date = trimString(_date);
