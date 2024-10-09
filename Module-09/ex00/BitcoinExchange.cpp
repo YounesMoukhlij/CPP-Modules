@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:24:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:24:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 
 BitcoinExchange::BitcoinExchange()
 {
-	// std::cout << "called constructor by default!" << std::endl;
 }
 
 BitcoinExchange::~BitcoinExchange()
 {
-
 }
 
-BitcoinExchange::BitcoinExchange(const BitcoinExchange& _obj) {
-	if (this != &_obj)
-		*this = _obj;
+BitcoinExchange::BitcoinExchange(const BitcoinExchange& origine)
+{
+	if (this != &origine)
+		*this = origine;
 }
 
-BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& _obj) {
-	if (this != &_obj) {
-		dataBaseMap = _obj.dataBaseMap;
+BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& origine){
+	if (this != &origine) {
+		dataBaseMap = origine.dataBaseMap;
 	}
 	return (*this);
 }
