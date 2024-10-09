@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:33:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:35:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int main(int you, char **nes)
 		std::cerr << "Usage ./btc <file>" << std::endl;
 		return (EXIT_FAILURE);
 	}
-	BitcoinExchange	bit;
 	
+	BitcoinExchange	bit;
 	try
 	{
 		std::string file = static_cast<const std::string>(nes[0x1]);
