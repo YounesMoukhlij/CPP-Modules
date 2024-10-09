@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:55:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:55:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@
 class BitcoinExchange
 {
 	private:
-		std::ifstream	infile;
-		std::ifstream	dataBase;
+		std::ifstream					infile;
+		std::ifstream					dataBase;
 		std::map<std::string, float>	dataBaseMap;
 		
 	public :
