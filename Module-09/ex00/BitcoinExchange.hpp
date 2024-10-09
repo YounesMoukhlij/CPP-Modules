@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:26:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:29:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,19 +38,19 @@ class BitcoinExchange
 
 
 		
-		class	InvalidOpen: public std::exception
-		{
-			public:
-				const char* what() const throw();
-		};
-		class	InvalidData: public std::exception
-		{
-			public:
-				const char* what() const throw();
-		};
-		class	InvalidName: public std::exception
-		{
-			public:
-				const char* what() const throw();
-		};
+		// class	InvalidOpen: public std::exception
+		// {
+		// 	public:
+		// 		const char* what() const throw();
+		// };
+		// class	InvalidData: public std::exception
+		// {
+		// 	public:
+		// 		const char* what() const throw();
+		// };
+		// class	InvalidName: public std::exception
+		// {
+		// 	public:
+		// 		const char* what() const throw();
+		// };
 };
