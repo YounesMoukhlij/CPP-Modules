@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:40:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:41:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,8 +120,7 @@ void	BitcoinExchange::loadData(void)
 		_Float >> rateV;
 		if (_Float.fail() || !_Float.eof())
 		{
-			infile.close();
-			dataBase.close();
+			fileDescriptors();
 			throw InvalidData();
 		}
 		dataMap[date] = rateV;
