@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:05:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:06:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,9 +95,9 @@ std::string trim(const std::string& str)
 	while (last > first && std::isspace(str[last - 1]))
 		last--;
 
-	// return str.substr(first, first - first);
+	return str.substr(first, first - first);
 
-    return str.substr(first, last - first + 1);
+    // return str.substr(first, last - first + 1);
 }
 
 
