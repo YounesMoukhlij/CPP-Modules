@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:49:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:51:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,7 +150,7 @@ void	BitcoinExchange::fillData(const std::string& inputDate)
 bool	BitcoinExchange::parseEntry(std::string& str)
 {
 	std::string	strV;
-	float		_value;
+	float		value;
 	size_t		delPos;
 	std::string	year;
 	std::string	month;
@@ -168,12 +168,12 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	month = date.substr(5, 2);
 	day = date.substr(8, 2);
 	std::stringstream strFloat(strV);
-	strFloat >> _value;
+	strFloat >> value;
 	if (!(!strFloat.fail() && strFloat.eof()))
 		return ((std::cerr << "Error: too larsssge a number." << std::endl), false);
-	if (_value > 3E8)
+	if (value > 3E8)
 		return ((std::cerr << "Error: too large a number." << std::endl), false);
-	if (_value < 0x0)
+	if (value < 0x0)
 		return ((std::cerr << "Error : not a positive number." << std::endl), false);
 	return (true);
 }
