@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:09:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:11:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,6 +135,6 @@ void	BitcoinExchange::readData(void)
 		if (!parseEntry(line))
 			continue;
 		else
-			findClosestLowerDate(date);
+			func(date);
 	}
 }
