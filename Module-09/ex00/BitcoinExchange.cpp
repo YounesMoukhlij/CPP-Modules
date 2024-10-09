@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:23:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:31:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -165,6 +165,10 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	std::string	year;
 	std::string	month;
 	size_t		delPos;
+	
+	std::stringstream _intY(_yStr);
+	std::stringstream monthInt(_mStr);
+	std::stringstream dayInt(_dStr);
 
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
