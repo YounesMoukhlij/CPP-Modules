@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:48:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:49:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,7 +150,6 @@ void	BitcoinExchange::fillData(const std::string& inputDate)
 bool	parseEntry(std::string& str)
 {
 	std::string	strV;
-	std::string	_date;
 	float		_value;
 	size_t		delPos;
 	std::string	year;
@@ -160,14 +159,14 @@ bool	parseEntry(std::string& str)
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
 		return ((std::cerr << "Error : bad input => " << str << std::endl), false);
-	_date = trim(str.substr(0x0, delPos));
+	date = trim(str.substr(0x0, delPos));
 	strV = trim(str.substr(delPos + 0x1));
 	// check dates
-	if (_date.size() != 0xA || _date[0x4] != '-' || _date[0x7] != '-' )
+	if (date.size() != 0xA || date[0x4] != '-' || date[0x7] != '-' )
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
-	year = _date.substr(0, 4);
-	month = _date.substr(5, 2);
-	day = _date.substr(8, 2);
+	year = date.substr(0, 4);
+	month = date.substr(5, 2);
+	day = date.substr(8, 2);
 	std::stringstream strFloat(strV);
 	strFloat >> _value;
 	if (!(!strFloat.fail() && strFloat.eof()))
