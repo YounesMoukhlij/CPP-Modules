@@ -6,14 +6,14 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/07 16:50:53 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/09 12:29:00 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 OBJ = ${SRC:.cpp=.o}
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = #-Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp BitcoinExchange.cpp
 
