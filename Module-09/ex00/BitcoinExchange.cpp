@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:34:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:34:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,7 @@ void	BitcoinExchange::loadData(void)
 	while (std::getline(dataBase, line))
 	{
 		std::cout  << line << std::endl;
+		sleep (1);
 		delPos = line.find(',');
 		if (delPos == std::string::npos)
 		{
