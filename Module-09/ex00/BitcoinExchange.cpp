@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 17:17:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:18:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,11 +81,12 @@ std::string trim(const std::string& str)
 }
 
 
-void	firstCheck(std::string line)
+void	firstCheck(std::string line, int mode)
 {
-	
-	if (line.compare("date,exchange_rate"))
-		throw InvalidData();
+	if (!mode)
+		if (line.compare("date,exchange_rate"))
+			throw InvalidData();
+	else 
 }
 
 void	BitcoinExchange::loadData(void)
