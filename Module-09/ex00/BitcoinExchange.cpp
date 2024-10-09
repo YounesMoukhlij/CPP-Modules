@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:54:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:54:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,9 +129,14 @@ void	BitcoinExchange::loadData(void)
 		rate = trim(rate);
 		std::stringstream	_Float(rate);
 		_Float  >> rateV;
-			if (rateFloat.fail() || !rateFloat.eof())
-	{
-		closeFds();
+		if (rateFloat.fail() || !rateFloat.eof())
+		{
+			infile.close();
+			dataBase.close();
+			throw InvalidData();
+		}
+		{
+			closeFds();
 		throw ErrorInvalidData;
 	}
 	dataBaseMap[_date] = _rateValue;
