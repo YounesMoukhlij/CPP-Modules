@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:01:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:06:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,22 @@ void	BitcoinExchange::loadData(void)
 			throw InvalidData();
 		}
 		dataMap[date] = rateV;
+	}
+}
+
+
+
+
+void	BitcoinExchange::readAndPaeData(void) {
+	std::string	line;
+
+	getline(infile, line);
+	line = trimString(line);
+	if (line != "date | value")
+		throw ErrorInvalidData;
+	while (getline(infile, line))
+	{
+		if (parseLine(line))
+			findClosestLowerDate(_date);
 	}
 }
