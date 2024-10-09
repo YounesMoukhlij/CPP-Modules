@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:51:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:51:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,6 +127,10 @@ void	BitcoinExchange::loadData(void)
 			dataBase.close();
 			throw InvalidData();
 		}
+	_date = _str.substr(0, _posDelimiter);
+	_rate = _str.substr(_posDelimiter + 1);
+	_date = trimString(_date);
+	_rate = trimString(_rate);
 		fillData(line, delPos);
 	}
 }
