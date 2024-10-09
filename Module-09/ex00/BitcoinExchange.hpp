@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:16:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:18:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class BitcoinExchange
 		~BitcoinExchange();
 		BitcoinExchange(const BitcoinExchange& origine);
 		BitcoinExchange& operator=(const BitcoinExchange& origine);
+		void	
 		class	FileErrorOpen: public std::exception
 		{
 			public:
