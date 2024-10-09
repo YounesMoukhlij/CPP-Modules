@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:33:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:34:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,8 @@ std::string trim(const std::string& str)
 {
     std::string::size_type first = str.find_first_not_of(" ");
     
-    // if (first == std::string::npos)
-    //     return "";
+    if (first == std::string::npos)
+        return "";
 
     std::string::size_type last = str.find_last_not_of(" ");
 	
@@ -100,19 +100,19 @@ std::string trim(const std::string& str)
 void	BitcoinExchange::loadData(void)
 {
 	std::string		line;
-	// size_t		delPos;
+	size_t		delPos;
 
 	std::getline(dataBase, line);
 	line = trim (line);
 	std::cout  << line << std::endl;
-	// if (line != "date,exchange_rate")
-	// 	throw	InvalidData();
-	// while (std::getline(dataBase, line))
-	// {
-	// 	delPos = line.find(',');
-	// 	if (delPos == std::string::npos)
-	// 	{
-	// 		throw InvalidData();
-	// 	}
-	// }
+	if (line != "date,exchange_rate")
+		throw	InvalidData();
+	while (std::getline(dataBase, line))
+	{
+		delPos = line.find(',');
+		if (delPos == std::string::npos)
+		{
+			throw InvalidData();
+		}
+	}
 }
