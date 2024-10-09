@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:07:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:08:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,9 @@ void	BitcoinExchange::loadData(void)
 		}
 		dataMap[date] = rateV;
 	}
+	// print map
+
+	
 }
 
 void	BitcoinExchange::fillData(const std::string& inputDate)
