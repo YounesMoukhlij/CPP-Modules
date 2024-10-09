@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:32:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:35:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,20 @@ const char*	BitcoinExchange::Invalidfile::what() const throw()
 const char*	BitcoinExchange::InvalidData::what() const throw()
 {
 	return ("Invalide Data input!");
+}
+
+void	BitcoinExchange::(const std::string& FileName)
+{
+	infile.open(FileName);
+	if (!infile.is_open()) 
+	{
+		std::cerr << FileName << ": "; 
+		throw ErrorOpenFile;
+	}
+	dataBase.open("data.csv");
+	if (!dataBase.is_open()) {
+		infile.close();
+		std::cerr << "data.csv: ";
+		throw ErrorOpenFile;
+	}
 }
