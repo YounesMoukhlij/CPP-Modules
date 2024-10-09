@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:06:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:07:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ void	BitcoinExchange::loadData(void)
 
 
 
-void	BitcoinExchange::readAndPaeData(void) {
+void	BitcoinExchange::readData(void) {
 	std::string	line;
 
 	getline(infile, line);

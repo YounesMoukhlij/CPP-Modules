@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:55:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:07:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ class BitcoinExchange
 		
 		// Member Functions
 		void				loadData();
+		void				readData();
 		void				nameChecker(std::string& name, int i);
 		void				openingFiles(const std::string& name, int j);
 		
