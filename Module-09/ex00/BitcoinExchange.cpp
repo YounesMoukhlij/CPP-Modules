@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:07:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:08:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,13 +127,14 @@ void	BitcoinExchange::readData(void)
 	std::string	line;
 
 	getline(infile, line);
-	line = trimString(line);
+	line = trim(line);
 	if (line != "date | value")
 		throw InvalidData();
 	while (getline(infile, line))
 	{
-		if (parseLine(line))
-			con
+		if (!parseLine(line))
+			continue;
+		else
 			findClosestLowerDate(_date);
 	}
 }
