@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 13:59:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:02:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,8 @@ std::string trim(const std::string& str)
 {
     std::string::size_type first = str.find_first_not_of(" ");
     
-    if (first == std::string::npos)
-        return "";
+    // if (first == std::string::npos)
+    //     return "";
 
     std::string::size_type last = str.find_last_not_of(" ");
 
