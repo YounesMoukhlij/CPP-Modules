@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:23:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:23:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	BitcoinExchange::NameChecker(std::string& name)
 	for (int i = 0x0; i < name.size(); i++)
 	{
 		if ((name[i] == '.' && name[i + 0x1] == 't' && name[i + 0x2] == 'x' && name[i + 0x3] == 't' && name[i + 0x4] == '\0')
-			|| name[i] == '.' && name[i + 0x1] == 'c' && name[i + 0x2] == 's' && name[i + 0x3] == 'v' && name[i + 0x4] == '\0')
+			|| !(name[i] == '.' && name[i + 0x1] == 'c' && name[i + 0x2] == 's' && name[i + 0x3] == 'v' && name[i + 0x4] == '\0'))
 	}
 	Extention = name.substr(name.size() - 4);
 	if (Extention != target1 && Extention != target2) {
