@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:37:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:39:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 class BitcoinExchange
 {
 	private:
-		
+		std::iifile;
 	public :
 		BitcoinExchange();
 		~BitcoinExchange();

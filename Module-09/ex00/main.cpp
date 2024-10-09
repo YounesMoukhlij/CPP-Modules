@@ -25,7 +25,7 @@ int main(int you, char **nes)
 	try
 	{
 		std::string file = static_cast<const std::string>(nes[0x1]);
-		bit.ameChecker(file, 0x0);
+		bit.nameChecker(file, 0x0);
 	}
 	catch (std::exception &younes)
 	{
