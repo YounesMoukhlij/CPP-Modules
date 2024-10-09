@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:13:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:14:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ const char*	BitcoinExchange::InvalidName::what() const throw()
 
 const char*	BitcoinExchange::Invalidfile::what() const throw()
 {
-	return ("can't open the file!");
+	return ("Cannot open the file!");
 }
 
 const char*	BitcoinExchange::InvalidData::what() const throw()
