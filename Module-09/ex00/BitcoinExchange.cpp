@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:21:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:21:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,19 +125,19 @@ bool	parseEntry(std::string& str)
 	std::string	_date;
 	size_t		delPos;
 
-	delPos = _line.find('|');
+	delPos = str.find('|');
 	if (delPos == std::string::npos)
-		// return (displayError(_line, 0), false);
-	_date = _line.substr(0, delPos);
-	_valueStr = _line.substr(delPos + 1);
+		// return (displayError(str, 0), false);
+	_date = str.substr(0, delPos);
+	_valueStr = str.substr(delPos + 1);
 	_date = trimString(_date);
 	_valueStr = trimString(_valueStr);
 	if (!isValidDate(_date) || !isValidValue(_valueStr))
-		return (displayError(_line, 0), false);
+		return (displayError(str, 0), false);
 	if (_value < 0)
-		return (displayError(_line, 1), false);
+		return (displayError(str, 1), false);
 	if (_value > 1000)
-		return (displayError(_line, 2), false);
+		return (displayError(str, 2), false);
 	return (true);
 }
 
