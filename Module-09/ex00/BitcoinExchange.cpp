@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 16:15:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:15:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,14 +132,14 @@ void	BitcoinExchange::fillData(const std::string& inputDate)
 
 	it = dataMap.lower_bound(inputDate);
 	if (it != dataMap.end() && it->first == inputDate)
-		std::cout << inputDate << " => " << value << " = " << (it->second * value) << std::endl;
+		std::cout << inputDate << " => " << value << " = " << static_cast<float>(it->second * value) << std::endl;
 	else
 	{
 		if (it != dataMap.begin())
 		{
 			--it;
 			if (it->first < inputDate)
-				std::cout << inputDate << " => " << value << " = " << it->second * value << std::endl;
+				std::cout << inputDate << " => " << value << " = " <<  static_cast<float>(it->second * value) << std::endl;
 			else
 				std::cerr << "No date found in the database for: " << inputDate << std::endl;
 		}
