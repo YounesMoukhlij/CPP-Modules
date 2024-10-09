@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:26:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:27:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,12 +119,12 @@ void	BitcoinExchange::loadData(void)
 	}
 }
 
-bool	isaDate(str::string& s)
+bool	isaDate(std::string& s)
 {
 
 }
 
-bool	isaValue(str::string& s)
+bool	isaValue(std::string& s)
 {
 
 }
