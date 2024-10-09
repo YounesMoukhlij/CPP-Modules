@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 12:28:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 12:28:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& origine)
 void	BitcoinExchange::NameChecker(std::string& name)
 {
 	int i;
-	std::string target1 = ".txt";
-	std::string target2 = ".csv";
+	// std::string target1 = ".txt";
+	// std::string target2 = ".csv";
 	std::string	Extention;
 	if (name.size() < 4)
 	{
@@ -48,10 +48,10 @@ void	BitcoinExchange::NameChecker(std::string& name)
 		
 	Extention = name.substr(name.size() - 4);
 	std::cout << Extention << std::endl;
-	if (Extention != target1 && Extention != target2)
-	{
-		std::cerr << name << ": ";
-		throw InvalidName();
-	}
+	// if (Extention != target1 && Extention != target2)
+	// {
+	// 	std::cerr << name << ": ";
+	// 	throw InvalidName();
+	// }
 }
 
