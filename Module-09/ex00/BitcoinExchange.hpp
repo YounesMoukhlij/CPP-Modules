@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 13:45:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:13:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@
 #include <sstream>
 
 # define IGNORE(param) (void)(param)
-
-
 
 class BitcoinExchange
 {
