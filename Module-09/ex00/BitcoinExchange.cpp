@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 15:22:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:23:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,9 +130,9 @@ bool	parseEntry(std::string& str)
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	_date = str.substr(0, delPos);
 	_valueStr = str.substr(delPos + 1);
-	_date = trimString(_date);
+	_date = tri(_date);
 	_valueStr = trimString(_valueStr);
-	if (!isValidDate(_date) || !isValidValue(_valueStr))
+	if (!isaDate(_date) || !isaValue(_valueStr))
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	if (_value < 0)
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
