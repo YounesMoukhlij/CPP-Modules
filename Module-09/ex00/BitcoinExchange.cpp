@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/09 14:49:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:49:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,8 @@ void	BitcoinExchange::loadData(void)
 		std::cout << delPos << std::endl;
 		if (delPos == std::string::npos)
 		{
-			close
+			infile.close();
+			dataBase.close();
 			throw InvalidData();
 		}
 	}
