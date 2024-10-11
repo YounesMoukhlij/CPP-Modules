@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:15:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:17:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,9 +153,6 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	
 	// if operator then do simple math
 	
-	int firstValue;
-	firstValue = _stack.pop();
-	int secondValue = _stack.top();
 	
 	std::cout << firstValue << std::endl;
 	std::cout << secondValue << std::endl;
