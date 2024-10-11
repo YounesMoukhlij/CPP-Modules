@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:11:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:11:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,18 @@
 RobotomyRequestForm::RobotomyRequestForm(void) : AForm("Robot", 72, 45)
 {
 	std::cout << "Robotomy Default Constructor Called." << std::endl;
-	std::srand(std::time(0x0));
 	this->_target = "defaultTarget";
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string _target): AForm(_target, 72, 45)
 {
 	std::cout << "Robotomy parametriesed Constructor Called." << std::endl;
-	std::srand(std::time(0x0));
 	this->_target = _target;
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm& origine) : AForm(origine.getName(), origine.getGradeSigned(), origine.getGradeExecute())
 {
 	std::cout << "Robotomy Copy Constructor Called." << std::endl;
-	std::srand(std::time(0x0));
 	*this = origine;
 }
 
