@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:35:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:35:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,10 @@ class RPN
 		RPN(const RPN& origine);
 		RPN& operator=(const RPN& origine);
 		
-		void		ParseArgu(const std::string& _str) const;
-		void		PolonaiseInverse(std::string& _str); 
+		void		ParseArguments(const std::string& str) const;
+		void		PolonaiseInverse(std::string& str);
+		
+		
 		class	ErrorInvalidArgument : public std::exception {
 			public :
 				const char* what() const throw();
