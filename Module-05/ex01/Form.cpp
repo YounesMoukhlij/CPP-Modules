@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:09:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:09:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,7 @@ Form& Form::operator=(const Form& origine)
 {
 	std::cout << "Form copy assignement  Called" << std::endl;
 	if (this != &origine)
-	{
-	*this = origine;
-		
+	{	
 		_indicator = origine._indicator;
 	}
 	return (*this);
