@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:42:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:50:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,7 +169,8 @@ void	RPN::ReversePolish(std::string& _str) {
 	std::cout << "the result is: " << _rpnStack.top() << std::endl;
 }
 
-void	RPN::parseArg(const std::string& _str) const {
+void	RPN::parseArg(const std::string& _str) const
+{
 	if (!isdigit(static_cast<int> (_str[0])) || !isValidChracters(_str))
 		throw ErrorInvalidArgument;
 }
