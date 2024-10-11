@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:50:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:50:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(int you, char **nes)
 
 	if (you != 2)
 	{
-		std::cerr << "Error usage: ./RPN 'argument>" << std::endl;
+		std::cerr << "Error Try : ./RPN <argument>" << std::endl;
 		return (EXIT_FAILURE);
 	}
 	
