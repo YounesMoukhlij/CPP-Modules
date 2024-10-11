@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:11:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:11:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ bool	RPN::ValidArguments(const std::string& _array) const
 	return (true);
 }
 
-int	RPN::OperatorChecker( std::string& _array) const
+int	RPN::OperatorChecker( std::string& _array) 
 {
 	int	indicator = -0x1;
 	
