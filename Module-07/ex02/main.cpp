@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:40:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:41:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@ int main(int you, char **nes)
 	try
 	{
     	int* mirror = new int[MAX_VAL];
+		if (!)
+	}
+	catch
     std::srand(time(NULL));
 
     for (int i = 0x0; i < MAX_VAL; i++)
