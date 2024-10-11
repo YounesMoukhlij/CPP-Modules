@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:28:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:28:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 				throw ErrorFlow();
 			break;
 		}
-		case D:
+		case DI:
 		{
 			if (Value_1 == 0)
 				throw std::invalid_argument("Division by zero");
