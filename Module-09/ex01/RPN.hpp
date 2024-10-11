@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:06:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:06:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class RPN
 	private:
 		std::stack<int>		_stack;
 	public:
-		// 
+		// Canonical Form
  		RPN();
 		~RPN();
 		RPN(const RPN& origine);
