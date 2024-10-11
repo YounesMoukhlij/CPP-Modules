@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:06:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:06:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,20 +180,20 @@ void	RPN::ParseArguments(const std::string& _array) const
 	size_t	Coperators = Cnumbers + 0x0;
 	
 	if (!isdigit(static_cast<int>(_array[0x0])))
-		return (false);
+		throw ErrorArgument();
 	if (!ValidArg(_array[_array.size() - 0x1]) && _array[_array.size() - 0x1] != ' ')
-		return (false);
+		throw ErrorArgument();
 	for (size_t i = 0x0; i < length; i++)
 	{
 		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
-			return (false);
+			throw ErrorArgument();
 		if (ValidArg(_array[i]) && _array[i] != ' ')
 			Coperators++;
 		if (!isdigit(_array[i]) && _array[i] != ' ')
 			Cnumbers++;
 	}
 	if (!(Coperators - 0x1 == Cnumbers))
-		return (false);
+		throw ErrorArgument();
 	return (true);
 	if (!ValidArguments(_array, _array.size()))
 		throw ErrorArgument();
