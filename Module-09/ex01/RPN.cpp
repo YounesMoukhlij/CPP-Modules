@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:54:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:54:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int	RPN::OperatorCharacter(char _oprt)
 			return (MULT);
 		case D:
 			return (DIV);
-		case (ADD - 0x1):
+		case A:
 			return (ADD);
-		case (SOUS - 0x1):
+		case SOUS - 0x1):
 			return (SOUS);
 		default:
 			return (MULT - 0x2);
