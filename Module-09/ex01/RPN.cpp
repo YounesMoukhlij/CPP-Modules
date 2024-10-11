@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:52:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:52:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -177,10 +177,10 @@ void	RPN::parseArg(const std::string& _str) const
 
 const char* RPN::ErrorArgument::what() const throw()
 {
-	return ("invalid argument!");
+	return ("Invalid Argument!");
 }
 
 const	char* RPN::ErrorFlow::what() const throw()
 {
-	return ("Overflow Problemh hasdOccured.");
+	return ("Overflow Problem had Occured.");
 }
