@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:29:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:29:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,6 +151,7 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	int	Y;
 	int	num1;
 	int	num2;
+	(void ) Y;
 	
 	
 	// if operator then do simple math
@@ -200,7 +201,6 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		default :
 			throw ErrorArgument();
 	}
-	Y = 0x9 >> 0x0;
 	
 }
 
