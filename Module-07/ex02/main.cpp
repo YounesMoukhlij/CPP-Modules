@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:41:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:41:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main(int you, char **nes)
 	}
 	catch (std::exception& ii)
 	{
-		std::cout << 
+		std::cout << ii.what() << 
 	}
     std::srand(time(NULL));
 
