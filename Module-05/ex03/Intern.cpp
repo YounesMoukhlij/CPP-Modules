@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:37:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:37:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 			throw NoFormExist();
 	}
 	if (!form)
-		throw bad_alloc();
+		throw std::bad_alloc();
 	std::cout << "Intern creates " << _target << std::endl;
 	return (form);
 }
@@ -71,9 +71,4 @@ AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 const char* Intern::NoFormExist::what() const throw()
 {
 	return ("Form not found!");
-}
-
-const char* Intern::MemoryFailedAllocation::what() const throw()
-{
-	return ("Failed to allocate memory!");
 }
