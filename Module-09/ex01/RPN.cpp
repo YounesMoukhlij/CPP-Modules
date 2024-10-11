@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:05:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:05:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -175,6 +175,7 @@ void	RPN::PolonaiseInverse(std::string& _array)
 
 void	RPN::ParseArguments(const std::string& _array) const
 {
+	length = array.size
 	size_t Cnumbers = length - _array.size();
 	size_t Coperators = Cnumbers;
 	
