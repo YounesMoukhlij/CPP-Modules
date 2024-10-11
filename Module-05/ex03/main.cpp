@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:29:46 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:29:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(int you, char **nes)
 	Intern A;
 	Intern B;
 
-	A
+	A = B;
 	try
 	{
 		Bureaucrat bureaucrat("Younes", 1);
