@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:35:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:35:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,6 +150,7 @@ void	RPN::CalculateStaff(std::string& str, std::stack<int>& _stack)
 {
 	(void) str;
 	(void) _stack;
+	
 }
 
 void	RPN::PolonaiseInverse(std::string& _array)
