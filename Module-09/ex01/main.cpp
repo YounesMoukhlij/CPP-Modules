@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:08:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:09:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int main(int you, char **nes)
 		std::cerr << "Error Try : ./RPN <argument>." << std::endl;
 		return (EXIT_FAILURE);
 	}
-	
 	try
 	{
 		RPN	rpn;
