@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:53:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:53:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ RPN& RPN::operator=(const RPN& origine)
 
 int	RPN::OperatorCharacter(char _oprt)
 {
-	return (c == )
+	
 }
 
 int	RPN::OperatorChecker( std::string& _array) 
