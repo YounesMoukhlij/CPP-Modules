@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:10:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:11:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int	RPN::OperatorChecker(const std::string& _array) const
 {
 	int	indicator = -0x1;
 	
-	const std::string oprt[4] = {"*", "/", "+", "-"};
+	 std::string oprt[4] = {"*", "/", "+", "-"};
 	for (int i = 0x0; i < 0x4; i++)
 	{
 		if (_array[0] == oprt[0])
