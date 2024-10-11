@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:35:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:48:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <exception>
 #include <stack>
 #include <sstream>
+
+# define IGNORE(param) (void)(param)
 
 class RPN
 {
@@ -37,7 +39,7 @@ class RPN
 				const char* what() const throw();
 		};
 
-		class	ErrorOverFlow : public std::exception
+		class	ErrorFlow : public std::exception
 		{
 			public :
 				const char* what() const throw();
