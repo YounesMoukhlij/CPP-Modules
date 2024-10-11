@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:34:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:34:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,7 +146,7 @@ int	RPN::OperatorChecker( std::string& _array)
 // }
 
 
-void	RPN::CalculateStaff(int Number, std::stack<int>& _stack)
+void	RPN::CalculateStaff(char, std::stack<int>& _stack)
 {
 	(void) Number;
 	(void) _stack;
