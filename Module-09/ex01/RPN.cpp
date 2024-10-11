@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:19:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:20:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,29 +43,7 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	for (size_t i = 0x0; i < length; i++)
 	{
 
-		if (!isdigit((_array[i])) && !(c == '*' || c == '/' || c == '-' || c == '+'))
-		{
-			if (_array[i] != ' ')
-				return (false);
-			if (_array[i] == ' ' &&  (i + 1 < _array.size() && isSpace(_array[i + 1])))
-				return (false);
-		}
-		if (isdigit(_array[i])) 
-		{
-			if (i + 1 < _array.size() && isdigit(_array[i + 1]))
-				return false;
-			_countDigit++;
-		}
-		else if (c == '*' || c == '/' || c == '-' || c == '+')
-		{
-			if ((i + 1 < _array.size() && !isSpace(_array[i + 1])))
-				return (false);
-			else
-			_countOperators++;
-		}
 	}
-	if (isSpace(_array[i - 1]) || ((_countDigit - 1) != _countOperators))
-		return (false);
 	return (true);
 }
 
