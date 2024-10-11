@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:21:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:24:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ class RPN
 		int			OperatorChecker( std::string& _array) ;
 		int			IntConversion(const std::string& _array) const;
 		void		ParseArguments(const std::string& _array) const;
+		void		CheckFlow(int Value_1, int Value_2, char opr) const;
 		bool		ValidArguments(const std::string& _array, size_t length) const;
 		
 
