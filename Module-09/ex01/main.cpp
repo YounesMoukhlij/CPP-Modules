@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:47:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:47:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ int main(int ac, char **av) {
 	{
 		std::cerr << "Error: " << e.what() << " => "<< av[1] << std::endl;
 	}
-
+	return (EXIT_SUCCESS);
 }
