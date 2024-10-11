@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:11:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:11:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 RPN::RPN()
 {
-	std::cout << "Default constructor called." << std::endl;
+	std::cout << "RPN Default constructor called." << std::endl;
 }
 
 RPN::~RPN()
 {
-	std::cout << "destructor called." << std::endl;
+	std::cout << "RPN Destructor called." << std::endl;
 }
 
 RPN::RPN(const RPN& origine)
 {
-	std::cout << "Copy constructor called." << std::endl;
+	std::cout << "RPN Copy constructor called." << std::endl;
 	if (this != &origine)
 		*this = origine;
 }
@@ -32,7 +32,7 @@ RPN::RPN(const RPN& origine)
 RPN& RPN::operator=(const RPN& origine)
 {
 	(void) origine;
-	std::cout << "Copy Assignement called." << std::endl;
+	std::cout << "RPN Copy Assignement called." << std::endl;
 	return (*this);
 }
 
