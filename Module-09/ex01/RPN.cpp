@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:52:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:53:03 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,7 +159,7 @@ void	RPN::operationCalcule(std::string& _piece, std::stack<int>& _stack) {
 void	RPN::PolonaiseInverse(std::string& array)
 {
 	std::string			_piece;
-	std::stringstream	inputString(_str);
+	std::stringstream	inputString(array);
 	while (getline(inputString, _piece, ' '))
 	{
 		if (isdigit(_piece[0]))
@@ -170,9 +170,9 @@ void	RPN::PolonaiseInverse(std::string& array)
 	std::cout << "the result is: " << _rpnStack.top() << std::endl;
 }
 
-void	RPN::ParseArguments(const std::string& _str) const
+void	RPN::ParseArguments(const std::string& array) const
 {
-	if (!isdigit(static_cast<int> (_str[0])) || !isValidChracters(_str))
+	if (!isdigit(static_cast<int> (array[0])) || !isValidChracters(array))
 		throw ErrorArgument();
 }
 
