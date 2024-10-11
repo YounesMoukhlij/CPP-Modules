@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:20:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:21:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	RPN::OperatorChecker( std::string& _array)
 	}
 }
 
-int	RPN::strToInt(const std::string& _array) const
+int	RPN::In(const std::string& _array) const
 {
 	int					_value;
 	std::stringstream	strInt(_str);
