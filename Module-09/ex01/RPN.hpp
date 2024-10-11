@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:26:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:26:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ class RPN
 			public :
 				const char* what() const throw();
 		};
-		class	ErrorOprt : public std::exception
+		class	ErrorOperation : public std::exception
 		{
 			public :
 				const char* what() const throw();
