@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:32:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:32:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	RPN::OperatorChecker( std::string& _array)
 			return (DIV);
 		case (ADD - 0x1):
 			return (ADD);
-		case 0x3:
+		case (SOUS - 0x1):
 			return (SOUS);
 		default:
 			return (NOTHING);
