@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:10:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:10:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,7 +161,7 @@ int	RPN::strToInt(const std::string& _array) const
 // 	}
 // }
 
-void	RPN::PolonaiseInverse(std::string& array)
+void	RPN::PolonaiseInverse(std::string& _array)
 {
 	// std::string			_piece;
 	// std::stringstream	inputString(array);
@@ -175,7 +175,7 @@ void	RPN::PolonaiseInverse(std::string& array)
 	// std::cout << "the result is: " << _rpnStack.top() << std::endl;
 }
 
-void	RPN::ParseArguments(const std::string& array) const
+void	RPN::ParseArguments(const std::string& _array) const
 {
 	if (!isdigit(static_cast<int>(array[0])))
 		throw ErrorArgument();
