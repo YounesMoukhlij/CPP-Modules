@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:20:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:23:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -165,7 +165,7 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		 std::cout << _stack.top() << "   ";
 		 _stack.pop();
 	}
-		 std::cout << std::endl;
+	std::cout << "end printing" << std::endl;
 	switch(opr)
 	{
 		case  MULT:
