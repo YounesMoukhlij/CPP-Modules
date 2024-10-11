@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:07:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:08:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -251,9 +251,10 @@ void	RPN::OperationAPPOLLO(std::string& __array, int mode)
 	{
 		case 0x0:
 			ParseArguments(__array);
-			
+			break;
 		case 0x1:
-			ParseArguments(__array);
+			PolonaiseInverse(__array);
+			b
 	}
 }
 
