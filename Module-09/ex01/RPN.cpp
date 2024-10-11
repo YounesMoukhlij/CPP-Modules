@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:51:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:51:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,6 +180,7 @@ const char* RPN::ErrorArgument::what() const throw()
 	return ("invalid argument!");
 }
 
-const	char* RPN::ErrorOverFlow::what() const throw() {
+const	char* RPN::ErrorFlow::what() const throw()
+{
 	return ("overflow in an  operation");
 }
