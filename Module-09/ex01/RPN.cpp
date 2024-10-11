@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:00:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:00:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -205,7 +205,7 @@ void	RPN::PolonaiseInverse(std::string& _array)
 		std::cout << "readed read[0] := " << read[0x0] << std::endl;
 		if (isdigit(read[0x0]))
 		{
-			std::cout << isdigit(read[0x0]) << std::endl;
+			std::cout << "asdasdasd   " << read[0x0]) << std::endl;
 			_stack.push(static_cast<int>(read[0x0]));
 		}
 		else
