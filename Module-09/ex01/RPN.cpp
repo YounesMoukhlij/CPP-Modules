@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:00:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:00:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,11 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	size_t Coperators = 0x0;
 	
 	if (!isdigit(static_cast<int>(_array[0x0])))
-		throw ErrorArgument();
+		return (false);
 	for (size_t i = 0x0; i < length; i++)
 	{
 		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
-			throw ErrorArgument();
+			return (false);
 		if (ValidArg(_array[i]) && _array[i] != ' ')
 			Coperators++;
 		if (!isdigit(_array[i]) && _array[i] != ' ')
