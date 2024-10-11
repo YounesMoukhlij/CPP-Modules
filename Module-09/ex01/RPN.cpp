@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:00:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:00:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,8 +98,6 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	}
 	if (!(Coperators - 0x1 == Cnumbers))
 		return (false);
-
-		
 	return (true);
 }
 
