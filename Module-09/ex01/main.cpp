@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:47:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:47:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int main(int ac, char **av) {
 		return (EXIT_FAILURE);
 	}
 	
-	RPN	test;
-	std::string	_str = static_cast<const std::string> (av[1]);
 	try
 	{
+		RPN	test;
+		std::string	_str = static_cast<const std::string> (av[1]);
 		test.parseArg(_str);
 		test.ReversePolish(_str);
 	}
