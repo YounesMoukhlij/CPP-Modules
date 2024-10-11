@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:57:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:58:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,10 +79,13 @@ bool	RPN::isValidChracters(const std::string& _str) const {
 	return (true);
 }
 
-int	RPN::whichOperator(const std::string& _str) const
+int	RPN::whichOperator(const std::string& array) const
 {
 	std::string oprt[4] = ["*", "/", "+", "-"];
 	for (int i = 0x0; i < 0x4; i++)
+	{
+		if (a)
+	}
 	if (_str[0] == '*')
 		return (1);
 	else if (_str[0] == '/')
