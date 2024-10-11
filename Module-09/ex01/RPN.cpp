@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:51:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:52:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,5 +182,5 @@ const char* RPN::ErrorArgument::what() const throw()
 
 const	char* RPN::ErrorFlow::what() const throw()
 {
-	return ("Overflow Problem Occured in an operation");
+	return ("Overflow Problemh hasdOccured.");
 }
