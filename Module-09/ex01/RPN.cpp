@@ -105,7 +105,7 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 				(Value_1 < 0 && Value_2 < INT_MIN - Value_1))
 				throw ErrorFlow();
 			break;
-		case :
+		case S:
 			if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
 				throw ErrorFlow();
 			break;
