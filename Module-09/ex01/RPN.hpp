@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:21:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:21:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ class RPN
 		RPN& operator=(const RPN& origine);
 		
 		// Member Functions
-		
 		void		PolonaiseInverse(std::string& _array);
 		int			OperatorChecker( std::string& _array) ;
+		int			IntConversion(const std::string& _array) const;
 		void		ParseArguments(const std::string& _array) const;
 		bool		ValidArguments(const std::string& _array, size_t length) const;
 		
