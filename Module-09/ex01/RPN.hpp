@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:03:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:03:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 # define IGNORE(param) (void)(param)
 
 # define MULT 0x1
-# define DIV  0x
-# define ADD  0x2
-# define SOUS 0x3
+# define DIV  0x2
+# define ADD  0x3
+# define SOUS 0x4
 # define NOTHING -0x1
 
 class RPN
