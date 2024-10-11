@@ -6,14 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:48:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:48:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RPN.hpp"
 
-int main(int you, char **nes) {
-
+int main(int you, char **nes)
+{
 
 	if (ac != 2)
 	{
