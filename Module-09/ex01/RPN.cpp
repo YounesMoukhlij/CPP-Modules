@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:28:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:28:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 			if (Value_1 * Value_2 > INT_MAX || Value_1 * Value_2 < INT_MIN)
 				throw ErrorFlow();
 			break;
+		}
 		case D:
 		{
 			if (Value_1 == 0)
@@ -102,11 +103,14 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 			break;
 		}
 		case A:
+		{
 			if ((Value_1 > 0 && Value_2 > INT_MAX - Value_1) ||
 				(Value_1 < 0 && Value_2 < INT_MIN - Value_1))
 				throw ErrorFlow();
 			break;
+		}
 		case S:
+		{
 			if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
 				throw ErrorFlow();
 			break;
