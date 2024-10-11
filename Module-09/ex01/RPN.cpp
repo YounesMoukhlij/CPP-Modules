@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:40:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:40:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	RPN::OperatorChecker( std::string& _array)
 7 5 - 6 1 + * 8 2 / +
 2 - 7 * 4 +
 
-
+2 - 
 
 int	RPN::IntConversion(const std::string& _array) const
 {
