@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:07:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:07:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -245,7 +245,10 @@ void	RPN::ParseArguments(const std::string& _array) const
 }
 
 
-void	RPN::OperationA
+void	RPN::OperationAPPOLLO(std::string& __array, int mode)
+{
+	
+}
 
 
 const char* RPN::ErrorArgument::what() const throw()
