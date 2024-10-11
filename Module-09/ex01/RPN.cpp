@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:56:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:56:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,7 @@ int	RPN::ValidArg(char _oprt) const
 		case S:
 			return (SOUS);
 		case SPACE:
-			return (SOUS);
-
+			return (SPACE);
 		default:
 			return (MULT - 0x1);
 	}
