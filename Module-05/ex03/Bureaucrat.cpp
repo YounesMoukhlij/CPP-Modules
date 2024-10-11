@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/10 16:42:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 13:55:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,9 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& origine)
 {
 	std::cout << "Bureaucrat copy assignement  Called" << std::endl;
 	if (this != &origine)
-		*this = origine;
+	{
+		_grade = origine._grade;
+	}
 	return (*this);
 }
 
