@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:35:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:35:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class RPN
 {
 	private:
-		std::stack<int>		stack;
+		std::stack<int>		_stack;
 	public:
 		RPN();
 		~RPN();
