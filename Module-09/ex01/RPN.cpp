@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:50:44 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:50:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,21 +94,21 @@ void RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 {
     switch (opr)
     {
-        case M:  // Multiplication
+        case M: 
         {
-            // Check for multiplication overflow
+        
             if (Value_1 == 0 || Value_2 == 0)
                 throw std::invalid_argument("One of the elements is zero.");
-            if (Value_1 > 0 && Value_2 > INT_MAX / Value_1)  // Positive overflow check
+            if (Value_1 > 0 && Value_2 > INT_MAX / Value_1) 
                 throw ErrorFlow();
-            if (Value_1 < 0 && Value_2 < INT_MIN / Value_1)  // Negative overflow check
+            if (Value_1 < 0 && Value_2 < INT_MIN / Value_1) 
                 throw ErrorFlow();
             break;
         }
         
-        case S:  // Subtraction
+        case S: 
         {
-            // Check for subtraction overflow
+        
             if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
                 throw ErrorFlow();
             if (Value_1 > 0 && Value_2 < INT_MIN + Value_1)
@@ -116,23 +116,23 @@ void RPN::CheckFlow(int Value_1, int Value_2, char opr) const
             break;
         }
 
-        case D:  // Division
+        case D: 
         {
-            // Check for division by zero or overflow
+        
             if (Value_1 == 0)
                 throw std::invalid_argument("Division by zero.");
-            if (Value_2 == INT_MIN && Value_1 == -1)  // Check for INT_MIN / -1 overflow
+            if (Value_2 == INT_MIN && Value_1 == -1) 
                 throw ErrorFlow();
             break;
         }
         
-        case A:  // Addition
+        case A: 
         {
-            // Check for addition overflow
+        
             if (Value_1 > 0 && Value_2 > INT_MAX - Value_1)
-                throw ErrorFlow();  // Positive overflow
+                throw ErrorFlow(); 
             if (Value_1 < 0 && Value_2 < INT_MIN - Value_1)
-                throw ErrorFlow();  // Negative overflow
+                throw ErrorFlow(); 
             break;
         }
 
