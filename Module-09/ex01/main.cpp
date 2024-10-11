@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:49:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:50:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(int you, char **nes)
 	}
 	catch(const std::exception& younes)
 	{
-		std::cerr << "Error: " << e.what() << std::endl;
+		std::cerr << "Error: " << younes.what() << std::endl;
 	}
 	return (EXIT_SUCCESS);
 }
