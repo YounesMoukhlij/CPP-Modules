@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:02:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:02:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # define MULT 0x0
 # define DIV  0x1
 # define ADD  0x2
-# define
+# define SOUS 0x3
 
 class RPN
 {
