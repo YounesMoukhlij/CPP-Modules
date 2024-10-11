@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:48:35 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:50:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,41 +89,58 @@ int	RPN::IntConversion(const std::string& _array) const
 	return (_intValue);
 }
 
-void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
+
+void RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 {
-	switch (opr)
-	{
-		case M:
-		{
-			if (Value_1 != 0x0 && Value_2 != 0x0)
-				throw std::invalid_argument("The 2 elements are Zeros");
-			if (Value_1 * Value_2 > INT_MAX || Value_1 * Value_2 < INT_MIN)
-				throw ErrorFlow();
-			break;
-		}
-		case S:
-		{
-			if (Value_1 < 0x0 && Value_2 > INT_MAX + Value_1)
-				throw ErrorFlow();
-			break;
-		}
-		case D:
-		{
-			if (Value_1 == 0x0)
-				throw std::invalid_argument("Division by zero");
-			if (Value_2 == INT_MIN && Value_1 == -0x1)
- 				throw ErrorFlow();
-			break;
-		}
-		case A:
-		{
-			if ((Value_1 > 0x0 && Value_2 > INT_MAX - Value_1) ||
-				(Value_1 < 0x0 && Value_2 < INT_MIN - Value_1))
-				throw ErrorFlow();
-			break;
-		}
-	}
+    switch (opr)
+    {
+        case M:  // Multiplication
+        {
+            // Check for multiplication overflow
+            if (Value_1 == 0 || Value_2 == 0)
+                throw std::invalid_argument("One of the elements is zero.");
+            if (Value_1 > 0 && Value_2 > INT_MAX / Value_1)  // Positive overflow check
+                throw ErrorFlow();
+            if (Value_1 < 0 && Value_2 < INT_MIN / Value_1)  // Negative overflow check
+                throw ErrorFlow();
+            break;
+        }
+        
+        case S:  // Subtraction
+        {
+            // Check for subtraction overflow
+            if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
+                throw ErrorFlow();
+            if (Value_1 > 0 && Value_2 < INT_MIN + Value_1)
+                throw ErrorFlow();
+            break;
+        }
+
+        case D:  // Division
+        {
+            // Check for division by zero or overflow
+            if (Value_1 == 0)
+                throw std::invalid_argument("Division by zero.");
+            if (Value_2 == INT_MIN && Value_1 == -1)  // Check for INT_MIN / -1 overflow
+                throw ErrorFlow();
+            break;
+        }
+        
+        case A:  // Addition
+        {
+            // Check for addition overflow
+            if (Value_1 > 0 && Value_2 > INT_MAX - Value_1)
+                throw ErrorFlow();  // Positive overflow
+            if (Value_1 < 0 && Value_2 < INT_MIN - Value_1)
+                throw ErrorFlow();  // Negative overflow
+            break;
+        }
+
+        default:
+            throw std::invalid_argument("Unknown operator.");
+    }
 }
+
 
 void	RPN::PolonaiseInverse(std::string& _array)
 {
