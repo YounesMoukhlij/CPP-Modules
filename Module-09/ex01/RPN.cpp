@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:42:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:42:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,17 @@ RPN::RPN(const RPN& origine)
 
 RPN& RPN::operator=(const RPN& origine)
 {
-	std::cout << "Copy Assigneme called." << std::endl;
+	std::cout << "Copy Assignement called." << std::endl;
 	return (*this);
 }
 
-bool	RPN::isOperator(char c) const {
+bool	RPN::isOperator(char c) const
+{
 	return (c == '*' || c == '/' || c == '-' || c == '+');
 }
 
-bool	RPN::isSpace(char c) const {
+bool	RPN::isSpace(char c) const
+{
 	return (c == ' ');
 }
 
