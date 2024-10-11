@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:48:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:49:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main(int you, char **nes)
 	{
 		RPN	rpn;
 		std::string	_str = static_cast<const std::string> (av[1]);
-		rpn.parseArg(_str);
+		rpn.parseArgument(_str);
 		rpn.ReversePolish(_str);
 	}
 	catch(const std::exception& e)
