@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:41:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:41:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 RPN::RPN()
 {
-	std::cout << "Default constructor by  alled." << std::endl;
+	std::cout << "Default constructor called." << std::endl;
 }
 
 RPN::~RPN()
 {
-	std::cout << "destructor called!" << std::endl;
+	std::cout << "destructor called." << std::endl;
 }
 
 RPN::RPN(const RPN& origine)
