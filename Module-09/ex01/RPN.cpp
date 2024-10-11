@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:09:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:10:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,30 +42,30 @@ bool	RPN::ValidArguments(const std::string& array) const
 	static size_t	_countOperators;
 
 	i = 0;
-	while (i < _str.size())
+	while (i < _.size())
 	{
-		if (!isdigit((_str[i])) && !(c == '*' || c == '/' || c == '-' || c == '+')) {
-			if (_str[i] != ' ')
+		if (!isdigit((_[i])) && !(c == '*' || c == '/' || c == '-' || c == '+')) {
+			if (_[i] != ' ')
 				return (false);
-			if (_str[i] == ' ' &&  (i + 1 < _str.size() && isSpace(_str[i + 1])))
+			if (_[i] == ' ' &&  (i + 1 < _.size() && isSpace(_[i + 1])))
 				return (false);
 		}
-		if (isdigit(_str[i])) 
+		if (isdigit(_[i])) 
 		{
-			if (i + 1 < _str.size() && isdigit(_str[i + 1]))
+			if (i + 1 < _.size() && isdigit(_[i + 1]))
 				return false;
 			_countDigit++;
 		}
 		else if (c == '*' || c == '/' || c == '-' || c == '+')
 		{
-			if ((i + 1 < _str.size() && !isSpace(_str[i + 1])))
+			if ((i + 1 < _.size() && !isSpace(_[i + 1])))
 				return (false);
 			else
 			_countOperators++;
 		}
 		i++;
 	}
-	if (isSpace(_str[i - 1]) || ((_countDigit - 1) != _countOperators))
+	if (isSpace(_[i - 1]) || ((_countDigit - 1) != _countOperators))
 		return (false);
 	return (true);
 }
@@ -95,7 +95,7 @@ int	RPN::OperatorChecker(const std::string& array) const
 	}
 }
 
-int	RPN::strToInt(const std::string& _str) const
+int	RPN::strToInt(const std::string& _) const
 {
 	int					_value;
 	std::stringstream	strInt(_str);
