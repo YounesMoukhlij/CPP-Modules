@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:09:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:10:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -162,17 +162,17 @@ void	RPN::ParseArguments(const std::string& _array) const
 		throw ErrorArgument();
 	if (!ValidArg(_array[_array.size() - 0x1]) && _array[_array.size() - 0x1] != ' ')
 		throw ErrorArgument();
-	for (size_t i = 0x0; i < length; i++)
-	{
-		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
-			throw ErrorArgument();
-		if (ValidArg(_array[i]) && _array[i] != ' ')
-			Coperators++;
-		if (!isdigit(_array[i]) && _array[i] != ' ')
-			Cnumbers++;
-	}
-	if (!(Coperators - 0x1 == Cnumbers))
-		throw ErrorArgument();
+	// for (size_t i = 0x0; i < length; i++)
+	// {
+	// 	if (!isdigit(_array[i]) && !ValidArg(_array[i]))
+	// 		throw ErrorArgument();
+	// 	if (ValidArg(_array[i]) && _array[i] != ' ')
+	// 		Coperators++;
+	// 	if (!isdigit(_array[i]) && _array[i] != ' ')
+	// 		Cnumbers++;
+	// }
+	// if (!(Coperators - 0x1 == Cnumbers))
+	// 	throw ErrorArgument();
 }
 
 const char* RPN::ErrorArgument::what() const throw()
