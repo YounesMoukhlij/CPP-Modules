@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:52:34 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/05 13:00:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:19:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 #include <sstream>
 
 # define IGNORE(param) (void)(param)
-# define _CHAR_ 0
-# define _INT_ 1
-# define _FLOAT_ 2
+# define _CHAR_ 0x0
+# define _INT_ 0x1
+# define _FLOAT_ 0x2
 # define _DOUBLE_ 3
 # define _MINUSINF_ 4
 # define _PLUSINF_ 5
