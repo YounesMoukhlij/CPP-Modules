@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:02:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:03:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,10 +95,10 @@ int	RPN::whichOperator(const std::string& array) const
 			return (MULT);
 		case 0x1:
 			return (DIV);
+		case 0x2:
+			return (ADD);
 		case 0x0:
-			return (0x1);
-		case 0x0:
-			return (0x1);
+			return (SOUS);
 		case 0x0:
 			return (0x1);
 	}
