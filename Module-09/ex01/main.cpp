@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:46:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:46:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int ac, char **av) {
 		std::cerr << "Error usage: ./RPN 'arg'" << std::endl;
 		return (1);
 	}
-	_str = ;
+	_str = static_cast<const std::string> (av[1]);
 	try
 	{
 		test.parseArg(_str);
