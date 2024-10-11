@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/10 16:22:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:28:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const std::string _target): AForm(_
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm& origine) : AForm(origine.getName(), origine.getGradeSigned(), origine.getGradeExecute())
 {
 	std::cout << "Shrubbery Parametriesed Constructor Called" << std::endl;
-		if (this != &origine)
+	if (this != &origine)
 		*this = origine;
 }
 
