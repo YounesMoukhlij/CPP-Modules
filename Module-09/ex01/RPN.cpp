@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:30:38 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:31:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	RPN::OperatorChecker( std::string& _array)
 	}
 	switch(indicator)
 	{
-		case 0x0:
+		case (MULT - 0x1):
 			return (MULT);
 		case 0x1:
 			return (DIV);
