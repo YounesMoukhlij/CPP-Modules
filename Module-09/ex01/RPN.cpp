@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:50:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:51:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ int	RPN::IntConversion(const std::string& _array) const
 }
 
 
-void RPN::CheckFlow(int Value_1, int Value_2, char opr) const
+void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 {
     switch (opr)
     {
