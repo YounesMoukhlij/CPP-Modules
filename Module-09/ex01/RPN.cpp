@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:10:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:10:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,37 +35,37 @@ RPN& RPN::operator=(const RPN& origine)
 	return (*this);
 }
 
-bool	RPN::ValidArguments(const std::string& array) const
+bool	RPN::ValidArguments(const std::string& _array) const
 {
 	size_t	i;
 	static size_t	_countDigit;
 	static size_t	_countOperators;
 
 	i = 0;
-	while (i < _.size())
+	while (i < _array.size())
 	{
-		if (!isdigit((_[i])) && !(c == '*' || c == '/' || c == '-' || c == '+')) {
-			if (_[i] != ' ')
+		if (!isdigit((_array[i])) && !(c == '*' || c == '/' || c == '-' || c == '+')) {
+			if (_array[i] != ' ')
 				return (false);
-			if (_[i] == ' ' &&  (i + 1 < _.size() && isSpace(_[i + 1])))
+			if (_array[i] == ' ' &&  (i + 1 < _array.size() && isSpace(_array[i + 1])))
 				return (false);
 		}
-		if (isdigit(_[i])) 
+		if (isdigit(_array[i])) 
 		{
-			if (i + 1 < _.size() && isdigit(_[i + 1]))
+			if (i + 1 < _array.size() && isdigit(_array[i + 1]))
 				return false;
 			_countDigit++;
 		}
 		else if (c == '*' || c == '/' || c == '-' || c == '+')
 		{
-			if ((i + 1 < _.size() && !isSpace(_[i + 1])))
+			if ((i + 1 < _array.size() && !isSpace(_array[i + 1])))
 				return (false);
 			else
 			_countOperators++;
 		}
 		i++;
 	}
-	if (isSpace(_[i - 1]) || ((_countDigit - 1) != _countOperators))
+	if (isSpace(_array[i - 1]) || ((_countDigit - 1) != _countOperators))
 		return (false);
 	return (true);
 }
@@ -95,7 +95,7 @@ int	RPN::OperatorChecker(const std::string& array) const
 	}
 }
 
-int	RPN::strToInt(const std::string& _) const
+int	RPN::strToInt(const std::string& _array) const
 {
 	int					_value;
 	std::stringstream	strInt(_str);
