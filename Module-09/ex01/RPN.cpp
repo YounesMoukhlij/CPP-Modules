@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:59:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:59:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,8 @@ int	RPN::OperatorChecker( std::string& _array)
 
 bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 {
-	size_t Cnumbers;
-	size_t Coperators;
+	size_t Cnumbers = 0x0;
+	size_t Coperators = 0x0;
 	
 	if (!isdigit(static_cast<int>(_array[0x0])))
 		throw ErrorArgument();
@@ -91,6 +91,7 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	{
 		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
 			throw ErrorArgument();
+		if ()
 	}
 	return (true);
 }
