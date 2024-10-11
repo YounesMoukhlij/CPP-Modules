@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:01:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:02:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 # define IGNORE(param) (void)(param)
 
-# define FI ''
-# define
+# define FI 0x0
+# define QISMA
 # define
 # define
 
