@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:18:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:18:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ RPN& RPN::operator=(const RPN& origine)
 
 bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 {
-	size_t	i;
 	static size_t	_countDigit;
 	static size_t	_countOperators;
 
@@ -65,7 +64,6 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 			else
 			_countOperators++;
 		}
-		i++;
 	}
 	if (isSpace(_array[i - 1]) || ((_countDigit - 1) != _countOperators))
 		return (false);
