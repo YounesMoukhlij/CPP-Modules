@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:18:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:18:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	static size_t	_countDigit;
 	static size_t	_countOperators;
 
-	i = 0;
 	for (size_t i = 0x0; i < length; i++)
 	{
 
