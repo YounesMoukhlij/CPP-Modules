@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:50:56 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/10 15:02:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:00:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ ShrubberyCreationForm&  ShrubberyCreationForm::operator=(const ShrubberyCreation
 {
 	std::cout << "Shrubbery copy assignement Called" << std::endl;
 	if (this != &shrubbery)
-		this->_target = shrubbery._target;
+		_target = shrubbery._target;
 	return (*this);
 }			
 
