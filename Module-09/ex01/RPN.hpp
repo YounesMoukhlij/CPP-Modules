@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:10:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:11:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,13 @@ class RPN
 		
 		// Member Functions
 		int			ValidArg(char _oprt) const;
-		void		PolonaiseInverse(std::string& _array);
+		void		PolonaiseInverse(cstd::string& _array);
 		int			OperatorChecker( std::string& _array) ;
 		int			IntConversion(const std::string& _array) const;
 		void		ParseArguments(const std::string& _array) const;
 		void		CheckFlow(int Value_1, int Value_2, char opr) const;
 		void		CalculateStaff(int opr, std::stack<int>& _stack);
-		void		OperationAPPOLO(const std::string& __array, int mode);
+		void		OperationAPPOLO(const std::string& _array, int mode);
 	
 		
 
