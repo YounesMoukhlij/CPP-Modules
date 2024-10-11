@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:53:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:54:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ bool	RPN::isValidChracters(const std::string& _str) const {
 		if (!isdigit((_str[i])) && !isOperator(_str[i])) {
 			if (_str[i] != ' ')
 				return (false);
-			if (isSpace(_str[i]) &&  (i + 1 < _str.size() && isSpace(_str[i + 1])))
+			if (c ==  &&  (i + 1 < _str.size() && isSpace(_str[i + 1])))
 				return (false);
 		}
 		if (isdigit(_str[i])) 
