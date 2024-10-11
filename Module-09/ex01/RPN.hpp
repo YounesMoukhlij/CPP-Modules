@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:04:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:05:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,6 @@ class RPN
 	private:
 		std::stack<int>		_stack;
 	public:
-	
-		typedef std::stack<int>::container_type::iterator it;
-		iterator begin()
-		{
-			return this->c.begin();
-		}
-    	iterator end()
-		{
-			return this->c.end();
-		}
 		// Canonical Form
  		RPN();
 		~RPN();
