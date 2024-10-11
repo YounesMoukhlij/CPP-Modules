@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:17:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:17:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -178,9 +178,9 @@ void	RPN::PolonaiseInverse(std::string& _array)
 
 void	RPN::ParseArguments(const std::string& _array) const
 {
-	if (!isdigit(static_cast<int>(_array[0])), _array.size())
+	if (!isdigit(static_cast<int>(_array[0])))
 		throw ErrorArgument();
-	if (!ValidArguments(_array))
+	if (!ValidArguments(_array, _array.size()))
 		throw ErrorArgument();
 }
 
