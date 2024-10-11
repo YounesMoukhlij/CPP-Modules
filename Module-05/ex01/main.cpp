@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/10 12:23:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:06:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int you, char **nes)
 		std::cerr << "Program doesn't accepte any arguments" << std::endl;
 		return (EXIT_FAILURE);
 	}
-
+	Form A
     try
 	 {
         Bureaucrat alice("Alice", 0xA);
