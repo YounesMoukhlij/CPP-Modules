@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:32:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:32:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 class RPN
 {
 	private:
-		/* data */
 		std::stack<int>		_rpnStack;
 		bool				isValidChracters(const std::string& _str) const;
 		bool				isOperator(char c) const;
