@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:03:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:04:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,16 +102,6 @@ int	RPN::whichOperator(const std::string& array) const
 		default:
 			return (NOTHING);
 	}
-	
-	if (_str[0] == '*')
-		return (1);
-	else if (_str[0] == '/')
-		return (2);
-	else if (_str[0] == '+')
-		return (3);
-	else if (_str[0] == '-')
-		return (4);
-	return (-1);
 }
 
 int	RPN::strToInt(const std::string& _str) const {
