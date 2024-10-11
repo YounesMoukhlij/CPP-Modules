@@ -6,19 +6,20 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:41:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:41:27 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RPN.hpp"
 
-RPN::RPN() {
-	// std::cout << "called constructor by default!" << std::endl;
+RPN::RPN()
+{
+	std::cout << " constructor by defaultcalled.!" << std::endl;
 }
 
 RPN::~RPN()
 {
-	// std::cout << "destructor called!" << std::endl;
+	std::cout << "destructor called!" << std::endl;
 }
 
 RPN::RPN(const RPN& origine)
