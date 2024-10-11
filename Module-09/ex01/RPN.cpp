@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:01:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:01:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,11 @@ int	RPN::whichOperator(const std::string& array) const
 		if (array[0] == oprt[0])
 			indicator = i;
 	}
-	switch
+	switch(indicator)
+	{
+		case 0x0:
+			
+	}
 	
 	if (_str[0] == '*')
 		return (1);
