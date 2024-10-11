@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:49:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:49:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -192,7 +192,8 @@ void	RPN::PolonaiseInverse(std::string& _array)
 			_stack.push(static_cast<int>(read[0x0]));
 		else
 		{
-			if (_stack.size() <)
+			if (_stack.size() < 0x2)
+				throw
 			CalculateStaff(OperatorChecker(read), _stack);
 		}
 	}
