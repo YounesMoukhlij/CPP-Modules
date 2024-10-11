@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:24:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:24:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,7 +148,8 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 
 void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 {
-	int 
+	int	num1;
+	int	;
 	
 	
 	// if operator then do simple math
