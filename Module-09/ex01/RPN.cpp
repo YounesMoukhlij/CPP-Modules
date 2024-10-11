@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:49:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:50:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -239,5 +239,5 @@ const	char* RPN::ErrorOperation::what() const throw()
 }
 const	char* RPN::SmallStack::what() const throw()
 {
-	return ("Dont Foul me, Cannot Multiply Zero by Zero. What the point!!!");
+	return ("You Have Entred ");
 }
