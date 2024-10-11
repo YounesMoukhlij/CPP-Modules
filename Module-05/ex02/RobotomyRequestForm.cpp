@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:10:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:11:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,8 @@ RobotomyRequestForm&  RobotomyRequestForm::operator=(const RobotomyRequestForm& 
 {
 	std::cout << "Robotomy Copy assignement Called." << std::endl;
 	if (this != &origine)
-	{
-		*this = origine;
-		
-		// this->_target = origine._target;
+	{	
+		this->_target = origine._target;
 	}
 	return (*this);
 }
