@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:11:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:16:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class RPN
 {
 	private:
 		std::stack<int>		_stack;
+		void		CalculateStaff(int opr, std::stack<int>& _stack);
 	public:
 		// Canonical Form
  		RPN();
@@ -48,7 +49,6 @@ class RPN
 		int			IntConversion(const std::string& _array) const;
 		void		ParseArguments(const std::string& _array) const;
 		void		CheckFlow(int Value_1, int Value_2, char opr) const;
-		void		CalculateStaff(int opr, std::stack<int>& _stack);
 		void		OperationAPPOLO(const std::string& _array, int mode);
 	
 		
