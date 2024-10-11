@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:55:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:56:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ RPN& RPN::operator=(const RPN& origine)
 }
 
 
-int	RPN::OperatorCharacter(char _oprt) const
+int	RPN::ValidArg(char _oprt) const
 {
 	switch (_oprt)
 	{
@@ -87,7 +87,7 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 		throw ErrorArgument();
 	for (size_t i = 0x0; i < length; i++)
 	{
-		if (!isdigit(_array[i]) && !OperatorCharacter(_array[i]))
+		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
 			throw ErrorArgument();
 	}
 	return (true);
