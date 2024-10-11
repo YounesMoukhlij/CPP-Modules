@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:46:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:47:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main(int ac, char **av) {
 	if (ac != 2)
 	{
 		std::cerr << "Error usage: ./RPN 'arg'" << std::endl;
-		return (1);
+		return ();
 	}
 	
 	RPN	test;
