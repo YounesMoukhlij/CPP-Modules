@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:16:35 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:16:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ RPN& RPN::operator=(const RPN& origine)
 	return (*this);
 }
 
-bool	RPN::ValidArguments(const std::string& _array, int leng) const
+bool	RPN::ValidArguments(const std::string& _array, int length) const
 {
 	size_t	i;
 	static size_t	_countDigit;
@@ -178,7 +178,7 @@ void	RPN::PolonaiseInverse(std::string& _array)
 
 void	RPN::ParseArguments(const std::string& _array) const
 {
-	if (!isdigit(static_cast<int>(array[0])))
+	if (!isdigit(static_cast<int>(array[0])), )
 		throw ErrorArgument();
 	if (!ValidArguments(array))
 		throw ErrorArgument();
