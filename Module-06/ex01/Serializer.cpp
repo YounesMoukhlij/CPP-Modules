@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 18:14:46 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 18:42:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:35:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ Serializer::Serializer(const Serializer& origine)
 		*this = origine;
 }
 
-Serializer::~Serializer(void) {
+Serializer::~Serializer(void)
+{
 	
 }
 
