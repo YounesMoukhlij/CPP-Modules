@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:32:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:32:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class RPN
 {
 	private:
-		std::stack<int>		_rpnStack;
+		std::stack<int>		rpnStack;
 		bool				isValidChracters(const std::string& _str) const;
 		bool				isOperator(char c) const;
 		bool				isSpace(char c) const;
@@ -30,9 +30,9 @@ class RPN
 		void				operationCalcule(std::string& _piece, std::stack<int>& _stack);
 	public:
 		RPN();
-		RPN(const RPN& _rpn);
+		RPN(const RPN& origine);
 		~RPN();
-		RPN& operator=(const RPN& _rpn);
+		RPN& operator=(const RPN& origine);
 		void	parseArg(const std::string& _str) const;
 		void	ReversePolish(std::string& _str); 
 		class	ErrorInvalidArgument : public std::exception {
