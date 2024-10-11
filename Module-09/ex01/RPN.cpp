@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:15:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:15:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -172,7 +172,10 @@ void	RPN::ParseArguments(const std::string& _array) const
 			Coperators++;
 		}
 		if (!isdigit(_array[i]) && _array[i] != ' ')
+		{
+			std::cout << 
 			Cnumbers++;
+		}
 	}
 	printf("%lu   --  %lu\n", Coperators, Cnumbers);
 	if (Coperators + 0x1 != Cnumbers)
