@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:06:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:06:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 	Form A("A", 0x1, 0x0);
-	Form A("A", 0x3, 0x1);
+	Form B("B", 0x3, 0x4);
+	
+	A = B;
     try
 	 {
         Bureaucrat alice("Alice", 0xA);
