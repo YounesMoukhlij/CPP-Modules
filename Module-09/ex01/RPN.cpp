@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:23:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:23:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,9 @@ int	RPN::IntConversion(const std::string& _array) const
 	return (_intValue);
 }
 
-void	RPN::isOperationValid(int Value_1, int Value_2, char _operator) const
+void	RPN::isOperationValid(int Value_1, int Value_2, char opr) const
 {
-	switch (_operator)
+	switch (opr)
 	{
 		case '*':
 			if (firstValue != 0 && secondValue != 0 &&
