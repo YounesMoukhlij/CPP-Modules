@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:51:45 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:11:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:11:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ const std::string& RobotomyRequestForm::getTarget(void) const
 void	RobotomyRequestForm::execute(Bureaucrat const & bur) const
 {
 	executionChecker(bur);
+	std::srand(std::time(0x0));
 	std::cout << bur.getName() << " executed " << this->_target << std::endl;
 	std::cout << "Drilling noises..." << std::endl;
 	if (std::rand() % 0x2)
