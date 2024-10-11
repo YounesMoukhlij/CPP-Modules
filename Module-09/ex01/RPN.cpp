@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:32:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:33:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,5 +143,5 @@ const	char* RPN::ErrorFlow::what() const throw()
 
 const	char* RPN::ErrorOperation::what() const throw()
 {
-	return ("Cannot Multiply by 0.");
+	return ("Dont Foul me, Ch");
 }
