@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:15:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:15:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,8 @@ bool	RPN::ValidArguments(const std::string& _array) const
 	i = 0;
 	while (i < _array.size())
 	{
-		if (!isdigit((_array[i])) && !(c == '*' || c == '/' || c == '-' || c == '+')) {
+		if (!isdigit((_array[i])) && !(c == '*' || c == '/' || c == '-' || c == '+'))
+		{
 			if (_array[i] != ' ')
 				return (false);
 			if (_array[i] == ' ' &&  (i + 1 < _array.size() && isSpace(_array[i + 1])))
