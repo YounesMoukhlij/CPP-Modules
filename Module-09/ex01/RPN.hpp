@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:53:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:01:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,11 @@
 #include <sstream>
 
 # define IGNORE(param) (void)(param)
+
+# define FI ''
+# define
+# define
+# define
 
 class RPN
 {
