@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:15:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:16:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ RPN& RPN::operator=(const RPN& origine)
 	return (*this);
 }
 
-bool	RPN::ValidArguments(const std::string& _array) const
+bool	RPN::ValidArguments(const std::string& _array, int leng) const
 {
 	size_t	i;
 	static size_t	_countDigit;
