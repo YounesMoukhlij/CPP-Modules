@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:02:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:07:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -243,6 +243,10 @@ void	RPN::ParseArguments(const std::string& _array) const
 	if (Coperators + 0x1 != Cnumbers)
 		throw ErrorArgument();
 }
+
+
+void	RPN::OperationA
+
 
 const char* RPN::ErrorArgument::what() const throw()
 {
