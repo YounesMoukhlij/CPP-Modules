@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:29:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:30:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Intern& Intern::operator=(const Intern& intern)
 	std::cout << "Intern Copy Assignement Called." << std::endl;
 	if (this != &intern)
 	{
-		
+
 	}
 	return (*this);
 }
