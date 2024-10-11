@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:01:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:02:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int	RPN::whichOperator(const std::string& array) const
 	switch(indicator)
 	{
 		case 0x0:
-			return (0x1);
+			return (MULT);
 		case 0x1:
 			return (0x1);
 		case 0x0:
