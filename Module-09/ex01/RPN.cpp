@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:23:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:23:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,23 +87,23 @@ void	RPN::isOperationValid(int Value_1, int Value_2, char opr) const
 	switch (opr)
 	{
 		case '*':
-			if (firstValue != 0 && secondValue != 0 &&
-				(firstValue * secondValue > INT_MAX || firstValue * secondValue < INT_MIN))
+			if (Value_1 != 0 && secondValue != 0 &&
+				(Value_1 * secondValue > INT_MAX || Value_1 * secondValue < INT_MIN))
 				throw ErrorOverFlow;
 			break;
 		case '/':
-			if (firstValue == 0)
+			if (Value_1 == 0)
 				throw std::invalid_argument("Division by zero");
-			if (secondValue == INT_MIN && firstValue == -1)
+			if (secondValue == INT_MIN && Value_1 == -1)
  				throw ErrorOverFlow;
 			break;
 		case '+':
-			if ((firstValue > 0 && secondValue > INT_MAX - firstValue) ||
-				(firstValue < 0 && secondValue < INT_MIN - firstValue))
+			if ((Value_1 > 0 && secondValue > INT_MAX - Value_1) ||
+				(Value_1 < 0 && secondValue < INT_MIN - Value_1))
 				throw ErrorOverFlow;
 			break;
 		case '-':
-			if (firstValue < 0 && secondValue > INT_MAX + firstValue)
+			if (Value_1 < 0 && secondValue > INT_MAX + Value_1)
 				throw ErrorOverFlow;
 			break;
 	}
