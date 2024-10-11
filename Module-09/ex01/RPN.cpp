@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:33:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:33:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,7 +182,8 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		{
 			std::cout << "///" << std::endl;
 			CheckFlow(num1, num2, '\'');
-		
+			_stack.push(num1 * num2);
+			
 			break;
 
 		}
@@ -190,6 +191,8 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		{
 			CheckFlow(num1, num2, '+');
 			std::cout << "++++" << std::endl;
+			_stack.push(num1 * num2);
+			
 			break;
 
 		}
@@ -197,7 +200,8 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		{
 			CheckFlow(num1, num2, '-');
 			std::cout << "---" << std::endl;
-		
+			_stack.push(num1 * num2);
+			
 			break;
 
 		}
