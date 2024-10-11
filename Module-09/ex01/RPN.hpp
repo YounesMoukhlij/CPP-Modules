@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:26:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:27:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@
 # define ADD  0x3
 # define SOUS 0x4
 # define NOTHING -0x1
+
+# define M '*'
 
 class RPN
 {
