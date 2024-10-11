@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:24:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:24:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,22 +89,22 @@ void	RPN::isOperationValid(int Value_1, int Value_2, char opr) const
 		case '*':
 			if (Value_1 != 0 && Value_2 != 0 &&
 				(Value_1 * Value_2 > INT_MAX || Value_1 * Value_2 < INT_MIN))
-				throw ErrorOverFlow;
+				throw ErrorFlow();
 			break;
 		case '/':
 			if (Value_1 == 0)
 				throw std::invalid_argument("Division by zero");
 			if (Value_2 == INT_MIN && Value_1 == -1)
- 				throw ErrorOverFlow;
+ 				throw ErrorFlow();
 			break;
 		case '+':
 			if ((Value_1 > 0 && Value_2 > INT_MAX - Value_1) ||
 				(Value_1 < 0 && Value_2 < INT_MIN - Value_1))
-				throw ErrorOverFlow;
+				throw ErrorFlow();
 			break;
 		case '-':
 			if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
-				throw ErrorOverFlow;
+				throw ErrorFlow();
 			break;
 	}
 }
