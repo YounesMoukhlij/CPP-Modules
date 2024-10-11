@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 13:56:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 13:57:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ int main(int you, char **nes)
 	bureaucrat A("younes", 12);
 	bureaucrat B("moukhlij", 30);
 
+	B = A;
+
+	std::cout << B << std::endl;
 	
     std::cout << "1st Try" << std::endl;
     try
