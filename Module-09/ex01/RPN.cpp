@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:22:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:23:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,37 +109,7 @@ int	RPN::IntConversion(const std::string& _array) const
 // 	}
 // }
 
-// void	RPN::operationCalcule(std::string& _piece, std::stack<int>& _stack) {
 
-// 	int	firstValue;
-// 	int secondValue;
-
-// 	if (_stack.size() < 2)
-// 		throw ErrorInvalidArgument;
-// 	firstValue = _stack.top(), _stack.pop();
-// 	secondValue = _stack.top(), _stack.pop();
-// 	switch (whichOperator(_piece))
-// 	{
-// 		case 1:
-// 			_stack.push(firstValue * secondValue);
-// 			isOperationValid(firstValue, secondValue, '*');
-// 			break;
-// 		case 2:
-// 			isOperationValid(firstValue, secondValue, '/');
-// 			_stack.push(secondValue / firstValue);
-// 			break;
-// 		case 3:
-// 			isOperationValid(firstValue, secondValue, '+');
-// 			_stack.push(firstValue + secondValue);
-// 			break;
-// 		case 4:
-// 			isOperationValid(firstValue, secondValue, '-');
-// 			_stack.push(secondValue - firstValue);
-// 			break;
-// 		default:
-// 			throw	ErrorInvalidArgument;
-// 	}
-// }
 
 void	RPN::PolonaiseInverse(std::string& _array)
 {
