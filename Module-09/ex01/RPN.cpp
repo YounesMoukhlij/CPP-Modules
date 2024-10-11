@@ -172,7 +172,7 @@ void	RPN::PolonaiseInverse(std::string& array)
 
 void	RPN::ParseArguments(const std::string& array) const
 {
-	if
+	if ()
 	if (!isdigit(static_cast<int> (array[0])) || !isValidChracters(array))
 		throw ErrorArgument();
 }
