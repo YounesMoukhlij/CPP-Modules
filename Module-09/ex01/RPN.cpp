@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:02:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:02:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ bool	RPN::ValidArguments(const std::string& _array, size_t length) const
 	
 	if (!isdigit(static_cast<int>(_array[0x0])))
 		return (false);
-	if (_array[_array.size() - ])
+	if (ValidArg(_array[_array.size() - 0x1]))
 	for (size_t i = 0x0; i < length; i++)
 	{
 		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
