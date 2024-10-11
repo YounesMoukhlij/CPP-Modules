@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:23:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:23:35 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,7 +153,7 @@ void	RPN::PolonaiseInverse(std::string& _array)
 	while (getline(inputString, _piece, ' '))
 	{
 	}
-	std::cout << "The Result"
+	std::cout << "The Result : " << << std::endl;
 }
 
 void	RPN::ParseArguments(const std::string& _array) const
