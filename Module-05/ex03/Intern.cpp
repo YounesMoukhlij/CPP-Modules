@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:56:55 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 14:09:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:57:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,35 @@
 
 Intern::Intern(void)
 {
-	
+	std::cout << "Intern Default Constructor Called." << std::endl;
 }
 
 Intern::Intern(const Intern& intern)
 {
+	std::cout << "Intern Copy Constructor Called." << std::endl;
+	
 	if (this != &intern)
 		*this = intern;
 }
 
 Intern::~Intern(void)
 {
-
+	std::cout << "Intern Destructor Called." << std::endl;
 }
 
 Intern& Intern::operator=(const Intern& intern)
 {
-	(void)intern;
+	std::cout << "Intern Copy Assignement Called." << std::endl;
+	if (this != &intern)
+		*this = intern;
 	return (*this);
 }
 
 AForm* Intern::makeForm(const std::string& _name, const std::string& _target)
 {
 	std::string Names[] = {"Shrubbery", "Roboto", "Presidential"};
-	AForm *form;
+	AForm 		*form;
 
-	int i = -0x1;
 	int checker = -0x1;
 	for (int i = 0x0; i < 0x3; i++)
 	{

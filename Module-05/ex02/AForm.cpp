@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:57:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:25:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name
 
 void	AForm::beSigned(const Bureaucrat& bur)
 {
-	if (bur.getGrade() >= this->_gradeSign)
+	if (bur.getGrade() <= this->_gradeSign)
 		this->_indicator = true;
 	else
 		throw GradeTooLowException();
@@ -72,7 +72,7 @@ std::ostream& operator<<(std::ostream& file, const AForm& AForm)
     file << "AForm: " << AForm.getName()
         << ", Signed: " << (AForm.getIndicator() ? "Yes" : "No")
         << ", Grade required to sign: " << AForm.getGradeSigned()
-        << ", Grade required to execute: " << AForm.getGradeExecute();
+        << ", Grade required to execute: " << AForm.getGradeExecute() << std::endl;
     return file;
 }
 
@@ -91,7 +91,7 @@ AForm::~AForm()
 
 void	AForm::executionChecker(const Bureaucrat& bur) const
 {
-	if (!_gradeSign)
+	if (_gradeSign == false)
 		throw GradeNotSignedException();
 	if (bur.getGrade() > this->_gradeExecute)
 		throw GradeTooLowException();

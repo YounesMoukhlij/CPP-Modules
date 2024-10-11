@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:37:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:26:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ AForm::AForm(const std::string& name, int gradeSigned, int gradeExecute) : _name
 
 void	AForm::beSigned(const Bureaucrat& bur)
 {
-	if (bur.getGrade() >= this->_gradeSign)
+	if (bur.getGrade() <= this->_gradeSign)
 		this->_indicator = true;
 	else
 		throw GradeTooLowException();

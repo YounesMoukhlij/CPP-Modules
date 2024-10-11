@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:55:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:23:07 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,12 @@ int main(int you, char **nes)
 
     try
 	 {
-        Bureaucrat alice("Alice", 40);
-        Form contract("Bouzkri", 30, 20);
-	
-		contract.beSigned(alice);
+        Bureaucrat alice("Alice", 0xA);
+        Form contract("BzikerMann", 0xA, 2 * 0xA);
+		
         std::cout << contract << std::endl;  // Show initial form status
         alice.signForm(contract);           // Try to sign the form
-        std::cout << contract << std::endl;  // Show updated form status
+        std::cout << contract << std::endl;  // Show after Signature
     }
 	catch (std::exception& e)
 	{

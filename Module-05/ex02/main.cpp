@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/04 13:58:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:38:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ int main(int you, char **nes)
     std::cout << std::endl;
 	try
 	{
-		Bureaucrat bureaucrat("Mr", 80);
-		RobotomyRequestForm roboto("roboto");
+		Bureaucrat bureaucrat("Mr", 20);
+		RobotomyRequestForm roboto("RRAATAATATA");
 		
 		bureaucrat.signForm(roboto);
-		roboto.execute(bureaucrat);
+		bureaucrat.executeForm(roboto);
 		std::cout << roboto;
 	}
 	catch (const std::exception& e)
@@ -48,10 +48,11 @@ int main(int you, char **nes)
 	
 	try
 	{
-		Bureaucrat bureaucrat("Younes", 145);
-		ShrubberyCreationForm shrubbery("shrubbery");
+		Bureaucrat bureaucrat("Younes", 100);
+		ShrubberyCreationForm shrubbery("Hayeler");
+		
 		bureaucrat.signForm(shrubbery);
-		shrubbery.execute(bureaucrat);
+		bureaucrat.executeForm(shrubbery);
 		std::cout << shrubbery;
 	}
 	catch (const std::exception& e)
@@ -67,11 +68,11 @@ int main(int you, char **nes)
 
 	try
 	{
-		std::srand(std::time(nullptr));
-		Bureaucrat bureaucrat("YOUNAN", 4);
+		std::srand(std::time(0x0));
+		Bureaucrat bureaucrat("YOUNAN", 6);
 		PresidentialPardonForm presidential("presidential");
 		bureaucrat.signForm(presidential);
-		presidential.execute(bureaucrat);
+		bureaucrat.executeForm(presidential);
 		std::cout << presidential;
 	}
 	catch (const std::exception& e)
@@ -80,3 +81,4 @@ int main(int you, char **nes)
 	}
     return (EXIT_SUCCESS);
 }
+        

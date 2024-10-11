@@ -6,13 +6,13 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:06:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/03 18:41:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 15:25:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form(void) : _name("Student"), _gradeSign(0x96), _gradeExecute(0x96)
+Form::Form(void) : _name("Default"), _gradeSign(0x96), _gradeExecute(0x96)
 {
 	std::cout << "Form Default Constructor Called" << std::endl;
 	this->_indicator = false;
@@ -24,7 +24,7 @@ Form::Form(const std::string& name, int gradeSigned, int gradeExecute) : _name(n
 	this->_indicator = false;
 	if (this->_gradeSign < 0x1 || this->_gradeExecute < 0x1)
 		throw GradeTooHighException();
-	else if (this->_gradeSign > 0x96 || this->_gradeSign > 0x96)
+	else if (this->_gradeSign > 0x96 || this->_gradeExecute > 0x96)
 		throw GradeTooLowException();
 }
 
@@ -40,7 +40,7 @@ const char* Form::GradeTooLowException::what() const throw()
 
 void	Form::beSigned(const Bureaucrat& bur)
 {
-	if (bur.getGrade() >= this->_gradeSign)
+	if (bur.getGrade() <= this->_gradeSign)
 		this->_indicator = true;
 	else
 		throw GradeTooLowException();

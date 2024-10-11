@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:41:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,9 @@ Bureaucrat::~Bureaucrat()
 	std::cout << "Bureaucrat Destructor Called" << std::endl;
 }
 
-Bureaucrat::Bureaucrat()
+Bureaucrat::Bureaucrat() : _name("Default")
 {
+	_grade = 0x1;
 	std::cout << "Bureaucrat Default Constructor Called" << std::endl;
 }
 
@@ -26,16 +27,12 @@ Bureaucrat::Bureaucrat(const std::string name, int grade) : _name(name), _grade(
 {
 	std::cout << "Bureaucrat Default Constructor Called" << std::endl;
 	if (grade < 0x1)
-	{
 		throw GradeTooHighException();
-	}
-	if (grade > 0x9C)
-	{
+	if (grade > 0x96)
 		throw GradeTooLowException();
-	}
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat& origine)
+Bureaucrat::Bureaucrat(const Bureaucrat& origine) : _name(origine._name)
 {
 	std::cout << "Bureaucrat copy Constructor Called" << std::endl;
 	*this = origine;
@@ -69,7 +66,7 @@ void	Bureaucrat::incrementGrade()
 
 void	Bureaucrat::decrementGrade()
 {
-	if (_grade + 0x1 > 0x9C)
+	if (_grade + 0x1 > 0x96)
 		throw GradeTooLowException();
 	_grade++;
 }
