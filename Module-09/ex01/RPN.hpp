@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:35:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:38:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ class RPN
 		int			IntConversion(const std::string& _array) const;
 		void		ParseArguments(const std::string& _array) const;
 		void		CheckFlow(int Value_1, int Value_2, char opr) const;
-		void		CalculateStaff(std::string& str, std::stack<int>& _stack);
+		void		CalculateStaff(int opr, std::stack<int>& _stack);
 		
 		
 
