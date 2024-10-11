@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:01:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:01:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,15 +85,15 @@ int	RPN::OperatorChecker(std::string& _array)
 
 // 2 * 7 + 
 
-// int	RPN::IntConversion(const std::string& _array) const
-// {
-// 	int					_intValue;
-// 	std::stringstream	str(_array);
+int	RPN::IntConversion(const std::string& _array) const
+{
+	int					_intValue;
+	std::stringstream	str(_array);
 	
-// 	str >> _intValue;
+	str >> _intValue;
 	
-// 	return (_intValue);
-// }
+	return (_intValue);
+}
 
 
 void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
