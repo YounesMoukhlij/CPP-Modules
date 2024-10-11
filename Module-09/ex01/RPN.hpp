@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:34:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:34:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,12 @@ class RPN
 		void				operationCalcule(std::string& _piece, std::stack<int>& _stack);
 	public:
 		RPN();
-		RPN(const RPN& origine);
 		~RPN();
+		RPN(const RPN& origine);
 		RPN& operator=(const RPN& origine);
+		
 		void	parseArg(const std::string& _str) const;
-		void	ReversePolonaiseInverse(std::string& _str); 
+		void		PolonaiseInverse(std::string& _str); 
 		class	ErrorInvalidArgument : public std::exception {
 			public :
 				const char* what() const throw();
