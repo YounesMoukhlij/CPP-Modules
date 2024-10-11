@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:13:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:14:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -164,7 +164,6 @@ void	RPN::ParseArguments(const std::string& _array) const
 	// 	throw ErrorArgument();
 	for (static size_t i; i < length; i++)
 	{
-		std::cout << _array[i] << std::endl;
 		// if (!isdigit(_array[i]) && !ValidArg(_array[i]))
 		// 	throw ErrorArgument();
 		if (ValidArg(_array[i]) && _array[i] != ' ')
