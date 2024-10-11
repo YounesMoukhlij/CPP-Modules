@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 17:53:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:53:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,54 +96,54 @@ int	RPN::OperatorChecker(std::string& _array)
 // }
 
 
-// void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
-// {
-//     switch (opr)
-//     {
-//         case M: 
-//         {
+void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
+{
+    switch (opr)
+    {
+        case M: 
+        {
         
-//             if (Value_1 == 0 || Value_2 == 0)
-//                 throw std::invalid_argument("One of the elements is zero.");
-//             if (Value_1 > 0 && Value_2 > INT_MAX / Value_1) 
-//                 throw ErrorFlow();
-//             if (Value_1 < 0 && Value_2 < INT_MIN / Value_1) 
-//                 throw ErrorFlow();
-//             break;
-//         }
-//         case S: 
-//         {
+            if (Value_1 == 0 || Value_2 == 0)
+                throw std::invalid_argument("One of the elements is zero.");
+            if (Value_1 > 0 && Value_2 > INT_MAX / Value_1) 
+                throw ErrorFlow();
+            if (Value_1 < 0 && Value_2 < INT_MIN / Value_1) 
+                throw ErrorFlow();
+            break;
+        }
+        case S: 
+        {
         
-//             if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
-//                 throw ErrorFlow();
-//             if (Value_1 > 0 && Value_2 < INT_MIN + Value_1)
-//                 throw ErrorFlow();
-//             break;
-//         }
-//         case D: 
-//         {
+            if (Value_1 < 0 && Value_2 > INT_MAX + Value_1)
+                throw ErrorFlow();
+            if (Value_1 > 0 && Value_2 < INT_MIN + Value_1)
+                throw ErrorFlow();
+            break;
+        }
+        case D: 
+        {
         
-//             if (Value_1 == 0)
-//                 throw std::invalid_argument("Division by zero.");
-//             if (Value_2 == INT_MIN && Value_1 == -1) 
-//                 throw ErrorFlow();
-//             break;
-//         }
+            if (Value_1 == 0)
+                throw std::invalid_argument("Division by zero.");
+            if (Value_2 == INT_MIN && Value_1 == -1) 
+                throw ErrorFlow();
+            break;
+        }
         
-//         case A: 
-//         {
+        case A: 
+        {
         
-//             if (Value_1 > 0 && Value_2 > INT_MAX - Value_1)
-//                 throw ErrorFlow(); 
-//             if (Value_1 < 0 && Value_2 < INT_MIN - Value_1)
-//                 throw ErrorFlow(); 
-//             break;
-//         }
+            if (Value_1 > 0 && Value_2 > INT_MAX - Value_1)
+                throw ErrorFlow(); 
+            if (Value_1 < 0 && Value_2 < INT_MIN - Value_1)
+                throw ErrorFlow(); 
+            break;
+        }
 
-//         default:
-//             throw std::invalid_argument("Unknown operator.");
-//     }
-// }
+        default:
+            throw std::invalid_argument("Unknown operator.");
+    }
+}
 
 
 void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
@@ -156,7 +156,7 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	{
 		case  MULT:
 		{
-
+			CheckFlow()
 		}
 		case DIV:
 		{
