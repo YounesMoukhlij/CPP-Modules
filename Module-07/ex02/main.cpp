@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 14:41:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:41:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,11 @@ int main(int you, char **nes)
 	{
     	int* mirror = new int[MAX_VAL];
 		if (!mirror)
-			throw std::bad_alloc
+			throw std::bad_alloc();
 	}
-	catch
+	catch (std::exception& ii)
+
+	
     std::srand(time(NULL));
 
     for (int i = 0x0; i < MAX_VAL; i++)
