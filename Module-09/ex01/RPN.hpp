@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 16:27:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:27:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # define M '*'
 # define A '+'
 # define S '-'
-# define D ''
+# define D '\''
 
 class RPN
 {
