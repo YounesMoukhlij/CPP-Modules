@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:51:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:51:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -175,7 +175,8 @@ void	RPN::parseArg(const std::string& _str) const
 		throw ErrorArgument();
 }
 
-const char* RPN::ErrorInvalidArgument::what() const throw() {
+const char* RPN::ErrorArgument::what() const throw()
+{
 	return ("invalid argument!");
 }
 
