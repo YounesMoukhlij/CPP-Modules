@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 15:41:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:41:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,19 @@ RPN::RPN() {
 	// std::cout << "called constructor by default!" << std::endl;
 }
 
-RPN::~RPN() {
+RPN::~RPN()
+{
 	// std::cout << "destructor called!" << std::endl;
 }
 
-RPN::RPN(const RPN& _rpn) {
-	if (this != &_rpn)
-		*this = _rpn;
+RPN::RPN(const RPN& origine)
+{
+	if (this != &origine)
+		*this = origine;
 }
 
-RPN& RPN::operator=(const RPN& _rpn) {
-	if (this != &_rpn) {}
+RPN& RPN::operator=(const RPN& origine) {
+	if (this != &origine) {}
 	return (*this);
 }
 
