@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:05:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:05:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main(int you, char **nes)
 	{
 		RPN	rpn;
 		std::string	data = static_cast<const std::string>(nes[0x1]);
-		rpn.OperationApp
+		rpn.OperationaPPOLO(data, mode)
 		rpn.ParseArguments(data);
 		rpn.PolonaiseInverse(data);
 	}
