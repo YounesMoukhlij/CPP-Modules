@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:28:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:28:32 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -200,7 +200,7 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		default :
 			throw ErrorArgument();
 	}
-	
+	Y = 
 	
 }
 
