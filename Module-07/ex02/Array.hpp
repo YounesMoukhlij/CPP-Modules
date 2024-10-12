@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:28:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:28:34 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,8 @@ Array<T>& Array<T>::operator=(const Array &origine)
 		if (_array)
 			delete [] _array;
 		_size = origine._size;
-		if 
+		if (_size > 0x0)
+		{
 		_array = new T[_size];
 		if (!_array)
 			throw std::bad_alloc();
