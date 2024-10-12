@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:05:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 18:06:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int main(int you, char **nes)
 		Span A(12);
 		Span B(12);
 		
-		A.arrayFiller();
+		A.arrayFiller(); // Just a addNumbe
 		B = A;
 		std::cout << "Displaying B" << std::endl;
 		B.displayArray();
