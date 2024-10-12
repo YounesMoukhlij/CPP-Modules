@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:38:05 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:36:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:36:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(int you, char **nes)
 	std::cout << A.getIndicator() << std::endl;
     try
 	 {
-        Bureaucrat alice("Alice", 8);
+        Bureaucrat alice("Alice", 45);
         Form contract("BzikerMann", 10, 2 * 0xA);
 		
         std::cout << contract << std::endl;  // Show initial form status
