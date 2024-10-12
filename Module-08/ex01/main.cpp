@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:00:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 18:04:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main(int you, char **nes)
 		/*
 			- Attempt to add a sixth number
 		*/
-        span.addNumber(6); 
+        span.addNumber(6); // Should 
 	}
 	catch (std::exception &e)
 	{
