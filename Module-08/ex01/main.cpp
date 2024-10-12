@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:58:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:58:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int main(int you, char **nes)
         // This should throw an exception since we are exceeding the maximum size
         span.addNumber(6); // Attempt to add a sixth number
 	}
+	catch()
 	try
 	{
 		Span A(12);
@@ -54,6 +55,10 @@ int main(int you, char **nes)
 	catch (std::exception &e)
 	{
 		std::cout << "Exception Caugth : " << e.what() << std::endl;
+	catch (std::exception &e)
+	{
+		std::cout << "Exception Caugth : " << e.what() << std::endl;
+	}
 	}
 	return (EXIT_SUCCESS);
 }
