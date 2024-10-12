@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:26:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:26:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,8 @@ Array<T>::Array(std::size_t n) : _size(n)
 template<class T>
 Array<T>::Array(const Array& origine)
 {
-	_array = 0x0;
 	if (_array)
-		delete
+		delete _array;
 	if (this != &origine)
 		*this = origine;
 }
