@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:31:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:31:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int main(int you, char **nes)
 	
 	try
 	{
+		Span A(2);
 		Span a(2);
 		a.arrayFiller();
 		a.displayArray();
