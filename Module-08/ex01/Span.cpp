@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:37:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:37:51 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int		Span::shortestSpan()
 	int	difference = 0x0;
 	
 	if (_n <= 0x1)
-		throw std::invalid_argument("No Enough numbers to look in.");
+		throw std::logic_error("No Enough numbers to look in.");
 	std::sort(_array, _array + _n);
 	for (usd i = 0x0; i < _n ; i++)
 	{
