@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:24:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:24:43 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main(int you, char **nes)
 	
 	for (int i = 0; i < B.getSize() ; i++)
 	{
-		std::cout <<  Y[i] << std::endl;
+		std::cout <<  B[i] << std::endl;
 	}
 	
 	// try
