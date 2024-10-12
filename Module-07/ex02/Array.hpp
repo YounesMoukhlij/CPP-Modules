@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:11:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:13:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,6 @@ Array<T>::Array(const Array& origine)
 	if (this != &origine)
 	{
 		*this = origine;
-		// _size = origine._size;
-		// _array = new T[_size];
-		// if (!_array)
-		// 	throw std::bad_alloc();
-		// for (std::size_t i = 0x0; i < _size ; i++)
-		// 	_array[i] = origine._array[i];
 	}
 }
 
