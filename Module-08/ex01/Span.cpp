@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:27:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:27:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ void	Span::arrayFiller()
 	{
 		int _value = std::rand() % 100;
 		_array[index] = _value;
-		
+		puts("123");
 	}
 	_i = _n;
 }
