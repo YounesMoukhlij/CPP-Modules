@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:08:52 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:09:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ int main(int you, char **nes)
 	}
 	
 	Array A(2);
-	Array A(2);
+	Array B(3);
+	
+	A = B
 	
 	try
 	{
