@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/05 16:40:21 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/12 14:03:49 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp
 
-NAME = iter
+NAME = Array
 
 
 all : ${NAME}
