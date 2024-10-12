@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:54 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 13:53:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 13:53:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int main(int you, char **nes)
     swap(cc, dd);
     std::cout << "After Swap" << std::endl;
     std::cout << cc << " " << dd << std::endl;
-    std::cout << "min( c, d ) = " << max(cc, dd) << std::endl;
+    std::cout << "min( c, d ) = " <<  << std::endl;
     std::cout << "max( c, d ) = " << min(cc, dd) << std::endl;
 		
     return (EXIT_SUCCESS);
