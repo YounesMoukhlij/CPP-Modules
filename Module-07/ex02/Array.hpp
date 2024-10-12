@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:26:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:27:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ template<class T>
 Array<T>::Array(const Array& origine)
 {
 	if (_array)
-		delete _array;
+		delete [] _array;
 	if (this != &origine)
 		*this = origine;
 }
