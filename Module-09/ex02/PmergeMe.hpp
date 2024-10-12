@@ -15,6 +15,7 @@ class PmergeMe
 {
     private:
         int         _size;
+		std::vector<int>	_vector;
 	public:
 		PmergeMe();
 		PmergeMe(const PmergeMe& origine);
