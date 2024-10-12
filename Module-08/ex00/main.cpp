@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 11:32:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:06:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int main(int you, char **nes)
     vect.push_back(0xC);
     vect.push_back(0xE);
     vect.push_back(0xF);
+    vect.push_back(100);
 
     for (std::vector<int>::iterator i = vect.begin(); i < vect.end(); i++)
     {
