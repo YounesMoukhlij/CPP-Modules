@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:34:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:34:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ Array<T>::Array(std::size_t n) : _size(n)
 template<class T>
 Array<T>::Array(const Array& origine)
 {
-	std::cout << "Array Cop Constructor Called." << std::endl;
+	std::cout << "Array Copy Constructor Called." << std::endl;
 	if (_array)
 		delete [] _array;
 	if (this != &origine)
@@ -78,6 +78,7 @@ Array<T>::Array(const Array& origine)
 template<class T>
 Array<T>& Array<T>::operator=(const Array &origine)
 {
+	std::cout << "Array Copy Assigne Called." << std::endl;
 	if (this != &origine)
 	{
 		if (_array)
