@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:31:47 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:31:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(int you, char **nes)
 		A.displayArray();
 		A.addNumber(1999);
 		std::cout << "longestSpan : " << A.longestSpan() << std::endl;
-		std::cout << longestSpanA.shortestSpan() << std::endl;
+		std::cout << "shortestSpan : " << A.shortestSpan() << std::endl;
 		a.displayArray();
 	}
 	catch (std::exception &e)
