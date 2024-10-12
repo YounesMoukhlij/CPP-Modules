@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:08:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:11:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Array
 		Array(const Array& origine);
 		Array& operator=(const Array &origine);
 
-		std::size_t	getSize() const;
+		std::size_t		getSize() const;
 		T&				operator[](std::size_t index);
 		const T&		operator[](std::size_t index) const;
 };
