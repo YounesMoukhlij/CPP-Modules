@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:34:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:34:52 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ Array<T>::Array(const Array& origine)
 template<class T>
 Array<T>& Array<T>::operator=(const Array &origine)
 {
-	std::cout << "Array Copy Assigne Called." << std::endl;
+	std::cout << "Array Copy Assignement Called." << std::endl;
 	if (this != &origine)
 	{
 		if (_array)
