@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:22:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:23:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int main(int you, char **nes)
 	B = A;
 	std::cout << B.getSize() << std::endl;
 	
+	T* Y = B.getArra
 	for (int i = 0; i < B.getSize() ; i++)
 	{
 		std::cout <<  << std::endl;
