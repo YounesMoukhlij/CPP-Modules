@@ -6,14 +6,14 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:23:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:23:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
 
 
-Span::Span()
+Span::Span() : _i(0x0), _n()
 {
 	_i = 0x0;
 	_array = NULL;
