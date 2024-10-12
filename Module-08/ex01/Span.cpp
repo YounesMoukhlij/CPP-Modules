@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:56:35 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:56:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,11 +88,10 @@ int		Span::longestSpan()
 
 void	Span::addNumber(usd n)
 {
-
-		_array[_i] = n;
-		_i++;
 	if (_i >= _n)
 		throw std::out_of_range("Cannot add more numbers; Span is full.");
+	_array[_i] = n;
+	_i++;
 }
 
 
