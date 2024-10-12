@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:29:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:37:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	Span::addNumber(usd n)
 		_i++;
 	}
 	else
-		throw std::out_of_range("Cannot add the number, Out of range.");
+		throw std::out_of_range("Cannot add more numbers; Span is full.");
 }
 
 
