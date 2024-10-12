@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:05:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:05:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,8 +91,6 @@ int main(int you, char **nes)
 	std::cout << std::endl;
 	try
 	{
-		atexit(younes);
-		
 		Array<int> arr1;
     	std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
 
