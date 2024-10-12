@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:33:45 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:36:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int you, char **nes)
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
 		return (EXIT_FAILURE);
 	}
-	
+
 	try
 	{
 		Span A(4);
