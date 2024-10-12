@@ -32,7 +32,6 @@ class Array
 		Array& operator=(const Array &origine);
 
 		std::size_t		getSize() const;
-
 		T&				operator[](std::size_t index);
 		const T&		operator[](std::size_t index) const;
 };
