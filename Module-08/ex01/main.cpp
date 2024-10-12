@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:11 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:26:46 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:28:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int main(int you, char **nes)
 	{
 		Span a(5);
 		a.arrayFiller();
-		// a.displayArray();
-		std::cout << a.longestSpan() << std::endl;
-		std::cout << a.shortestSpan() << std::endl;
+		a.displayArray();
+		// std::cout << a.longestSpan() << std::endl;
+		// std::cout << a.shortestSpan() << std::endl;
 		// a.displayArray();
 	}
 	catch (std::exception &e)
