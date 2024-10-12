@@ -22,7 +22,7 @@ template<class T>
 class Array
 {
 	private:
-		T* 		_array;
+		T* 			_array;
 		std::size_t _size;
 	public:
 		Array();
