@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:07:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 18:07:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int main(int you, char **nes)
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
 		return (EXIT_FAILURE);
 	}
+	/*
+	*/
 
 
 	MutantStack<int> mstack;
