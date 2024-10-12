@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:04:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:04:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,51 +85,51 @@ int main(int you, char **nes)
 		std::cout << ii.what() << std::endl;
 	}
 	
-	std::cout << std::endl;
-	std::cout << std::endl;
-	std::cout << "2nd TEST" << std::endl;
-	std::cout << std::endl;
-	std::cout << std::endl;
-	try
-	{
-		Array<int> arr1;
-    	std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
+	// std::cout << std::endl;
+	// std::cout << std::endl;
+	// std::cout << "2nd TEST" << std::endl;
+	// std::cout << std::endl;
+	// std::cout << std::endl;
+	// try
+	// {
+	// 	Array<int> arr1;
+    // 	std::cout << "Size of arr1: " << arr1.getSize() << std::endl;
 
-		Array<int> arr2(0x5);
-    	std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
+	// 	Array<int> arr2(0x5);
+    // 	std::cout << "Size of arr2: " << arr2.getSize() << std::endl;
 
 
-		Array<std::string>str(0x3);
-    	std::cout << "Size of str : " << arr2.getSize() << std::endl;
+	// 	Array<std::string>str(0x3);
+    // 	std::cout << "Size of str : " << arr2.getSize() << std::endl;
 
-		Array<int> arr3(arr2);
-    	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
-		for (std::size_t i = 0; i < arr3.getSize(); i++)
-			std::cout << "arr3[" << i << "] = " << arr3[i] << std::endl;
+	// 	Array<int> arr3(arr2);
+    // 	std::cout << "Size of arr3: " << arr3.getSize() << std::endl;
+	// 	for (std::size_t i = 0; i < arr3.getSize(); i++)
+	// 		std::cout << "arr3[" << i << "] = " << arr3[i] << std::endl;
 
-		Array<float> arr4(0x6);
-    	std::cout << "Size of arr4 of type float: " << arr4.getSize() << std::endl;
-		for (size_t i = 0x0; i < arr4.getSize(); i++)
-			arr4[i] = 42.5f;
-		for (size_t i = 0x0; i < arr4.getSize(); i++)
-			std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
-		try
-		{
-			arr4[0x4] = -0x1;
-		}
-		catch(const std::exception& e)
-	    {
-    	    std::cerr << e.what() << '\n';
-    	}
-		std::cout << std::endl;
-		std::cout << "Check after modifing the value." << std::endl;
-		std::cout << std::endl;
-		for (size_t i = 0x0; i < arr4.getSize(); i++)
-			std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << e.what() << '\n';
-	}
+	// 	Array<float> arr4(0x6);
+    // 	std::cout << "Size of arr4 of type float: " << arr4.getSize() << std::endl;
+	// 	for (size_t i = 0x0; i < arr4.getSize(); i++)
+	// 		arr4[i] = 42.5f;
+	// 	for (size_t i = 0x0; i < arr4.getSize(); i++)
+	// 		std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
+	// 	try
+	// 	{
+	// 		arr4[0x4] = -0x1;
+	// 	}
+	// 	catch(const std::exception& e)
+	//     {
+    // 	    std::cerr << e.what() << '\n';
+    // 	}
+	// 	std::cout << std::endl;
+	// 	std::cout << "Check after modifing the value." << std::endl;
+	// 	std::cout << std::endl;
+	// 	for (size_t i = 0x0; i < arr4.getSize(); i++)
+	// 		std::cout << "arr4[" << i << "] = " << arr4[i] << std::endl;
+	// }
+	// catch(const std::exception& e)
+	// {
+	// 	std::cerr << e.what() << '\n';
+	// }
     return (EXIT_SUCCESS);
 }
