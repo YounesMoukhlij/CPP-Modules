@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:25:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:25:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ int main(int you, char **nes)
 	
 	// Simple Test
 	
-	Array<int> A(2);
+	Array<int> A(9);
 	Array<int> B(466);
 	
 	B = A;
-	std::cout << B.getSize() << std::endl;
+	// std::cout << B.getSize() << std::endl;
 	
 	for (size_t i = 0; i < B.getSize() ; i++)
 	{
