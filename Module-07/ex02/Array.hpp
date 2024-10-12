@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/07 13:54:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:06:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ template<class T>
 class Array
 {
 	private:
-		T* _array;
+		T* 		_array;
 		std::size_t _size;
 	public:
 		Array();
