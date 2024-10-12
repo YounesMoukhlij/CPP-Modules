@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 15:52:12 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 13:56:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 13:56:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ void swap(T &t1, T &t2)
 	t2 = tmp;
 }
 
-template<typename T> T &min(T &t1, T &t2)
+template<typename T> 
+T &min(T &t1, T &t2)
 {
 	if (t1 < t2)
 		return (t1);
