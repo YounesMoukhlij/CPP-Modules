@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:37:59 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:39:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:40:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat& origine) : _name(origine._name)
 }
 
 
-Bureaucrat& Bureaucrat::operator=(const Bureaucrat& origine) 
+Bureaucrat& Bureaucrat::operator=(const Bureaucrat& origine)
 {
 	std::cout << "Bureaucrat copy assignement  Called" << std::endl;
 	if (this != &origine)
