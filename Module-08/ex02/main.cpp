@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:08:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 18:12:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int main(int you, char **nes)
 	MutantStack<int> B;
 	
 	A = B;
+	MutantStack<int> B;
 
 	
 	/*
