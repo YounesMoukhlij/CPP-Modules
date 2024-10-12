@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:13:57 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:14:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ int main(int you, char **nes)
 	}
 	
 	
-	// Si
+	// Simple Test
+	
 	// Array<int> A(2);
 	// Array<int> B(466);
 	
