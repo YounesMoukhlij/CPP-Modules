@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:33:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:34:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ Array<T>::~Array()
 template<class T>
 Array<T>::Array() : _array(0x0), _size(0x0)
 {
+	std::cout << "Array D Called." << std::endl;
 	
 }
 
