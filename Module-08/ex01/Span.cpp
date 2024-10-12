@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:24:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:24:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Span::Span(const Span& origine)
 	_array = NULL;
 	if (this != &origine)
 	{
-		this = 
+		*this = origine;
 		_n = origine._n;
 		_i = origine._i;
 		_array = new int[_n];
