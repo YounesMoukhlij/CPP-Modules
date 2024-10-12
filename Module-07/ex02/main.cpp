@@ -25,7 +25,7 @@ int main(int you, char **nes)
 	Array A(2);
 	Array B(3);
 	
-	A = B
+	A = B;
 	
 	try
 	{
