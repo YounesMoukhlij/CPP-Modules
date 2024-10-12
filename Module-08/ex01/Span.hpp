@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:22:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:22:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ typedef unsigned int usd;
 class Span
 {
     private:
-        usd		_n;
-		usd		_i;
+        usd	_n;
+		usd	_i;
         int	*_array;
 	public:
 		Span();
