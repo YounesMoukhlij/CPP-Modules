@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:40:35 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:25:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:25:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,12 @@ Array<T>::Array(std::size_t n) : _size(n)
 {
 	if (n == 0x0)
 		_array = 0x0;
-	el
-	_array = new T[n];
-	if (!_array)
-		throw std::bad_alloc();
+	else
+	{
+		_array = new T[n];
+		if (!_array)
+			throw std::bad_alloc();
+	}
 }
 
 template<class T>
