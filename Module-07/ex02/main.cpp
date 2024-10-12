@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:42:01 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 14:04:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 14:04:17 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ void	younes()
 
 int main(int you, char **nes)
 {
-	atexit(younes);
 
 	IGNORE(nes);
 	if (you != 0x1)
 	{
+	atexit(younes);
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
 		return (EXIT_FAILURE);
 	}
