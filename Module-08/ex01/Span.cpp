@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:25:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:26:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,4 +115,5 @@ void	Span::displayArray()
 	{
 		std::cout << "[" << i << "]"<< _array[i] << std::endl;
 	}
+	_array[ ]
 }
