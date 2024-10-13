@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/13 16:23:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:23:14 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ class MutantStack : public std::stack<T>
 		
 		iterator end() {return this->c.end();}
 		iterator begin() { return this->c.begin(); }
-		// const_iterator end() const {return this->c.end();}
-		// const_iterator begin() const { return this->c.begin();}
+		const_iterator end() const {return this->c.end();}
+		const_iterator begin() const { return this->c.begin();}
 		
 };
 
