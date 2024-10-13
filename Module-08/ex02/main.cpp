@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/13 16:22:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:22:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int main(int you, char **nes)
 	while (it1 != ite1)
 	{
 		std::cout << "mstack = [" << *it1  << "]"<< std::endl;
-		++it;
+		++it1;
 	}
 	while (it1 != ite)
 	{
