@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:03:29 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:49:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Span::Span(usd n)
 Span::Span(const Span& origine)
 {
 	std::cout << "Copy Constructor Called." << std::endl;
-	_array = NULL;
+	_array = 0x0;
 	if (this != &origine)
 		*this = origine;
 }
@@ -45,25 +45,26 @@ Span::~Span()
 Span&   Span::operator=(const Span& origine)
 {
 	std::cout << "Copy assignement Constructor Called." << std::endl;
-	_array = 0x0;
 	if (this != &origine)
 	{
+		if (_array != 0x0)
+			delete [] _array;
 		_n = origine._n;
 		_i = origine._i;
 		_array = new int[_n];
 		if (!_array)
 			throw std::bad_alloc();
-		for (std::size_t i = 0x0; i < _n ; i++)
+		for (long i = 0x0; i < _n ; i++)
 			_array[i] = origine._array[i];
 	}
 	return (*this);
 }
 
 
-int		Span::shortestSpan()
+long		Span::shortestSpan()
 {
-	int	lowestSpan = INT_MAX;
-	int	difference = 0x0;
+	long	lowestSpan = INT_MAX;
+	long	difference = 0x0;
 	
 	if (_n <= 0x1)
 		throw std::logic_error("No Enough numbers to look in.");
@@ -77,12 +78,13 @@ int		Span::shortestSpan()
 	return (lowestSpan);
 }
 
-int		Span::longestSpan()
+long		Span::longestSpan()
 {
 	if (_n <= 0x1)
 		throw std::logic_error("No Enough numbers to look in.");
 	std::sort(_array, _array + _n);
-	return (_array[_n - 0x1] - _array[0x0]);
+	long a = _array[_n - 0x1] - _array[0x0];
+	return (a);
 }
 
 void	Span::addNumber(usd n)
@@ -109,5 +111,5 @@ void	Span::arrayFiller()
 void	Span::displayArray()
 {
 	for (usd i = 0x0; i < _n ; i++)
-		std::cout << "[" << i << "]"<< _array[i] << std::endl;
+		std::cout << "[" << i << "] = "<< _array[i] << std::endl;
 }

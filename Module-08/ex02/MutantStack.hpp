@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:52 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 18:07:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:51:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,14 @@ class MutantStack : public std::stack<T>
 		MutantStack(const MutantStack& origine);
 		MutantStack& operator=(const MutantStack& origine);
 		
-		
 		typedef typename std::stack<T>::container_type::iterator iterator;
-		iterator end()
-		{
-			return this->c.end();
-		}
-		iterator begin()
-		{
-			return this->c.begin();
-		}
+		typedef typename std::stack<T>::container_type::const_iterator const_iterator;
+		
+		iterator end() {return this->c.end();}
+		iterator begin() { return this->c.begin(); }
+		const_iterator end() const {return this->c.end();}
+		const_iterator begin() const { return this->c.begin();}
+		
 };
 
 template <typename T>
@@ -56,8 +54,8 @@ MutantStack<T>::~MutantStack()
 template <typename T>
 MutantStack<T>::MutantStack(const MutantStack& origine) : std::stack<T>(origine)
 {
-	*this = origine;
 	std::cout << "Copy Constructor Called." << std::endl;
+	*this = origine;
 }
 
 template <typename T>

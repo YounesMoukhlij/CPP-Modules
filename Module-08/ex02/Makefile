@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/07 13:59:29 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/13 13:22:17 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,10 +20,7 @@ SRC = main.cpp
 NAME = MutantStack
 
 
-all : ${NAME} play
-
-play :
-	@clear
+all : ${NAME} 
 
 %.o: %.cpp MutantStack.hpp
 	@echo "\033[30m Compiling ...\033[0m"

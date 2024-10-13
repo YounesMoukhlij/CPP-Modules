@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/12 17:22:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:49:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,19 @@ typedef unsigned int usd;
 class Span
 {
     private:
-        usd	_n;
-		usd	_i;
-        int	*_array;
+        long	_n;
+		long	_i;
+        int		*_array;
 	public:
 		Span();
 		Span(usd n);
 		Span(const Span& origine);
 		~Span();
 
-		Span&   operator=(const Span& origine);
-		int		shortestSpan();
-		int		longestSpan();
-		void	addNumber(usd n);
-		void	arrayFiller();
-		void	displayArray();
+		Span&   	operator=(const Span& origine);
+		long		shortestSpan();
+		long		longestSpan();
+		void		addNumber(usd n);
+		void		arrayFiller();
+		void		displayArray();
 };
