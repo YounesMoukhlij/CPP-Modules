@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:24 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/13 16:18:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:19:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,17 @@ class Span
     private:
         long	_n;
 		long	_i;
-        int		*_array;
+        long	*_array;
 	public:
 		Span();
-		Span(usd n);
+		Span(long n);
 		Span(const Span& origine);
 		~Span();
 
 		Span&   	operator=(const Span& origine);
 		long		shortestSpan();
 		long		longestSpan();
-		void		addNumber(usd n);
+		void		addNumber(long n);
 		void		arrayFiller();
 		void		displayArray();
 };

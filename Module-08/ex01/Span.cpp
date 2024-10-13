@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:32:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/13 15:49:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:20:08 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ Span::Span() : _n(0x0), _i(0x0), _array(0x0)
 	std::cout << "Default Constructor Called." << std::endl;
 }
 
-Span::Span(usd n)
+Span::Span(long n)
 {
 	std::cout << "Parametriesed Constructor Called." << std::endl;
 	_n = n;
 	_i = 0x0;
-	_array = new int[n];
+	_array = new long[n];
 	if (!_array)
 		throw std::bad_alloc();
 }
@@ -51,7 +51,7 @@ Span&   Span::operator=(const Span& origine)
 			delete [] _array;
 		_n = origine._n;
 		_i = origine._i;
-		_array = new int[_n];
+		_array = new long[_n];
 		if (!_array)
 			throw std::bad_alloc();
 		for (long i = 0x0; i < _n ; i++)
@@ -69,7 +69,7 @@ long		Span::shortestSpan()
 	if (_n <= 0x1)
 		throw std::logic_error("No Enough numbers to look in.");
 	std::sort(_array, _array + _n);
-	for (usd i = 0x0; i < _n ; i++)
+	for (long i = 0x0; i < _n ; i++)
 	{
 		difference = _array[i + 0x1] - _array[i];
 		if (difference < lowestSpan)
@@ -87,7 +87,7 @@ long		Span::longestSpan()
 	return (a);
 }
 
-void	Span::addNumber(usd n)
+void	Span::addNumber(long n)
 {
 	if (_i >= _n)
 		throw std::out_of_range("Cannot add more numbers; Span is full.");
@@ -99,9 +99,9 @@ void	Span::addNumber(usd n)
 void	Span::arrayFiller()
 {
 	std::srand(std::time(0x0));
-	for (usd index = 0x0; index < _n; index++)
+	for (long index = 0x0; index < _n; index++)
 	{
-		int _value = std::rand() % 1000;
+		long _value = std::rand() % 1000;
 		addNumber(_value);
 	}
 	_i = _n; // Updating the index in array 0_0
@@ -110,6 +110,6 @@ void	Span::arrayFiller()
 
 void	Span::displayArray()
 {
-	for (usd i = 0x0; i < _n ; i++)
+	for (long i = 0x0; i < _n ; i++)
 		std::cout << "[" << i << "] = "<< _array[i] << std::endl;
 }
