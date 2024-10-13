@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:42:32 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/13 16:22:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/13 16:22:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ int main(int you, char **nes)
 	MutantStack<int>::const_iterator ite1 = mstack.end();
 	++it;
 	--it;
+	++it1;
+	--it1;
 	while (it != ite)
 	{
 		std::cout << "mstack = [" << *it  << "]"<< std::endl;
