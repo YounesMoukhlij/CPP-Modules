@@ -20,9 +20,25 @@ int main(int you, char **nes)
 		std::cerr << "The Program Does not take any Arguments." << std::endl;
 		return (EXIT_FAILURE);
 	}
-	
+
 	std::cout << std::endl; std::cout << "\033[42m  ----- 00 Test Overflow -----\033[0m" << std::endl; std::cout << std::endl;
-	
+
+	try
+	{
+		Span sp = Span(5);
+		sp.addNumber(6);
+		sp.addNumber(3);
+		sp.addNumber(17);
+		sp.addNumber(9);
+		sp.addNumber(11);
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << "Exception Caugth : " << e.what() << std::endl;
+	}
+
 	try
 	{
 		Span span(2);
@@ -35,14 +51,14 @@ int main(int you, char **nes)
 	{
 		std::cout << "Exception Caugth : " << e.what() << std::endl;
 	}
-		
-		
+
+
 	std::cout << std::endl; std::cout << "\033[42m  ----- 1st Test -----\033[0m" << std::endl; std::cout << std::endl;
-	
+
 	try
 	{
 		Span span(5);
-		
+
 		span.addNumber(1);
         span.addNumber(2);
         span.addNumber(3);
@@ -57,17 +73,17 @@ int main(int you, char **nes)
 	{
 		std::cout << "Exception Caugth : " << e.what() << std::endl;
 	}
-	
+
 	std::cout << std::endl; std::cout << "\033[42m  ----- 2nd Test -----\033[0m" << std::endl; std::cout << std::endl;
 
 	try
 	{
 		Span A(12);
 		Span B(12);
-		
+
 		A.arrayFiller(); // Just a addNumber but autoMatized by ME OFC ^_*
 		B = A;
-		
+
 		Span C(B);
 		Span D(2);
 		D = C;
@@ -76,9 +92,9 @@ int main(int you, char **nes)
 		std::cout << "Displaying A" << std::endl;
 		A.displayArray();
 		std::cout << "Displaying C" << std::endl;
-		C.displayArray(); 
+		C.displayArray();
 		std::cout << "Displaying D" << std::endl;
-		D.displayArray(); 
+		D.displayArray();
 		std::cout << "longestSpan A : " << A.longestSpan() << std::endl;
 		std::cout << "shortestSpan A : " << A.shortestSpan() << std::endl;
 		std::cout << "longestSpan D : " << D.longestSpan() << std::endl;

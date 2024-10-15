@@ -65,15 +65,17 @@ long		Span::shortestSpan()
 {
 	long	lowestSpan = INT_MAX;
 	long	difference = 0x0;
-	
+	long	temp = 0x0;
+
 	if (_n <= 0x1)
 		throw std::logic_error("No Enough numbers to look in.");
 	std::sort(_array, _array + _n);
-	for (long i = 0x0; i < _n ; i++)
+	difference = _array[0x1] - _array[0x0];
+	for (long i = 0x0; i < _n - 1 ; i++)
 	{
-		difference = _array[i + 0x1] - _array[i];
-		if (difference < lowestSpan)
-			lowestSpan = difference;
+		temp = _array[i + 0x1] - _array[i];
+		if (difference > temp)
+			lowestSpan = temp;
 	}
 	return (lowestSpan);
 }
