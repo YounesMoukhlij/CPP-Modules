@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/16 18:06:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:06:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,6 +151,8 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	
 	
 	// if operator then do simple math
+	if (_stack.size() < 0x2)
+				throw SmallStack();
 	
 	Y = (1) & (num2 = _stack.top(), _stack.pop(), Y = 0x9C);
 	Y = (1) & (num1 = _stack.top(), _stack.pop(), Y << 0x1);
@@ -191,13 +193,6 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 			_stack.push(num1 - num2);
 			break;
 
-	// std::cout << "printing" << std::endl;
-	// while (!_stack.empty())
-	// {
-	// 	 std::cout << _stack.top() << "   ";
-	// 	 _stack.pop();
-	// }
-	// std::cout << "end printing" << std::endl;
 		}
 		default :
 			throw ErrorArgument();
@@ -226,13 +221,16 @@ void	RPN::PolonaiseInverse(const std::string& _array)
 			_stack.push(IntConversion(read));
 		}
 		else
-		{
-			// if (_stack.size() < 0x2)
-			// 	throw SmallStack();
 			CalculateStaff(OperatorChecker(read), _stack);
-		}
 	}
 	std::cout << "The Result : " << _stack.top() << std::endl;
+	// std::cout << "printing" << std::endl;
+	// while (!_stack.empty())
+	// {
+	// 	 std::cout << _stack.top() << "   ";
+	// 	 _stack.pop();
+	// }
+	// std::cout << "end printing" << std::endl;
 }
 
 void	RPN::ParseArguments(const std::string& _array) const
