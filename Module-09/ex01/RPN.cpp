@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:35:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:11:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -174,15 +174,15 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 		case  MULT:
 		{
 			std::cout << "**" << std::endl;
-			_stack.push(num1 * num2);
 			CheckFlow(num1, num2, '*');
+			_stack.push(num1 * num2);
 			break;
 		}
 		case DIV:
 		{
 			std::cout << "///" << std::endl;
-			_stack.push(num1 / num2);
 			CheckFlow(num1, num2, '/');
+			_stack.push(num1 / num2);
 			
 			break;
 
