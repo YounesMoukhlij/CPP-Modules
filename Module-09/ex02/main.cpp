@@ -9,6 +9,8 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 
+	try
+	{
 	PmergeMe OPerationAPPOLLO;
 
 	for (int i = 1; i < you; i++)
@@ -16,5 +18,6 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 	}
 	OPerationAPPOLLO.OPerationPrint();
+	
     return (EXIT_SUCCESS);
 }
