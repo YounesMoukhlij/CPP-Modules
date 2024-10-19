@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:20:08 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:20:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 				break;
 		}
 		i = j;
-		printf("i == %lu  && j == %d\n", i, j);
+		printf("[i == %lu  && j == %lu]\n", i, j);
 		if (!isdigit(Data_Entry[i]) && Data_Entry[i] != '+')
 			throw InvalidData();
 		if (isdigit(Data_Entry[i]))
