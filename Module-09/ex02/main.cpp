@@ -13,7 +13,7 @@ int main(int you, char **nes)
 
 	for (int i = 1; i < you; i++)
 	{
-		OPerationAPPOLLO.OPerationParse(a(nes[i]));
+		OPerationAPPOLLO.OPerationParse(static_cast<std::st (nes[i]));
 	}
     return (EXIT_SUCCESS);
 }
