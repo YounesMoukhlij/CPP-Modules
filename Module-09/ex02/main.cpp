@@ -8,6 +8,6 @@ int main(int you, char **nes)
 		std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endl;
 		return (EXIT_FAILURE);
 	}
-	while(*)
+	for (
     return (EXIT_SUCCESS);
 }
