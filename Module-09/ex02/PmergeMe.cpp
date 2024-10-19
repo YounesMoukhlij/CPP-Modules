@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:20:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:20:30 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ const char* PmergeMe::DuplicateData::what() const throw()
 void PmergeMe::OPerationParse(const std::string& Data_Entry)
 {
 	int	counter = 0x0;
+	size_t j = 0x0;
 
 	for (size_t i = 0x0; i < Data_Entry.size(); i++)
 	{
-		size_t j = 0x0;
 		while (j < Data_Entry.size())
 		{
 			if (isspace(Data_Entry[j]))
