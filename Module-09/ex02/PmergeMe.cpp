@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:08:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:08:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,9 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 	int	countDigit;
 
 	countDigit = 0;
-	size_t	i = 0;
-	for (size_t i = 0; i < Data_Entry.size(); i++)
+	for (size_t i = 0x0; i < Data_Entry.size(); i++)
 	{
-		for (size_t j; j < Data_Entry.size(); j++)
+		for (size_t j = 0x0; j < Data_Entry.size(); j++)
 		{
 			if (Data_Entry[i] == Data_Entry[j])
 				throw DuplicateData();
