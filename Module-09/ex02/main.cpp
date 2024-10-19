@@ -15,7 +15,7 @@ int main(int you, char **nes)
 
 		for (int i = 1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
-		std::cout << 	
+		std::cout << "Befo"
 		OPerationAPPOLLO.OPerationPrint();
 	}
 	catch (std::exception &e)
