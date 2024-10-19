@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:37:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:37:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 PmergeMe::PmergeMe()
 {
-	std::cout << "! Constructor by Default Called !" << std::endl;
+	std::cout << "!!! Constructor by Default Called !!!" << std::endl;
 }
 
 PmergeMe::PmergeMe(const PmergeMe& origine)
 {
-	std::cout << "! Copy Constructor Called !" << std::endl;
+	std::cout << "!!! Copy Constructor Called !!!" << std::endl;
 	if (this != &origine)
 		*this = origine;
 }
 
 PmergeMe::~PmergeMe()
 {
-	std::cout << "! Destructor called !" << std::endl;
+	std::cout << "!!! Destructor called !!!" << std::endl;
 }
 
 PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
