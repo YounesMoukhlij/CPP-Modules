@@ -13,7 +13,7 @@ int main(int you, char **nes)
 
 	for (int i = 1; i < you; i++)
 	{
-		OPerationAPPOLLO.push_back(atoi(nes[i]));
+		OPerationAPPOLLO.OPeParse(atoi(nes[i]));
 	}
     return (EXIT_SUCCESS);
 }
