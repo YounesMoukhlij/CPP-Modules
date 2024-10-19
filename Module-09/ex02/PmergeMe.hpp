@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 15:37:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:37:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,37 +48,3 @@ class PmergeMe
 };
 
 
-PmergeMe::PmergeMe()
-{
-	std::cout << "constructor by default called" << std::endl;
-}
-
-PmergeMe::PmergeMe(const PmergeMe& origine)
-{
-	std::cout << "Copy Constructor Called" << std::endl;
-	if (this != &origine)
-		*this = origine;
-}
-
-PmergeMe::~PmergeMe()
-{
-	std::cout << "Destructor called" << std::endl;
-}
-
-PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
-{
-	if (this != &origine)
-    {
-	}
-	return (*this);
-}
-
-const char* PmergeMe::InvalidData::what() const throw()
-{
-	return ("Invalid argument!");
-}
-
-const char* PmergeMe::DuplicateData::what() const throw()
-{
-	return ("Duplicate Number!");
-}
