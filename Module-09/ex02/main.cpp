@@ -9,11 +9,11 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 
-	PmergeMe OperationAPPOLLO;
+	PmergeMe OPerationAPPOLLO;
 
 	for (int i = 1; i < you; i++)
 	{
-		OPerationAPPOLLO.OPeParse(atoi(nes[i]));
+		OPerationAPPOLLO.OPerationParse(a(nes[i]));
 	}
     return (EXIT_SUCCESS);
 }
