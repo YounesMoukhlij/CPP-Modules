@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:22:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:22:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 			throw InvalidData();
 		if (isdigit(Data_Entry[i]))
 			counter++;
-			
+		i++;
 		puts("YOUNES");
 	}
 	if (!counter)
