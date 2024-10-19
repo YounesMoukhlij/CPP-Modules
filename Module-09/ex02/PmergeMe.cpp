@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:02:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:02:48 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,28 @@ const char* PmergeMe::DuplicateData::what() const throw()
 
 void PmergeMe::OPerationParse(const std::string& Data_Entry)
 {
-	
+	int	countDigit;
+
+	countDigit = 0;
+	size_t	i = 0;
+	while (i < _str.size())
+	{
+		if (isspace(_str[i]))
+			i++;
+		else
+			break;
+	}
+	while (i < _str.size())
+	{
+		if (!isdigit(_str[i]) && !isPlus(_str[i]))
+			return (false);
+		if (isdigit(_str[i]))
+			countDigit++;
+		i++;
+	}
+	if (countDigit == 0)
+		return (false);
+	return (true);
 	std::stringstream	ss(Data_Entry);
 	int 				temp;
 	
