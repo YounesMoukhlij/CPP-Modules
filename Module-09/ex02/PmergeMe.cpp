@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:36:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:36:53 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ PmergeMe::PmergeMe(const PmergeMe& origine)
 
 PmergeMe::~PmergeMe()
 {
-	std::cout << ".. Destructor called" << std::endl;
+	std::cout << "... Destructor called ..." << std::endl;
 }
 
 PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
