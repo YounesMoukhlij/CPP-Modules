@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 15:38:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:38:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class PmergeMe
 	
 
 
-		void			OPerationParse(const std::string &)
+		void			OPerationParse(const std::string &Data_En)
 		// Exceptions
 		class InvalidData : public std::exception
 		{
