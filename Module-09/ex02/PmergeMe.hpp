@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 18:33:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:33:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class PmergeMe
     private:
 		std::vector<int>	_vector;
 	public:
-		// -- Canonical Form --
+		// Canonical Form :
 		// Constructor
 		PmergeMe();
 		// Copy Constructor
