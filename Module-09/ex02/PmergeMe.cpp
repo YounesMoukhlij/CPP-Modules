@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:20:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:20:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 {
 	int		counter = 0x0;
 	size_t 	j = 0x0;
-
+	
+	while ()
 	for (size_t i = 0x0; i < Data_Entry.size(); i++)
 	{
 		while (j < Data_Entry.size())
