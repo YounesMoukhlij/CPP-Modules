@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:16:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:32:28 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ class PmergeMe
 
 
 		void			OPerationParse(const std::string &Data_Entry);
+		OPerationSort(v)
 		void			OPerationPrint() const;
 		
 		// Exceptions
