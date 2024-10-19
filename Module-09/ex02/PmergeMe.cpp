@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:17:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:17:37 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 
 const char* PmergeMe::InvalidData::what() const throw()
 {
-	return ("\Invalid argument!");
+	return ("\033[42mInvalid argument!\033[0m");
 }
 
 const char* PmergeMe::DuplicateData::what() const throw()
 {
-	return ("Duplicate Number!");
+	return ("Duplicate Number!\033[0m");
 }
 
 void PmergeMe::OPerationParse(const std::string& Data_Entry)
