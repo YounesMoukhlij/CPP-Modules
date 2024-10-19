@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 18:33:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:33:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ class PmergeMe
 		PmergeMe();
 		// Copy Constructor
 		PmergeMe(const PmergeMe& origine);
+		// Destructor
 		~PmergeMe();
+		// Operator Overload
 		PmergeMe& operator=(const PmergeMe& origine);
 	
 
