@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:02:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:04:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 	}
 	while (i < Data_Entry.size())
 	{
-		if (!isdigit(Data_Entry[i]) && !isPlus(Data_Entry[i]))
+		if (!isdigit(Data_Entry[i]) && !isPlus(Data_Entry[i] ))
 			return (false);
 		if (isdigit(Data_Entry[i]))
 			countDigit++;
