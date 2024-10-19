@@ -15,7 +15,7 @@ int main(int you, char **nes)
 
 		for (int i = 1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
-		std::cout << "Before: ";
+		std::cout << "~ Before ~";
 		OPerationAPPOLLO.OPerationPrint();
 		std::cout << "After: ";
 		OPerationAPPOLLO.OPerationPrint();
