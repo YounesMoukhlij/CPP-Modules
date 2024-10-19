@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/17 13:59:32 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/19 16:17:55 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,10 @@ SRC = main.cpp PmergeMe.cpp
 NAME = PmergeMe
 
 
-all : ${NAME}
+all : ${NAME} play
+
+play:
+	@clear
 
 %.o: %.cpp PmergeMe.hpp
 	@echo "\033[30m Compiling ...\033[0m"
