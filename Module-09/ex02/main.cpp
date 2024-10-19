@@ -15,5 +15,6 @@ int main(int you, char **nes)
 	{
 		OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 	}
+	OPerationAPPOLLO.OPerationPrint();
     return (EXIT_SUCCESS);
 }
