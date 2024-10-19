@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 15:38:33 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:15:12 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 class PmergeMe
 {
     private:
-        int         _size;
+        // int         _size;
 		std::vector<int>	_vector;
 	public:
 		PmergeMe();
