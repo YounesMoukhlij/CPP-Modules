@@ -12,11 +12,10 @@ int main(int you, char **nes)
 	try
 	{
 		PmergeMe OPerationAPPOLLO;
-	
+
 		for (int i = 1; i < you; i++)
 		{
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
-		}
 		OPerationAPPOLLO.OPerationPrint();
 	}
 	catch (std::exception &e)
