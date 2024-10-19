@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 16:23:11 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:36:19 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 PmergeMe::PmergeMe()
 {
-	std::cout << "constructor by default called" << std::endl;
+	std::cout << "Constructor by default called" << std::endl;
 }
 
 PmergeMe::PmergeMe(const PmergeMe& origine)
