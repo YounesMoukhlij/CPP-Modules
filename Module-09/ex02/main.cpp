@@ -5,13 +5,14 @@ int main(int you, char **nes)
 {
     if (you == 0x1)
 	{
-		std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endl
+		std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endl;
 		return (EXIT_FAILURE);
 	}
 
 	try
 	{
 		PmergeMe OPerationAPPOLLO;
+
 		for (int i = 0x1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
@@ -19,9 +20,9 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationTime();
 
 	}
-	catch (std::exception &e)
+	catch (std::exception &younes)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << younes.what() << std::endl;
 		return (EXIT_FAILURE);
 	}
     return (EXIT_SUCCESS);
