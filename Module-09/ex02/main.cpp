@@ -16,7 +16,7 @@ int main(int you, char **nes)
 		for (int i = 1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
-		std::cout << "~~~~ Vectors "
+		std::cout << "~~~~ Welcome TO Vectors ~~~~" 
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 
