@@ -11,7 +11,6 @@ int main(int you, char **nes)
 
 	try
 	{
-		struct timeval 								start, end;
 		PmergeMe OPerationAPPOLLO;
 
 		for (int i = 1; i < you; i++)
@@ -21,7 +20,6 @@ int main(int you, char **nes)
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 
-		gettimeofday(&start, 0x0);
 		OPerationAPPOLLO.OPerationSort();
 
 		std::cout << "~ After ~" << std::endl;
@@ -30,8 +28,7 @@ int main(int you, char **nes)
 		// std::cout << "\033[43m~~~~ Welcome TO Deque ~~~~\033[0m" << std::endl;
 
 
-		// OPerationAPPOLLO.OPerationTime();
-		std::cout << "Time for Vector : " << OPerationAPPOLLO.getTime(start, end) << " s" << std::endl;
+		OPerationAPPOLLO.OPerationTime();
 
 	}
 	catch (std::exception &e)
