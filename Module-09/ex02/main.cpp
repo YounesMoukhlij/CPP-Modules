@@ -23,6 +23,8 @@ int main(int you, char **nes)
 
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
+
+		
 	}
 	catch (std::exception &e)
 	{
