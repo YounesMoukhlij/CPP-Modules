@@ -234,7 +234,7 @@ void	PmergeMe::OPerationSort()
 	gettimeofday(&startDeque, NULL);
 	// FordJhonsonDequeSort();
 	gettimeofday(&endDeque, NULL);
-	OPerationPrint(DEAQ, AFTER);
+	OPerationPrint(DEQUE, AFTER);
 }
 
 void	PmergeMe::OPerationTime()
