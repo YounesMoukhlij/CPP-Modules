@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:22:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:23:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,13 +152,13 @@ double PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
 
 void	PmergeMe::FordJhonsonDequeSort(void)
 {
-	std::vector<int>::iterator					tmp;
-	std::vector<std::pair<int, int> >::iterator	Pairs_it;
-	std::vector<int> 							Tmp_Vector;
-	std::vector<int>::iterator					LastElement;
-	std::vector<int> 							Final_Vector;
-	std::vector<int>::iterator					it = _vector.begin();
-	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
+	std::deque<int>::iterator					tmp;
+	std::deque<std::pair<int, int> >::iterator	Pairs_it;
+	std::deque<int> 							Tmp_deque;
+	std::deque<int>::iterator					LastElement;
+	std::deque<int> 							Final_deque;
+	std::deque<int>::iterator					it = _deque.begin();
+	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
 	
 	// The Last Element Make noises it's better to pop it
 	if (_vector.size() % 0x2)
