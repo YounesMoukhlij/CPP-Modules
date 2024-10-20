@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:18:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:18:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void	PmergeMe::FordJhonsonSort(std::vector<int> &Data)
 	{
 		if (it1->first > it1->second)
 			std::swap(it1->first, it1->second);
-			(it1++);
+		it1++;
 	}
 	
 	
