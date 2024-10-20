@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:47:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:48:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,8 @@ void	PmergeMe::FordJhonsonSort(void)
 	for (it1 = Pairs.begin(); it1 != Pairs.end(); it1++)
 		Final_Vector.push_back(it1->first), Tmp_Vector.push_back(it1->second);
 	std::cout << "Final Vector Values " << std::endl;
-	OPerationPrint();
+	OPerationPrint(Final_Vector);
+	OPerationPrint(T);
 }
 
 
