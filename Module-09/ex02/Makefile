@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/20 12:23:37 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/20 17:10:07 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = main.cpp PmergeMe.cpp
 NAME = PmergeMe
 
 
-all : ${NAME} play
+all : ${NAME} play ./p
 
 play:
 	@clear
