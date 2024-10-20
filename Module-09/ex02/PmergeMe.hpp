@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:32:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:32:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 #include <utility>
 
 # define VECTOR 0x1
-# de
+# define DEQUE 0x2
 
 class PmergeMe
 {
