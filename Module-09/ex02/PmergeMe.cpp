@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:30:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:30:49 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,7 +158,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	std::deque<int>::iterator					LastElement;
 	std::deque<int> 							Final_deque;
 	std::deque<int>::iterator					it = _deque.begin();
-	// std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
+	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
 	
 	// The Last Element Make noises it's better to pop it
 	if (_deque.size() % 0x2)
@@ -176,7 +176,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 		 
 
 	// Copy the pairs in the final vector
-	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+	for (Pairs_it = Pairs_Deque.begin(); Pairs_it != Pairs_Deque.end(); Pairs_it++)
 		Final_deque.push_back(Pairs_it->first), Tmp_deque.push_back(Pairs_it->second);
 
 	// tmp_it = Tmp_deque.begin();
