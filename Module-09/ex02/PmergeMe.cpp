@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:57:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:58:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,7 +169,7 @@ void	PmergeMe::OPerationSort()
 
 void	PmergeMe::OPerationTime()
 {
-	std::cout << " ^_* TIME Difference"
+	std::cout << " ^_* TIME Difference ^_*" << std::endl;
 	std::cout << "Time for Vector : " << getTime(startVector, endVector) << std::endl;
 	std::cout << "Time for Deque : " << getTime(startDeque, endDeque) << std::endl;
 }
