@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:26:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:27:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,7 +153,7 @@ double PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
 void	PmergeMe::FordJhonsonDequeSort(void)
 {
 	std::deque<int>::iterator					tmp;
-	std::deque<std::pair<int, int> >::iterator	Pairs_it;
+	std::deque<std::iterator				Pairs_it;
 	std::deque<int> 							Tmp_deque;
 	std::deque<int>::iterator					LastElement;
 	std::deque<int> 							Final_deque;
