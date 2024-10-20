@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:54:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:04:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ class PmergeMe
 		void			OPerationPrint(void) const;
 		void			FordJhonsonDequeSort(void);
 		void			FordJhonsonVectorSort(void);
+		double			PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
+		
 		void			OPerationParse(const std::string &Data_Entry);
 		// void			OPerationPrint(std::vector<int>& Data) const;
 		// void 			printPairs(const std::vector<std::pair<int, int> >& Pairs);
