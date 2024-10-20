@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:46:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:47:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -190,7 +190,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	for (Pairs_it = Pairs_Deque.begin(); Pairs_it != Pairs_Deque.end(); Pairs_it++)
 		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
 	// Sort All the pairs
-	std::sort(Pairs_Deque.begin(), Pairs_.end());
+	std::sort(Pairs_Deque.begin(), Pairs_Deque.end());
 		 
 
 	// Copy the pairs in the final vector
