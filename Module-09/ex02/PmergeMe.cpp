@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:36:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:36:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,10 +78,11 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 }
 
 
-void	PmergeMe::OPerationPrint(int mode1) const
+void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 {
 	size_t i = 0x0;
 	
+	if (mode2 == B)
 	if (mode == VECTOR)
 	{
 		while (i < _vector.size())
