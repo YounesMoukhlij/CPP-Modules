@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:47:04 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:52:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ class PmergeMe
 		std::vector<int>							_vector;
 		int											poped_value;
 		std::vector<std::pair<int, int> >			Pairs;
+		
 		
 	public:
 		// Canonical Form :
