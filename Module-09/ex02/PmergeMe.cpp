@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:23:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:23:22 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,10 +161,10 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
 	
 	// The Last Element Make noises it's better to pop it
-	if (_vector.size() % 0x2)
-		poped_value = *(--(_vector.end())), _vector.pop_back();
+	if (.size() % 0x2)
+		poped_value = *(--(.end())), .pop_back();
 		
-	while (it != _vector.end())
+	while (it != .end())
 		Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
 	
 
@@ -177,28 +177,28 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 
 	// Copy the pairs in the final vector
 	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
-		Final_Vector.push_back(Pairs_it->first), Tmp_Vector.push_back(Pairs_it->second);
+		Final.push_back(Pairs_it->first), Tmp.push_back(Pairs_it->second);
 
-	tmp_it = Tmp_Vector.begin();
-	while (tmp_it != Tmp_Vector.end())
+	tmp_it = Tmp.begin();
+	while (tmp_it != Tmp.end())
 	{
-		tmp = std::upper_bound(Final_Vector.begin(), Final_Vector.end(), *tmp_it);
-		Final_Vector.insert(tmp, *tmp_it);
+		tmp = std::upper_bound(Final.begin(), Final.end(), *tmp_it);
+		Final.insert(tmp, *tmp_it);
 		tmp_it++;
 	}
-	_vector.clear();
-	it = Final_Vector.begin();
-	while (it != Final_Vector.end())
+	.clear();
+	it = Final.begin();
+	while (it != Final.end())
 	{
-		_vector.push_back(*it);
-		if (it + 0x1 == Final_Vector.end())
-			LastElement = std::upper_bound(_vector.begin(), _vector.end(), poped_value), _vector.insert(LastElement, poped_value);
+		.push_back(*it);
+		if (it + 0x1 == Final.end())
+			LastElement = std::upper_bound(.begin(), .end(), poped_value), .insert(LastElement, poped_value);
 		it++;			
 	}
 	
 	// clear the vectors
-	Tmp_Vector.clear();
-	Final_Vector.clear();
+	Tmp.clear();
+	Final.clear();
 	Pairs.clear();
 }
 
