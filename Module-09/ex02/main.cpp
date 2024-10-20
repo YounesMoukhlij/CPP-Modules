@@ -18,7 +18,7 @@ int main(int you, char **nes)
 
 		std::cout << "\033[42m~~~~ Welcome TO Vectors ~~~~\033[0m" << std::endl;
 		std::cout << "~ Before ~" << std::endl;
-		OPerationAPPOLLO.OPerationPrint(VECTOR);
+		OPerationAPPOLLO.OPerationPrint(VECTOR, BEFORE);
 
 		OPerationAPPOLLO.OPerationSort();
 
