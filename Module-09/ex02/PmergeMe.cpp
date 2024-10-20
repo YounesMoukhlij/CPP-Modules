@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:09:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:09:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ void	PmergeMe::FordJhonsonSort(void)
 	std::sort(Pairs.begin(), Pairs.end());
 		 
 	printPairs(Pairs);
+	// Merge the pairs
 }
 
 
