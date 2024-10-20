@@ -3,7 +3,7 @@
 
 int main(int you, char **nes)
 {
-    if (you == 1)
+    if (you == 0x1)
 	{
 		std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endl;
 		return (EXIT_FAILURE);
@@ -13,7 +13,7 @@ int main(int you, char **nes)
 	{
 		PmergeMe OPerationAPPOLLO;
 
-		for (int i = 1; i < you; i++)
+		for (int i = 0x1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
 		OPerationAPPOLLO.OPerationSort();
