@@ -5,13 +5,13 @@ int main(int you, char **nes)
 {
     if (you == 0x1)
 	{
-		(1) & (std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endlreturn (EXIT_FAILURE));
+		std::cerr << "Error Try ./PmergeMe <arg1> <arg2> ..." << std::endl
+		return (EXIT_FAILURE);
 	}
 
 	try
 	{
 		PmergeMe OPerationAPPOLLO;
-
 		for (int i = 0x1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
