@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:07:31 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:07:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,10 +143,7 @@ void	PmergeMe::FordJhonsonVectorSort(void)
 	Pairs.clear();
 }
 
-double PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
-{
-	return (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000000.0;
-}
+
 
 double PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
 {
