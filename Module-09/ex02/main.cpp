@@ -17,8 +17,7 @@ int main(int you, char **nes)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
-		FordJhonsonSort
-		OPerationAPPOLLO.OPerationSort();
+		OPerationAPPOLLO.FordJhonsonSort()
 		// std::cout << "~ After ~" << std::endl;
 		// OPerationAPPOLLO.OPerationPrint();
 	}
