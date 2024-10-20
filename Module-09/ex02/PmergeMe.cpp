@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:18:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:18:31 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ void	PmergeMe::OPerationPrint() const
 
 void	PmergeMe::FordJhonsonSort(void)
 {
-	std::vector<std::pair<int, int> >::iterator	it1;
+	std::vector<std::pair<int, int> >::iterator	Pairs_it;
 	std::vector<int>::iterator					tmp;
 	static int									random;
 	std::vector<int> 							Tmp_Vector;
@@ -121,15 +121,15 @@ void	PmergeMe::FordJhonsonSort(void)
 	
 	printPairs(Pairs);
 	// Sort the pairs 
-	for (it1 = Pairs.begin(); it1 != Pairs.end(); it1++)
-		(it1->first > it1->second) ? std::swap(it1->first, it1->second) : void();
+	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
 	// Sort All the pairs
 	std::sort(Pairs.begin(), Pairs.end());
 		 
 	printPairs(Pairs);
 	// Copy the pairs in the final vector
-	for (it1 = Pairs.begin(); it1 != Pairs.end(); it1++)
-		Final_Vector.push_back(it1->first), Tmp_Vector.push_back(it1->second);
+	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+		Final_Vector.push_back(Pairs_it->first), Tmp_Vector.push_back(Pairs_it->second);
 		
 		
 	std::cout << "Final Vector Values " << std::endl;
