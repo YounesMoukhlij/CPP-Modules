@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:24:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:24:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ class PmergeMe
 		std::vector<std::pair<int, int> >			Pairs;
 		std::deque<int>								_deque;
 		std::vector<int>							_vector;
+		int											deque_value;
 		int											vector_value;
-		int											vector_value;
-		// struct timeval 								startDeque, endDeque;
+		struct timeval 								startDeque, endDeque;
 		struct timeval 								startVector, endVector;
 		
 	public:
