@@ -19,6 +19,7 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationPrint();
 
 		OPerationAPPOLLO.OPerationSort(0x1);
+		OPerationAPPOLLO.OPerationSort(0x1);
 
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
