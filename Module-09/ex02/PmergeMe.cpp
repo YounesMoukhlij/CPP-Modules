@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:39:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:39:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ void	PmergeMe::FordJhonsonSort(void)
 		it1++;
 	}
 	printPairs(Pairs);
-	random = 0x0;
+	// random = 0x0;
 }
 
 void	PmergeMe::OPerationSort()
