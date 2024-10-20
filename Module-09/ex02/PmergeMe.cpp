@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:26:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:26:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,8 +157,8 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	std::deque<int> 							Tmp_deque;
 	std::deque<int>::iterator					LastElement;
 	std::deque<int> 							Final_deque;
-	std::deque<int>::iterator					it = _deque.begin();
-	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
+	// std::deque<int>::iterator					it = _deque.begin();
+	// std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
 	
 	// The Last Element Make noises it's better to pop it
 	if (_deque.size() % 0x2)
