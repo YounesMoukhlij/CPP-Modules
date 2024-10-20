@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:43:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:45:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,14 +107,15 @@ void	PmergeMe::FordJhonsonSort(void)
 	
 	for (it1 = Pairs.begin(); it1 != Pairs.end(); it1++)
 	{
-		(it1->first > it1->second) ? std::swap(it1->first, it1->second) : random << 0x1;
+		// (it1->first > it1->second) ? std::swap(it1->first, it1->second) : random << 0x1;
+		(it1->first > it1->second) ? std::swap(it1->first, it1->second) : void();
 	}
-	while (it1 != Pairs.end())
-	{
-		if (it1->first > it1->second)
-			std::swap(it1->first, it1->second);
-		it1++;
-	}
+	// while (it1 != Pairs.end())
+	// {
+	// 	if (it1->first > it1->second)
+	// 		std::swap(it1->first, it1->second);
+	// 	it1++;
+	// }
 	printPairs(Pairs);
 }
 
