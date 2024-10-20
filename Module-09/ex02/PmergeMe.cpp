@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:37:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:38:09 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -224,12 +224,13 @@ void	PmergeMe::OPerationSort()
 {
 	std::cout << "\033[42m~~~~ Welcome TO Vectors ~~~~\033[0m" << std::endl;
 	OPerationPrint(VECTOR, BEFORE);
+	OPerationPrint(VECTOR, BEFORE);
 	gettimeofday(&startVector, 0x0);
 	FordJhonsonVectorSort();
 	gettimeofday(&endVector, 0x0);
 	OPerationPrint(VECTOR, AFTER);
 	
-
+	std::cout << "\033[43m~~~~ Welcome TO Deque ~~~~\033[0m" << std::endl;
 	gettimeofday(&startDeque, NULL);
 	// FordJhonsonDequeSort();
 	gettimeofday(&endDeque, NULL);
