@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:04:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:04:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,9 +113,6 @@ void	PmergeMe::FordJhonsonSort(void)
 	printPairs(Pairs);
 }
 
-void	PmergeMe::OPerationSort()
-{	
-	FordJhonsonSort();
 
 void PmergeMe::printPairs(const std::vector<std::pair<int, int> >& Pairs)
 {
