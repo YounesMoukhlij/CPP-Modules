@@ -18,7 +18,7 @@ int main(int you, char **nes)
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 
-		OPerationAPPOLLO.OP();
+		OPerationAPPOLLO.OPerationSort(0x1);
 
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
