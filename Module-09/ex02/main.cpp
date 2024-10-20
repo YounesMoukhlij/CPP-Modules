@@ -16,15 +16,10 @@ int main(int you, char **nes)
 		for (int i = 1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
-		std::cout << "\033[42m~~~~ Welcome TO Vectors ~~~~\033[0m" << std::endl;
-		std::cout << "~ Before ~" << std::endl;
 
 		OPerationAPPOLLO.OPerationSort();
 
-		std::cout << "~ After ~" << std::endl;
-		OPerationAPPOLLO.OPerationPrint();
 
-		// std::cout << "\033[43m~~~~ Welcome TO Deque ~~~~\033[0m" << std::endl;
 
 
 		OPerationAPPOLLO.OPerationTime();
