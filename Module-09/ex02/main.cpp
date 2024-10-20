@@ -18,8 +18,8 @@ int main(int you, char **nes)
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 
-		OPerationAPPOLLO.FordJhonsonSort();
-		
+		OPerationAPPOLLO.FordJhonsonVectorSort();
+
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 	}
