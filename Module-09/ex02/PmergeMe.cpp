@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:34:19 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:34:42 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,6 @@ void	PmergeMe::FordJhonsonSort(void)
 	std::vector<int>::iterator					LastElement;
 	std::vector<int> 							Final_Vector;
 	std::vector<int>::iterator					it = _vector.begin();
-	// std::vector<int>::iterator					it1 = Final_Vector.begin();
 	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
 	
 	// The Last Element Make noises it's better to pop it
@@ -121,23 +120,20 @@ void	PmergeMe::FordJhonsonSort(void)
 	while (it != _vector.end())
 		Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
 	
-	// printPairs(Pairs);
+
 	// Sort the pairs 
 	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
 		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
 	// Sort All the pairs
 	std::sort(Pairs.begin(), Pairs.end());
 		 
-	// printPairs(Pairs);
+
 	// Copy the pairs in the final vector
 	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
 		Final_Vector.push_back(Pairs_it->first), Tmp_Vector.push_back(Pairs_it->second);
 		
 		
-	// std::cout << "Final Vector Values " << std::endl;
-	// OPerationPrint(Final_Vector);
-	// std::cout << "Tmp Vector Values " << std::endl;
-	// OPerationPrint(Tmp_Vector);
+
 	
 	tmp_it = Tmp_Vector.begin();
 	while (tmp_it != Tmp_Vector.end())
@@ -156,6 +152,7 @@ void	PmergeMe::FordJhonsonSort(void)
 		it++;			
 	}
 	// OPerationPrint(Final_Vector);
+	
 	// clear the vectors
 	Tmp_Vector.clear();
 	Final_Vector.clear();
