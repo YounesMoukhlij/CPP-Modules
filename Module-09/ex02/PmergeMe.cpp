@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:47:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:47:44 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ void	PmergeMe::FordJhonsonSort(void)
 	static int									random;
 	std::vector<int>::iterator					it = _vector.begin();
 	
+	// The Last Element M
 	if (_vector.size() % 0x2)
 		random = (0xC) & (poped_value = *(--(_vector.end())), _vector.pop_back(), random << 0x1);
 	while (it != _vector.end())
