@@ -25,6 +25,9 @@ int main(int you, char **nes)
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 
+		std::cout << "~~~~ Welcome TO Deque ~~~~" << std::endl;
+
+
 		OPerationAPPOLLO.OPerationTime();
 	}
 	catch (std::exception &e)
