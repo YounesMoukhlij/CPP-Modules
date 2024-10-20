@@ -23,7 +23,7 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationSort();
 
 		std::cout << "~ After ~" << std::endl;
-		OPerationAPPOLLO.OPerationPrint();
+		OPerationAPPOLLO.OPerationPrint(VECTOR);
 
 		// std::cout << "\033[43m~~~~ Welcome TO Deque ~~~~\033[0m" << std::endl;
 
