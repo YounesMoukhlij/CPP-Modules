@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:08:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:09:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,9 +93,9 @@ void	PmergeMe::OPerationPrint() const
 
 void	PmergeMe::FordJhonsonSort(void)
 {
-	std::vector<int>
 	std::vector<std::pair<int, int> >::iterator	it1;
 	static int									random;
+	std::vector<int> 							Final_Vector;
 	std::vector<int>::iterator					it = _vector.begin();
 	
 	// The Last Element Make noises it's better to pop it
