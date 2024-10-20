@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/19 18:39:22 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:01:46 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ void	PmergeMe::OPerationPrint() const
 
 void	PmergeMe::FordJhonsonSort(std::vector<int> &Data)
 {
-
+	
 }
 
 void	PmergeMe::OPerationSort()
