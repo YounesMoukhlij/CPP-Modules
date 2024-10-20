@@ -23,7 +23,6 @@ int main(int you, char **nes)
 
 		gettimeofday(&start, 0x0);
 		OPerationAPPOLLO.OPerationSort();
-		gettimeofday(&end, 0x0);
 
 		std::cout << "~ After ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
