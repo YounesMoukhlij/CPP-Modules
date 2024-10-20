@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:54:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:54:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 	size_t i = 0x0;
 	
 	(mode2 == BEFORE) ? std::cout << "~ Before ~" << std::endl : std::cout << "";
-	(mode2 == AFTER) ?  std::cout << "~ After ~" << std::endl 
+	(mode2 == AFTER) ?  std::cout << "~ After ~" << std::endl : std::cout << "";
 	
 	if (mode1 == VECTOR)
 	{
