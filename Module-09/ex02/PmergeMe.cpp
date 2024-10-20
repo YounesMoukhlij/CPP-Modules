@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:56:03 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:56:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,6 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 	}
 	else if (mode1 == DEQUE)
 	{
-		std::cout << "-  ";
 		while (i < _deque.size())
 		{
 			std::cout <<  _deque[i];
