@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:21:09 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:21:18 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ class PmergeMe
 		void			OPerationPrint(void) const;
 		void			FordJhonsonSort(std::vector<int> &Data);
 		void			OPerationParse(const std::string &Data_Entry);
-		void PmergeMe::printPairs(const std::vector<std::pair<int, int>>& Pairs);
+		void 			printPairs(const std::vector<std::pair<int, int>>& Pairs);
 		
 		// Exceptions
 		class InvalidData : public std::exception
