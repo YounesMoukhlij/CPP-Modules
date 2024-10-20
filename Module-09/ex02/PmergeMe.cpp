@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:09:42 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:09:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void	PmergeMe::FordJhonsonSort(void)
 	// Copy the pairs in the final vector
 	for (it1 = Pairs.begin(); it1 != Pairs.end(); it1++)
 		Final_Vector.push_back(it1->first), Final_Vector.push_back(it1->second);
-	printPairs(Pairs);
+	O
 }
 
 
