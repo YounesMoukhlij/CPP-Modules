@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:17:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:17:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,6 +144,7 @@ void	PmergeMe::FordJhonsonSort(void)
 		Final_Vector.insert(tmp, *tmp_it);
 		tmp_it++;
 	}
+	_vector
 	while ()
 	OPerationPrint(Final_Vector);
 	// clear the vectors
