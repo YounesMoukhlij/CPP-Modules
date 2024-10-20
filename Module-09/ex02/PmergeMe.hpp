@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:02:12 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:47:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ class PmergeMe
 		// Functions Member
 		void			OPerationSort(void);
 		void			FordJhonsonSort(void);
-		void			OPerationPrint(void) const;
+		void			OPerationPrint(std::vector<int>& Data) const;
 		void			OPerationParse(const std::string &Data_Entry);
 		void 			printPairs(const std::vector<std::pair<int, int> >& Pairs);
 		
