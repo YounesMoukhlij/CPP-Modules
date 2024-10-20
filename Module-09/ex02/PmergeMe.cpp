@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 12:27:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 12:27:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,7 @@ void	PmergeMe::OPerationSort()
 
 void PmergeMe::printPairs(const std::vector<std::pair<int, int> >& Pairs)
 {
+	std::cout << pritinf
     for (std::vector<std::pair<int, int> >::const_iterator it = Pairs.begin(); it != Pairs.end(); ++it) {
         std::cout << "(" << it->first << ", " << it->second << ")\n";
     }
