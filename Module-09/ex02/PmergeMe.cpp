@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:42:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:43:45 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,7 +217,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	// clear the vectors
 	Tmp_deque.clear();
 	Final_deque.clear();
-	Pairs.clear();
+	Pairs_Deque.clear();
 }
 
 
