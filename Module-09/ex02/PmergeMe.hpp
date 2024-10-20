@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:18 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 15:00:20 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 15:00:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@
 class PmergeMe
 {
     private:
-		size_t				_size;
-		std::vector<int>				_vector;
+		std::vector<int>							_vector;
 		int											poped_value;
 		std::vector<std::pair<int, int> >			Pairs;
 		
