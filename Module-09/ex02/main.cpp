@@ -30,7 +30,7 @@ int main(int you, char **nes)
 
 
 		// OPerationAPPOLLO.OPerationTime();
-		std::cout << "Time for Vector : " << getTime(startVector, endVector) << " s" << std::endl;
+		std::cout << "Time for Vector : " << getTime(start, end) << " s" << std::endl;
 
 	}
 	catch (std::exception &e)
