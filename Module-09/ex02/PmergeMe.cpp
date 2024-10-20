@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:25:43 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:25:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,45 +161,45 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
 	
 	// The Last Element Make noises it's better to pop it
-	if (_deque.size() % 0x2)
-		deque_value = *(--(_deque.end())), _deque.pop_back();
+	// if (_deque.size() % 0x2)
+	// 	deque_value = *(--(_deque.end())), _deque.pop_back();
 		
-	while (it != _deque.end())
-		Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
+	// while (it != _deque.end())
+	// 	Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
 	
 
-	// Sort the pairs 
-	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
-		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
-	// Sort All the pairs
-	std::sort(Pairs.begin(), Pairs.end());
+	// // Sort the pairs 
+	// for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+	// 	(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
+	// // Sort All the pairs
+	// std::sort(Pairs.begin(), Pairs.end());
 		 
 
-	// Copy the pairs in the final vector
-	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
-		Final_deque.push_back(Pairs_it->first), Tmp_deque.push_back(Pairs_it->second);
+	// // Copy the pairs in the final vector
+	// for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+	// 	Final_deque.push_back(Pairs_it->first), Tmp_deque.push_back(Pairs_it->second);
 
-	tmp_it = Tmp_deque.begin();
-	while (tmp_it != Tmp_deque.end())
-	{
-		tmp = std::upper_bound(Final_deque.begin(), Final_deque.end(), *tmp_it);
-		Final_deque.insert(tmp, *tmp_it);
-		tmp_it++;
-	}
-	_deque.clear();
-	it = Final_deque.begin();
-	while (it != Final_deque.end())
-	{
-		_deque.push_back(*it);
-		if (it + 0x1 == Final_deque.end())
-			LastElement = std::upper_bound(_deque.begin(), _deque.end(), deque_value), _deque.insert(LastElement, deque_value);
-		it++;			
-	}
+	// tmp_it = Tmp_deque.begin();
+	// while (tmp_it != Tmp_deque.end())
+	// {
+	// 	tmp = std::upper_bound(Final_deque.begin(), Final_deque.end(), *tmp_it);
+	// 	Final_deque.insert(tmp, *tmp_it);
+	// 	tmp_it++;
+	// }
+	// _deque.clear();
+	// it = Final_deque.begin();
+	// while (it != Final_deque.end())
+	// {
+	// 	_deque.push_back(*it);
+	// 	if (it + 0x1 == Final_deque.end())
+	// 		LastElement = std::upper_bound(_deque.begin(), _deque.end(), deque_value), _deque.insert(LastElement, deque_value);
+	// 	it++;			
+	// }
 	
-	// clear the vectors
-	Tmp_deque.clear();
-	Final_deque.clear();
-	Pairs.clear();
+	// // clear the vectors
+	// Tmp_deque.clear();
+	// Final_deque.clear();
+	// Pairs.clear();
 }
 
 
