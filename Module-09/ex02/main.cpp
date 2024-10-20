@@ -18,8 +18,8 @@ int main(int you, char **nes)
 		std::cout << "~ Before ~" << std::endl;
 		OPerationAPPOLLO.OPerationPrint();
 		OPerationAPPOLLO.OPerationSort();
-		std::cout << "~ After ~" << std::endl;
-		OPerationAPPOLLO.OPerationPrint();
+		// std::cout << "~ After ~" << std::endl;
+		// OPerationAPPOLLO.OPerationPrint();
 	}
 	catch (std::exception &e)
 	{
