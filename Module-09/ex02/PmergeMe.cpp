@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:30:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:31:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,14 +138,14 @@ void	PmergeMe::FordJhonsonSort(void)
 	std::cout << "Tmp Vector Values " << std::endl;
 	OPerationPrint(Tmp_Vector);
 	
-	// tmp_it = Tmp_Vector.begin();
+	tmp_it = Tmp_Vector.begin();
 	while (tmp_it != Tmp_Vector.end())
 	{
 		tmp = std::upper_bound(Final_Vector.begin(), Final_Vector.end(), *tmp_it);
 		Final_Vector.insert(tmp, *tmp_it);
 		tmp_it++;
 	}
-	// _vector.clear();
+	_vector.clear();
 	// it = Final_Vector.begin();
 	// while (it != Final_Vector.end())
 	// {
