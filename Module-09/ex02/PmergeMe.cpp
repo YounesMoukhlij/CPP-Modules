@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:03:53 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:04:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -171,5 +171,5 @@ void	PmergeMe::OPerationTime()
 {
 	std::cout << "\033[41m ^_* TIME Difference ^_*\033[0m" << std::endl;
 	std::cout << "Time for Vector : " << getTime(startVector, endVector) << "s" << std::endl;
-	std::cout << "Time for Deque : " << getTime(startDeque, endDeque) << std::endl;
+	// std::cout << "Time for Deque : " << getTime(startDeque, endDeque) << "s" << std::endl;
 }
