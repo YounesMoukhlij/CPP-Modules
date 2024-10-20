@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:52:37 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:53:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,3 +168,5 @@ void	PmergeMe::OPerationSort(int mode)
 	FordJhonsonDequeSort();
 	gettimeofday(&endVector, NULL);
 }
+
+void	
