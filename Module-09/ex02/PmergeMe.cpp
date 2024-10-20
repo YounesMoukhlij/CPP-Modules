@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:53:55 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:53:57 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,4 +169,8 @@ void	PmergeMe::OPerationSort(int mode)
 	gettimeofday(&endVector, NULL);
 }
 
-void	
+void	PmergeMe::OPerationTime()
+{
+	std::cout << "Time for Vector : " << getTime(startVector, endVector) << std::endl;
+	std::cout << "Time for Deque : " << getTime(startDeque, endDeque) << std::endl;
+}
