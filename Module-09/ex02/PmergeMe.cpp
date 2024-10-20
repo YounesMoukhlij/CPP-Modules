@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:51:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:51:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,6 +152,8 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 
 void	PmergeMe::OPerationSort(int mode)
 {
+	struct timeval startTimeV, endTimeV;
+	struct timeval startTimeD, endTimeD;
 	FordJhonsonVectorSort();
 	FordJhonsonDequeSort();
 }
