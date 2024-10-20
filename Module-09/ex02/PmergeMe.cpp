@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 17:51:36 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:51:47 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 		while (i < _vector.size())
 		{
 			std::cout <<  _vector[i];
-			(i++ + 0x1 < _vector.size()) ? std::cout << " " : v();
+			(i++ + 0x1 < _vector.size()) ? std::cout << " " : void();
 		}
 	}
 	else if (mode1 == DEQUE)
@@ -103,7 +103,7 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 		while (i < _deque.size())
 		{
 			std::cout <<  _deque[i];
-			(i++ + 0x1 < _deque.size()) ? std::cout << " ": (void);
+			(i++ + 0x1 < _deque.size()) ? std::cout << " " : void();
 		}
 	}
 	std::cout << std::endl;
