@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:10:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:10:24 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,7 +140,7 @@ void	PmergeMe::FordJhonsonSort(void)
 		tmp = std::upper_bound(_vector.begin(), _vector.end(), *tmp_it);
 		Final_Vector.insert(tmp, *tmp_it);
 	}
-	OPerationPrint(Final_Vector);
+	// OPerationPrint(Final_Vector);
 }
 
 
