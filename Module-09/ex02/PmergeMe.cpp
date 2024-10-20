@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:44:54 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:45:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,57 @@ void	PmergeMe::OPerationPrint() const
 	std::cout << std::endl;
 }
 
+void	PmergeMe::FordJhonsonVectorSort(void)
+{
+	std::vector<int>::iterator					tmp;
+	std::vector<std::pair<int, int> >::iterator	Pairs_it;
+	std::vector<int> 							Tmp_Vector;
+	std::vector<int>::iterator					LastElement;
+	std::vector<int> 							Final_Vector;
+	std::vector<int>::iterator					it = _vector.begin();
+	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
+	
+	// The Last Element Make noises it's better to pop it
+	if (_vector.size() % 0x2)
+		poped_value = *(--(_vector.end())), _vector.pop_back();
+		
+	while (it != _vector.end())
+		Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
+	
+
+	// Sort the pairs 
+	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
+	// Sort All the pairs
+	std::sort(Pairs.begin(), Pairs.end());
+		 
+
+	// Copy the pairs in the final vector
+	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
+		Final_Vector.push_back(Pairs_it->first), Tmp_Vector.push_back(Pairs_it->second);
+
+	tmp_it = Tmp_Vector.begin();
+	while (tmp_it != Tmp_Vector.end())
+	{
+		tmp = std::upper_bound(Final_Vector.begin(), Final_Vector.end(), *tmp_it);
+		Final_Vector.insert(tmp, *tmp_it);
+		tmp_it++;
+	}
+	_vector.clear();
+	it = Final_Vector.begin();
+	while (it != Final_Vector.end())
+	{
+		_vector.push_back(*it);
+		if (it + 0x1 == Final_Vector.end())
+			LastElement = std::upper_bound(_vector.begin(), _vector.end(), poped_value), _vector.insert(LastElement, poped_value);
+		it++;			
+	}
+	
+	// clear the vectors
+	Tmp_Vector.clear();
+	Final_Vector.clear();
+	Pairs.clear();
+}
 void	PmergeMe::FordJhonsonVectorSort(void)
 {
 	std::vector<int>::iterator					tmp;
