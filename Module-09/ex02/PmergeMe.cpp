@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/20 16:54:48 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/20 16:55:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -156,8 +156,6 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 
 void	PmergeMe::OPerationSort()
 {
-	struct timeval startVector, endVector;
-	struct timeval startDeque, endDeque;
 	
 	gettimeofday(&startVector, NULL);
 	FordJhonsonVectorSort();
