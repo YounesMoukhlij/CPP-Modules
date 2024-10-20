@@ -19,7 +19,7 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationPrint();
 		OPerationAPPOLLO.FordJhonsonSort();
 		std::cout << "~ After ~" << std::endl;
-		// OPerationAPPOLLO.OPerationPrint();
+		OPerationAPPOLLO.OPerationPrint();
 	}
 	catch (std::exception &e)
 	{
