@@ -37,7 +37,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 		_deque = origine._deque;
 		Pairs = origine.Pairs;
 		Pairs_Deque = origine.Pairs_Deque;
-		
+		st
 	}
 	return (*this);
 }
