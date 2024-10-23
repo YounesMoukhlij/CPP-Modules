@@ -19,6 +19,7 @@ int main(int you, char **nes)
 
 		OPerationAPPOLLO.OPerationSort();
 		OPerationAPPOLLO.OPerationTime();
+
 		
 		PmergeMe A(OPerationAPPOLLO);
 		PmergeMe A;
