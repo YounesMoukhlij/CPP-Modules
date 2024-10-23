@@ -34,6 +34,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 	if (this != &origine)
 	{
 		_vector = origine._vector;
+		_de = origine._vector;
 	}
 	return (*this);
 }
