@@ -26,8 +26,8 @@ int main(int you, char **nes)
 		// PmergeMe A;
 
 		// A = OPerationAPPOLLO;
-		A.OPerationSort();
-		A.OPerationTime();
+		// A.OPerationSort();
+		// A.OPerationTime();
 
 	}
 	catch (std::exception &younes)
