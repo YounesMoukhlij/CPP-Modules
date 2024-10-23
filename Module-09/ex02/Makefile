@@ -20,7 +20,8 @@ SRC = main.cpp PmergeMe.cpp
 NAME = PmergeMe
 
 
-all : ${NAME} 
+all : ${NAME}
+
 play:
 	@clear
 	@./PmergeMe 2 9 0 34 5 8 1
