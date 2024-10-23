@@ -33,6 +33,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 {
 	if (this != &origine)
 	{
+		
 	}
 	return (*this);
 }
