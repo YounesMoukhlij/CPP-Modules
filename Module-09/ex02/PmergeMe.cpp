@@ -85,6 +85,9 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 		throw InvalidData();
 	if (_vector.size() > 0x1)
 		if (std::find(_vector.begin(), _vector.end(), temp) != _vector.end())
+		{
+
+		}
 			throw DuplicateData();
 	_vector.push_back(temp);
 	_deque.push_back(temp);
