@@ -20,9 +20,9 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationSort();
 		OPerationAPPOLLO.OPerationTime();
 
-		PmergeMe A();
+		PmergeMe A(OPerationAPPOLLO);
 
-		A = OPerationAPPOLLO;
+		// A = OPerationAPPOLLO;
 		A.OPerationSort();
 		A.OPerationTime();
 
