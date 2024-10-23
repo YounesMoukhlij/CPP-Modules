@@ -20,7 +20,9 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationSort();
 		OPerationAPPOLLO.OPerationTime();
 
-		
+		PmergeMe A;
+
+		A = OPerationAPPOLLO
 
 	}
 	catch (std::exception &younes)
