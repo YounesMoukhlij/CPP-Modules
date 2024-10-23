@@ -40,7 +40,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 		deque_value = origine.deque_value;
 		vector_value = origine.vector_value;
 		startDeque = origine.startDeque;
-		startVector = origine.
+		startVector = origine.startVector
 	}
 	return (*this);
 }
