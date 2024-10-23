@@ -13,15 +13,14 @@
 
 OBJ = ${SRC:.cpp=.o}
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp PmergeMe.cpp
 
 NAME = PmergeMe
 
 
-all : ${NAME} play
-
+all : ${NAME} 
 play:
 	@clear
 	@./PmergeMe 2 9 0 34 5 8 1
