@@ -87,7 +87,7 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 		if (std::find(_vector.begin(), _vector.end(), temp) != _vector.end())
 		{
 			puts("123");
-			std::vector<int>::iterator 
+			std::vector<int>::iterator it = std
 			throw DuplicateData();
 		}
 	_vector.push_back(temp);
