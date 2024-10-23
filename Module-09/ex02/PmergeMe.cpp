@@ -33,7 +33,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 {
 	if (this != &origine)
 	{
-		
+		_vector = or
 	}
 	return (*this);
 }
