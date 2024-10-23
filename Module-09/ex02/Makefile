@@ -13,14 +13,14 @@
 
 OBJ = ${SRC:.cpp=.o}
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 
 
 SRC = main.cpp PmergeMe.cpp
 
 NAME = PmergeMe
 
 
-all : ${NAME} play 
+all : ${NAME} play
 
 play:
 	@clear
