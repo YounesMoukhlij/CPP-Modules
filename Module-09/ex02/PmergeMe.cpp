@@ -32,7 +32,7 @@ PmergeMe::~PmergeMe()
 PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 {
 	if (this != &origine)
-    {
+	{
 	}
 	return (*this);
 }
@@ -51,7 +51,7 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 {
 	int		counter = 0x0;
 	size_t 	i = 0x0;
-	
+
 	while (i < Data_Entry.size())
 	{
 		while (isspace(Data_Entry[i]))
@@ -65,10 +65,10 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 	if (!counter)
 		throw InvalidData();
 
-	
+
 	std::stringstream	ss(Data_Entry);
 	int 				temp;
-	
+
 	ss >> temp;
 	if (ss.fail() || !ss.eof())
 		throw InvalidData();
@@ -82,11 +82,11 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 {
 	size_t i = 0x0;
-	
+
 	(mode2 == BEFORE) ? std::cout << "~ Before ~" << std::endl : std::cout << "";
 	(mode2 == AFTER) ?  std::cout << "~ After ~" << std::endl : std::cout << "";
 	(mode1 == VECTOR || mode1 == DEQUE) ? std::cout << "->   " :  std::cout << "";
-	
+
 	if (mode1 == VECTOR)
 	{
 		while (i < _vector.size())
@@ -115,21 +115,21 @@ void	PmergeMe::FordJhonsonVectorSort(void)
 	std::vector<int> 							Final_Vector;
 	std::vector<int>::iterator					it = _vector.begin();
 	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
-	
+
 	// The Last Element Make noises it's better to pop it
 	if (_vector.size() % 0x2)
 		vector_value = *(--(_vector.end())), _vector.pop_back();
-		
+
 	while (it != _vector.end())
 		Pairs.insert(Pairs.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
-	
 
-	// Sort the pairs 
+
+	// Sort the pairs
 	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
 		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
 	// Sort All the pairs
 	std::sort(Pairs.begin(), Pairs.end());
-		 
+
 
 	// Copy the pairs in the final vector
 	for (Pairs_it = Pairs.begin(); Pairs_it != Pairs.end(); Pairs_it++)
@@ -149,9 +149,9 @@ void	PmergeMe::FordJhonsonVectorSort(void)
 		_vector.push_back(*it);
 		if (it + 0x1 == Final_Vector.end())
 			LastElement = std::upper_bound(_vector.begin(), _vector.end(), vector_value), _vector.insert(LastElement, vector_value);
-		it++;			
+		it++;
 	}
-	
+
 	// clear the vectors
 	Tmp_Vector.clear();
 	Final_Vector.clear();
@@ -172,21 +172,21 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	std::deque<int> 							Final_deque;
 	std::deque<int>::iterator					it = _deque.begin();
 	std::deque<int>::iterator					tmp_it = Tmp_deque.begin();
-	
+
 	// The Last Element Make noises it's better to pop it
 	if (_deque.size() % 0x2)
 		deque_value = *(--(_deque.end())), _deque.pop_back();
-		
+
 	while (it != _deque.end())
 		Pairs_Deque.insert(Pairs_Deque.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
-	
 
-	// Sort the pairs 
+
+	// Sort the pairs
 	for (Pairs_it = Pairs_Deque.begin(); Pairs_it != Pairs_Deque.end(); Pairs_it++)
 		(Pairs_it->first > Pairs_it->second) ? std::swap(Pairs_it->first, Pairs_it->second) : void();
 	// Sort All the pairs
 	std::sort(Pairs_Deque.begin(), Pairs_Deque.end());
-		 
+
 
 	// Copy the pairs in the final vector
 	for (Pairs_it = Pairs_Deque.begin(); Pairs_it != Pairs_Deque.end(); Pairs_it++)
@@ -206,9 +206,9 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 		_deque.push_back(*it);
 		if (it + 0x1 == Final_deque.end())
 			LastElement = std::upper_bound(_deque.begin(), _deque.end(), deque_value), _deque.insert(LastElement, deque_value);
-		it++;			
+		it++;
 	}
-	
+
 	// clear the vectors
 	Tmp_deque.clear();
 	Final_deque.clear();
@@ -224,7 +224,7 @@ void	PmergeMe::OPerationSort()
 	FordJhonsonVectorSort();
 	gettimeofday(&endVector, 0x0);
 	OPerationPrint(VECTOR, AFTER);
-	
+
 	std::cout << "\033[43m~~~~ Welcome TO Deque ~~~~\033[0m" << std::endl;
 	OPerationPrint(DEQUE, BEFORE);
 	gettimeofday(&startDeque, NULL);
