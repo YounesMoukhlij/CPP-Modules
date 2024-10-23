@@ -21,9 +21,9 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationTime();
 
 		// Test Canonical Form
-		
-		PmergeMe A(OPerationAPPOLLO);
-		PmergeMe A;
+
+		// PmergeMe A(OPerationAPPOLLO);
+		// PmergeMe A;
 
 		// A = OPerationAPPOLLO;
 		A.OPerationSort();
