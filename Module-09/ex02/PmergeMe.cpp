@@ -35,7 +35,7 @@ PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 	{
 		_vector = origine._vector;
 		_deque = origine._deque;
-		P
+		_Pa
 	}
 	return (*this);
 }
