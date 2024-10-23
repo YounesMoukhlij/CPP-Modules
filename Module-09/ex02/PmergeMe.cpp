@@ -31,7 +31,7 @@ PmergeMe::~PmergeMe()
 
 PmergeMe&	PmergeMe::operator=(const PmergeMe& origine)
 {
-	std::cout << "!!! Destructor called !!!" << std::endl;
+	std::cout << "!!! Copy Assignement tructor called !!!" << std::endl;
 	if (this != &origine)
 	{
 		_vector = origine._vector;
