@@ -22,7 +22,7 @@ int main(int you, char **nes)
 
 		PmergeMe A;
 
-		A = OPerationAPPOLLO
+		A = OPerationAPPOLLO;
 
 	}
 	catch (std::exception &younes)
