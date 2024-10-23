@@ -20,7 +20,7 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationSort();
 		OPerationAPPOLLO.OPerationTime();
 
-		// Tests
+		// Test 
 		PmergeMe A(OPerationAPPOLLO);
 		PmergeMe A;
 
