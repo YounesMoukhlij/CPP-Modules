@@ -171,7 +171,7 @@ void	PmergeMe::FordJhonsonVectorSort(void)
 
 double PmergeMe::getTime(const struct timeval& start, const struct timeval& end)
 {
-	return (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 100.0;
+	return (end.tv_sec - start.tv_sec) + (end.tv_usec - start.tv_usec) / 1000.0;
 }
 
 void	PmergeMe::FordJhonsonDequeSort(void)
