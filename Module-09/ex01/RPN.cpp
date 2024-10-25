@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 16:57:10 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:58:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ RPN::RPN(const RPN& origine)
 RPN& RPN::operator=(const RPN& origine)
 {
 	(void) origine;
-	std::cout << "RPN Copy Assignement called." << std::endl;
+	// std::cout << "RPN Copy Assignement called." << std::endl;
 	return (*this);
 }
 
