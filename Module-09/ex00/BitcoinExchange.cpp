@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 12:15:50 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:16:02 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ BitcoinExchange& BitcoinExchange::operator=(const BitcoinExchange& origine)
 		value = origine.value;
 		date = origine.date;
 		dataMap = origine.dataMap;
-		infile = origine.infile;
-		dataBase = origine.dataBase;
 	}
 	return (*this);
 }
