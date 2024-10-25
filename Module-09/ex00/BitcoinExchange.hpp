@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:40:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:42:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class BitcoinExchange
 		std::ifstream					dataBase;
 		std::string						date;
 		std::map<std::string, float>	dataMap;
-		double							value;
+		float							value;
 		
 	public :
 		// canonical Form
