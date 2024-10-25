@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 12:49:34 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:55:58 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,6 +144,7 @@ void	BitcoinExchange::loadData(void)
 void	BitcoinExchange::printData(const std::string& inputDate)
 {
 	std::map<std::string, float>::const_iterator it;
+	
 	
 	float value = dataMap["2011-01-03"];
 	std::cout << "value :"<< value << std::endl;
