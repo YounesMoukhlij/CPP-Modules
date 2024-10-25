@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 16:34:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:35:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int main(int you, char **nes)
 	try
 	{
 		BitcoinExchange	bit;
-		BitcoinExchange	a(bit);
 
 		
 		std::string file = static_cast<const std::string>(nes[0x1]);
@@ -34,12 +33,13 @@ int main(int you, char **nes)
 		bit.readData();
 		bit.fileDescriptors();
 		
-		a = bit;
-		a.nameChecker(file);
-		a.openingFiles(file);
-		a.loadData();
-		a.readData();
-		a.fileDescriptors();
+		BitcoinExchange	a(bit);
+		// a = bit;
+		// a.nameChecker(file);
+		// a.openingFiles(file);
+		// a.loadData();
+		// a.readData();
+		// a.fileDescriptors();
 	}
 	catch (std::exception &younes)
 	{
