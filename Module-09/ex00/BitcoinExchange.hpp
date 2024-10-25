@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 11:57:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:00:04 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ class BitcoinExchange
 		bool				parseEntry(std::string& str);
 		void				printData(const std::string& infos);
 		void				nameChecker(std::string& name);
+		void				openingFiles(const std::string& name);
 		void				firstCheck(std::string line, int mode);
-		void				openingFiles(const std::string& name, int j);
 		
 		
 		
