@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 13:02:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:02:54 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main(int you, char **nes)
 	data.insert({"2024-10-26", 0x2});
 	
 
-	std::
+	std::map<std::string, float>::const_iterator it = data.lower_bound("2024-10-25");
 	
 	return (EXIT_SUCCESS);
 }
