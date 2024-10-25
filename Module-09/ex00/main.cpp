@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 13:03:39 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:08:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int main(int you, char **nes)
 
 	data.insert(std::make_pair("2024-10-25", 0x1));
 	data.insert(std::make_pair("2024-11-25", 0x2));
-	data.insert(std::make_pair("2024-12-25", 0x3));
+	data.insert(std::make_pair("2024-09-25", 0x3));
 	
 
 	std::map<std::string, float>::const_iterator it = data.begin();
