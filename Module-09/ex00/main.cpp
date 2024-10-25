@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 13:01:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:01:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main(int you, char **nes)
 	
 	std::map<std::string, float>	data;
 
-	
+	data.insert
 	
 	return (EXIT_SUCCESS);
 }
