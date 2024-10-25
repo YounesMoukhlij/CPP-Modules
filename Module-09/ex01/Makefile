@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/16 17:33:28 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/25 16:45:52 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,10 +20,7 @@ SRC = main.cpp RPN.cpp
 NAME = RPN
 
 
-all : ${NAME} play
-
-play :
-	@clear
+all : ${NAME}
 
 %.o: %.cpp RPN.hpp
 	@echo "\033[30m Compiling ...\033[0m"
