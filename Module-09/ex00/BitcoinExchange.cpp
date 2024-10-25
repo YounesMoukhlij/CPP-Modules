@@ -195,7 +195,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	_intY >> _year;
 	_intM >> _month;
 	_intD >> _day;
-	if (_month < (0x1 >> 0x0) || _month > 0xC || _day <= 0x || _year < ( 0x0 << 0x8) || _day > ((0x1 << 0x5) - 0x1))
+	if (_month < (0x1 >> 0x0) || _month > 0xC || _day <= 0x0 || _year < ( 0x0 << 0x8) || _day > ((0x1 << 0x5) - 0x1))
 		return false;
 	if (_month == 2)
 		if (_day > 28 || _day > 29)
