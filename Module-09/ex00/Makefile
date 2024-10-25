@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/25 12:04:55 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/25 12:04:58 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,7 @@ SRC = main.cpp BitcoinExchange.cpp
 
 NAME = btc
 
-all : ${NAME} play 
-
-
-
+all : ${NAME} 
 
 
 %.o: %.cpp BitcoinExchange.hpp
