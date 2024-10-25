@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:43:23 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 17:09:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:09:20 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(int you, char **nes)
 		rpn.OperationAPPOLO(data, 0x1);
 
 		RPN	rpn1(rpn);
-		/
+		
 	}
 	catch(const std::exception& younes)
 	{
