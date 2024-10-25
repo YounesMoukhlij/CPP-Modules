@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:54:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:54:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,7 +208,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 		fileDescriptors();
 		throw InvalidData();
 	}
-	if (value > 0x3E8)
+	if (value > 1000)
 		return ((std::cerr << "Error: too large a number." << std::endl), false);
 	if (value < 0x0)
 		return ((std::cerr << "Error : not a positive number." << std::endl), false);
