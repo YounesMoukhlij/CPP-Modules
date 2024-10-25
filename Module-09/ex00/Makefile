@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/25 11:53:23 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/25 12:04:55 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,9 @@ NAME = btc
 
 all : ${NAME} play 
 
-play :
-	@clear
 
-run :
-	./btc input.csv
+
+
 
 %.o: %.cpp BitcoinExchange.hpp
 	@echo "\033[30m Compiling ...\033[0m"
