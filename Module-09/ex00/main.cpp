@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 16:35:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:35:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int main(int you, char **nes)
 		bit.fileDescriptors();
 		
 		BitcoinExchange	a(bit);
+		
 		// a = bit;
 		// a.nameChecker(file);
 		// a.openingFiles(file);
