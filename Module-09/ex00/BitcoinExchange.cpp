@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:24:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:33:21 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -195,9 +195,10 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	_intY >> _year;
 	_intM >> _month;
 	_intD >> _day;
+	std::string ss = year + "-" + month + "-" + day;
 	if (_month <= 0x0 || _month > 12 || _day <= 0x0 || _year <= 0x0 || _day > 31)
 	{
-		std::string ss = year + "-" + month + "-" + day;
+		return ((std::cerr << "Error : bad input => " << ss << std::endl), false);
 		return ((std::cerr << "Error : bad input => " << ss << std::endl), false);
 	}
 	if (_month == 2)
