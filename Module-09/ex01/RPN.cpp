@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 17:20:24 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:20:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,6 +150,7 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	
 	// if operator then do simple math
 	
+
 	Y = (1) & (num2 = _stack.top(), _stack.pop(), Y = 0x9C);
 	Y = (1) & (num1 = _stack.top(), _stack.pop(), Y << 0x1);
 	
@@ -225,7 +226,6 @@ void	RPN::ParseArguments(const std::string& _array) const
 		if (isdigit(_array[i]) && _array[i] != ' ')
 			Cnumbers++;
 	}
-	
 	if (Coperators + 0x1 != Cnumbers)
 		throw ErrorArgument();
 }
