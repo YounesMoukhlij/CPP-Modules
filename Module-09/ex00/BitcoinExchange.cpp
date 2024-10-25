@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:03:02 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:15:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -203,6 +203,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	std::stringstream stringFloat(strV);
 	stringFloat >> value;
 	if (!(!stringFloat.fail() && stringFloat.eof()))
+	{}
 		return ((std::cerr << "Error: too larsssge a number." << std::endl), false);
 	if (value > 3E8)
 		return ((std::cerr << "Error: too large a number." << std::endl), false);
