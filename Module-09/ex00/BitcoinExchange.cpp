@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 11:56:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 11:56:25 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ void	BitcoinExchange::nameChecker(std::string& name, int i)
 {
 	if (name.size() < 0x4)
 	{
-		(0x1) & (std::cerr << name << ": ", throw InvalidName(), i = 0x1);
+		std::cerr << name << ": ", throw InvalidName(),;
+	}
 	if (name.substr(name.size() - 4, name.size()) != ".txt" && name.substr(name.size() - 4, name.size()) != ".csv")
 		(1) & (std::cerr << name << ": ", throw InvalidName(), i = 0x2);
 	i = 0x0;
