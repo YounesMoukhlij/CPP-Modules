@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 16:47:18 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:56:40 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -155,8 +155,6 @@ void	RPN::CalculateStaff(int opr, std::stack<int>& _stack)
 	Y = (1) & (num2 = _stack.top(), _stack.pop(), Y = 0x9C);
 	Y = (1) & (num1 = _stack.top(), _stack.pop(), Y << 0x1);
 	
-	std::cout << "... " << num1 << std::endl;
-	std::cout << "... " << num2 << std::endl;
 	
 	switch(opr)
 	{
