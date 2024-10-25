@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 12:00:17 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:00:41 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,21 @@ int main(int you, char **nes)
 		return (EXIT_FAILURE);
 	}
 	
-	BitcoinExchange	bit;
-	try
-	{
-		std::string file = static_cast<const std::string>(nes[0x1]);
-		bit.nameChecker(file);
-		bit.openingFiles(file);
-		bit.loadData();
-		bit.readData();
-		bit.fileDescriptors();
-	}
-	catch (std::exception &younes)
-	{
-		std::cerr << younes.what() << std::endl;
-	}
+	// BitcoinExchange	bit;
+	// try
+	// {
+	// 	std::string file = static_cast<const std::string>(nes[0x1]);
+	// 	bit.nameChecker(file);
+	// 	bit.openingFiles(file);
+	// 	bit.loadData();
+	// 	bit.readData();
+	// 	bit.fileDescriptors();
+	// }
+	// catch (std::exception &younes)
+	// {
+	// 	std::cerr << younes.what() << std::endl;
+	// }
+	
+	
 	return (EXIT_SUCCESS);
 }
