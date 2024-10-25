@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 16:57:07 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:57:10 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ RPN::~RPN()
 
 RPN::RPN(const RPN& origine)
 {
-	std::cout << "RPN Copy constructor called." << std::endl;
+	// std::cout << "RPN Copy constructor called." << std::endl;
 	if (this != &origine)
 		*this = origine;
 }
