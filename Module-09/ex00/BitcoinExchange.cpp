@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:16:40 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 15:20:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,7 +182,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	date = trim(str.substr(0x0, delPos));
 	strV = trim(str.substr(delPos + 0x1));
 	// check dates
-	if (date.size() != 0xA || date[0x4] != '-' || date[0x7] != '-' )
+	if (date.size() != 10 || date[0x4] != '-' || date[0x7] != '-' )
 		return ((std::cerr << "Error : bad input : " << str << std::endl), false);
 	day = date.substr(0x8, 0x2);
 	year = date.substr(0x0, 0x4);
