@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 12:57:23 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:57:29 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,25 +143,24 @@ void	BitcoinExchange::loadData(void)
 
 void	BitcoinExchange::printData(const std::string& inputDate)
 {
-	(void) inputDate;
 	std::map<std::string, float>::const_iterator it;
 	
-	// it = dataMap.lower_bound(inputDate);
-	// if (it != dataMap.end() && it->first == inputDate)
-	// 	std::cout << inputDate << " => " << value << " = " << static_cast<float>(it->second * value) << std::endl;
-	// else
-	// {
-	// 	if (it != dataMap.begin())
-	// 	{
-	// 		--it;
-	// 		if (it->first < inputDate)
-	// 			std::cout << inputDate << " => " << value << " = " <<  static_cast<float>(it->second * value) << std::endl;
-	// 		else
-	// 			std::cerr << "No date found in the database for: " << inputDate << std::endl;
-	// 	}
-	// 	else
-	// 		std::cerr << "No date found in the database for: " << inputDate << std::endl;
-	// }
+	it = dataMap.lower_bound(inputDate);
+	if (it != dataMap.end() && it->first == inputDate)
+		std::cout << inputDate << " => " << value << " = " << static_cast<float>(it->second * value) << std::endl;
+	else
+	{
+		if (it != dataMap.begin())
+		{
+			--it;
+			if (it->first < inputDate)
+				std::cout << inputDate << " => " << value << " = " <<  static_cast<float>(it->second * value) << std::endl;
+			else
+				std::cerr << "No date found in the database for: " << inputDate << std::endl;
+		}
+		else
+			std::cerr << "No date found in the database for: " << inputDate << std::endl;
+	}
 }
 
 
