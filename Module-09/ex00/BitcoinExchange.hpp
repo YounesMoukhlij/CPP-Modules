@@ -6,18 +6,18 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:06 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/25 15:42:21 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/25 16:22:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include <iostream>
-#include <fstream>
-#include <map>
-#include <cstdlib>
-#include <sstream>
-#include <limits>
+# include <iostream>
+# include <fstream>
+# include <map>
+# include <cstdlib>
+# include <sstream>
+# include <limits>
 
 # define IGNORE(param) (void)(param)
 
