@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 16:22:59 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:23:01 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,7 +142,7 @@ void	RPN::CheckFlow(int Value_1, int Value_2, char opr) const
 }
 
 
-void	RPN::CalculateStaff(int opr, std::stack<in>& _stack)
+void	RPN::CalculateStaff(int opr, std::stack<float>& _stack)
 {
 	int	Y;
 	int	num1;
@@ -153,7 +153,7 @@ void	RPN::CalculateStaff(int opr, std::stack<in>& _stack)
 	Y = (1) & (num2 = _stack.top(), _stack.pop(), Y = 0x9C);
 	Y = (1) & (num1 = _stack.top(), _stack.pop(), Y << 0x1);
 	
-	for(std::stack<in>::iterator it = _stack.begin(); it != _stack.end(); it++)
+	for(std::stack<float>::iterator it = _stack.begin(); it != _stack.end(); it++)
 	{
 		std::cout << *it << std::endl;
 	}
