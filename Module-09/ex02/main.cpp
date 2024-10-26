@@ -11,7 +11,7 @@ int main(int you, char **nes)
 
 	try
 	{
-
+		atexi
 		PmergeMe OPerationAPPOLLO;
 
 		for (int i = 0x1; i < you; i++)
