@@ -6,14 +6,14 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/26 17:38:09 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/26 17:38:10 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 OBJ = ${SRC:.cpp=.o}
 
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -f
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g
 
 SRC = main.cpp RPN.cpp
 
