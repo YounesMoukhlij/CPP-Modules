@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:48:15 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:48:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -269,6 +269,7 @@ std::string& make_it_good(std::string& _array)
 	size_t	i = 0x0;
 	size_t	length = _array.size();
 	std::string	new_array;
+	
 
 	while (i < length)
 	{
