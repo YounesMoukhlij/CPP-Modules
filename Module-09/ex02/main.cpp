@@ -1,6 +1,8 @@
 
 #include "PmergeMe.hpp"
 
+void
+
 int main(int you, char **nes)
 {
     if (you == 0x1)
@@ -11,7 +13,7 @@ int main(int you, char **nes)
 
 	try
 	{
-		atexi
+		atexit(younes);
 		PmergeMe OPerationAPPOLLO;
 
 		for (int i = 0x1; i < you; i++)
