@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:30:26 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:30:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,19 +119,19 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 
 void	PmergeMe::FordJhonsonVectorSort(void)
 {
-	bool										flag = flas;
 	std::vector<int>::iterator					tmp;
 	std::vector<std::pair<int, int> >::iterator	Pairs_it;
 	std::vector<int> 							Tmp_Vector;
 	std::vector<int>::iterator					LastElement;
 	std::vector<int> 							Final_Vector;
+	bool										flag = false;
 	std::vector<int>::iterator					it = _vector.begin();
 	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
 
 	// The Last Element Make noises it's better to pop it
 	if (_vector.size() % 0x2)
 	{
-		vector_value = *(--(_vector.end())), _vector.pop_back(), flag = 0x1;
+		vector_value = *(--(_vector.end())), _vector.pop_back(), flag = true;
 	}
 	
 	std::cout << "Vector Value : " << vector_value << std::endl;
