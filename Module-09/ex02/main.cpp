@@ -3,7 +3,7 @@
 
 void	younes(void)
 {
-	sys
+	system("leaks PmergeMe");
 }
 
 int main(int you, char **nes)
