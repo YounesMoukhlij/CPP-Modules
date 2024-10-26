@@ -1,10 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/26 16:37:42 by youmoukh          #+#    #+#             */
+/*   Updated: 2024/10/26 16:37:42 by youmoukh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "PmergeMe.hpp"
-
-void	younes(void)
-{
-	system("leaks PmergeMe");
-}
 
 int main(int you, char **nes)
 {
@@ -16,16 +22,13 @@ int main(int you, char **nes)
 
 	try
 	{
-		atexit(younes);
 		PmergeMe OPerationAPPOLLO;
 
 		for (int i = 0x1; i < you; i++)
 			OPerationAPPOLLO.OPerationParse(static_cast<std::string>(nes[i]));
 
 		OPerationAPPOLLO.OPerationSort();
-		OPerationAPPOLLO.OPerationTime();
-
-	
+		OPerationAPPOLLO.OPerationTime();	
 
 	}
 	catch (std::exception &younes)
