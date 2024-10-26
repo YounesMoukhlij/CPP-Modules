@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:31:49 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:31:59 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,8 +129,9 @@ void	PmergeMe::FordJhonsonVectorSort(void)
 	std::vector<int>::iterator					tmp_it = Tmp_Vector.begin();
 
 	// The Last Element Make noises it's better to pop it
-	if (_vector.size() % 0x2 )
+	if (_vector.size() % 0x2)
 	{
+		puts("234");
 		vector_value = *(--(_vector.end())), _vector.pop_back(), flag = true;
 	}
 	
