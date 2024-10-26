@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:44:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:39:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,8 @@ void PmergeMe::OPerationParse(const std::string& Data_Entry)
 	// 		throw DuplicateData();
 	_vector.push_back(temp);
 	_deque.push_back(temp);
+
+	for ()
 }
 
 
