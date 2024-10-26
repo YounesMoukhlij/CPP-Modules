@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:48:51 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:49:00 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,7 +264,7 @@ void	RPN::ParseArguments(const std::string& _array) const
 		throw ErrorArgument();
 }
 
-std::string& make_it_good(std::string& _array)
+std::string	formal_string(std::string& _array)
 {
 	size_t	i = 0x0;
 	size_t	length = _array.size();
