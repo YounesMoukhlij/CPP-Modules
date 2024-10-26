@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 16:22:05 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:53:23 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ class RPN
 		void		ParseArguments(const std::string& _array) const;
 		void		CheckFlow(int Value_1, int Value_2, char opr) const;
 		void		OperationAPPOLO(const std::string& _array, int mode);
+		std::string	formal_string(const std::string& _array);
+		
 	
 		
 
