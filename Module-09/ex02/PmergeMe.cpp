@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:30:13 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:30:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,6 +119,7 @@ void	PmergeMe::OPerationPrint(int mode1, int mode2) const
 
 void	PmergeMe::FordJhonsonVectorSort(void)
 {
+	bool										flag = flas;
 	std::vector<int>::iterator					tmp;
 	std::vector<std::pair<int, int> >::iterator	Pairs_it;
 	std::vector<int> 							Tmp_Vector;
