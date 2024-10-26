@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:41:56 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:42:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -189,7 +189,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 
 	// The Last Element Make noises it's better to pop it
 	if (_deque.size() % 0x2)
-		deque_value = *(--(_deque.end())), _deque.pop_back(), ;
+		deque_value = *(--(_deque.end())), _deque.pop_back(), flag = true;
 
 	while (it != _deque.end())
 		Pairs_Deque.insert(Pairs_Deque.end(), std::make_pair(*it, *(it + 0x1))), it += 0x2;
@@ -218,7 +218,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	while (it != Final_deque.end())
 	{
 		_deque.push_back(*it);
-		if (it + 0x1 == Final_deque.end())
+		if (it + 0x1 == Final_deque.end() && )
 			LastElement = std::upper_bound(_deque.begin(), _deque.end(), deque_value), _deque.insert(LastElement, deque_value);
 		it++;
 	}
