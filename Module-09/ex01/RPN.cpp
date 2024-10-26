@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:30:25 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:30:33 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,7 +264,7 @@ void	RPN::ParseArguments(const std::string& _array) const
 	{
 		for (int i = 0; i < _array.size(); i++)
 		{
-
+			if ()
 		}
 		std::cout << "Result : " << _array << std::endl;
 	}
