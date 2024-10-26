@@ -1,7 +1,10 @@
 
 #include "PmergeMe.hpp"
 
-void
+void	younes(void)
+{
+	sys
+}
 
 int main(int you, char **nes)
 {
