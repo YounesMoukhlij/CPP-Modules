@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:09:01 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:09:06 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -233,7 +233,7 @@ void	RPN::ParseArguments(const std::string& _array) const
 				if (!isdigit(_array[i]))
 					break;
 				Cspace++;
-				
+				i++;
 			}
 			if (Cspace)
 				Cnumbers++;
