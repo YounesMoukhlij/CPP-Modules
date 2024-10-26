@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:37:00 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:40:16 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -219,25 +219,25 @@ void	RPN::ParseArguments(const std::string& _array) const
 	size_t	Cnumbers = length - _array.size();
 	size_t	Coperators = Cnumbers + 0x0;
 
-	while (_array[i] == ' ' && _array[i])
-		i++;
-	if (!isdigit(static_cast<int>(_array[i])))
-		throw ErrorArgument();
-	else
-	{
-		while (_array[i])
-		{
-			if (isdigit(static_cast<int>(_array[i])))
-				counter++;
-			i++;
-		}
-	}
+	// while (_array[i] == ' ' && _array[i])
+	// 	i++;
+	// if (!isdigit(static_cast<int>(_array[i])))
+	// 	throw ErrorArgument();
+	// else
+	// {
+	// 	while (_array[i])
+	// 	{
+	// 		if (isdigit(static_cast<int>(_array[i])))
+	// 			counter++;
+	// 		i++;
+	// 	}
+	// }
 	
-	if (!ValidArg(_array[_array.size() - 0x1]) && _array[_array.size() - 0x1] != ' ')
-	{
-		if (!counter)
-			throw ErrorArgument();	
-	}
+	// if (!ValidArg(_array[_array.size() - 0x1]) && _array[_array.size() - 0x1] != ' ')
+	// {
+	// 	if (!counter)
+	// 		throw ErrorArgument();	
+	// }
 	for (size_t i = 0x0; i < length; i++)
 	{
 		if (!isdigit(_array[i]) && !ValidArg(_array[i]))
@@ -255,11 +255,11 @@ void	RPN::ParseArguments(const std::string& _array) const
 				Cnumbers++;
 		}
 	}
-	if (!(Cnumbers == 0x1 && !Coperators))
-	{
-		if (Cnumbers < 0x2)
-			throw SmallStack();
-	}
+	// if (!(Cnumbers == 0x1 && !Coperators))
+	// {
+	// 	if (Cnumbers < 0x2)
+	// 		throw SmallStack();
+	// }
 	if (Coperators + 0x1 != Cnumbers)
 		throw ErrorArgument();
 }
