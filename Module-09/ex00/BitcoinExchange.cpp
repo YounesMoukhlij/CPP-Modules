@@ -71,7 +71,7 @@ const char*	BitcoinExchange::InvalidData::what() const throw()
 void	BitcoinExchange::openingFiles(const std::string& name)
 {
 	infile.open(name);
-	if (!infile.is_open()) 
+	if (!infile.is_open())
 	{
 		std::cerr << name << ": ";
 		throw Invalidfile();
@@ -137,13 +137,13 @@ void	BitcoinExchange::loadData(void)
 			throw InvalidData();
 		}
 		dataMap[date] = rateV;
-	}	
+	}
 }
 
 void	BitcoinExchange::printData(const std::string& inputDate)
 {
 	std::map<std::string, float>::const_iterator it;
-	
+
 	it = dataMap.lower_bound(inputDate);
 	if (it != dataMap.end() && it->first == inputDate)
 		std::cout << inputDate << " => " << value << " = " << static_cast<float>(it->second * value) << std::endl;
@@ -173,7 +173,8 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	std::string	year;
 	std::string	month;
 	size_t		delPos;
-	
+	bool		isLeapYear;
+
 
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
@@ -186,20 +187,25 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	day = date.substr(0x8, 0x2);
 	year = date.substr(0x0, 0x4);
 	month = date.substr(0x5, 0x2);
-	
+
 	std::stringstream _intY(year);
 	std::stringstream _intM(month);
 	std::stringstream _intD(day);
-	
+
 	_intY >> _year;
 	_intM >> _month;
 	_intD >> _day;
 	std::string ss = year + "-" + month + "-" + day;
 	if (_month <= 0x0 || _month > 12 || _day <= 0x0 || _year <= 0x0 || _day > 31)
 		return ((std::cerr << "Error : bad input => " << ss << std::endl), false);
+	if (_month == 2) {
+			isLeapYear = (_year % 4 == 0 && _year % 100 != 0) || (_year % 400 == 0);
+		if (_day > (isLeapYear ? 29 : 28))
+			return false;
+	}
 	if (_month == 2)
 	{
-		
+
 		if (_day > 28 || _day > 29)
 			return ((std::cerr << "Error : bad input => " << ss << std::endl), false);
 	}
