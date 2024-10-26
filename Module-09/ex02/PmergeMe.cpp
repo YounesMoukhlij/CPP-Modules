@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 16:56:14 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:56:36 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -221,10 +221,10 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 		tmp_it++;
 	}
 	_deque.clear();
-	if (Final_deque.size() == 0)
-	{
-		_deque.push_back(*it);
-	}
+	// if (Final_deque.size() == 0)
+	// {
+	// 	_deque.push_back(*it);
+	// }
 	// if (Final_deque.begin() == Final_deque.end())
 		// _deque.push_back(*it);
 	it = Final_deque.begin();
