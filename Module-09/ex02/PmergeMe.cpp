@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:56:14 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 14:42:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:43:56 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -218,7 +218,7 @@ void	PmergeMe::FordJhonsonDequeSort(void)
 	while (it != Final_deque.end())
 	{
 		_deque.push_back(*it);
-		if (it + 0x1 == Final_deque.end() && flag)
+		if (it + 0x1 == Final_deque.end() && flag == true)
 			LastElement = std::upper_bound(_deque.begin(), _deque.end(), deque_value), _deque.insert(LastElement, deque_value);
 		it++;
 	}
