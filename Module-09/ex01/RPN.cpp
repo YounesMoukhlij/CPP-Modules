@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:50:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:50:39 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -272,8 +272,8 @@ std::string	formal_string(const std::string& _array)
 	
 	while (_array[i])
 	{
-		if (isdigit(_array[i]) &&)
-			new_array += _array[i];
+		if (isdigit(_array[i]) && isValidArg(_array[i + 0x1]))
+			fl
 		i++;
 	}
 
