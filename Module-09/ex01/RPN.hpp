@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:39 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/11 18:34:27 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 16:22:05 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@
 class RPN
 {
 	private:
-		std::stack<int>		_stack;
-		void		CalculateStaff(int opr, std::stack<int>& _stack);
+		std::stack<float>		_stack;
+		void		CalculateStaff(int opr, std::stack<float>& _stack);
 	public:
 		// Canonical Form
  		RPN();
