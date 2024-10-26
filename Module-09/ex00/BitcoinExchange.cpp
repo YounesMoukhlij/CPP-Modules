@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 13:46:32 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:49:50 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -180,6 +180,7 @@ bool	BitcoinExchange::parseEntry(std::string& str)
 	delPos = str.find('|');
 	if (delPos == std::string::npos)
 		return ((std::cerr << "Error : bad input => " << str << std::endl), false);
+	if (str.s)
 	date = trim(str.substr(0x0, delPos));
 	strV = trim(str.substr(delPos + 0x1));
 	// check dates
