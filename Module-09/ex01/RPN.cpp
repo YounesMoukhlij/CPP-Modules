@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:48:06 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:48:15 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -264,7 +264,24 @@ void	RPN::ParseArguments(const std::string& _array) const
 		throw ErrorArgument();
 }
 
-std::string& make_it_g
+std::string& make_it_good(std::string& _array)
+{
+	size_t	i = 0x0;
+	size_t	length = _array.size();
+	std::string	new_array;
+
+	while (i < length)
+	{
+		if (_array[i] == ' ')
+			i++;
+		else
+		{
+			new_array += _array[i];
+			i++;
+		}
+	}
+	return (new_array);
+}
 
 void	RPN::OperationAPPOLO(const std::string& _array, int mode)
 {
