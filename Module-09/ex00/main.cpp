@@ -6,11 +6,16 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:40:33 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 13:35:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 15:30:11 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "BitcoinExchange.hpp"
+
+void	younes(void)
+{
+	system("leaks PmergeMe");
+}
 
 int main(int you, char **nes)
 {
