@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:51:58 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:52:13 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -285,7 +285,7 @@ std::string	formal_string(const std::string& _array)
 	{
 		if (isdigit(_array[i]) && flag == 'a')
 		{
-			
+			new_array += _array[i];
 		}
 	}
 	return (new_array);
