@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:39:04 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 13:43:28 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:43:38 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -156,8 +156,10 @@ void	BitcoinExchange::printData(const std::string& inputDate)
 		{
 			--it;
 			if (it->first < inputDate)
-			
+			{
+				std::cout << static_cast<float>(it->second * value) << std::endl;
 				std::cout << inputDate << " => " << value << " = " <<  static_cast<float>(it->second * value) << std::endl;
+			}
 			else
 				std::cerr << "No date found in the database for: " << inputDate << std::endl;
 		}
