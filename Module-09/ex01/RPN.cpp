@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:31:41 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:31:55 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -262,14 +262,16 @@ void	RPN::ParseArguments(const std::string& _array) const
 	}
 	if (Cnumbers == 0x1 && !Coperators)
 	{
+		
 		while (_array[j])
 		{
 			if (_array[j] == ' ')
 				j++;
-			if ()
+			if (isdigit(_array[j]))
+				std::cout << "Result : " << _array[i] << std::endl;
+				
 			j++;
 		}
-		std::cout << "Result : " << _array << std::endl;
 	}
 	if (Cnumbers < 0x2)
 		throw SmallStack();
