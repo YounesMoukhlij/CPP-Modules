@@ -25,15 +25,7 @@ int main(int you, char **nes)
 		OPerationAPPOLLO.OPerationSort();
 		OPerationAPPOLLO.OPerationTime();
 
-		// ---> > > > > Test Canonical Form
-
-		// PmergeMe A(OPerationAPPOLLO);
-		// PmergeMe A;
-
-		// A = OPerationAPPOLLO;
-		// A.OPerationSort();
-		// A.OPerationTime();
-		
+	
 
 	}
 	catch (std::exception &younes)
