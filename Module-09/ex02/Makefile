@@ -6,7 +6,7 @@
 #    By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 13:43:06 by youmoukh          #+#    #+#              #
-#    Updated: 2024/10/20 17:10:22 by youmoukh         ###   ########.fr        #
+#    Updated: 2024/10/26 14:46:01 by youmoukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,6 @@ NAME = PmergeMe
 
 all : ${NAME}
 
-play:
-	@clear
-	@./PmergeMe 2 9 0 34 5 8 1
 
 %.o: %.cpp PmergeMe.hpp
 	@echo "\033[30m Compiling ...\033[0m"
