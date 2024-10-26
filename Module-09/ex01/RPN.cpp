@@ -6,7 +6,7 @@
 /*   By: youmoukh <youmoukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:31:30 by youmoukh          #+#    #+#             */
-/*   Updated: 2024/10/26 17:54:16 by youmoukh         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:54:26 by youmoukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -284,7 +284,7 @@ std::string	RPN::formal_string(const std::string& _array)
 	i = 0x0;
 	while (i < length && flag == 'b')
 	{
-		if (isdigit(_array[i]) && flag == 'a')
+		if (isdigit(_array[i]))
 		{
 			new_array[j] = _array[i];
 		}
