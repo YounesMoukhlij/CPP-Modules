@@ -18,7 +18,7 @@ OBJS = ${SRCS:.cpp=.o}
 all : ${NAME}
 
 ${NAME} : ${OBJS}
-	@${COMPILE} ${OBJS} -o $@ && 
+	@${COMPILE} ${OBJS} -o $@ &&
 
 clean :
 	@${RM} ${OBJS} && \
@@ -31,3 +31,5 @@ fclean : clean
 	echo "Failed to delete executable ${NAME} ❌"
 
 re : fclean all
+
+
