@@ -10,7 +10,7 @@ void leak()
 }
 int main()
 {
-	atexit(leak);
+	atexit(younes);
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
