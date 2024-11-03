@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   cure.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: zelabbas <zelabbas@student.1337.ma>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 12:01:33 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/05/25 15:00:42 by zelabbas         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "Cure.hpp"
 
@@ -46,7 +35,7 @@ AMateria* Cure::clone(void) const
 	{
 		std::cerr << "Memory allocation failed" << std::endl;
 		return (nullptr);
-	} 
+	}
 	return (cloneIce);
 }
 
