@@ -6,8 +6,6 @@
 
 class Cure : public AMateria
 {
-	private:
-		/* data */
 	public:
 		Cure(void);
 		Cure(const std::string&);
