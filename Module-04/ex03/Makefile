@@ -11,8 +11,7 @@ OBJS = ${SRCS:.cpp=.o}
 
 %.o : %.cpp AMateria.hpp Character.hpp ICharacter.hpp IMateriaSource.hpp MateriaSource.hpp Cure.hpp Ice.hpp
 	@${COMPILE} ${FLAGS} -c $< -o $@ && \
-	echo "Compilation of $< done ✅" || \
-	(echo "Compilation of $< failed ❌" && exit 1)
+
 
 
 
