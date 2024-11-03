@@ -4,7 +4,9 @@
 #include "Character.hpp"
 #include "MateriaSource.hpp"
 
-void leak(){system("leaks interfaces");}
+void leak()
+{
+	system("leaks interfaces");}
 int main()
 {
 	atexit(leak);
