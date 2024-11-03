@@ -39,7 +39,7 @@ SRC = main.cpp AMateria.cpp Character.cpp MateriaSource.cpp Cure.cpp Ice.cpp
 
 OBJ = ${SRC:.cpp=.o}
 
-NAME = Animal
+NAME = interfaces
 
 all : ${NAME}
 
