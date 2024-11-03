@@ -6,7 +6,8 @@
 
 void leak()
 {
-	system("leaks interfaces");}
+	system("leaks interfaces");
+}
 int main()
 {
 	atexit(leak);
