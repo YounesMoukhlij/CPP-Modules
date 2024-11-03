@@ -34,7 +34,7 @@ AMateria* Cure::clone(void) const
 	if (!cloneIce)
 	{
 		std::cerr << "Memory allocation failed" << std::endl;
-		return (nullptr);
+		return (0x0);
 	}
 	return (cloneIce);
 }
