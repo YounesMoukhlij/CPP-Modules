@@ -18,9 +18,7 @@ OBJS = ${SRCS:.cpp=.o}
 all : ${NAME}
 
 ${NAME} : ${OBJS}
-	@${COMPILE} ${OBJS} -o $@ && \
-	echo "Executable ${NAME} created ✅" || \
-	(echo "Failed to create executable ${NAME} ❌" && exit 1)
+	@${COMPILE} ${OBJS} -o $@ && 
 
 clean :
 	@${RM} ${OBJS} && \
