@@ -4,7 +4,7 @@
 #include "Character.hpp"
 #include "MateriaSource.hpp"
 
-void leak()
+void younes()
 {
 	system("leaks interfaces");
 }
