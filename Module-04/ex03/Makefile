@@ -43,7 +43,7 @@ NAME = Animal
 
 all : ${NAME}
 
-%.o : %.cpp Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp Brain.hpp
+%.o : %.cpp AMateria.hpp Character.hpp ICharacter.hpp IMateriaSource.hpp MateriaSource.hpp Cure.hpp Ice.hpp
 	@echo "\033[30m Compiling ...\033[0m"
 	@c++ ${CPPFLAGS} -c $< -o $@
 
